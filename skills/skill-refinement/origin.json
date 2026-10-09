@@ -1,0 +1,27 @@
+{
+  "source_name": "skill-refinement",
+  "adapted_on": "2026-10-09",
+  "changes": [
+    "Generalized historical conversation and originating-user references; operational rules and evaluation outcomes unchanged."
+  ],
+  "source_sha256": {
+    "CHANGELOG.md": "73bff6010fc946d19e878b2337ce01072ca8a2e91fd3ae1dcf88919387e85d2e",
+    "README.md": "b4113207933f7c164ea327fad815e2a97b0cbe866871e359d9c13f2c534eca12",
+    "SKILL.md": "8abe9a39817a868b140a5e602672a9b43374e36ca2eea85543e933fa572dd980",
+    "VALIDATION.md": "3698556a4f4fdba6edbc78667b5b0b2c3fdf78244b39850c8ba69687c93929ff",
+    "evals/cases.json": "fac77cbbec7ce7903b629ddfd4a2974b9894d2eae678675ef68d3ffa8c828a36",
+    "evals/cases.md": "1e5a1b0f0072e4dadaddad7ae30691c9bf5ab8aa5517a6d9459f788cdaa53de6",
+    "evals/execution-results.json": "0de2f5d0dab3a71b4393e7353c43589a84dc2d4547698cb26192ce856a0b002d",
+    "evals/run_cases.py": "4ba49f9628d6f83906334ae4d20175ea6c128277a87f6c2c9b1a1fe5b86eead1",
+    "evals/self-analysis.json": "308865f70e84a588e1cbd4f81831f7057a1e4cc4df7e69a8c1f8c41041604b52",
+    "evals/test_analyzer.py": "95f33d7f079fa60fab92ca38d461733088c799da008de24de6100da1b88e1853",
+    "evals/test_preparation.py": "b2d9c411ed9dca2d51a2986ad117bc6628082e16b52ae4bc49856b2dbc890999",
+    "evals/worked-rewrites.json": "9b364fb264418568986745aa94a235aa1962389c1eaee2789bcc32fb3f66f5de",
+    "evals/worked-rewrites.md": "8eb55231283a9e4877d9b105d09d1857cafb0ea28a95b4a5143dcd46b559cf10",
+    "references/decision-rules.md": "679da8d568636508ad374e61aa75233a85c482eb32eca2db2f4d290cac0740c0",
+    "references/evidence.md": "a2c9e593c04cbc088e13e863112b92ef5c4a4e21bfe633aeb5d4cd342e59ec2d",
+    "references/measurement.md": "dfb681a7a4deb582ae95ad042a11b5a0ce29a0a354259825da5a01902bfa2bd8",
+    "references/patterns.md": "6e13e5d5c3f5e3ace76a80c5751496dcd0854481bceaf32cd0ff04d2c582b159",
+    "scripts/analyze_skill.py": "f01c04affcc5aeffa9612628183d78aa689e6b46706e26dc230b04e0a8acad5e"
+  }
+}

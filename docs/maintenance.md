@@ -60,6 +60,8 @@ No hooks, MCP servers, accounts, or credentials are bundled. The Codex marketpla
 
 ## Curated adaptations
 
-Research to Skill, Ticket Craft, Learning Loop, and the privacy-reviewed Technical Documentation package are maintained as separate portable source packages outside this repository. Their original source fingerprints and intentional changes are recorded in each package's `origin.json`. The importer hashes the curated source; it does not silently regenerate it from the original installed skill. Reconcile upstream changes and revalidate the adaptation before synchronizing. Ticket Craft derives from Write Work Item Descriptions and includes focused authoring corrections.
+All packages with an `origin.json` are maintained as separate portable source packages outside this repository, including privacy-reviewed adaptations. Their original source fingerprints and intentional changes are recorded in each package's `origin.json`. The importer hashes the curated source; it does not silently regenerate it from the original installed skill. Reconcile upstream changes and revalidate the adaptation before synchronizing. Ticket Craft derives from Write Work Item Descriptions and includes focused authoring corrections.
 
 Only approved additions belong in the private source map. New packages do not automatically receive research schedules. The daily publication job can collect completed changes from these mapped packages using the same review process.
+
+Before publication, inspect both file contents and the pending commit’s author/committer identity. Use the public maintainer identity with a GitHub noreply address, and verify the resulting commit metadata before pushing. File-level checks do not inspect Git identities. Do not rewrite published history as part of the recurring update job.

@@ -2,7 +2,8 @@
   "source_name": "ticket-craft",
   "adapted_on": "2026-10-09",
   "changes": [
-    "Clarified review-only output and preservation of existing ticket contracts during revision."
+    "Clarified review-only output and preservation of existing ticket contracts during revision.",
+    "Removed residual originating-user or author-environment details from supporting records; operational rules unchanged."
   ],
   "source_sha256": {
     "SKILL.md": "c10046535e4f0e9b6c48582c8f8a864c857a91fcc5eda6d52b353f2ed82b61df",

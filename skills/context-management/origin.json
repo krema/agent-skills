@@ -1,0 +1,14 @@
+{
+  "source_name": "context-management",
+  "adapted_on": "2026-10-09",
+  "changes": [
+    "Generalized historical conversation and originating-user references; operational rules and evaluation outcomes unchanged."
+  ],
+  "source_sha256": {
+    "RESEARCH.md": "c85cf4a2a59ce92e9a879701b72b210a4b88c5aaea2b7c22b4a7dedd9d7b1ce6",
+    "SKILL.md": "267d7c6c3b9c44515a70ad3661b72d94b9bc3f2c65c708f4cd810ed82fa873c4",
+    "VALIDATION.md": "88ea23f3261b06ce603a1406db74a0d5d7494beef04a585151c755a88c2b014b",
+    "references/evaluation.md": "a6f85230c92e241a2f9f60d7afd7267b52b2d165f0cf635a7b404def8dbaa967",
+    "references/evidence.md": "04834c56f7077ce69b080794580a333b6dcaaaff711f65bb7157fde5cf22a7bf"
+  }
+}

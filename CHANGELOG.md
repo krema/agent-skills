@@ -7,6 +7,7 @@
 - Add Learning Loop, adapted from Copilot Workflow Learning with neutral private records, evidence-based proposals, authorized application, and outcome verification.
 - Generalize historical private-project context and personal preferences in Technical Documentation’s evidence ledger.
 - Apply a focused authoring review: scope-sensitive delivery, review-only boundaries, and bounded learning-loop completion and recovery.
+- Extend privacy review to all skill resources and reachable history; generalize residual originating-request and conversation references.
 - Record adaptation provenance and privacy review; no capture hooks or schedules are bundled.
 
 

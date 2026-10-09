@@ -10,7 +10,7 @@ Scope: Research to Skill, Ticket Craft, and Learning Loop. Reviewed selection, s
 
 ## Checks and limits
 
-- Passed: metadata, eight package names, required resources, six manifests, provenance, and relative links in the distribution. The distribution contains 71 skill files.
+- Passed: metadata, eight package names, required resources, six manifests, provenance, and relative links in the distribution. The distribution contained 71 skill files at the authoring review; subsequent privacy adaptations add lineage records.
 - Passed: author consistency review of entrypoints and affected references, including conditional archive instructions and review-only deliverables.
 - Author walkthroughs: normal creation/revision and learning-batch review retain their intended outputs; review-only and ordinary-research requests do not enter packaging; linked ticket criteria remain stable; repeated persistence failure retains the durable checkpoint and reports a blocker. Corresponding scenarios are included in each skill's evaluation cases.
 - Not run: independent agent execution, live tracker changes, observer deployment, cross-host capture, or matched performance comparisons. The expected outcomes were visible during walkthroughs. The revised decisions are structurally validated, behaviorally untested.
