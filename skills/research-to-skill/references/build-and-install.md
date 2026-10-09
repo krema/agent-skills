@@ -30,7 +30,7 @@ Isolate tests from live accounts and installed skill directories unless those ac
 
 ## Package
 
-Create a ZIP containing one top-level skill folder and all its referenced resources. Exclude caches, credentials, test scratch, and unrelated files. Inspect archive entries and extract to a temporary location; verify links and rerun required executable checks from that location. A package is not self-contained if it needs the author's workspace files. Report checks that were omitted and why.
+Validate required resources and links in the actual delivered layout. When a ZIP is requested or is the agreed delivery format, create it with one top-level skill folder and all its referenced resources. Keep an existing delivered archive consistent with authorized revisions. The following archive checks apply only when delivering an archive: Exclude caches, credentials, test scratch, and unrelated files. Inspect archive entries and extract to a temporary location; verify links and rerun required executable checks from that location. A package is not self-contained if it needs the author's workspace files. Report checks that were omitted and why.
 
 ## Install in the target agent when requested
 

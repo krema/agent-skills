@@ -10,6 +10,7 @@ Turn a research question into guidance an agent can act on, with traceable suppo
 ## Establish the intended use
 
 Identify the topic, realistic tasks, target agent/environment, and the decisions the skill should improve. Use the conversation to resolve these before asking about essential gaps. Inspect an existing package when updating it; preserve useful behavior and the user's scope.
+A research question without a request to create or improve a skill belongs to ordinary research, not this packaging workflow. For a review-only request, inspect the relevant evidence and instructions and return actionable findings without rewriting or packaging.
 Distinguish creating a skill from executing its eventual tasks. Keep research, packaging, installation, and scheduling authorization separate; honor actions already requested without asking again.
 
 ## Research and assess
@@ -28,7 +29,7 @@ Repair demonstrated problems and recheck affected behavior. Favor narrow correct
 
 ## Deliver and install
 
-Deliver the complete folder and ZIP, with key-file links, evidence limitations, and actual validation results. Keep all required resources inside the folder; exclude scratch files, secrets, and machine-specific paths.
+Deliver the complete skill folder or the requested in-place revision, with key-file links, evidence limitations, and actual validation results. Create a ZIP when requested or when an archive is the agreed delivery format; keep any existing delivered archive consistent with the revision. Keep all required resources inside the folder; exclude scratch files, secrets, and machine-specific paths.
 When installation is requested, install the validated package in the user's chosen agent's supported skill location using the procedure in [build-and-install.md](references/build-and-install.md). Verify the installed files match the tested package. Do not silently replace an unrelated skill or report a blocked installation as successful.
 For an evidence refresh, revisit affected claims, weaken or remove rules when warranted, rerun affected checks, and update the authorized installed copy. Create or alter a recurring schedule only when requested.
 

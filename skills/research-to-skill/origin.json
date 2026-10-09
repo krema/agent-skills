@@ -4,7 +4,8 @@
   "changes": [
     "Generalized installation guidance and default prompt from Codex to the requested agent.",
     "Added a cross-host installation evaluation case.",
-    "Research rules and historical evidence retained; no new effectiveness claim."
+    "Research rules and historical evidence retained; no new effectiveness claim.",
+    "Authoring review clarified review-only and adjacent-task boundaries and made archive delivery conditional."
   ],
   "source_sha256": {
     "SKILL.md": "0f7956b8a0b038e7cc9fdcddfa4919b26e6dd77ee869fb593bc7dfcfb1511d42",

@@ -8,6 +8,8 @@ Create descriptions that explain the purpose to people and give an executor enou
 
 ## Establish the item and its audience
 
+Choose drafting, revision, or review-only from the request. In review-only mode, return findings and suggested corrections without rewriting the descriptions or changing artifacts. For revisions, preserve existing item IDs, links, agreed requirements, and criterion IDs referenced by other items; identify any necessary contract change explicitly.
+
 Use the request and supplied artifacts to identify the item type, intended audience, parent outcome, and stage: discovery, refinement, or execution. Respect local tracker terminology. An epic organizes a larger outcome; a story describes a useful behavior; a subtask contributes a bounded deliverable. Technical enablers and investigations need a concrete beneficiary or decision, not an invented user persona.
 
 Read [templates](assets/templates.md) when drafting. Read [examples](references/examples.md) when hierarchy or audience differences need clarification. Read [evidence](references/evidence.md) when explaining the basis, evaluating a disputed rule, or refreshing the guidance.
@@ -37,6 +39,6 @@ Keep essential outcome, constraints, and acceptance visible. Link substantial su
 
 ## Review and deliver
 
-Use [review checks](references/review.md) before finishing. Return the description(s), any consequential questions, and a concise readiness judgment: discovery, needs refinement, or ready for the stated executor with disclosed limitations. These are descriptive judgments, not mandatory workflow gates. A human-readable discovery epic need not contain implementation instructions. An agent tasked only with analysis needs an analysis deliverable, not a fabricated coding plan.
+Use [review checks](references/review.md) before finishing. For drafting or revision, return the description(s), any consequential questions, and a concise readiness judgment: discovery, needs refinement, or ready for the stated executor with disclosed limitations. These are descriptive judgments, not mandatory workflow gates. A human-readable discovery epic need not contain implementation instructions. An agent tasked only with analysis needs an analysis deliverable, not a fabricated coding plan.
 
-For reviews, identify the exact ambiguity or inconsistency, its execution consequence, and a concrete revision. Preserve existing intent. Writing descriptions does not execute the work or update a live tracker unless requested.
+For reviews, identify the source location, exact ambiguity or inconsistency, its execution consequence, and a suggested correction. If no material defect is found, report that with review limits rather than manufacturing findings. Preserve existing intent. Writing descriptions does not execute the work or update a live tracker unless requested.

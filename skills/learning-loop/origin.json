@@ -5,7 +5,8 @@
     "Rewritten as a host-independent observe, propose, apply, verify cycle.",
     "Neutral private storage, durable evidence transitions, coverage and deduplication guidance.",
     "Optional capture integration contract; no hooks, schedules, or model training bundled.",
-    "New evaluation scenarios and explicit behavioral validation limits."
+    "New evaluation scenarios and explicit behavioral validation limits.",
+    "Authoring review clarified per-invocation completion, non-Git storage, and bounded persistence recovery."
   ],
   "source_sha256": {
     "SKILL.md": "3e708e6bef0483e6a567e089651a8fb47f94a75b30ee13006794094a27332e41",

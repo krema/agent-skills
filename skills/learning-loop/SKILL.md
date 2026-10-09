@@ -11,7 +11,7 @@ Turn available experience into scoped, testable improvements. The cycle is obser
 
 Use the current conversation and user-authorized logs or artifacts. Identify the project, available sessions, capture gaps, and authorized mode. Default to observation and proposals; honor an existing authorization to apply changes within its stated scope. Do not scan unrelated conversations or enable monitoring merely because this skill was invoked.
 
-Keep learning records outside the installed skill, in an existing user-selected private location or the project's `.agent-learnings/` directory. Before persisting conversation-derived content, verify that the location is untracked and excluded from version control; an ignore rule does not untrack existing files. If safe storage is unavailable, give a minimal in-conversation finding and explain that persistence is pending. Do not change tracking or migrate existing logs silently.
+Keep learning records outside the installed skill, in an existing user-selected private location or the project's `.agent-learnings/` directory. Before persisting conversation-derived content, verify that the location is outside a version-controlled tree or both untracked and excluded within that tree; an ignore rule does not untrack existing files. If safe storage is unavailable, give a minimal in-conversation finding and explain that persistence is pending. Do not change tracking or migrate existing logs silently.
 
 Read [record format](references/record-format.md) when persisting evidence or proposals. Read [integration](references/integration.md) only when configuring repeated capture or consuming host event streams. A skill invocation alone does not provide continuous observation.
 
@@ -38,6 +38,8 @@ Apply only within current or standing user authorization. Before editing, re-rea
 Mark applied after checking the actual artifact. Mark validated only after the intended behavioral check succeeds, with evidence and limitations; formatting or a self-review is not that check. If behavior is untested, leave it applied but unvalidated. If failure recurs or a regression appears, revise or revert within scope, preserving unrelated later edits, and attach the new evidence. Rejected or superseded proposals must not be applied on the next cycle without new grounds.
 
 ## Continue the loop
+
+Finish each invocation when the available authorized evidence batch has been assessed, warranted proposals or authorized changes are recorded, and remaining checks or blockers are explicit. Do not keep the run open waiting for future feedback.
 
 On subsequent invocations, inspect new evidence and unresolved proposals, then compare outcomes with prior predictions. Advance any capture checkpoint only after durable recording; replay must not inflate support. Retain useful lessons with traceable scope, revisit those contradicted by new evidence, and follow the user's retention requirements.
 

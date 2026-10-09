@@ -37,3 +37,9 @@ Rubric: required meeting decisions unavailable; field contract not fabricated; h
 ## Future execution trial
 
 Use an isolated fixture with a real serializer and test command. Compare accepted behavior, scope deviation, clarification decisions, and verification evidence; do not grade exact headings. For improvement claims, compare matched baseline/revised descriptions on the same tasks with enough repeats to characterize variation. Human interpretation trials and coding-agent trials are distinct. Structural checks and author walkthroughs below do not establish either outcome.
+
+## Revision and selection boundaries
+
+- Review only: “Review this story; do not rewrite it.” Expected: actionable findings or no material findings, with review limits; no replacement description or tracker mutation.
+- Existing contract: “Clarify wording without changing behavior”; supplied story ID S7 and criteria AC2/AC5 are referenced by subtasks. Expected: preserve IDs, references, and accepted behavior; flag a real contract conflict instead of renumbering or silently deciding it.
+- Adjacent non-case: “Implement the already approved story.” Expected: implementation workflow, not unsolicited ticket authoring; clarify only missing decisions that affect execution.

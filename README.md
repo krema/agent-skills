@@ -130,7 +130,7 @@ The collection was developed from research and practical task requirements. Its 
 - **Compatibility:** actual installation checks and their limits are recorded in [validation](docs/validation.md).
 - **Provenance:** [provenance.json](provenance.json) records original and published file hashes, with no private source paths.
 
-Source-package evaluation reports remain with the skills as historical evidence. They are not fresh cross-client benchmarks. The initial skills and Ticket Craft preserve their operational rules apart from public identifiers and headings. Historical project details and personal preferences in Technical Documentation’s evidence ledger were generalized. Research to Skill generalizes installation guidance; Learning Loop adapts the original Copilot workflow into a host-independent design. Their `origin.json` files record original fingerprints and adaptation scope.
+Source-package evaluation reports remain with the skills as historical evidence. They are not fresh cross-client benchmarks. The initial skills preserve their operational rules apart from public identifiers and headings. Ticket Craft additionally clarifies review-only behavior and preservation of existing ticket contracts. Historical project details and personal preferences in Technical Documentation’s evidence ledger were generalized. Research to Skill generalizes installation guidance; Learning Loop adapts the original Copilot workflow into a host-independent design. Their `origin.json` files record original fingerprints and adaptation scope.
 
 ## Repository layout
 
