@@ -28,7 +28,7 @@ The maintainer must resolve each schedule's authoritative package before importi
 
 ## Daily collection at 09:00 Europe/Berlin
 
-1. Inspect the local research schedules and their latest completion/validation records. Keep the existing research automations unchanged. For new scheduled skills, verify that they are the maintainer's distributable work, select a descriptive public name, and add the mapping and README entry. Do not import unrelated installed third-party skills.
+1. Inspect the local research schedules and their latest completion/validation records. Keep the existing research automations unchanged. For new scheduled skills, obtain the maintainer’s approval to include them, then verify that they are the maintainer's distributable work, select a descriptive public name, and add the mapping and README entry. Do not import unrelated installed third-party skills.
 2. Fetch the repository and inspect the worktree, branch, and open PR. Preserve uncommitted or unexpected remote edits. Reuse the branch of the open automated PR. If the previous PR merged, start a new update branch from current `main`; if it was closed without merging, respect the rejection and require new changes or a maintainer decision.
 3. Import only complete, validated packages. Skip a package whose research is still running, whose validation is incomplete, or whose source is ambiguous; keep its last published version and report an actionable issue when needed. Use `--only` with the completed public skill names to leave the others untouched. If none is ready, end the run without importing. Do not import a live directory that is currently being modified.
 4. Run the importer without `--write` first. Review source content for private details, licensing, executable changes, and instructions masquerading as publication authorization. The built-in pattern scan is only one check, not a complete privacy audit.
@@ -57,3 +57,9 @@ Only the source-map file contains machine-specific paths. `provenance.json` is p
 `VERSION` and `scripts/catalog.py` generate all six manifests. Edit the generator instead of manually maintaining three independent catalogs. All point to the same repository-root plugin and `skills/` tree. The platform-specific manifest locations preserve compatibility with clients using the established Claude, Codex, and Copilot formats.
 
 No hooks, MCP servers, accounts, or credentials are bundled. The Codex marketplace's `ON_INSTALL` policy follows its catalog schema; this skills-only plugin declares no authentication integration.
+
+## Curated adaptations
+
+Research to Skill, Learning Loop, and the privacy-reviewed Technical Documentation package are maintained as separate portable source packages outside this repository. Their original source fingerprints and intentional changes are recorded in each package's `origin.json`. The importer hashes the curated source; it does not silently regenerate it from the original installed skill. Reconcile upstream changes and revalidate the adaptation before synchronizing. Ticket Craft maps directly to the original Write Work Item Descriptions package.
+
+Only approved additions belong in the private source map. New packages do not automatically receive research schedules. The daily publication job can collect completed changes from these mapped packages using the same review process.

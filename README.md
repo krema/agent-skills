@@ -15,12 +15,15 @@ Install the complete collection as **`skills@krema`**, or choose individual skil
 | [Technical Documentation](skills/technical-documentation/SKILL.md) | Human readers need clearer, maintainable technical guides. | “Improve this onboarding guide so a new developer can complete their first task.” |
 | [Context Loading](skills/context-loading/SKILL.md) | An agent needs the right information at the right time. | “Restructure these instructions so task-specific details load when needed.” |
 | [Skill Refinement](skills/skill-refinement/SKILL.md) | A skill or agent-facing document needs a substantive review or rewrite. | “Improve this skill: remove redundant guidance and preserve its conditions and recovery steps.” |
+| [Research to Skill](skills/research-to-skill/SKILL.md) | Research should become an actionable skill with traceable evidence. | “Research this topic, build a skill, and report what was actually validated.” |
+| [Ticket Craft](skills/ticket-craft/SKILL.md) | Epics, stories, or subtasks need clear scope and observable acceptance criteria. | “Turn these requirements into stories with a useful handoff for an agent.” |
+| [Learning Loop](skills/learning-loop/SKILL.md) | Corrections and verified outcomes should improve future workflows. | “Review these supplied logs and propose scoped improvements to our guidance.” |
 
 Agent Instructions focuses on repository rules; Skill Refinement reviews the content of skills and other agent-facing documents. Context Loading decides what to retrieve; Context Management preserves useful state across long tasks. Technical Documentation is for human readers.
 
 ## Install
 
-Choose **one installation method per agent** to avoid loading duplicate copies. Native plugins install all five skills together. `npx skills` also supports selecting individual skills.
+Choose **one installation method per agent** to avoid loading duplicate copies. Native plugins install all eight skills together. `npx skills` also supports selecting individual skills.
 
 ### Claude Code — native marketplace
 
@@ -87,6 +90,8 @@ Ask the agent for the task you want completed, using the examples above as a sta
 
 The Markdown skills need no API keys or additional services. Skill Refinement includes optional structural checks and evaluation helpers requiring **Python 3.10+**, using only the standard library.
 
+Learning Loop keeps observations in private project storage and proposes evidence-backed changes. It includes no background observer: continuous capture requires a separately authorized host integration or recurring invocation. Applying improvements respects the user’s existing authorization.
+
 ## Updates
 
 Updates are reviewed through one rolling pull request. The maintainer's local automation checks completed research packages daily at **09:00 Europe/Berlin**, imports validated changes, and creates or updates the existing PR. It does not merge automatically. A run without changes creates no PR.
@@ -117,14 +122,15 @@ npx skills update
 
 ## Evidence and validation
 
-The initial five skills were developed from research and practical task requirements. Their evidence files distinguish empirical findings, platform documentation, and engineering judgment. Research informs the guidance; it does not guarantee better results for every model or task.
+The collection was developed from research and practical task requirements. Its evidence files distinguish empirical findings, platform documentation, and engineering judgment. Research informs the guidance; it does not guarantee better results for every model or task.
 
 - **Evidence:** [instructions](skills/agent-instructions/references/evidence.md), [context management](skills/context-management/references/evidence.md), [documentation](skills/technical-documentation/references/evidence.md), [context loading](skills/context-loading/references/evidence.md), [refinement](skills/skill-refinement/references/evidence.md).
+- **New skills:** [research method](skills/research-to-skill/references/method-evidence.md), [ticket writing](skills/ticket-craft/references/evidence.md), [learning loop](skills/learning-loop/references/evidence.md).
 - **Checks:** metadata, native manifests, file hashes, local links, synchronization guards, and the included Python tooling tests.
 - **Compatibility:** actual installation checks and their limits are recorded in [validation](docs/validation.md).
 - **Provenance:** [provenance.json](provenance.json) records original and published file hashes, with no private source paths.
 
-Source-package evaluation reports remain with the skills as historical evidence. They are not fresh cross-client benchmarks. Public packaging changes identifiers and the entrypoint headings; it preserves the underlying instructions.
+Source-package evaluation reports remain with the skills as historical evidence. They are not fresh cross-client benchmarks. The initial skills and Ticket Craft preserve their operational rules apart from public identifiers and headings. Historical project details and personal preferences in Technical Documentation’s evidence ledger were generalized. Research to Skill generalizes installation guidance; Learning Loop adapts the original Copilot workflow into a host-independent design. Their `origin.json` files record original fingerprints and adaptation scope.
 
 ## Repository layout
 
