@@ -4,3 +4,13 @@ __pycache__/
 .local/
 *.local.json
 .agent-learnings/
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+*.bundle
+privacy-audit/
