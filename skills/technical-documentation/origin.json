@@ -1,0 +1,18 @@
+{
+  "source_name": "technical-documentation",
+  "adapted_on": "2026-10-09",
+  "changes": [
+    "Generalized historical project observations and personal preferences in the evidence ledger; operational rules unchanged.",
+    "Removed residual originating-user or author-environment details from supporting records; operational rules unchanged."
+  ],
+  "source_sha256": {
+    "SKILL.md": "e32c5c882e0f73070cc373f5fee5dfb708b582f32cdb737fbc9e6d1274567a6c",
+    "evals/requests.md": "a713a5f744366b4521ec1b62e0e6b527cef51fe741bef78404cdb3492f6fc925",
+    "evals/rubric.md": "ed98a2af965ea76b23838e6ee7712a47e74c0a5f0a9cc1eb0c1ed41970fed427",
+    "references/evidence.md": "b439ea8f1bb76b714e85f9735763d714e0dcbb43dc60edd946df4f5eef487a03",
+    "references/guide-patterns.md": "7c1e16dd7da0833605a9c1d9f5ff02b0ded758a7f3a821040d91c4ace261d60a",
+    "references/maintenance.md": "92e936e1950d8ff47d833d070685da83793eaf8221fa0d8c5a9e7da93931b9c6",
+    "references/validation.md": "1db7d253d35a24bc371035191cfff59a955f475a08307c53ff1887cbada6c2df",
+    "references/writing.md": "bcfe4c40ddc604ad181acedd651ba6952330fc22d28931bbeb0d57c874910b48"
+  }
+}

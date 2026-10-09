@@ -27,6 +27,7 @@
       "evals/fixtures/refactor/instructions.md": "07a971b7267e7ab60615b4a1d1f284d4729f03c86d74175cab7721bdc7fd55c5",
       "evals/fixtures/refactor/styles.md": "4699dea9e2bd97cedd14a9c1acd83c9f72b0c425d6833ae5e6bd98033c56dcdf",
       "evals/validation.md": "eb475620318b250d12b2a5abb7171c8dbc7910966636ede22c6b0db261303b3e",
+      "origin.json": "05a3008f6e8a74529a6fe57eac6efda1526a74aeeb4c2d6460563a3f1c38cc50",
       "references/evidence.md": "313f48cb2f9a9a63db08f81dad90e4aa247e13a683d0354c9a74eed6ae3692d0",
       "references/instruction-design.md": "4c8f334f884ebcf738d5bb81ef8a22977e7ff68eb86401755a9312fcce185e12",
       "references/research-synthesis.md": "39bcf8167a83c0ee2e28beb706cc627be4cb2a87fd6e8f87b37e79eb6b5461f5",
@@ -41,32 +42,83 @@
       "evals/fixtures/refactor/instructions.md": "07a971b7267e7ab60615b4a1d1f284d4729f03c86d74175cab7721bdc7fd55c5",
       "evals/fixtures/refactor/styles.md": "4699dea9e2bd97cedd14a9c1acd83c9f72b0c425d6833ae5e6bd98033c56dcdf",
       "evals/validation.md": "eb475620318b250d12b2a5abb7171c8dbc7910966636ede22c6b0db261303b3e",
-      "references/evidence.md": "f785f913ecea6af59525233201cb62aec863f6de81847debfa84b77fce1ead9c",
+      "origin.json": "d802f6ccf80688766f4aa188161da3c27d79d7d638ce581bf75d4d052941b0b2",
+      "references/evidence.md": "0e0aee3e621dbd3e06783d88342095610e4ff5882eb576668d2cc25ba8613b4c",
       "references/instruction-design.md": "4c8f334f884ebcf738d5bb81ef8a22977e7ff68eb86401755a9312fcce185e12",
       "references/research-synthesis.md": "abde3a782a2533d9424bdfaf9e5cac720b2ad288f8fb0ba1f10456fabe0135e5",
       "references/retrieval-design.md": "eb2336121215adede0bba5d6ebc3947b35b77c98533dc8d8ed2be9353896f790"
     },
     "title": "Context Loading",
-    "transformation": "Public identifier replacement and entrypoint heading; no rule changes. Historical privacy correction generalizes originating conversation/project references; source fingerprints retained."
+    "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
   },
   "context-management": {
     "published_sha256": {
       "RESEARCH.md": "fb889e36a289c2fb669ad72c17997475a4cf901e4b9ff328c72bc51aaf94fb6c",
       "SKILL.md": "2e404b2b61e28bc6fc289eebb0e8d2f246958a4de6dc271b85764d2a29ed631e",
       "VALIDATION.md": "88ea23f3261b06ce603a1406db74a0d5d7494beef04a585151c755a88c2b014b",
+      "origin.json": "730d92fb9e3af6723912fbf9c333394d33604e398896ccf3296f93eed15e7aee",
       "references/evaluation.md": "a6f85230c92e241a2f9f60d7afd7267b52b2d165f0cf635a7b404def8dbaa967",
       "references/evidence.md": "9e4f3185ead5ed62d6994f69685aee0bc6e352bcd34ff15c92d33a9a812202e2"
     },
     "source_name": "context-rot-management",
     "source_sha256": {
-      "RESEARCH.md": "c85cf4a2a59ce92e9a879701b72b210a4b88c5aaea2b7c22b4a7dedd9d7b1ce6",
+      "RESEARCH.md": "fb889e36a289c2fb669ad72c17997475a4cf901e4b9ff328c72bc51aaf94fb6c",
       "SKILL.md": "267d7c6c3b9c44515a70ad3661b72d94b9bc3f2c65c708f4cd810ed82fa873c4",
       "VALIDATION.md": "88ea23f3261b06ce603a1406db74a0d5d7494beef04a585151c755a88c2b014b",
+      "origin.json": "66e9dbdd030bf3ed8a2281424c4f17e84162c0e62b0e12f42bfce07d7742739f",
       "references/evaluation.md": "a6f85230c92e241a2f9f60d7afd7267b52b2d165f0cf635a7b404def8dbaa967",
-      "references/evidence.md": "04834c56f7077ce69b080794580a333b6dcaaaff711f65bb7157fde5cf22a7bf"
+      "references/evidence.md": "9e4f3185ead5ed62d6994f69685aee0bc6e352bcd34ff15c92d33a9a812202e2"
     },
     "title": "Context Management",
-    "transformation": "Public identifier replacement and entrypoint heading; no rule changes. Historical privacy correction generalizes originating conversation/project references; source fingerprints retained."
+    "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
+  },
+  "learning-loop": {
+    "published_sha256": {
+      "SKILL.md": "b8dfafc053d6fda8b439ba14622c328131b65ecbc0864502fd95cca01f67c76a",
+      "evals/cases.md": "528d984dc99f6afb35d771873a7d8bc6ac62917a28392119f4f684e6d833fd9d",
+      "evals/validation.md": "7fb5c22b145110a082da1148d2a8b3c7e85ca4d0e7af7d90367495d0cc35979f",
+      "origin.json": "bf07a39ca8ca0f1e2f4d8409f535ff9253e752997f5aae80c30fd09d27d63242",
+      "references/evidence.md": "4f13d70ff2e3bb4df8654fd168b325953a134151766964f345bcc6bccaf752a1",
+      "references/integration.md": "ad67710fea5feb85f129219eedb76e71ee24587c0f8641223582471e7d50cb37",
+      "references/record-format.md": "f392c04f2ef7e0ed55f89b91a3c915b396a2673a2efcc885e6be7cbdbe2a99d9"
+    },
+    "source_name": "learning-loop",
+    "source_sha256": {
+      "SKILL.md": "b8dfafc053d6fda8b439ba14622c328131b65ecbc0864502fd95cca01f67c76a",
+      "evals/cases.md": "528d984dc99f6afb35d771873a7d8bc6ac62917a28392119f4f684e6d833fd9d",
+      "evals/validation.md": "7fb5c22b145110a082da1148d2a8b3c7e85ca4d0e7af7d90367495d0cc35979f",
+      "origin.json": "bf07a39ca8ca0f1e2f4d8409f535ff9253e752997f5aae80c30fd09d27d63242",
+      "references/evidence.md": "4f13d70ff2e3bb4df8654fd168b325953a134151766964f345bcc6bccaf752a1",
+      "references/integration.md": "ad67710fea5feb85f129219eedb76e71ee24587c0f8641223582471e7d50cb37",
+      "references/record-format.md": "f392c04f2ef7e0ed55f89b91a3c915b396a2673a2efcc885e6be7cbdbe2a99d9"
+    },
+    "title": "Learning Loop",
+    "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
+  },
+  "research-to-skill": {
+    "published_sha256": {
+      "SKILL.md": "661ba2953c4a9de3ebc822248c4ecacbaee559cc4113cc34ac047e17058c2b5d",
+      "agents/openai.yaml": "209b4c11b6d999f21261b85a8ac73fee3cc5471bb65e897bdb55c01ded4137c1",
+      "assets/evidence-template.md": "60f97e89f844bf982fdbabe7900cbe7de22bf2e4664b649ba6d716fe1508a139",
+      "evals/cases.md": "fef3c335f48b387e3933af91da8ea9331215be965a4d45b7dd5a1b331a9ad9d3",
+      "origin.json": "7e2b7ffa3d32e9165efd038ecdfb742c141552c2d356e6d5aeea3ceb2eefca03",
+      "references/build-and-install.md": "954aaf1eec60c5f5cbb57db59166d235b98dce2b63c5251fe4679074129bbc19",
+      "references/method-evidence.md": "741981331d933a8eb9329155240d31483b32d177580c13bbb9142ad58f698c47",
+      "references/research-method.md": "d786f4b7b67ab52d660bd5d18023ed21e5de1a168c1d2191b1b869c5e999d9fd"
+    },
+    "source_name": "research-to-skill",
+    "source_sha256": {
+      "SKILL.md": "661ba2953c4a9de3ebc822248c4ecacbaee559cc4113cc34ac047e17058c2b5d",
+      "agents/openai.yaml": "209b4c11b6d999f21261b85a8ac73fee3cc5471bb65e897bdb55c01ded4137c1",
+      "assets/evidence-template.md": "60f97e89f844bf982fdbabe7900cbe7de22bf2e4664b649ba6d716fe1508a139",
+      "evals/cases.md": "fef3c335f48b387e3933af91da8ea9331215be965a4d45b7dd5a1b331a9ad9d3",
+      "origin.json": "7e2b7ffa3d32e9165efd038ecdfb742c141552c2d356e6d5aeea3ceb2eefca03",
+      "references/build-and-install.md": "954aaf1eec60c5f5cbb57db59166d235b98dce2b63c5251fe4679074129bbc19",
+      "references/method-evidence.md": "741981331d933a8eb9329155240d31483b32d177580c13bbb9142ad58f698c47",
+      "references/research-method.md": "d786f4b7b67ab52d660bd5d18023ed21e5de1a168c1d2191b1b869c5e999d9fd"
+    },
+    "title": "Research to Skill",
+    "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
   },
   "skill-refinement": {
     "published_sha256": {
@@ -83,6 +135,7 @@
       "evals/test_preparation.py": "b2d9c411ed9dca2d51a2986ad117bc6628082e16b52ae4bc49856b2dbc890999",
       "evals/worked-rewrites.json": "9b364fb264418568986745aa94a235aa1962389c1eaee2789bcc32fb3f66f5de",
       "evals/worked-rewrites.md": "8eb55231283a9e4877d9b105d09d1857cafb0ea28a95b4a5143dcd46b559cf10",
+      "origin.json": "9d9fa89e6544fc8d50388ce7e7ae359219e7d2e4b6ca0946e79eb4c1e5e3b44b",
       "references/decision-rules.md": "679da8d568636508ad374e61aa75233a85c482eb32eca2db2f4d290cac0740c0",
       "references/evidence.md": "a2c9e593c04cbc088e13e863112b92ef5c4a4e21bfe633aeb5d4cd342e59ec2d",
       "references/measurement.md": "dfb681a7a4deb582ae95ad042a11b5a0ce29a0a354259825da5a01902bfa2bd8",
@@ -91,8 +144,8 @@
     },
     "source_name": "skill-bloat-optimizer",
     "source_sha256": {
-      "CHANGELOG.md": "73bff6010fc946d19e878b2337ce01072ca8a2e91fd3ae1dcf88919387e85d2e",
-      "README.md": "b4113207933f7c164ea327fad815e2a97b0cbe866871e359d9c13f2c534eca12",
+      "CHANGELOG.md": "f3c2e7497e4c0488405f043cd8e58dd8a3d69da85eb358fcea0cae3064495570",
+      "README.md": "e4157c0a408ba88488e856c69c4ec9ecb36a1995b9683943566da91b7d755b76",
       "SKILL.md": "8abe9a39817a868b140a5e602672a9b43374e36ca2eea85543e933fa572dd980",
       "VALIDATION.md": "3698556a4f4fdba6edbc78667b5b0b2c3fdf78244b39850c8ba69687c93929ff",
       "evals/cases.json": "fac77cbbec7ce7903b629ddfd4a2974b9894d2eae678675ef68d3ffa8c828a36",
@@ -104,6 +157,7 @@
       "evals/test_preparation.py": "b2d9c411ed9dca2d51a2986ad117bc6628082e16b52ae4bc49856b2dbc890999",
       "evals/worked-rewrites.json": "9b364fb264418568986745aa94a235aa1962389c1eaee2789bcc32fb3f66f5de",
       "evals/worked-rewrites.md": "8eb55231283a9e4877d9b105d09d1857cafb0ea28a95b4a5143dcd46b559cf10",
+      "origin.json": "6b6413ff1010ab2a265b2f253f5c6d0723bc7d4c774b3ede678425d1e620ba97",
       "references/decision-rules.md": "679da8d568636508ad374e61aa75233a85c482eb32eca2db2f4d290cac0740c0",
       "references/evidence.md": "a2c9e593c04cbc088e13e863112b92ef5c4a4e21bfe633aeb5d4cd342e59ec2d",
       "references/measurement.md": "dfb681a7a4deb582ae95ad042a11b5a0ce29a0a354259825da5a01902bfa2bd8",
@@ -111,13 +165,14 @@
       "scripts/analyze_skill.py": "f01c04affcc5aeffa9612628183d78aa689e6b46706e26dc230b04e0a8acad5e"
     },
     "title": "Skill Refinement",
-    "transformation": "Public identifier replacement and entrypoint heading; no rule changes. Historical privacy correction generalizes originating conversation/project references; source fingerprints retained."
+    "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
   },
   "technical-documentation": {
     "published_sha256": {
       "SKILL.md": "e3426be836a3d3f0a8fbd095111fc1a153be91dd19638a4c9bbd219e75899715",
       "evals/requests.md": "a713a5f744366b4521ec1b62e0e6b527cef51fe741bef78404cdb3492f6fc925",
       "evals/rubric.md": "ed98a2af965ea76b23838e6ee7712a47e74c0a5f0a9cc1eb0c1ed41970fed427",
+      "origin.json": "1863cbac6e35999b28291ced8b4c17f1d08b91335acd1c3da2cf94361fe0b1ec",
       "references/evidence.md": "bc55b7b956147d654baafc2ff4ce82bbd7407539a19946bc8eed0d7f6d0d4138",
       "references/guide-patterns.md": "7c1e16dd7da0833605a9c1d9f5ff02b0ded758a7f3a821040d91c4ace261d60a",
       "references/maintenance.md": "92e936e1950d8ff47d833d070685da83793eaf8221fa0d8c5a9e7da93931b9c6",
@@ -129,13 +184,39 @@
       "SKILL.md": "e32c5c882e0f73070cc373f5fee5dfb708b582f32cdb737fbc9e6d1274567a6c",
       "evals/requests.md": "a713a5f744366b4521ec1b62e0e6b527cef51fe741bef78404cdb3492f6fc925",
       "evals/rubric.md": "ed98a2af965ea76b23838e6ee7712a47e74c0a5f0a9cc1eb0c1ed41970fed427",
-      "references/evidence.md": "b439ea8f1bb76b714e85f9735763d714e0dcbb43dc60edd946df4f5eef487a03",
+      "origin.json": "09efeb4e601a913ac4da565c1e3bf73c2c8ea6d5fd9ab7200e22d7c7456b43e3",
+      "references/evidence.md": "bc55b7b956147d654baafc2ff4ce82bbd7407539a19946bc8eed0d7f6d0d4138",
       "references/guide-patterns.md": "7c1e16dd7da0833605a9c1d9f5ff02b0ded758a7f3a821040d91c4ace261d60a",
       "references/maintenance.md": "92e936e1950d8ff47d833d070685da83793eaf8221fa0d8c5a9e7da93931b9c6",
       "references/validation.md": "1db7d253d35a24bc371035191cfff59a955f475a08307c53ff1887cbada6c2df",
       "references/writing.md": "bcfe4c40ddc604ad181acedd651ba6952330fc22d28931bbeb0d57c874910b48"
     },
     "title": "Technical Documentation",
-    "transformation": "Public identifier replacement and entrypoint heading; no rule changes. Historical privacy correction generalizes originating conversation/project references; source fingerprints retained."
+    "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
+  },
+  "ticket-craft": {
+    "published_sha256": {
+      "SKILL.md": "8192ff90504625b93238e58bbfa1d24678e1f5e6ea9adfea32b7229ceda47a62",
+      "assets/templates.md": "15fea9667bd9dc8aae82a461ca6d85151da8b6df7f636a1c39985dd78b9fee77",
+      "evals/cases.md": "f214a459a37ea94daf6b96b74a9c04f70645e1e85f7665b11aedfd6edbe1b2a2",
+      "evals/validation.md": "efb44945d0de63f2e47339821854e6e1f02a369d50677b31fddafd07eb69fa8b",
+      "origin.json": "fc66db9cf94d08fc0adb38c17aa53183920aa719f92f5bd114103cad0fcaaef3",
+      "references/evidence.md": "f70e2e84cda71f460be12a89c40dbab3f5a789340bb28c60364464675c2d6c23",
+      "references/examples.md": "d8be7216c974bf6a1831a0ec2f3642f6ce16e08e8cb3d06a4769cc31d64d672b",
+      "references/review.md": "d724399ada219ebfcd10d9713ee0e7575102d81c5cfcd46676af7079f9585dba"
+    },
+    "source_name": "write-work-item-descriptions",
+    "source_sha256": {
+      "SKILL.md": "988128c6c1b7fcee7c7e3bca27affccb10fefee943f2e6ee12dbcb56a2a27e8b",
+      "assets/templates.md": "15fea9667bd9dc8aae82a461ca6d85151da8b6df7f636a1c39985dd78b9fee77",
+      "evals/cases.md": "f214a459a37ea94daf6b96b74a9c04f70645e1e85f7665b11aedfd6edbe1b2a2",
+      "evals/validation.md": "efb44945d0de63f2e47339821854e6e1f02a369d50677b31fddafd07eb69fa8b",
+      "origin.json": "48793b17d2bbd8b31f53a5f59947b85f54f8df897bccadb2f6d4d74d72d36eaf",
+      "references/evidence.md": "f70e2e84cda71f460be12a89c40dbab3f5a789340bb28c60364464675c2d6c23",
+      "references/examples.md": "d8be7216c974bf6a1831a0ec2f3642f6ce16e08e8cb3d06a4769cc31d64d672b",
+      "references/review.md": "d724399ada219ebfcd10d9713ee0e7575102d81c5cfcd46676af7079f9585dba"
+    },
+    "title": "Ticket Craft",
+    "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
   }
 }

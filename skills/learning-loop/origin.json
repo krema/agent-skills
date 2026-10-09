@@ -1,0 +1,18 @@
+{
+  "source_name": "copilot-workflow-learning",
+  "adapted_on": "2026-10-09",
+  "changes": [
+    "Rewritten as a host-independent observe, propose, apply, verify cycle.",
+    "Neutral private storage, durable evidence transitions, coverage and deduplication guidance.",
+    "Optional capture integration contract; no hooks, schedules, or model training bundled.",
+    "New evaluation scenarios and explicit behavioral validation limits.",
+    "Authoring review clarified per-invocation completion, non-Git storage, and bounded persistence recovery.",
+    "Removed residual originating-user or author-environment details from supporting records; operational rules unchanged."
+  ],
+  "source_sha256": {
+    "SKILL.md": "3e708e6bef0483e6a567e089651a8fb47f94a75b30ee13006794094a27332e41",
+    "evals/cases.md": "a48c3b753488151fcfca422f601c68b1d8fb89dcaf1c17254ee637fad486909d",
+    "references/evidence.md": "4690175a69a92fe01e2c1d1472f7ed0d85a7a5a9c57d41ada9d7172449693d34",
+    "references/vscode-integration.md": "237e8808e6c35d95329c23a78e44e1e6b26a70b57966884194b7bf9a8f8bbb65"
+  }
+}

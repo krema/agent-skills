@@ -1,0 +1,20 @@
+{
+  "source_name": "research-to-skill",
+  "adapted_on": "2026-10-09",
+  "changes": [
+    "Generalized installation guidance and default prompt from Codex to the requested agent.",
+    "Added a cross-host installation evaluation case.",
+    "Research rules and historical evidence retained; no new effectiveness claim.",
+    "Authoring review clarified review-only and adjacent-task boundaries and made archive delivery conditional.",
+    "Removed residual originating-user or author-environment details from supporting records; operational rules unchanged."
+  ],
+  "source_sha256": {
+    "SKILL.md": "0f7956b8a0b038e7cc9fdcddfa4919b26e6dd77ee869fb593bc7dfcfb1511d42",
+    "agents/openai.yaml": "91a5594cf2edd4c92f703a3a0ec9593b459caa5cc88f98b6828aca0540899fa5",
+    "assets/evidence-template.md": "60f97e89f844bf982fdbabe7900cbe7de22bf2e4664b649ba6d716fe1508a139",
+    "evals/cases.md": "f583c2cade4d5c2102595996c3aef90625d8d9744421427cae74f6b93ee75045",
+    "references/build-and-install.md": "319f6f425a8269fab4ba96723cd24e65eac6102a7837c5acbf043ef94e66bc45",
+    "references/method-evidence.md": "563500b2f4621a04b423ae605df274904f25fd268733dc6ce5694f525b9f37e0",
+    "references/research-method.md": "d786f4b7b67ab52d660bd5d18023ed21e5de1a168c1d2191b1b869c5e999d9fd"
+  }
+}

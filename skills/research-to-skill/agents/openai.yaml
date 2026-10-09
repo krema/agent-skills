@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research to Skill"
+  short_description: "Turn evidence into actionable agent skills"
+  default_prompt: "Use $research-to-skill to research my topic, build an evidence-based skill package, validate it, and install it in my chosen agent only when requested."

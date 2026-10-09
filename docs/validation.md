@@ -25,3 +25,16 @@ These checks verify packaging, installation, and discovery, not successful execu
 Source-package evaluation reports are historical and may use original skill names or source version numbers. Collection version 1.0.0 describes this distribution, not a reset of the source research history.
 
 Package delivery, manifest acceptance, skill discovery, and correct agent behavior are different checks. This publication does not claim a measured performance improvement or cross-model behavioral equivalence.
+
+## Version 1.1.0 additions — 2026-10-09
+
+- Eight skills and six native manifests pass collection validation, including all 74 skill-file hashes and relative Markdown links.
+- All six synchronization tests and 28 included Python-tooling tests pass.
+- The skills CLI discovers all eight public identifiers from the local release candidate.
+- A repeat selective import reports no changes. Ticket Craft retains the writing approach with explicit review-only and revision-contract rules; Research to Skill changes installation guidance; Learning Loop is a substantial adaptation.
+- The plugin layout is unchanged. Native installation checks above apply to version 1.0.0; they were not rerun for 1.1.0. No new cross-agent behavioral trial was performed. Learning Loop has author walkthroughs and structural checks only; background capture is neither bundled nor tested.
+- The privacy review is documented in [privacy-review.md](privacy-review.md).
+
+The subsequent focused authoring review and its validation limits are recorded in [authoring-review.md](authoring-review.md).
+
+The expanded privacy review adds three source-lineage records and generalizes historical provenance prose without changing skill procedures or executable helpers. Final collection validation covers 74 skill files.
