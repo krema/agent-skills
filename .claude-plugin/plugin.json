@@ -1,0 +1,12 @@
+{
+  "name": "skills",
+  "version": "1.0.0",
+  "description": "Krema's growing collection of reusable skills for Claude Code, Codex, and GitHub Copilot.",
+  "author": {
+    "name": "krema",
+    "url": "https://github.com/krema"
+  },
+  "homepage": "https://github.com/krema/agent-skills",
+  "repository": "https://github.com/krema/agent-skills",
+  "license": "MIT"
+}

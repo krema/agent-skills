@@ -1,0 +1,141 @@
+{
+  "agent-instructions": {
+    "published_sha256": {
+      "SKILL.md": "892755da91709e69f0e38a0ce22d8c44056f616dc7594f5a12a71744be2366e8",
+      "evals/cases.md": "9aed1e30bfa9e8f14231344633eb9660e2efbdc65a0a82a4b37cab2900e64f8a",
+      "evals/validation.md": "2a394eaff945cf9f17108aec9efadc738b9de5cffae9cfdafb79af47152cf005",
+      "references/evidence.md": "757cab6df4a5fb199d0221dd6c53097e6a64b14a1019e0b4946f6ba079ae84a0",
+      "references/runtime-notes.md": "83d5447db5757fc084a88d1f03d54ef7cfc4750ca424b5490805d6cb794c411c"
+    },
+    "source_name": "agent-instruction-maintenance",
+    "source_sha256": {
+      "SKILL.md": "86d88d2e3ed186fee59ef70460583fa943f54bd4f77b47d4366aba3e137ac8e2",
+      "evals/cases.md": "9aed1e30bfa9e8f14231344633eb9660e2efbdc65a0a82a4b37cab2900e64f8a",
+      "evals/validation.md": "2a394eaff945cf9f17108aec9efadc738b9de5cffae9cfdafb79af47152cf005",
+      "references/evidence.md": "757cab6df4a5fb199d0221dd6c53097e6a64b14a1019e0b4946f6ba079ae84a0",
+      "references/runtime-notes.md": "83d5447db5757fc084a88d1f03d54ef7cfc4750ca424b5490805d6cb794c411c"
+    },
+    "title": "Agent Instructions",
+    "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
+  },
+  "context-loading": {
+    "published_sha256": {
+      "SKILL.md": "df95e784f841bd7de431e17376e4a8b7f80308ca25f768436dffb94991ca97cb",
+      "evals/cases.md": "b298226a63f685b081b9eee2b794acba4bbd1cda648c843362169feb70bf576b",
+      "evals/fixtures/rag/corpus.md": "940fac4bb92f7e45c3babe3b03e1e6095599cf1e87a9c6b0c7f49b45dd14ceb7",
+      "evals/fixtures/refactor/database.md": "f432094dde5565b174b52c8243dbd4a11645c806ea509a92925ccbb3c92b9c33",
+      "evals/fixtures/refactor/instructions.md": "07a971b7267e7ab60615b4a1d1f284d4729f03c86d74175cab7721bdc7fd55c5",
+      "evals/fixtures/refactor/styles.md": "4699dea9e2bd97cedd14a9c1acd83c9f72b0c425d6833ae5e6bd98033c56dcdf",
+      "evals/validation.md": "eb475620318b250d12b2a5abb7171c8dbc7910966636ede22c6b0db261303b3e",
+      "references/evidence.md": "313f48cb2f9a9a63db08f81dad90e4aa247e13a683d0354c9a74eed6ae3692d0",
+      "references/instruction-design.md": "4c8f334f884ebcf738d5bb81ef8a22977e7ff68eb86401755a9312fcce185e12",
+      "references/research-synthesis.md": "39bcf8167a83c0ee2e28beb706cc627be4cb2a87fd6e8f87b37e79eb6b5461f5",
+      "references/retrieval-design.md": "eb2336121215adede0bba5d6ebc3947b35b77c98533dc8d8ed2be9353896f790"
+    },
+    "source_name": "progressive-context-disclosure",
+    "source_sha256": {
+      "SKILL.md": "68480085f03447556e930d3e80f866761115b9abeae014dd38da2e5f66de38e8",
+      "evals/cases.md": "b298226a63f685b081b9eee2b794acba4bbd1cda648c843362169feb70bf576b",
+      "evals/fixtures/rag/corpus.md": "940fac4bb92f7e45c3babe3b03e1e6095599cf1e87a9c6b0c7f49b45dd14ceb7",
+      "evals/fixtures/refactor/database.md": "f432094dde5565b174b52c8243dbd4a11645c806ea509a92925ccbb3c92b9c33",
+      "evals/fixtures/refactor/instructions.md": "07a971b7267e7ab60615b4a1d1f284d4729f03c86d74175cab7721bdc7fd55c5",
+      "evals/fixtures/refactor/styles.md": "4699dea9e2bd97cedd14a9c1acd83c9f72b0c425d6833ae5e6bd98033c56dcdf",
+      "evals/validation.md": "eb475620318b250d12b2a5abb7171c8dbc7910966636ede22c6b0db261303b3e",
+      "references/evidence.md": "f785f913ecea6af59525233201cb62aec863f6de81847debfa84b77fce1ead9c",
+      "references/instruction-design.md": "4c8f334f884ebcf738d5bb81ef8a22977e7ff68eb86401755a9312fcce185e12",
+      "references/research-synthesis.md": "abde3a782a2533d9424bdfaf9e5cac720b2ad288f8fb0ba1f10456fabe0135e5",
+      "references/retrieval-design.md": "eb2336121215adede0bba5d6ebc3947b35b77c98533dc8d8ed2be9353896f790"
+    },
+    "title": "Context Loading",
+    "transformation": "Public identifier replacement and entrypoint heading; no rule changes. Historical privacy correction generalizes originating conversation/project references; source fingerprints retained."
+  },
+  "context-management": {
+    "published_sha256": {
+      "RESEARCH.md": "fb889e36a289c2fb669ad72c17997475a4cf901e4b9ff328c72bc51aaf94fb6c",
+      "SKILL.md": "2e404b2b61e28bc6fc289eebb0e8d2f246958a4de6dc271b85764d2a29ed631e",
+      "VALIDATION.md": "88ea23f3261b06ce603a1406db74a0d5d7494beef04a585151c755a88c2b014b",
+      "references/evaluation.md": "a6f85230c92e241a2f9f60d7afd7267b52b2d165f0cf635a7b404def8dbaa967",
+      "references/evidence.md": "9e4f3185ead5ed62d6994f69685aee0bc6e352bcd34ff15c92d33a9a812202e2"
+    },
+    "source_name": "context-rot-management",
+    "source_sha256": {
+      "RESEARCH.md": "c85cf4a2a59ce92e9a879701b72b210a4b88c5aaea2b7c22b4a7dedd9d7b1ce6",
+      "SKILL.md": "267d7c6c3b9c44515a70ad3661b72d94b9bc3f2c65c708f4cd810ed82fa873c4",
+      "VALIDATION.md": "88ea23f3261b06ce603a1406db74a0d5d7494beef04a585151c755a88c2b014b",
+      "references/evaluation.md": "a6f85230c92e241a2f9f60d7afd7267b52b2d165f0cf635a7b404def8dbaa967",
+      "references/evidence.md": "04834c56f7077ce69b080794580a333b6dcaaaff711f65bb7157fde5cf22a7bf"
+    },
+    "title": "Context Management",
+    "transformation": "Public identifier replacement and entrypoint heading; no rule changes. Historical privacy correction generalizes originating conversation/project references; source fingerprints retained."
+  },
+  "skill-refinement": {
+    "published_sha256": {
+      "CHANGELOG.md": "f3c2e7497e4c0488405f043cd8e58dd8a3d69da85eb358fcea0cae3064495570",
+      "README.md": "44636b2794a783d125785771a13aea61ebcb49e9fe327b855a013e4a0f22bbfc",
+      "SKILL.md": "7e7ce4124f881945a927d5b498cb244bcb4cedee3ad59f0399d9cfd9a9de0bd3",
+      "VALIDATION.md": "3698556a4f4fdba6edbc78667b5b0b2c3fdf78244b39850c8ba69687c93929ff",
+      "evals/cases.json": "fac77cbbec7ce7903b629ddfd4a2974b9894d2eae678675ef68d3ffa8c828a36",
+      "evals/cases.md": "1e5a1b0f0072e4dadaddad7ae30691c9bf5ab8aa5517a6d9459f788cdaa53de6",
+      "evals/execution-results.json": "0de2f5d0dab3a71b4393e7353c43589a84dc2d4547698cb26192ce856a0b002d",
+      "evals/run_cases.py": "4ba49f9628d6f83906334ae4d20175ea6c128277a87f6c2c9b1a1fe5b86eead1",
+      "evals/self-analysis.json": "308865f70e84a588e1cbd4f81831f7057a1e4cc4df7e69a8c1f8c41041604b52",
+      "evals/test_analyzer.py": "95f33d7f079fa60fab92ca38d461733088c799da008de24de6100da1b88e1853",
+      "evals/test_preparation.py": "b2d9c411ed9dca2d51a2986ad117bc6628082e16b52ae4bc49856b2dbc890999",
+      "evals/worked-rewrites.json": "9b364fb264418568986745aa94a235aa1962389c1eaee2789bcc32fb3f66f5de",
+      "evals/worked-rewrites.md": "8eb55231283a9e4877d9b105d09d1857cafb0ea28a95b4a5143dcd46b559cf10",
+      "references/decision-rules.md": "679da8d568636508ad374e61aa75233a85c482eb32eca2db2f4d290cac0740c0",
+      "references/evidence.md": "a2c9e593c04cbc088e13e863112b92ef5c4a4e21bfe633aeb5d4cd342e59ec2d",
+      "references/measurement.md": "dfb681a7a4deb582ae95ad042a11b5a0ce29a0a354259825da5a01902bfa2bd8",
+      "references/patterns.md": "6e13e5d5c3f5e3ace76a80c5751496dcd0854481bceaf32cd0ff04d2c582b159",
+      "scripts/analyze_skill.py": "f01c04affcc5aeffa9612628183d78aa689e6b46706e26dc230b04e0a8acad5e"
+    },
+    "source_name": "skill-bloat-optimizer",
+    "source_sha256": {
+      "CHANGELOG.md": "73bff6010fc946d19e878b2337ce01072ca8a2e91fd3ae1dcf88919387e85d2e",
+      "README.md": "b4113207933f7c164ea327fad815e2a97b0cbe866871e359d9c13f2c534eca12",
+      "SKILL.md": "8abe9a39817a868b140a5e602672a9b43374e36ca2eea85543e933fa572dd980",
+      "VALIDATION.md": "3698556a4f4fdba6edbc78667b5b0b2c3fdf78244b39850c8ba69687c93929ff",
+      "evals/cases.json": "fac77cbbec7ce7903b629ddfd4a2974b9894d2eae678675ef68d3ffa8c828a36",
+      "evals/cases.md": "1e5a1b0f0072e4dadaddad7ae30691c9bf5ab8aa5517a6d9459f788cdaa53de6",
+      "evals/execution-results.json": "0de2f5d0dab3a71b4393e7353c43589a84dc2d4547698cb26192ce856a0b002d",
+      "evals/run_cases.py": "4ba49f9628d6f83906334ae4d20175ea6c128277a87f6c2c9b1a1fe5b86eead1",
+      "evals/self-analysis.json": "308865f70e84a588e1cbd4f81831f7057a1e4cc4df7e69a8c1f8c41041604b52",
+      "evals/test_analyzer.py": "95f33d7f079fa60fab92ca38d461733088c799da008de24de6100da1b88e1853",
+      "evals/test_preparation.py": "b2d9c411ed9dca2d51a2986ad117bc6628082e16b52ae4bc49856b2dbc890999",
+      "evals/worked-rewrites.json": "9b364fb264418568986745aa94a235aa1962389c1eaee2789bcc32fb3f66f5de",
+      "evals/worked-rewrites.md": "8eb55231283a9e4877d9b105d09d1857cafb0ea28a95b4a5143dcd46b559cf10",
+      "references/decision-rules.md": "679da8d568636508ad374e61aa75233a85c482eb32eca2db2f4d290cac0740c0",
+      "references/evidence.md": "a2c9e593c04cbc088e13e863112b92ef5c4a4e21bfe633aeb5d4cd342e59ec2d",
+      "references/measurement.md": "dfb681a7a4deb582ae95ad042a11b5a0ce29a0a354259825da5a01902bfa2bd8",
+      "references/patterns.md": "6e13e5d5c3f5e3ace76a80c5751496dcd0854481bceaf32cd0ff04d2c582b159",
+      "scripts/analyze_skill.py": "f01c04affcc5aeffa9612628183d78aa689e6b46706e26dc230b04e0a8acad5e"
+    },
+    "title": "Skill Refinement",
+    "transformation": "Public identifier replacement and entrypoint heading; no rule changes. Historical privacy correction generalizes originating conversation/project references; source fingerprints retained."
+  },
+  "technical-documentation": {
+    "published_sha256": {
+      "SKILL.md": "e3426be836a3d3f0a8fbd095111fc1a153be91dd19638a4c9bbd219e75899715",
+      "evals/requests.md": "a713a5f744366b4521ec1b62e0e6b527cef51fe741bef78404cdb3492f6fc925",
+      "evals/rubric.md": "ed98a2af965ea76b23838e6ee7712a47e74c0a5f0a9cc1eb0c1ed41970fed427",
+      "references/evidence.md": "bc55b7b956147d654baafc2ff4ce82bbd7407539a19946bc8eed0d7f6d0d4138",
+      "references/guide-patterns.md": "7c1e16dd7da0833605a9c1d9f5ff02b0ded758a7f3a821040d91c4ace261d60a",
+      "references/maintenance.md": "92e936e1950d8ff47d833d070685da83793eaf8221fa0d8c5a9e7da93931b9c6",
+      "references/validation.md": "1db7d253d35a24bc371035191cfff59a955f475a08307c53ff1887cbada6c2df",
+      "references/writing.md": "bcfe4c40ddc604ad181acedd651ba6952330fc22d28931bbeb0d57c874910b48"
+    },
+    "source_name": "living-markdown-guides",
+    "source_sha256": {
+      "SKILL.md": "e32c5c882e0f73070cc373f5fee5dfb708b582f32cdb737fbc9e6d1274567a6c",
+      "evals/requests.md": "a713a5f744366b4521ec1b62e0e6b527cef51fe741bef78404cdb3492f6fc925",
+      "evals/rubric.md": "ed98a2af965ea76b23838e6ee7712a47e74c0a5f0a9cc1eb0c1ed41970fed427",
+      "references/evidence.md": "b439ea8f1bb76b714e85f9735763d714e0dcbb43dc60edd946df4f5eef487a03",
+      "references/guide-patterns.md": "7c1e16dd7da0833605a9c1d9f5ff02b0ded758a7f3a821040d91c4ace261d60a",
+      "references/maintenance.md": "92e936e1950d8ff47d833d070685da83793eaf8221fa0d8c5a9e7da93931b9c6",
+      "references/validation.md": "1db7d253d35a24bc371035191cfff59a955f475a08307c53ff1887cbada6c2df",
+      "references/writing.md": "bcfe4c40ddc604ad181acedd651ba6952330fc22d28931bbeb0d57c874910b48"
+    },
+    "title": "Technical Documentation",
+    "transformation": "Public identifier replacement and entrypoint heading; no rule changes. Historical privacy correction generalizes originating conversation/project references; source fingerprints retained."
+  }
+}

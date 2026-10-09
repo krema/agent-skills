@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "entrypoint": "SKILL.md",
+  "files": [
+    "CHANGELOG.md",
+    "README.md",
+    "SKILL.md",
+    "VALIDATION.md",
+    "evals/cases.md",
+    "evals/worked-rewrites.md",
+    "references/decision-rules.md",
+    "references/evidence.md",
+    "references/measurement.md",
+    "references/patterns.md"
+  ],
+  "content_review": {
+    "status": "required",
+    "files": [
+      "CHANGELOG.md",
+      "README.md",
+      "SKILL.md",
+      "VALIDATION.md",
+      "evals/cases.md",
+      "evals/worked-rewrites.md",
+      "references/decision-rules.md",
+      "references/evidence.md",
+      "references/measurement.md",
+      "references/patterns.md"
+    ],
+    "reason": "Every requested document needs semantic review, regardless of size or static findings."
+  },
+  "routes": [
+    {
+      "target": "evals/cases.md",
+      "line": 30,
+      "text": "Choose checks for the changed behavior: local facts and meaning checks for straightforward corrections; actual task execution for uncertain decisions or routes; matched original/revised trials for performance claims. Use the [evaluation protocol](evals/cases.md) when those trials are warranted, not merely because an edit is large. Inspect produced artifacts and relevant actions, not just a success report; retain or restore required behavior when a check fails."
+    },
+    {
+      "target": "references/decision-rules.md",
+      "line": 35,
+      "text": "- For an uncertain editing choice, read the relevant rule in [evidence-to-action guidance](references/decision-rules.md); follow its evidence IDs only as needed."
+    },
+    {
+      "target": "references/evidence.md",
+      "line": 36,
+      "text": "- For research claims or an evidence refresh, read the relevant entries and refresh protocol in [evidence](references/evidence.md). Keep experimental findings, product documentation, and author judgment distinct."
+    },
+    {
+      "target": "references/patterns.md",
+      "line": 37,
+      "text": "- For a concrete rewrite or routing pattern, read [patterns](references/patterns.md)."
+    },
+    {
+      "target": "references/measurement.md",
+      "line": 38,
+      "text": "- For structural validation, run `python3 <optimizer-dir>/scripts/analyze_skill.py <target> --strict`. This read-only helper cannot decide content quality. For CLI details or optional usage measurements, read [measurement](references/measurement.md)."
+    }
+  ],
+  "findings": [],
+  "limitations": [
+    "No semantic relevance, obligation count, content quality, or success score.",
+    "Markdown subset only; inline and reference-definition file links outside fences.",
+    "Fragments, external URLs, plain paths, HTML links, and complex nested destinations are not validated.",
+    "Frontmatter field presence only; use an actual YAML/spec validator.",
+    "Symlinks and excluded directories are not traversed; files over 2 MB are inspection errors."
+  ]
+}

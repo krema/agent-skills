@@ -1,0 +1,18 @@
+{
+  "name": "krema",
+  "owner": {
+    "name": "krema"
+  },
+  "metadata": {
+    "description": "Krema's growing collection of reusable skills for Claude Code, Codex, and GitHub Copilot.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "skills",
+      "source": "./",
+      "description": "Krema's growing collection of reusable skills for Claude Code, Codex, and GitHub Copilot.",
+      "version": "1.0.0"
+    }
+  ]
+}
