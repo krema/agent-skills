@@ -13,7 +13,14 @@ Validation performed for the initial publication on 2026-10-09:
 | `npx skills` | Installed all five skills into a temporary project targeting `claude-code`, `codex`, and `github-copilot` with `--copy`. Both the shared `.agents/skills` tree and `.claude/skills` tree matched all 47 files. |
 | Repeat import | A second source-map check reported no changes. |
 
-These initial client checks used the local source directory. They verify packaging and discovery, not successful execution of every skill on each agent. No model tasks or comparative behavioral benchmarks were run for this packaging release.
+After publication, the GitHub source `krema/agent-skills` was also checked:
+
+- Claude Code registered the remote marketplace and installed `skills@krema` 1.0.0 successfully in a fresh temporary profile.
+- GitHub Copilot CLI registered the remote marketplace and installed all five skills successfully in a fresh temporary profile.
+- `npx skills add krema/agent-skills --list` cloned the public repository and discovered all five public names.
+- The initial [GitHub Actions validation run](https://github.com/krema/agent-skills/actions/runs/37982613289) passed.
+
+These checks verify packaging, installation, and discovery, not successful execution of every skill on each agent. No model tasks or comparative behavioral benchmarks were run for this packaging release.
 
 Source-package evaluation reports are historical and may use original skill names or source version numbers. Collection version 1.0.0 describes this distribution, not a reset of the source research history.
 
