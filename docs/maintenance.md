@@ -45,6 +45,7 @@ When nothing changed, do not create empty commits, releases, or PRs. Keep privat
 python3 scripts/sync_skills.py /path/outside/repository/sources.local.json
 python3 scripts/sync_skills.py /path/outside/repository/sources.local.json --write
 python3 scripts/catalog.py
+python3 scripts/check_publication.py
 python3 scripts/validate.py
 python3 -m unittest discover -s tests -v
 python3 -m unittest discover -s skills/skill-refinement/evals -p 'test_*.py' -v
@@ -64,4 +65,12 @@ All packages with an `origin.json` are maintained as separate portable source pa
 
 Only approved additions belong in the private source map. New packages do not automatically receive research schedules. The daily publication job can collect completed changes from these mapped packages using the same review process.
 
-Before publication, inspect both file contents and the pending commit’s author/committer identity. Use the public maintainer identity with a GitHub noreply address, and verify the resulting commit metadata before pushing. File-level checks do not inspect Git identities. Do not rewrite published history as part of the recurring update job.
+Before publication, inspect both file contents and the pending commit’s author/committer identity. The intended public identities krema, André Kremser, and gestro@krema.dev are allowed; a GitHub noreply address is also allowed. Verify the intended commit identity before pushing. File-level checks do not inspect Git identities. Do not rewrite published history as part of the recurring update job.
+
+## Protected publication workflow
+
+The main branch requires a pull request, a passing `validate` check from GitHub Actions, an up-to-date branch, and resolved review conversations. Force pushes and branch deletion are blocked, including for administrators. Independent approvals are not mandatory for this solo-maintainer repository; CODEOWNERS requests the maintainer's review of contributions. The daily publication job prepares PRs and does not merge them. Merges use squash commits; merged branches are deleted automatically. Release tags matching `v*` cannot be deleted or rewritten.
+
+CI uses read-only permissions, checkout without persisted credentials, pinned Actions revisions, and a bounded job runtime. Dependabot proposes weekly updates to the Actions pins. Repository policy permits only the two Actions used by this workflow. Changes needing another external action require an explicit allowlist update after review. Binary assets or symlinks require an explicit publication-check change and review before introduction.
+
+The publication check reports selected path, link, filename, and credential patterns without exposing matched values. It complements GitHub secret scanning and push protection; contextual privacy review is still required. Run it on the staged/tracked publication files before pushing. A clean result is not proof of absence of private details.

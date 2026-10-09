@@ -147,6 +147,10 @@ docs/                      Maintenance and compatibility notes
 
 The repository is `krema/agent-skills`, the marketplace is `krema`, and the bundled plugin is `skills`. This repository hosts a directly installable marketplace; it does not imply inclusion in any vendor's official directory.
 
+## Security
+
+See the [security policy](SECURITY.md) for private vulnerability reporting and the limits of automated publication checks.
+
 ## License
 
 [MIT](LICENSE) for the original material in this repository. Referenced publications and third-party material retain their respective rights; links and citations do not relicense those sources.
