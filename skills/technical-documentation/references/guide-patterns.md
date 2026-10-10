@@ -6,17 +6,19 @@ These are adaptable writing prompts, not required headings. A developer guide ca
 
 State the tangible result and assumed starting state. Choose one supported route. Include prerequisites that can actually be checked, then lead through actions with expected observations. Explain only what the learner needs at that moment; link deeper discussion. Finish by recognizing the result, cleaning up any resources when appropriate, and offering a meaningful next task.
 
-Avoid making beginners select between infrastructure variants before they understand the system. If environments genuinely differ, identify the applicable route before the lesson. A unavailable dependency is a disclosed blocker, not an invitation to invent a simulation and label it verified.
+Avoid making beginners select between infrastructure variants before they understand the system. If environments genuinely differ, identify the applicable route before the lesson. An unavailable dependency is a disclosed blocker, not an invitation to invent a simulation and label it verified.
 
 ## How-to: a real task
 
 Title the page with the intended outcome, such as “Diagnose a report that was not delivered.” State when it applies. Provide prerequisites, actions, necessary decision branches, and checks. Connect symptoms to evidence and next actions rather than listing every possible error. Link detailed settings separately; keep values necessary for this task nearby. Include rollback or cleanup when the task creates a relevant need.
 
+For an observed or documented failure that can interrupt the task, place concise help near the relevant step or link directly to it: what the reader can notice, what evidence distinguishes likely causes, the supported correction, and how to check that they can continue. Prefer actual user stumbling points, issue reports, or tested behavior over speculative error catalogs. If recovery is unknown, state the gap and a supported next source of help. Do not deliberately induce failures or add warnings at a fixed frequency. This is a conditional design recommendation; more error text alone is not evidence of better learning.
+
 ## Explanation: a mental model
 
 Start with the question the reader needs answered and enough domain context to understand it. Trace a representative journey across responsibilities. Explain boundaries, relationships, and supported reasons for choices; discuss alternatives only when they clarify the actual design. A resource inventory or directory table may support the explanation, but cannot replace it.
 
-Example outline for a report system: what a scheduled report promises; how a saved definition differs from a schedule and a run; what happens when the schedule fires; where failure and retry occur; why the documented separation matters. These are illustrative questions, not facts about a particular project. If rationale is undocumented, distinguish observed behavior from a possible explanation.
+Synthetic example outline for an imaginary report system: what a scheduled report promises; how a saved definition differs from a schedule and a run; what happens when the schedule fires; where failure and retry occur; why the documented separation matters. These are illustrative questions, not facts about a particular project. If rationale is undocumented, distinguish observed behavior from a possible explanation.
 
 ## Reference: reliable lookup
 

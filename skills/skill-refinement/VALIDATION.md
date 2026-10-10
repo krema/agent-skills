@@ -1,4 +1,10 @@
-# Validation — version 3.0.0
+# Validation — version 3.0.1
+
+## Current release verification — 2026-10-10
+
+The operational SKILL.md and Python tools are byte-identical to 3.0.0. Changes update evidence and decision links, version documentation, synthetic-example labels and publication hygiene. Historical worker-report excerpts and private provenance are excluded from distribution and retained outside the package. The tests below describe the historical release; no new agent trials were performed. Current checks: 28 unit tests and 20 static fixture cases passed; strict structural inspection found no findings. All relative Markdown links and JSON documents were checked. ZIP integrity and extracted-file hash equality passed. A publication scan found no private local paths, chat titles, worker report excerpts, credentials or personal authoring-skill references. The archive was compared with the installed files after replacement. These are software/publication checks, not new behavioral evidence.
+
+## Historical validation — version 3.0.0
 
 Checked 2026-10-07. Results separate software checks, actual editing, downstream execution, and unmeasured effectiveness.
 
@@ -25,7 +31,7 @@ Three agents without authoring history each received three raw case requests and
 | research_transfer | Preserved the skill; did not turn hypothetical QA evidence into a universal repetition rule. |
 | short_overloaded | Removed the three owner-disowned prerequisites; preserved leading-zero fidelity. |
 
-One worker received parent confirmation that its already-written inline routing alternative was acceptable before its final completion notice. These are not fully blinded trials. Cases within each three-case session may influence later cases; the parent is both author and grader. Outputs, reports, grading reasons, and raw downstream requests/results are preserved in [execution-results.json](evals/execution-results.json); original editing inputs and rubrics are in [cases.json](evals/cases.json).
+One worker received parent confirmation that its already-written inline routing alternative was acceptable before its final completion notice. These are not fully blinded trials. Cases within each three-case session may influence later cases; the parent is both author and grader. Synthetic outputs, grading reasons, and downstream requests/results are preserved; worker report excerpts are excluded from this distribution. Historical artifacts are recorded in [execution-results.json](evals/execution-results.json); original editing inputs and rubrics are in [cases.json](evals/cases.json).
 
 ## Downstream execution of a revised skill
 
@@ -44,6 +50,6 @@ The refresh reappraised decision-critical findings and added E30 with explicit l
 
 ## Limits
 
-The other eleven editing cases remain behaviorally unrun. There is no matched original/revised or no-optimizer comparison, repeated-run success estimate, cross-model study, independent human grading, or measured cost/latency gain. Full action transcripts and reference-read telemetry were not retained. Worker walkthroughs in the reports are labeled as such and are not additional execution trials.
+The other eleven editing cases remain behaviorally unrun. There is no matched original/revised or no-optimizer comparison, repeated-run success estimate, cross-model study, independent human grading, or measured cost/latency gain. Full action transcripts and reference-read telemetry were not retained. Historical worker walkthroughs were not additional execution trials.
 
 The historical seven worked revisions remain author-produced illustrations from version 2. The archive was updated; no installed optimizer or recurring schedule was changed.

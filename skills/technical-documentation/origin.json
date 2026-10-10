@@ -3,7 +3,8 @@
   "adapted_on": "2026-10-09",
   "changes": [
     "Generalized historical project observations and personal preferences in the evidence ledger; operational rules unchanged.",
-    "Removed residual originating-user or author-environment details from supporting records; operational rules unchanged."
+    "Removed residual originating-user or author-environment details from supporting records; operational rules unchanged.",
+    "2026-10-10: Reconciled the completed upstream refresh against the original fingerprinted baseline and curated changes; retained privacy generalization and validation limits."
   ],
   "source_sha256": {
     "SKILL.md": "e32c5c882e0f73070cc373f5fee5dfb708b582f32cdb737fbc9e6d1274567a6c",
@@ -14,5 +15,16 @@
     "references/maintenance.md": "92e936e1950d8ff47d833d070685da83793eaf8221fa0d8c5a9e7da93931b9c6",
     "references/validation.md": "1db7d253d35a24bc371035191cfff59a955f475a08307c53ff1887cbada6c2df",
     "references/writing.md": "bcfe4c40ddc604ad181acedd651ba6952330fc22d28931bbeb0d57c874910b48"
-  }
+  },
+  "reconciled_source_sha256": {
+    "SKILL.md": "e32c5c882e0f73070cc373f5fee5dfb708b582f32cdb737fbc9e6d1274567a6c",
+    "evals/requests.md": "61db99d1ceee1a5657534a707bb28a5afcc4cc61e963ab68784f48f474fa18ee",
+    "evals/rubric.md": "dc863f2c91222ed7f3f21baadf529b50af3222fbb6f62011ce07cd845cee7c84",
+    "references/evidence.md": "f6689b572b2870fdca304c16adcdb39800c2f8731e940d225ab6f9193bae3358",
+    "references/validation.md": "165777522f55a35e9f1fdd447d0f2e370727271e111d2120669996f0db80e77d",
+    "references/guide-patterns.md": "f8b14f14675006b5de834184b0516244cc7d67378c988c64488c4b010b08a361",
+    "references/writing.md": "bcfe4c40ddc604ad181acedd651ba6952330fc22d28931bbeb0d57c874910b48",
+    "references/maintenance.md": "92e936e1950d8ff47d833d070685da83793eaf8221fa0d8c5a9e7da93931b9c6"
+  },
+  "reconciled_on": "2026-10-10"
 }

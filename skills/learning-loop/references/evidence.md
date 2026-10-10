@@ -13,3 +13,9 @@ Reviewed 2026-10-09. This is an engineering adaptation of an existing Copilot wo
 | Apply only within authorization and reconcile current targets | Retained source design; user scope | Frequency of feedback does not grant permission or justify broader scope. |
 
 The original package's broader bibliography has not been revalidated for this adaptation and is not presented as fresh evidence. No claim of guaranteed capture, autonomous improvement, or model weight training follows from these instructions. Refresh this design when real trials show mistaken generalization, missed feedback, harmful rule accumulation, or changed host interfaces.
+
+## Conditional recovery guidance — reviewed 2026-10-10
+
+[Sentry v1](https://arxiv.org/html/2610.02994v1), submitted 2026-10-02, accessed 2026-10-10, is earlier research newly assessed in this screening. Sections 4.3 and 5.3 and Appendix A.6.3 compare frozen playbooks with and without persistent exposure while retaining failure-triggered retrieval. Persistent exposure reduced reported performance on the evaluated tasks. The study uses Qwen3.5-9B and GPT-OSS-120B; transfer to other agents and authored skills is untested here.
+
+Engineering adaptation: give reusable recovery rules observable triggers and an exit condition, keep specialized details conditional, and review a success case where the trigger is absent. This supports narrower exposure, not a universal prohibition on persistent instructions or durable preferences. No runtime detector or automatic memory architecture is introduced, and no benchmark improvement is claimed for this skill.

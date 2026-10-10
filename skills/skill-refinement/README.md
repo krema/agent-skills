@@ -1,6 +1,6 @@
 # skill-refinement
 
-Version **3.0.0** — evidence refreshed 2026-10-07.
+Version **3.0.1** — targeted evidence additions checked 2026-10-10; legacy review dated 2026-10-07.
 
 An evidence-informed skill for improving the **content** of agent-facing Markdown at any size. The agent reviews and rewrites instructions; the bundled Python helper performs structural checks only. There is no size gate, target length, automatic bloat score, or rule-density score.
 
@@ -12,7 +12,7 @@ Unzip the whole directory into a skill location supported by your agent, or ask 
 
 “Optimize”, “improve”, and “rewrite” request actual edits. “Audit only” requests findings and proposed edits without mutation. A sound result may be shorter, longer, reorganized, or unchanged, depending on what the tasks require.
 
-Material edits distinguish verified project facts, observed task outcomes, research-supported hypotheses, and editorial judgment. The [decision matrix](references/decision-rules.md) connects guidance to supporting and contradictory research. The [evidence ledger](references/evidence.md) contains 30 dated entries with source quality and transfer limits; it is not all loaded for ordinary edits.
+Material edits distinguish verified project facts, observed task outcomes, research-supported hypotheses, and editorial judgment. The [decision matrix](references/decision-rules.md) connects guidance to supporting and contradictory research. The [evidence ledger](references/evidence.md) contains 33 dated entries with source quality and transfer limits; it is not all loaded for ordinary edits.
 
 ## Package and verification
 
@@ -34,10 +34,10 @@ python3 -B evals/run_cases.py
 python3 -B evals/run_cases.py --prepare /path/to/new-evaluation-inputs
 ```
 
-The analyzer is read-only. It cannot decide content relevance or prove performance. JSON schema 2 keeps measurements opt-in and always marks content review as required. Static tests are separate from execution trials and performance comparisons. This release runs fresh-agent editing trials and selected downstream tasks; see VALIDATION.md for exact results and limits. No matched performance improvement is claimed.
+The analyzer is read-only. It cannot decide content relevance or prove performance. JSON schema 2 keeps measurements opt-in and always marks content review as required. Static tests are separate from execution trials and performance comparisons. Version 3.0.0 recorded fresh-agent editing trials and selected downstream tasks; version 3.0.1 adds evidence without changing the entrypoint; see VALIDATION.md for exact results and limits. No matched performance improvement is claimed.
 
 ## Upgrade and provenance
 
 Replace the previous package directory with this complete version; do not overlay it and retain obsolete thresholds.md. The skill's identifier stays the same for compatibility. Version 2 removed the analyzer-first size framing. Version 3 makes consequential editing decisions more explicit, preserves unresolved conflicts, and scales validation to uncertainty rather than diff size. See [changelog](CHANGELOG.md).
 
-Version 1 was a reconstruction rather than a verified copy of an earlier package. Version 2 revises that reconstruction; unavailable earlier files were not reproduced or validated.
+Version 3.0.1 adds qualified evidence and removes private provenance. Evaluation inputs and worked examples are synthetic. Historical execution artifacts are retained with limitations; conversation excerpts are excluded from this distribution.

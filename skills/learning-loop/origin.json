@@ -7,7 +7,8 @@
     "Optional capture integration contract; no hooks, schedules, or model training bundled.",
     "New evaluation scenarios and explicit behavioral validation limits.",
     "Authoring review clarified per-invocation completion, non-Git storage, and bounded persistence recovery.",
-    "Removed residual originating-user or author-environment details from supporting records; operational rules unchanged."
+    "Removed residual originating-user or author-environment details from supporting records; operational rules unchanged.",
+    "2026-10-10: Added conditional recovery guidance and contrasting evaluation cases after assessing Sentry v1; engineering adaptation, behaviorally untested. Original ancestor fingerprints retained."
   ],
   "source_sha256": {
     "SKILL.md": "3e708e6bef0483e6a567e089651a8fb47f94a75b30ee13006794094a27332e41",

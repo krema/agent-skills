@@ -1,5 +1,7 @@
 # Content rewrite patterns
 
+Examples and evaluation inputs in this file are synthetic.
+
 Use a pattern only when it addresses an identified problem. The evidence and limits for these choices are in [decision-rules](decision-rules.md); examples here are authored illustrations, not experimental results.
 
 ## Replace vague instructions with verified decisions

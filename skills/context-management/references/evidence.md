@@ -6,7 +6,7 @@ This is an extensive targeted review, not a systematic review or meta-analysis. 
 
 ## Eligibility and search record
 
-The [Chroma seed report](https://www.trychroma.com/research/context-rot) is explicitly dated July 14, 2025. It supplies the topic only and is excluded from empirical support. A 2026 crawl date, conference label, citation, or website update does not make a 2025 result eligible. To avoid laundering old findings, this review favors first-submitted 2026 papers and a dated 2026 primary engineering report. Older related-work sections in eligible papers are not evidence entries.
+The [Chroma report](https://www.trychroma.com/research/context-rot) is explicitly dated July 14, 2025. It is excluded from empirical support. A 2026 crawl date, conference label, citation, or website update does not make a 2025 result eligible. To avoid laundering old findings, this review favors first-submitted 2026 papers and a dated 2026 primary engineering report. Older related-work sections in eligible papers are not evidence entries.
 
 Actual web query families used on 2026-10-07:
 
@@ -37,6 +37,8 @@ Source: Gao, Chen and Huang, [The First Drop of Ink](https://arxiv.org/html/2605
 Four QA datasets, 200 examples per setting, controlled distractor proportions; displayed 128K results include Llama-3.1-8B, Qwen2.5-7B and Qwen3-Next-80B. Initial hard distractors caused disproportionate losses. Filtering comparisons on two smaller models suggested much recovery came from shortening; attention-temperature sharpening worsened results.
 
 Confidence: informative controlled experiment, limited model/task transfer and model-judged answers. Filtering arms also differ in starting composition. The simplified attention account is not a universal causal proof. Operational inference: select task evidence while preserving coverage; measure rather than assume a filtering benefit. This does not justify deleting contrary evidence, changing API sampling temperature, or adopting the paper's context lengths as limits. E06/E11 show why task structure matters.
+
+Version status checked October 10: [v2](https://arxiv.org/html/2605.10828v2), August 20, 2026, is available. Abstract and experimental setup inspected; no full version diff or new v2 result is claimed here. The appraisal above remains explicitly tied to v1.
 
 ## E03 — Active correction differs from passive summarization
 
@@ -213,19 +215,3 @@ These are conditional engineering translations. Empirical support does not itsel
 - Search coverage is English-language and indexed-web dependent; October coverage ends October 9 (early-morning screening). This is not all 2026 work. No fabricated screened-record count, preregistration or exhaustive-review claim is made.
 - Research stopped when each operational decision had support plus counterweights; more method papers were unlikely to justify stronger unconditional rules. Remaining important uncertainty is target-agent effectiveness, best trigger timing, repeated-summary behavior, and long-horizon aggregate tasks.
 - Refresh when the target model/harness changes, a retention failure appears, or replicated evidence changes a decision. Recheck exact paper versions, matching baselines and source dates. This is not an automatic update schedule.
-
-## Revision 1.1 refresh
-
-The follow-up search used `context rot October 2026 research paper`, `site.arxiv.org/abs/2610 context compression agents`, and `site.arxiv.org/abs/2610 long-context degradation`. No directly relevant October 1–7 primary study was located; this is a coverage limit. FOCUS was discovered and appraised; DTOC was promoted from screened lead to evidence after method inspection. September E07/E08 were already included in revision 1.0. This revision strengthens actionable preservation and continuation checks rather than claiming those sources are newly discovered.
-
-## Revision 1.2 screening, 2026-10-08
-
-Overlapping discovery window: September 24–October 8, with 2026 eligibility checks and older 2026 leads allowed. Queried October context compression/rot, constraint compaction, long-context research, CLM and ReFold by title, and correction/replication/withdrawal terms. New appraisals E17–E19 change cost and partition checks. The earlier failure to locate October papers was a search-coverage gap, now corrected.
-
-E07, E08, E15 and E16 abstract submission histories still showed v1. Searches for the three new papers did not locate verified independent replications, corrections or withdrawals; this is not proof none exist. A replication landing page is not a completed replication. UNREAL (2610.08463, October 6) was screened at abstract level only: model-internal trained retrieval, not adopted for operational rules. Other index/blog/pilot leads were not promoted without method inspection. A compact external screening log records queries and follow-up gaps; it is not required to use this package.
-
-## Revision 1.3 screening, 2026-10-09
-
-Search overlap October 1–9; older known 2026 sources checked by rotation. E01 has an August v2, acknowledged above. E04, E12 and E17 remain v1 in inspected submission histories. New E20 sharpens trigger evaluation; no threshold is adopted.
-
-Other inspected leads: [AutoCompact](https://arxiv.org/html/2610.02163v1), October 1, methods/setup/results and limitations: trained model-harness co-design, one scaffold, three-run means, estimated cached-token pricing; does not establish a prompt-only timing rule. [Tree Navigation Without LLM Summaries](https://arxiv.org/html/2610.06902v1), HTML dated September 30: conclusion, comparison limitations and encoder sensitivity inspected; retrieval gains vary with reader, encoder and budget, consistent with existing conditional retrieval guidance. Neither is promoted to a new operational rule. REMORY is an index-only lead pending primary inspection. Correction/withdrawal/replication queries found no verified new event for E20; absence is not established. Search remains indexed-web dependent and non-exhaustive.

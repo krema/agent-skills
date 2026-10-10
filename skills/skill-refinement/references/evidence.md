@@ -1,6 +1,6 @@
 # Evidence ledger
 
-Research checked: **2026-10-07 (Europe/Berlin)**. This is a targeted review, not an exhaustive systematic review or independent replication. Links are primary papers, first-party documentation, author-run experiments, and original GitHub reports. Publication dates and revisions are separated from access dates. All entries were accessed on the date above; undated live documents are snapshots, not timeless guarantees.
+Research checked: **2026-10-07 (Europe/Berlin)**. This is a targeted review, not an exhaustive systematic review or independent replication. Links are primary papers, first-party documentation, author-run experiments, and original GitHub reports. Publication dates and revisions are separated from access dates. Legacy entries were accessed on the date above; later additions carry their own access dates; undated live documents are snapshots, not timeless guarantees.
 
 ## Research question and search scope
 
@@ -45,7 +45,7 @@ Five models on math, QA, and coding exhibit degradation as input grows, includin
 
 **Source:** Thibaud Gloaguen et al., [Evaluating AGENTS.md](https://arxiv.org/abs/2602.11988v3), [full text](https://arxiv.org/html/2602.11988v3), §4.2 and Table 3. **Dates:** first 2026-02-12; v3 2026-09-29. **Quality:** controlled preprint, multiple agents and two benchmarks; moderate-to-strong within scope.
 
-The current revision finds no statistically significant success effect versus no context: generated files are slightly negative, developer files slightly positive. Generated files increase average costs 20% on SWE-bench and 23% on CTXbench; developer files outperform generated ones significantly. Outcomes concern issue resolution in the evaluated repositories, not all organizational constraints. **Implication:** test additional requirements and avoid assuming automatic repository summaries help. **Counterweight:** E05 measures efficiency differently; E06 is observational. **Correction:** the earlier conversation's “AGENTS.md reduces success” is too strong as a general conclusion; current success contrasts versus baseline are not significant.
+The current revision finds no statistically significant success effect versus no context: generated files are slightly negative, developer files slightly positive. Generated files increase average costs 20% on SWE-bench and 23% on CTXbench; developer files outperform generated ones significantly. Outcomes concern issue resolution in the evaluated repositories, not all organizational constraints. **Implication:** test additional requirements and avoid assuming automatic repository summaries help. **Counterweight:** E05 measures efficiency differently; E06 is observational. **Correction:** an earlier summary's “AGENTS.md reduces success” is too strong as a general conclusion; current success contrasts versus baseline are not significant.
 
 ### E05 — Efficiency improvement on PR tasks
 
@@ -221,6 +221,30 @@ The benchmark stacks verifiable constraints, separating logically impossible com
 - Verify changed routes through actual task actions where feasible (E12); do not equate a working link or optimizer audit with runtime retrieval.
 
 No source establishes a universally optimal wording or validates this optimizer as a whole. The local execution results and remaining gaps are in [VALIDATION.md](../VALIDATION.md).
+
+## Evidence additions — 2026-10-10
+
+These are newly inspected sources for this ledger, not claims of newly published papers. Earlier entries were not all independently reappraised. The operational entrypoint is unchanged.
+
+### E31 — Compression needs runtime recovery checks
+
+**Source:** Gao et al., [SkillReducer v2](https://arxiv.org/html/2603.29919v2), §§IV–V and VII. **Dates:** first 2026-03-31; revised 2026-06-24; accessed 2026-10-10. **Quality:** comparative preprint; methods, results and validity discussion inspected; implementation not run.
+
+In a 600-skill evaluation, simulated routing checks were followed by actual Claude Code invocation checks; many descriptions needed restoration or fallback. Body evaluations mixed code assertions and model grading. Compression still produced regressions, notably when examples implicitly specified behavior but were deferred. **Limits:** generated tasks also guide optimization, finite coverage, model judges, and near-ceiling external benchmark results limit generalization. The body fallback can retain a regressing candidate after its bounded repair loop; it is not a guaranteed rollback. **Implication:** preserve behavior-defining examples and verify real activation after description edits. Retain the original when required behavior fails. **Counterweight:** average gains do not make every compression safe; this package retains its stricter invariant protection rather than copying the framework wholesale.
+
+### E32 — Useful additions and runtime visibility
+
+**Source:** Wang et al., [Agent Skill Evolution v1](https://arxiv.org/html/2610.04832v1), §§3, 5–7. **Dates:** submitted 2026-10-04; arXiv lists v1 only when accessed 2026-10-10. **Quality:** emerging comparative preprint with observational history analysis; methods, sandbox results and threats inspected; not replicated.
+
+The study analyzes 2,608 revision pairs, probes 21 models, and tests four agents in an 80-task sandbox. Useful added commands and paths can improve required actions; on-demand loading retains less of the benefit. Output truncation can hide a rule even after a skill read. **Limits:** probes deliberately need the added rule; string compliance is weaker than action or correctness, automated final checking has moderate agreement with blind human labels, and short sandbox episodes constrain transfer. **Implication:** retain verified task-specific facts and distinguish selection, visible content, action and outcome. **Counterweight:** this is neither evidence for adding rules to every task nor a blanket argument against lazy loading. Absence of a detectable episode cost does not establish cost equivalence.
+
+### E33 — Relevant skills can induce wrong work
+
+**Source:** Dong et al., [Agent Skills Can Be Harmful v1](https://arxiv.org/html/2608.11888v1), §§III–VII. **Dates:** submitted 2026-08-12; v1, accessed 2026-10-10. **Quality:** controlled paired-run failure analysis; methods, attribution examples and threats inspected; implementation not run.
+
+Across SkillsBench and SWE-Skills-Bench, target skill runs are contrasted with successful no-skill or matched-skill references. The curated failure set contains 125 functional failures and 182 efficiency regressions. Topically relevant guidance can omit or misfill required implementation elements; excessive verification and heavy construction workflows frequently explain expensive successful runs. **Limits:** this is a selected failure corpus, not an ecosystem failure rate; manual attribution, run variability and verifier/task boundaries limit causal and cross-harness claims. **Implication:** compare required artifacts and actual induced actions, rather than judging relevance or word count alone. Keep optional examples and procedures distinct from binding task requirements. **Counterweight:** diagnostic categories and the study's cost threshold are not universal acceptance gates; preserve necessary validation.
+
+**Decision:** strengthen existing evidence links without adding operational obligations. E31 supports example preservation and activation checks; E32 supports verified specificity and runtime visibility; E33 supports task fidelity and verification scaled to uncertainty. No measured improvement is claimed.
 
 ## Conflicts and remaining uncertainty
 

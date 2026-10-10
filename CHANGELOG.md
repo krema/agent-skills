@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.1 — 2026-10-10
+
+- Add conditional recovery guidance and contrasting evaluation cases to Learning Loop and Technical Documentation.
+- Refresh Context Loading and Skill Refinement evidence, preserving applicability limits and existing operational scope.
+- Clarify Context Management validation and source-version notes; generalize publication history and label synthetic examples.
+- Preserve historical validation limits and curated provenance; no new runtime integrations or measured performance claim.
+
 ## 1.1.0 — 2026-10-09
 
 - Add Research to Skill with host-independent installation guidance.

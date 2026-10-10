@@ -1,5 +1,7 @@
 # Evaluation cases and protocol
 
+Examples and evaluation inputs in this file are synthetic.
+
 Use when revising decision logic or checking whether content changes improve actual task outcomes.
 
 ## Reproducible tooling checks
