@@ -7,7 +7,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: validate-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  group: validate-${{ github.workflow }}-${{ github.event.pull_request.number || github.run_id }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 jobs:
   validate:
@@ -17,9 +17,11 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+          fetch-depth: 0
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: '3.12'
+      - run: python3 scripts/release_policy.py
       - run: python3 scripts/check_publication.py
       - run: python3 scripts/validate.py
       - run: python3 -m unittest discover -s tests -v
@@ -27,6 +29,10 @@ jobs:
 
   release:
     needs: validate
+    concurrency:
+      group: publish-collection-release
+      queue: max
+      cancel-in-progress: false
     if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -36,6 +42,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+          fetch-depth: 0
       - name: Publish missing version
         env:
           GH_TOKEN: ${{ github.token }}
