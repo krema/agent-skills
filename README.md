@@ -98,6 +98,8 @@ Updates are reviewed through one rolling pull request. The maintainer's local au
 
 The existing research schedules continue to maintain their local packages. The publication job synchronizes their results; it does not repeat the research. This local schedule is not a GitHub Actions cron job and needs its Codex execution environment to be available. GitHub Actions validates pushes and pull requests.
 
+After a merge to `main` passes validation, GitHub Actions publishes a release for the version in `VERSION`, using its `CHANGELOG.md` entry. Each version is released once; merges without a new version do not create duplicate releases. Browse [releases](https://github.com/krema/agent-skills/releases) for notes and source archives.
+
 Once a PR is merged, refresh your installation:
 
 ```sh

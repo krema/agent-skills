@@ -74,3 +74,11 @@ The main branch requires a pull request, a passing `validate` check from GitHub 
 CI uses read-only permissions, checkout without persisted credentials, pinned Actions revisions, and a bounded job runtime. Dependabot proposes weekly updates to the Actions pins. Repository policy permits only the two Actions used by this workflow. Changes needing another external action require an explicit allowlist update after review. Binary assets or symlinks require an explicit publication-check change and review before introduction.
 
 The publication check reports selected path, link, filename, and credential patterns without exposing matched values. It complements GitHub secret scanning and push protection; contextual privacy review is still required. Run it on the staged/tracked publication files before pushing. A clean result is not proof of absence of private details.
+
+## Automatic GitHub releases
+
+The validation workflow publishes a missing stable `vMAJOR.MINOR.PATCH` release after successful validation on `main`. `VERSION` supplies the tag and the matching `CHANGELOG.md` section supplies the release notes. The tag targets the exact validated merge commit. GitHub supplies source ZIP and tar archives; no additional installer bundle is generated.
+
+Only the release job receives `contents: write`; pull requests retain read-only access and never publish releases. Existing published versions are skipped. Existing drafts/prereleases or tags pointing to another commit stop publication for maintainer review, without overwriting anything. API failures fail the job rather than being treated as absence. Main-branch runs are serialized without cancellation; superseded PR runs may still be cancelled.
+
+The first merge enabling this workflow publishes the current version if missing. For recovery, rerun the failed job or manually dispatch “Validate skills” on `main`; validation still precedes publication. If the version was already published, change VERSION, regenerate manifests, and add a changelog section through the normal PR process for new distributable changes. No personal access token or additional third-party Action is needed. Existing protected release tags stay protected.

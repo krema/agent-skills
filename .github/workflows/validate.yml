@@ -3,11 +3,12 @@ on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
 permissions:
   contents: read
 concurrency:
   group: validate-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -23,3 +24,19 @@ jobs:
       - run: python3 scripts/validate.py
       - run: python3 -m unittest discover -s tests -v
       - run: python3 -m unittest discover -s skills/skill-refinement/evals -p 'test_*.py' -v
+
+  release:
+    needs: validate
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Publish missing version
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/release.py
