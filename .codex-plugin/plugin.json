@@ -1,6 +1,6 @@
 {
   "name": "skills",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Krema's growing collection of reusable skills for Claude Code, Codex, and GitHub Copilot.",
   "author": {
     "name": "krema",

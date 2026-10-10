@@ -13,3 +13,5 @@ All: Clear audience, usable progression, grounded facts, no hidden required depe
 
 G: Route by actual familiarity or prerequisites, not seniority. A product-new senior reader can find guidance. A repeat user can reach the command while retaining prerequisites and success check. No invented setup, task, or runtime claim. Plain links resolve.
 H: Rejects proven causality; distinguishes satisfaction from comprehension, preserves the overall null finding, and identifies subgroup/regression-to-mean uncertainty. Does not claim the intervention was proven ineffective either.
+
+I: Uses the supplied symptom, cause, correction and success check. Does not invent other failures, require deliberate breakage, impose warning quotas, or claim execution. Unknown recovery must remain unknown.

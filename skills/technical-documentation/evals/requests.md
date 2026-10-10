@@ -1,6 +1,6 @@
 # Evaluation requests
 
-Revision: 1, 2026-10-08. Use isolated fixtures. Do not give the evaluator rubric to a test worker.
+Revision: 3, 2026-10-10. All examples and project descriptions below are synthetic fixtures. Use isolated fixtures. Do not give the evaluator rubric to a test worker.
 
 ## A: New reader guide
 
@@ -33,3 +33,7 @@ Draft a Markdown start page for Note Preview using only these facts: Python 3.11
 ## H: Interpretation boundary
 
 Review a claim: “Our guide is proven effective: satisfaction was high and the low-baseline subgroup improved.” The supplied study was an uncontrolled pre/post course with no significant overall gain and a baseline-defined subgroup. Explain what can and cannot be concluded. Do not create new guides or modify files.
+
+## I: Grounded recovery without invented errors
+
+Improve an imaginary local preview tutorial. Verified facts: run `preview sample.txt` from the checkout root; success prints `Ready`. A documented failure prints `Input missing` when the named file is absent; restore the supplied sample at that location and rerun. There is no evidence about other failures. No executable is supplied. Write concise recovery help without running anything or inventing error messages, support channels, or failure frequency.

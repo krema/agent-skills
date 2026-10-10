@@ -1,5 +1,7 @@
 # Worked content revisions
 
+Examples and evaluation inputs in this file are synthetic.
+
 These seven concrete outputs were produced and reviewed by the package author in the same session. They illustrate applying the revised workflow; they are **not independent trials, a blinded evaluation, or measured agent-performance gains**. Inputs are in [cases.json](cases.json); full changed-file contents, reasons, and inspection notes are in [worked-rewrites.json](worked-rewrites.json). Unlisted files are unchanged.
 
 | Case | Actual decision | Basis | What was checked |

@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.0.1 — 2026-10-10
+
+- Add qualified SkillReducer, Agent Skill Evolution and skill-induced failure evidence; strengthen existing decision mappings.
+- Preserve the operational entrypoint and executable tools unchanged.
+- Remove private provenance and historical conversation/report excerpts from the distributable package; label synthetic examples.
+- Rerun software and packaging checks; no new behavioral trials or performance claim.
+
 ## 3.0.0 — 2026-10-07
 
 - Refine content decisions around conditions, actions, and observable outcomes; keep applicability in the operational rule.
@@ -19,4 +26,4 @@
 
 ## 1.0.0 — 2026-10-07
 
-Reconstructed the referenced package, added 17 evidence entries, read-only analyzer, and static tests. The revision addressed size-centric signals and analyzer-first framing that did not reliably elicit content optimization. Version 2 supersedes that design; the version 1 test success did not establish behavioral quality.
+Established the initial package, added 17 evidence entries, read-only analyzer, and static tests. Review identified that size-centric signals and analyzer-first framing did not reliably elicit content optimization. Version 2 supersedes that design; the version 1 test success did not establish behavioral quality.

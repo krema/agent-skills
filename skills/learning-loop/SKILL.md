@@ -29,6 +29,8 @@ An explicit durable correction can justify a targeted proposal immediately. A si
 
 Read the affected guidance and its scope. Check existing equivalent rules, conflicts, and whether the failure came from instructions, environment, or a product decision. Keep unresolved contradictions visible. Put project facts in project notes, a concise durable preference in scoped instructions, and a reusable procedure in a skill. Broaden scope only with supporting evidence or explicit user intent.
 
+When turning a recovery into reusable guidance, state the observable failure that makes it applicable and when to stop using it. Keep specialized recovery details in the relevant procedure or conditionally loaded reference; do not make the whole failure history an always-on instruction. Check both a matching failure and a successful case where the trigger is absent. This does not restrict durable user preferences or rules that genuinely apply throughout the task.
+
 ## Propose, apply, and verify
 
 Create a proposal with evidence IDs, counterevidence, exact target and baseline, before/after text or patch, intended scope, expected observable outcome, validation task, and recovery method. A plausible suggestion is not a validated lesson. Avoid accumulating duplicate or contradictory rules.

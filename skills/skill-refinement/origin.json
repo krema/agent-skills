@@ -2,7 +2,8 @@
   "source_name": "skill-refinement",
   "adapted_on": "2026-10-09",
   "changes": [
-    "Generalized historical conversation and originating-user references; operational rules and evaluation outcomes unchanged."
+    "Generalized historical conversation and originating-user references; operational rules and evaluation outcomes unchanged.",
+    "2026-10-10: Reconciled the completed upstream refresh against the original fingerprinted baseline and curated changes; retained privacy generalization and validation limits."
   ],
   "source_sha256": {
     "CHANGELOG.md": "73bff6010fc946d19e878b2337ce01072ca8a2e91fd3ae1dcf88919387e85d2e",
@@ -23,5 +24,26 @@
     "references/measurement.md": "dfb681a7a4deb582ae95ad042a11b5a0ce29a0a354259825da5a01902bfa2bd8",
     "references/patterns.md": "6e13e5d5c3f5e3ace76a80c5751496dcd0854481bceaf32cd0ff04d2c582b159",
     "scripts/analyze_skill.py": "f01c04affcc5aeffa9612628183d78aa689e6b46706e26dc230b04e0a8acad5e"
-  }
+  },
+  "reconciled_source_sha256": {
+    "CHANGELOG.md": "5279ccf655a4e6b5b03b7a188703fa5cc576f6a764a0709f74413320d58234f0",
+    "VALIDATION.md": "bc1d57e8a7220973d3ab1cd336ba01833a756e984ae451a41999e55a138fb135",
+    "README.md": "fa3a6ff395cb1445ed3b06e5213c1a0f77f6d7485521ffc08a0bfb3d7bd45cfa",
+    "SKILL.md": "8abe9a39817a868b140a5e602672a9b43374e36ca2eea85543e933fa572dd980",
+    "evals/test_analyzer.py": "95f33d7f079fa60fab92ca38d461733088c799da008de24de6100da1b88e1853",
+    "evals/self-analysis.json": "308865f70e84a588e1cbd4f81831f7057a1e4cc4df7e69a8c1f8c41041604b52",
+    "evals/run_cases.py": "4ba49f9628d6f83906334ae4d20175ea6c128277a87f6c2c9b1a1fe5b86eead1",
+    "evals/worked-rewrites.json": "9b364fb264418568986745aa94a235aa1962389c1eaee2789bcc32fb3f66f5de",
+    "evals/cases.json": "fac77cbbec7ce7903b629ddfd4a2974b9894d2eae678675ef68d3ffa8c828a36",
+    "evals/test_preparation.py": "b2d9c411ed9dca2d51a2986ad117bc6628082e16b52ae4bc49856b2dbc890999",
+    "evals/cases.md": "ad2d3a2e2723fe03ab870cac34109be55b3cd0fcf4ab7714d618d37c5176cfcf",
+    "evals/execution-results.json": "a1fe9dedb9382bc4ef8dcdee214a62327d26e9ef2176652089b3182d7e4fc378",
+    "evals/worked-rewrites.md": "8cb7311dd27c149345d400b2b115cafbdb03c164adee0b229626900f92e8c555",
+    "references/evidence.md": "b2ed16f2221e62eb3534132ffa3000c2e28c37d431fbd70b6e0d7a0b40be4df9",
+    "references/patterns.md": "e7d0463c62450c24890a900ac6ed5473f6603b5989c882b3955c93b4740db95a",
+    "references/measurement.md": "dfb681a7a4deb582ae95ad042a11b5a0ce29a0a354259825da5a01902bfa2bd8",
+    "references/decision-rules.md": "bff8b8976d47167c0df95dbe16823558af2911ee901cc8f9b4acde3571cc2f9f",
+    "scripts/analyze_skill.py": "f01c04affcc5aeffa9612628183d78aa689e6b46706e26dc230b04e0a8acad5e"
+  },
+  "reconciled_on": "2026-10-10"
 }

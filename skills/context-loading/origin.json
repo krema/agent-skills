@@ -2,7 +2,8 @@
   "source_name": "context-loading",
   "adapted_on": "2026-10-09",
   "changes": [
-    "Generalized historical conversation and originating-user references; operational rules and evaluation outcomes unchanged."
+    "Generalized historical conversation and originating-user references; operational rules and evaluation outcomes unchanged.",
+    "2026-10-10: Reconciled the completed upstream refresh against the original fingerprinted baseline and curated changes; retained privacy generalization and validation limits."
   ],
   "source_sha256": {
     "SKILL.md": "68480085f03447556e930d3e80f866761115b9abeae014dd38da2e5f66de38e8",
@@ -16,5 +17,19 @@
     "references/instruction-design.md": "4c8f334f884ebcf738d5bb81ef8a22977e7ff68eb86401755a9312fcce185e12",
     "references/research-synthesis.md": "abde3a782a2533d9424bdfaf9e5cac720b2ad288f8fb0ba1f10456fabe0135e5",
     "references/retrieval-design.md": "eb2336121215adede0bba5d6ebc3947b35b77c98533dc8d8ed2be9353896f790"
-  }
+  },
+  "reconciled_source_sha256": {
+    "SKILL.md": "68480085f03447556e930d3e80f866761115b9abeae014dd38da2e5f66de38e8",
+    "evals/validation.md": "a9235826f872c27eec78abd626beaf220ea1efdae6671395b8f2381e425f4430",
+    "evals/cases.md": "b298226a63f685b081b9eee2b794acba4bbd1cda648c843362169feb70bf576b",
+    "references/research-synthesis.md": "abde3a782a2533d9424bdfaf9e5cac720b2ad288f8fb0ba1f10456fabe0135e5",
+    "references/instruction-design.md": "4c8f334f884ebcf738d5bb81ef8a22977e7ff68eb86401755a9312fcce185e12",
+    "references/evidence.md": "e83403a569f7a467c77cf9589cc26f14b1932c0e52183c2cbe432fdc69b4f7fd",
+    "references/retrieval-design.md": "eb2336121215adede0bba5d6ebc3947b35b77c98533dc8d8ed2be9353896f790",
+    "evals/fixtures/rag/corpus.md": "940fac4bb92f7e45c3babe3b03e1e6095599cf1e87a9c6b0c7f49b45dd14ceb7",
+    "evals/fixtures/refactor/styles.md": "4699dea9e2bd97cedd14a9c1acd83c9f72b0c425d6833ae5e6bd98033c56dcdf",
+    "evals/fixtures/refactor/instructions.md": "07a971b7267e7ab60615b4a1d1f284d4729f03c86d74175cab7721bdc7fd55c5",
+    "evals/fixtures/refactor/database.md": "f432094dde5565b174b52c8243dbd4a11645c806ea509a92925ccbb3c92b9c33"
+  },
+  "reconciled_on": "2026-10-10"
 }

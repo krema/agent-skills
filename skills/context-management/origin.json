@@ -2,7 +2,8 @@
   "source_name": "context-management",
   "adapted_on": "2026-10-09",
   "changes": [
-    "Generalized historical conversation and originating-user references; operational rules and evaluation outcomes unchanged."
+    "Generalized historical conversation and originating-user references; operational rules and evaluation outcomes unchanged.",
+    "2026-10-10: Reconciled the completed upstream refresh against the original fingerprinted baseline and curated changes; retained privacy generalization and validation limits."
   ],
   "source_sha256": {
     "RESEARCH.md": "c85cf4a2a59ce92e9a879701b72b210a4b88c5aaea2b7c22b4a7dedd9d7b1ce6",
@@ -10,5 +11,13 @@
     "VALIDATION.md": "88ea23f3261b06ce603a1406db74a0d5d7494beef04a585151c755a88c2b014b",
     "references/evaluation.md": "a6f85230c92e241a2f9f60d7afd7267b52b2d165f0cf635a7b404def8dbaa967",
     "references/evidence.md": "04834c56f7077ce69b080794580a333b6dcaaaff711f65bb7157fde5cf22a7bf"
-  }
+  },
+  "reconciled_source_sha256": {
+    "VALIDATION.md": "caa2c24e7139599bd0d634eceb2a389ca712611f64807b7fd487ff5c53963049",
+    "RESEARCH.md": "973e1d99e5ae3059cbcf02e21ffb3e56a8624b3e96f98497693d63d75def5b80",
+    "SKILL.md": "267d7c6c3b9c44515a70ad3661b72d94b9bc3f2c65c708f4cd810ed82fa873c4",
+    "references/evidence.md": "a36a2a2ec772b800c6e8ece85ada2f6cd68794a5714961668615644f462ef824",
+    "references/evaluation.md": "69f77654237fc87cf568d007b1fdd72bb7ea99aa3339e4c22e0f551a8f56ebff"
+  },
+  "reconciled_on": "2026-10-10"
 }

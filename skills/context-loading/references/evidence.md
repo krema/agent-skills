@@ -10,7 +10,7 @@ Targeted refresh: **2026-10-09**. E18–E20 added from overlapping discovery and
 
 | Decision | Actual query/source families | Result |
 |---|---|---|
-| Meaning and intended use | Thoughtworks progressive disclosure entry and related source links | Practice recommendation, not an isolated causal trial |
+| Meaning and intended use | Thoughtworks context-engineering, skills, instruction-bloat and progressive-disclosure entries with linked sources | Practice recommendation, not an isolated causal trial |
 | Whether longer context harms use | “Lost in the Middle” long contexts; Chroma context-rot methods and limitations | Controlled effects under tested settings; no universal threshold |
 | Whether RAG should always be preferred | “retrieval augmented generation long context Self Route 2024”; Route Before Retrieve | Full context and hybrid alternatives materially change the design |
 | Whether instruction files help | Thoughtworks citation; “Evaluating AGENTS.md” context files coding agents | Different endpoints; latest September 2026 revision changes interpretation |
@@ -143,6 +143,18 @@ Source: Kinderman et al., [UNREAL](https://arxiv.org/html/2610.08463v1), October
 
 Type: provisional preprint using retrieval training on frozen-model representations. Sparse-evidence benchmarks favor selection in tested settings; Wikipedia training, random distractor construction and additional indexing costs limit transfer. Efficiency experiments use random weights/token IDs on an H100, separately from answer-quality experiments. They do not establish joint production quality and speed. Implication: retain selective/full-context comparisons and full-cost accounting; no backend requirement, universal break-even length or new operational rule is warranted. E06 addresses different tasks and retrieval configurations.
 
+## E21 — Skill overhead includes induced work
+
+Source: Dong et al., [Agent Skills Can Be Harmful](https://arxiv.org/html/2608.11888v1), August 12, 2026, v1; accessed October 10. Inspected study design, subjects, failure taxonomy and validity discussion.
+
+Type: provisional preprint using paired skill configurations on SkillsBench and SWE-Skills-Bench, with manual attribution. Selected regression cases implicate excessive procedures as well as loaded text. Ambiguous cases are excluded; subjective attribution and benchmark/harness dependence preclude prevalence or universal causal claims. Implication: existing total-work measurement and task-specific guidance remain appropriate. This does not justify removing necessary checks; no additional rule adopted.
+
+## E22 — Long-context failure is task and scaffold dependent
+
+Source: [How Agent Skills Fail under Long Contexts](https://arxiv.org/html/2607.17937v1), July 20, 2026, v1; accessed October 10. Inspected workspace construction, checker design, boundary probes and validity discussion.
+
+Type: bounded preprint case study with 24 artifact checks and ten valid runs per principal condition. Concrete checklists help the main case, but other task/model probes do not consistently degrade. Character-matched contexts differ beyond length; pilot-driven sample extension, infrastructure exclusions and sparse replications limit inference. Implication: existing workload-specific evaluation and requirement-preservation guidance stand. No universal context threshold or mandatory checklist follows.
+
 ## Evidence to behavior
 
 The following rules are synthesis unless marked interface requirement. Tests refer to cases in the evaluation file; passing a case is not general validation.
@@ -158,10 +170,12 @@ The following rules are synthesis unless marked interface requirement. Tests ref
 | Deferred tool selected → load schema before invocation | E11 interface pattern | Host protocol differs | B, trace/schema correctness |
 | External content selected → keep authority and access boundaries | E14/E18 plus host requirements | Additional gates can also exclude permitted evidence | B/I, exposure and evidence-preservation checks |
 | Long task/compaction → retain source handles and completed actions | E03/E13; inference | Re-reading may be necessary after change | E, no duplicated side effect |
-| Efficiency claim → matched quality and total-cost evaluation | E02/E06/E09/E10/E12/E13; synthesis | Tokens alone confound results | Comparative protocol |
+| Efficiency claim → matched quality and total-cost evaluation | E02/E06/E09/E10/E12/E13/E21; synthesis | Tokens alone confound results | Comparative protocol |
 | Multilingual free-text misses → inspect generated arguments and test supported normalization/fallback | E15; conditional inference | Exact identifiers and ambiguous matches require preservation checks | F, authored diagnostic review; runtime untested |
 | Claude deferred tools → retain complete API registration | E17; interface requirement | Other hosts may differ | G, contract review; live API untested |
 | Layered-memory efficiency claim → include construction and all generation stages | E16; accounting inference | Session fraction is not a billing metric | H, authored accounting review |
+
+October 10 review: E21–E22 provide additional bounded counterevidence; operational guidance and conclusions remain unchanged.
 
 ## Open questions and refresh triggers
 

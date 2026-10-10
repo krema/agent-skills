@@ -1,8 +1,8 @@
 # Evaluation protocol
 
-Prepared before author walkthroughs on 2026-10-07. These are synthetic evaluation requests and outcome rubrics, not published research findings. They test the skill's decisions; they do not establish mitigation effectiveness in production.
+All requests, records, identifiers and dialogue snippets below are synthetic evaluation fixtures, not private conversations or published research findings. They test the skill's decisions; they do not establish mitigation effectiveness in production.
 
-For a fresh execution trial, provide the worker only SKILL.md, relevant source fixtures and the request. Keep the rubric and validation report hidden. The current delivery did not conduct a fresh-worker trial. Do not count an author's reasoning through these cases as one.
+For a fresh execution trial, provide the worker only SKILL.md, relevant source fixtures and the request. Keep the rubric and validation report hidden. Fresh-worker execution has not been performed. Do not count an author's reasoning through these cases as one.
 
 ## Cases and outcome criteria
 
