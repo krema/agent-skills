@@ -167,6 +167,23 @@
     "title": "Skill Refinement",
     "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
   },
+  "stateful-evidence-reasoning": {
+    "published_sha256": {
+      "SKILL.md": "6dbda0954147dd406f5a86209f1c0da4b6048023a5372bfbca6793f54a372caa",
+      "evals/cases.md": "767dc319b0823b757fe704ca1a38504afc116e9d9f595205f4c92fb6e52b1cf4",
+      "references/evidence.md": "4c80a490e01d12feed5ff94b20c56171520ea153c0c50420e0d2bc1f3b37e476",
+      "references/validation.md": "67395e0a669497262a112d16f5100bf0f71e21a4ca5ecdc4514300017210f8ca"
+    },
+    "source_name": "stateful-evidence-reasoning",
+    "source_sha256": {
+      "SKILL.md": "446cec69f9bfa38bcadf01bf0109df8044d313115bfb2ab89a3f36c696c5a1a8",
+      "evals/cases.md": "767dc319b0823b757fe704ca1a38504afc116e9d9f595205f4c92fb6e52b1cf4",
+      "references/evidence.md": "4c80a490e01d12feed5ff94b20c56171520ea153c0c50420e0d2bc1f3b37e476",
+      "references/validation.md": "67395e0a669497262a112d16f5100bf0f71e21a4ca5ecdc4514300017210f8ca"
+    },
+    "title": "Stateful Evidence Reasoning",
+    "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
+  },
   "technical-documentation": {
     "published_sha256": {
       "SKILL.md": "e3426be836a3d3f0a8fbd095111fc1a153be91dd19638a4c9bbd219e75899715",
