@@ -4,6 +4,7 @@ import os
 from pathlib import Path
 import subprocess
 import tempfile
+import time
 
 from release_policy import artifact, git, notes_at, version_at, version_tuple
 
@@ -84,13 +85,20 @@ def publish(repo, sha, version, notes):
         gh('release', 'create', tag, '--repo', repo, '--target', sha,
            '--title', tag, '--notes-file', str(path),
            '--latest=false' if newer else '--latest=true')
-    # Do not claim success solely from a successful create request.
-    created = next((r for r in pages(repo, 'releases') if r['tag_name'] == tag), None)
-    actual = next((t['commit']['sha'] for t in pages(repo, 'tags') if t['name'] == tag), None)
-    if not created or actual != sha:
-        raise ValueError('Release creation not verified; inspect state before retrying')
-    verify_existing(created, actual, sha, version, notes)
-    print(f'Published and verified {tag} at {sha}')
+    # GitHub list endpoints may not expose a newly created release/tag yet.
+    # Retry only reads of absent entries; never retry creation or hide conflicts.
+    for attempt in range(5):
+        created = next((r for r in pages(repo, 'releases') if r['tag_name'] == tag), None)
+        actual = next((t['commit']['sha'] for t in pages(repo, 'tags') if t['name'] == tag), None)
+        if actual is not None and actual != sha:
+            raise ValueError('Release creation not verified: tag targets another commit')
+        if created and actual:
+            verify_existing(created, actual, sha, version, notes)
+            print(f'Published and verified {tag} at {sha}')
+            return
+        if attempt < 4:
+            time.sleep(2 ** attempt)
+    raise ValueError('Release creation not verified after bounded reads; inspect state before retrying')
 
 
 def main():
