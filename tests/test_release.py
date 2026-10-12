@@ -169,6 +169,27 @@ class ReleaseTests(unittest.TestCase):
                     release.publish('example/skills', sha, '1.1.1', 'Notes\n')
                     gh.assert_called_once()
 
+    def test_creation_waits_for_release_and_tag_visibility_without_recreating(self):
+        for delayed in ('release', 'tag', 'both'):
+            with self.subTest(delayed=delayed), repository():
+                sha = policy.git('rev-parse', 'HEAD')
+                first_release = [] if delayed in ('release', 'both') else [item()]
+                first_tag = [] if delayed in ('tag', 'both') else [tag(sha)]
+                states = [[], [], first_release, first_tag, [item()], [tag(sha)]]
+                with patch.object(release, 'pages', side_effect=states), patch.object(release, 'gh') as gh, patch.object(release.time, 'sleep') as sleep:
+                    release.publish('example/skills', sha, '1.1.1', 'Notes')
+                    gh.assert_called_once()
+                    sleep.assert_called_once_with(1)
+
+    def test_visibility_timeout_is_bounded_and_does_not_recreate(self):
+        with repository():
+            sha = policy.git('rev-parse', 'HEAD')
+            with patch.object(release, 'pages', return_value=[]), patch.object(release, 'gh') as gh, patch.object(release.time, 'sleep') as sleep:
+                with self.assertRaisesRegex(ValueError, 'bounded reads'):
+                    release.publish('example/skills', sha, '1.1.1', 'Notes')
+                gh.assert_called_once()
+                self.assertEqual([c.args[0] for c in sleep.call_args_list], [1, 2, 4, 8])
+
     def test_conflicting_tag_is_preserved(self):
         with repository():
             sha = policy.git('rev-parse', 'HEAD')
