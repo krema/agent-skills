@@ -18,12 +18,13 @@ Install the complete collection as **`skills@krema`**, or choose individual skil
 | [Research to Skill](skills/research-to-skill/SKILL.md) | Research should become an actionable skill with traceable evidence. | “Research this topic, build a skill, and report what was actually validated.” |
 | [Ticket Craft](skills/ticket-craft/SKILL.md) | Epics, stories, or subtasks need clear scope and observable acceptance criteria. | “Turn these requirements into stories with a useful handoff for an agent.” |
 | [Learning Loop](skills/learning-loop/SKILL.md) | Corrections and verified outcomes should improve future workflows. | “Review these supplied logs and propose scoped improvements to our guidance.” |
+| [Stateful Evidence Reasoning](skills/stateful-evidence-reasoning/SKILL.md) | An answer depends on multiple documents, conflicting versions, or calculations. | “Reconcile these reports, recompute using the final values, and cite the evidence.” |
 
-Agent Instructions focuses on repository rules; Skill Refinement reviews the content of skills and other agent-facing documents. Context Loading decides what to retrieve; Context Management preserves useful state across long tasks. Technical Documentation is for human readers.
+Agent Instructions focuses on repository rules; Skill Refinement reviews the content of skills and other agent-facing documents. Context Loading decides what to retrieve; Context Management preserves useful state across long tasks. Stateful Evidence Reasoning reconciles source evidence and derived answers; Research to Skill turns research into reusable guidance. Technical Documentation is for human readers.
 
 ## Install
 
-Choose **one installation method per agent** to avoid loading duplicate copies. Native plugins install all eight skills together. `npx skills` also supports selecting individual skills.
+Choose **one installation method per agent** to avoid loading duplicate copies. Native plugins install all nine skills together. `npx skills` also supports selecting individual skills.
 
 ### Claude Code — native marketplace
 
@@ -127,7 +128,7 @@ npx skills update
 The collection was developed from research and practical task requirements. Its evidence files distinguish empirical findings, platform documentation, and engineering judgment. Research informs the guidance; it does not guarantee better results for every model or task.
 
 - **Evidence:** [instructions](skills/agent-instructions/references/evidence.md), [context management](skills/context-management/references/evidence.md), [documentation](skills/technical-documentation/references/evidence.md), [context loading](skills/context-loading/references/evidence.md), [refinement](skills/skill-refinement/references/evidence.md).
-- **New skills:** [research method](skills/research-to-skill/references/method-evidence.md), [ticket writing](skills/ticket-craft/references/evidence.md), [learning loop](skills/learning-loop/references/evidence.md).
+- **Research and learning:** [research method](skills/research-to-skill/references/method-evidence.md), [ticket writing](skills/ticket-craft/references/evidence.md), [learning loop](skills/learning-loop/references/evidence.md), [stateful reasoning](skills/stateful-evidence-reasoning/references/evidence.md).
 - **Checks:** metadata, native manifests, file hashes, local links, synchronization guards, and the included Python tooling tests.
 - **Compatibility:** actual installation checks and their limits are recorded in [validation](docs/validation.md).
 - **Provenance:** [provenance.json](provenance.json) records original and published file hashes, with no private source paths.

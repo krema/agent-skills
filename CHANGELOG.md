@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.0 — 2026-10-12
+
+- Add Stateful Evidence Reasoning for multi-document questions, source-linked evidence, revised conclusions, and calculations based on corrected values.
+- Include the evidence assessment and synthetic evaluation cases; structural checks and author walkthroughs do not establish behavioral improvement.
+
 ## 1.1.1 — 2026-10-10
 
 - Add conditional recovery guidance and contrasting evaluation cases to Learning Loop and Technical Documentation.
