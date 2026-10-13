@@ -2,29 +2,56 @@
 
 A growing collection of reusable skills for **Claude Code, Codex, and GitHub Copilot**.
 
-Install the complete collection as **`skills@krema`**, or choose individual skills with `npx skills`. Each skill includes practical instructions and supporting references. The initial collection focuses on agent workflows; future skills can cover other topics.
+Install the complete collection as **`skills@krema`**, or choose individual skills with `npx skills`.
 
-[Browse the skills](#skills) · [Install](#install) · [Updates](#updates) · [Evidence and validation](#evidence-and-validation) · [Contributing](CONTRIBUTING.md)
+[Browse the skills](#skills) · [Install](#install) · [Updates](#updates) · [Contributing](CONTRIBUTING.md)
 
 ## Skills
+
+Choose a category for your task and use an example request to get started.
+
+[Agent instructions and context](#agent-instructions-and-context) · [Research and evidence](#research-and-evidence) · [Documentation and work planning](#documentation-and-work-planning) · [Skill and workflow improvement](#skill-and-workflow-improvement)
+
+### Agent instructions and context
+
+Set up repository guidance, load relevant information, and preserve decisions across long tasks.
 
 | Skill | Use it when… | Example request |
 | --- | --- | --- |
 | [Agent Instructions](skills/agent-instructions/SKILL.md) | Repository instructions are stale, contradictory, or hard to follow. | “Audit our AGENTS.md and CLAUDE.md. Fix conflicts while preserving project requirements.” |
-| [Context Management](skills/context-management/SKILL.md) | A long task loses constraints, repeats work, or needs a reliable handoff. | “Prepare a handoff that preserves decisions, unfinished work, and source references.” |
-| [Technical Documentation](skills/technical-documentation/SKILL.md) | Human readers need clearer, maintainable technical guides. | “Improve this onboarding guide so a new developer can complete their first task.” |
 | [Context Loading](skills/context-loading/SKILL.md) | An agent needs the right information at the right time. | “Restructure these instructions so task-specific details load when needed.” |
-| [Skill Refinement](skills/skill-refinement/SKILL.md) | A skill or agent-facing document needs a substantive review or rewrite. | “Improve this skill: remove redundant guidance and preserve its conditions and recovery steps.” |
-| [Research to Skill](skills/research-to-skill/SKILL.md) | Research should become an actionable skill with traceable evidence. | “Research this topic, build a skill, and report what was actually validated.” |
-| [Ticket Craft](skills/ticket-craft/SKILL.md) | Epics, stories, or subtasks need clear scope and observable acceptance criteria. | “Turn these requirements into stories with a useful handoff for an agent.” |
-| [Learning Loop](skills/learning-loop/SKILL.md) | Corrections and verified outcomes should improve future workflows. | “Review these supplied logs and propose scoped improvements to our guidance.” |
-| [Stateful Evidence Reasoning](skills/stateful-evidence-reasoning/SKILL.md) | An answer depends on multiple documents, conflicting versions, or calculations. | “Reconcile these reports, recompute using the final values, and cite the evidence.” |
+| [Context Management](skills/context-management/SKILL.md) | A long task loses constraints, repeats work, or needs a reliable handoff. | “Prepare a handoff that preserves decisions, unfinished work, and source references.” |
 
-Agent Instructions focuses on repository rules; Skill Refinement reviews the content of skills and other agent-facing documents. Context Loading decides what to retrieve; Context Management preserves useful state across long tasks. Stateful Evidence Reasoning reconciles source evidence and derived answers; Research to Skill turns research into reusable guidance. Technical Documentation is for human readers.
+### Research and evidence
+
+Reconcile source material or turn research into reusable guidance.
+
+| Skill | Use it when… | Example request |
+| --- | --- | --- |
+| [Stateful Evidence Reasoning](skills/stateful-evidence-reasoning/SKILL.md) | An answer depends on multiple documents, conflicting versions, or calculations. | “Reconcile these reports, recompute using the final values, and cite the evidence.” |
+| [Research to Skill](skills/research-to-skill/SKILL.md) | Research should become an actionable skill with traceable evidence. | “Research this topic, build a skill, and report what was actually validated.” |
+
+### Documentation and work planning
+
+Help people understand a system and give humans or agents clear work to carry out.
+
+| Skill | Use it when… | Example request |
+| --- | --- | --- |
+| [Technical Documentation](skills/technical-documentation/SKILL.md) | Human readers need clearer, maintainable technical guides. | “Improve this onboarding guide so a new developer can complete their first task.” |
+| [Ticket Craft](skills/ticket-craft/SKILL.md) | Epics, stories, or subtasks need clear scope and observable acceptance criteria. | “Turn these requirements into stories with a useful handoff for an agent.” |
+
+### Skill and workflow improvement
+
+Refine existing guidance and learn from corrections and verified outcomes.
+
+| Skill | Use it when… | Example request |
+| --- | --- | --- |
+| [Skill Refinement](skills/skill-refinement/SKILL.md) | A skill or agent-facing document needs a substantive review or rewrite. | “Improve this skill: remove redundant guidance and preserve its conditions and recovery steps.” |
+| [Learning Loop](skills/learning-loop/SKILL.md) | Corrections and verified outcomes should improve future workflows. | “Review these supplied logs and propose scoped improvements to our guidance.” |
 
 ## Install
 
-Choose **one installation method per agent** to avoid loading duplicate copies. Native plugins install all nine skills together. `npx skills` also supports selecting individual skills.
+Choose **one installation method per agent** to avoid loading duplicate copies. Native plugins install the complete collection; `npx skills` lets you choose individual skills. See [compatibility notes](docs/validation.md) for tested clients and limitations.
 
 ### Claude Code — native marketplace
 
@@ -95,13 +122,9 @@ Learning Loop keeps observations in private project storage and proposes evidenc
 
 ## Updates
 
-Updates are reviewed through one rolling pull request. The maintainer's local automation checks completed research packages daily at **09:00 Europe/Berlin**, imports validated changes, and creates or updates the existing PR. It does not merge automatically. A run without changes creates no PR.
+Updates are reviewed in pull requests. After a merge to `main` passes validation, GitHub Actions publishes any new collection version. See [releases](https://github.com/krema/agent-skills/releases) for changes and [maintenance](docs/maintenance.md) for the publication workflow.
 
-The existing research schedules continue to maintain their local packages. The publication job synchronizes their results; it does not repeat the research. This local schedule is not a GitHub Actions cron job and needs its Codex execution environment to be available. GitHub Actions validates pushes and pull requests.
-
-After a merge to `main` passes validation, GitHub Actions publishes a release for the version in `VERSION`, using its `CHANGELOG.md` entry. Changed distribution content requires a new version. Internal-only merges reuse an existing release after its content and notes are verified; older recovered releases do not replace a newer Latest release. Browse [releases](https://github.com/krema/agent-skills/releases) for notes and source archives.
-
-Once a PR is merged, refresh your installation:
+Refresh your installation after an update:
 
 ```sh
 # Claude Code
@@ -121,34 +144,7 @@ npx skills check
 npx skills update
 ```
 
-`npx skills update` can update other skills managed by that CLI too. See [maintenance](docs/maintenance.md) for the publication workflow and versioning.
-
-## Evidence and validation
-
-The collection was developed from research and practical task requirements. Its evidence files distinguish empirical findings, platform documentation, and engineering judgment. Research informs the guidance; it does not guarantee better results for every model or task.
-
-- **Evidence:** [instructions](skills/agent-instructions/references/evidence.md), [context management](skills/context-management/references/evidence.md), [documentation](skills/technical-documentation/references/evidence.md), [context loading](skills/context-loading/references/evidence.md), [refinement](skills/skill-refinement/references/evidence.md).
-- **Research and learning:** [research method](skills/research-to-skill/references/method-evidence.md), [ticket writing](skills/ticket-craft/references/evidence.md), [learning loop](skills/learning-loop/references/evidence.md), [stateful reasoning](skills/stateful-evidence-reasoning/references/evidence.md).
-- **Checks:** metadata, native manifests, file hashes, local links, synchronization guards, and the included Python tooling tests.
-- **Compatibility:** actual installation checks and their limits are recorded in [validation](docs/validation.md).
-- **Provenance:** [provenance.json](provenance.json) records original and published file hashes, with no private source paths.
-
-Source-package evaluation reports remain with the skills as historical evidence. They are not fresh cross-client benchmarks. The initial skills preserve their operational rules apart from public identifiers and headings. Ticket Craft additionally clarifies review-only behavior and preservation of existing ticket contracts. Historical project details and personal preferences in Technical Documentation’s evidence ledger were generalized. Research to Skill generalizes installation guidance; Learning Loop adapts the original Copilot workflow into a host-independent design. Their `origin.json` files record original fingerprints and adaptation scope.
-
-## Repository layout
-
-```text
-skills/                    One canonical copy of each skill and its resources
-.claude-plugin/            Claude Code plugin and marketplace manifests
-.codex-plugin/             Codex plugin manifest
-.agents/plugins/           Codex marketplace manifest
-.github/plugin/            GitHub Copilot plugin and marketplace manifests
-scripts/                   Synchronization, manifest generation, and validation
-tests/                     Tests for the publication tooling
-docs/                      Maintenance and compatibility notes
-```
-
-The repository is `krema/agent-skills`, the marketplace is `krema`, and the bundled plugin is `skills`. This repository hosts a directly installable marketplace; it does not imply inclusion in any vendor's official directory.
+`npx skills update` can update other skills managed by that CLI too.
 
 ## Security
 
@@ -157,10 +153,3 @@ See the [security policy](SECURITY.md) for private vulnerability reporting and t
 ## License
 
 [MIT](LICENSE) for the original material in this repository. Referenced publications and third-party material retain their respective rights; links and citations do not relicense those sources.
-
-## Platform references
-
-- [Claude Code marketplaces](https://code.claude.com/docs/en/plugin-marketplaces)
-- [Codex plugin packaging](https://developers.openai.com/plugins/build/plugins)
-- [GitHub Copilot plugin installation](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-finding-installing)
-- [The skills CLI](https://github.com/vercel-labs/skills)
