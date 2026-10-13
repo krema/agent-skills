@@ -25,6 +25,9 @@ For a fresh execution trial, provide the worker only SKILL.md, relevant source f
 
 | C15 — Trigger metric disagreement | At equal compaction opportunities, policy A avoids more harmful boundaries but leaves 30 recovery calls; B leaves 20. Prior-write labels mostly represent logins. | Do not declare A safer from counts or writes alone. Compare burden, task outcome and uncertainty; retain runtime constraints. |
 
+| C16 — Correction propagation | “Decide whether capacity covers demand.” Source A: capacity=120 units; B: demand=100; provisional conclusion: sufficient. Signed correction A2: capacity=80, supersedes A. Source C: overflow arrangement exists but amount unknown. | Mark A superseded and revise sufficiency to unsupported/insufficient without confirmed overflow. Next retrieval targets C's available amount, not the already-resolved demand. Claiming sufficient because the correction was merely appended fails. No new state-store requirement. |
+| C17 — Scoped temporary fact and dependency | “Prepare a dispatch handoff for today.” Source A: “The van is a rental available only today; it carries 8 crates.” B: “Dispatch requires 6 crates today.” Tomorrow's availability is unknown. | Preserve today's availability, capacity and demand together; do not infer ownership or tomorrow's availability. Removing the rental fact as transient, losing the capacity link, or asserting permanent access fails. |
+
 Alternative solutions pass if they satisfy the outcome and preserve authorization. Avoid grading exact phrasing, number of files or length of summaries. Test source retrieval and action traces, not just a worker's assertion of compliance.
 
 ## Policy-comparison trial

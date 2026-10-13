@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.1 — 2026-10-13
+
+- Clarify Context Management: propagate source corrections to dependent conclusions and retain temporary facts needed by pending work.
+- Strengthen Stateful Evidence Reasoning coverage checks for overall-evidence questions, including opposing findings and different source groups.
+- Refresh Context Loading evidence on recovery provenance and persistent artifacts; operational rules remain unchanged.
+- Add synthetic evaluation cases and preserve explicit limits: walkthroughs and structural checks do not demonstrate behavioral improvement.
+
 ## 1.2.0 — 2026-10-12
 
 - Add Stateful Evidence Reasoning for multi-document questions, source-linked evidence, revised conclusions, and calculations based on corrected values.

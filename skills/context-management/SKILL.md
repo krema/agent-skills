@@ -28,6 +28,8 @@ Repeated searches, user corrections, and unsupported early stopping are diagnost
 
 For a large corpus, start with relevant files or passages and retain their source locators. Expand when dependencies, contradictory evidence, or corpus-wide coverage require it. Preserve counterevidence that bears on the question even when it complicates the answer. Do not equate low lexical similarity with irrelevance.
 
+For multi-step research with accumulating or corrected evidence, distinguish source-backed observations from your conclusions and keep links between them. Let an unresolved premise or competing explanation guide the next search. When a source is corrected, superseded or withdrawn, reassess dependent conclusions and mark obsolete support inactive; appending the correction alone is insufficient. Before finishing, check whether remaining gaps could change the requested decision. Use ordinary notes or available tools; this does not reproduce LongHarness or require a new store. [E21; engineering inference]
+
 Before dropping history, identify what the next action and remaining obligations depend on. Review proposed omissions for failed attempts, prohibitions, and exact state that a broad plan may overlook. This is a lightweight engineering check, not an implementation of FOCUS or a requirement to simulate future actions. [E15]
 
 For batch tasks, retain the complete item set with stable identifiers and each item’s completion status; “process all remaining items” is not sufficient if the item list disappears. Verify coverage against the original set before declaring completion. [E15]
@@ -46,6 +48,8 @@ When history actually needs to be condensed, construct a working record containi
 - Completed actions and observed results, including pending operations and whether external effects already occurred.
 - Unresolved questions, conflicting evidence, rejected approaches and the reason they failed.
 - Next action, prerequisites, and precise locations of supporting originals.
+
+When extracting facts for a reusable record, check the original statement before stripping context: retain consequential conditions, attribution and temporal scope, and distinguish observation from inference. Do not discard a temporary fact solely for being temporary when a pending action or linked fact depends on it. If a proposed omission breaks a needed evidence chain, retain the dependency or a verified recovery path. The memory-filtering results do not establish that stable facts alone suffice for task continuation. [E22; engineering inference]
 
 Keep task facts and concise decision rationale, not a transcript of private reasoning. Preserve temporal anchors when chronology matters. Do not promote guesses into facts or turn provisional conclusions into settled ones. [E03, E04, E07, E08, E10, E12; record layout is an engineering choice]
 

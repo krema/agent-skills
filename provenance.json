@@ -26,11 +26,11 @@
       "evals/fixtures/refactor/database.md": "f432094dde5565b174b52c8243dbd4a11645c806ea509a92925ccbb3c92b9c33",
       "evals/fixtures/refactor/instructions.md": "07a971b7267e7ab60615b4a1d1f284d4729f03c86d74175cab7721bdc7fd55c5",
       "evals/fixtures/refactor/styles.md": "4699dea9e2bd97cedd14a9c1acd83c9f72b0c425d6833ae5e6bd98033c56dcdf",
-      "evals/validation.md": "a9235826f872c27eec78abd626beaf220ea1efdae6671395b8f2381e425f4430",
-      "origin.json": "70e53a790cca6133ae9b5f60d0db820640cc722f33dae0c93ed952765cc497c3",
-      "references/evidence.md": "e3e88e1c39087b6a2633e34921c5cd0fad657bcb46a3c26cd9e822c34dddb3e4",
+      "evals/validation.md": "af035d280cf696e76b21c5cf816dd8e50d999585d17868936904dee8037e338c",
+      "origin.json": "e948b497fefaf59ad1e14aabef76b2c597554e8f74d925cc696fb261ba03abc8",
+      "references/evidence.md": "b83ed88f04a44050a9fbf89dfd897e3c6d5291636ff1fc0e4f5f7ac613399f69",
       "references/instruction-design.md": "4c8f334f884ebcf738d5bb81ef8a22977e7ff68eb86401755a9312fcce185e12",
-      "references/research-synthesis.md": "39bcf8167a83c0ee2e28beb706cc627be4cb2a87fd6e8f87b37e79eb6b5461f5",
+      "references/research-synthesis.md": "a849ec4731e323a8a215e3f6f35805822118ab98c60570d15822464e5763fa96",
       "references/retrieval-design.md": "eb2336121215adede0bba5d6ebc3947b35b77c98533dc8d8ed2be9353896f790"
     },
     "source_name": "progressive-context-disclosure",
@@ -41,11 +41,11 @@
       "evals/fixtures/refactor/database.md": "f432094dde5565b174b52c8243dbd4a11645c806ea509a92925ccbb3c92b9c33",
       "evals/fixtures/refactor/instructions.md": "07a971b7267e7ab60615b4a1d1f284d4729f03c86d74175cab7721bdc7fd55c5",
       "evals/fixtures/refactor/styles.md": "4699dea9e2bd97cedd14a9c1acd83c9f72b0c425d6833ae5e6bd98033c56dcdf",
-      "evals/validation.md": "a9235826f872c27eec78abd626beaf220ea1efdae6671395b8f2381e425f4430",
-      "origin.json": "c7bff009b7f280f6c6cb09572f6114348bde538121fa355f0890abfdbb9f5630",
-      "references/evidence.md": "e83403a569f7a467c77cf9589cc26f14b1932c0e52183c2cbe432fdc69b4f7fd",
+      "evals/validation.md": "af035d280cf696e76b21c5cf816dd8e50d999585d17868936904dee8037e338c",
+      "origin.json": "c8ecb06b61c4f9e59919eba51bd5aed524e1a22f1915b6c76cba4ab277cdc466",
+      "references/evidence.md": "ff6f869cfd9bd2b030377852fea6355d7ab60588edfb9f5d11094649f9463760",
       "references/instruction-design.md": "4c8f334f884ebcf738d5bb81ef8a22977e7ff68eb86401755a9312fcce185e12",
-      "references/research-synthesis.md": "abde3a782a2533d9424bdfaf9e5cac720b2ad288f8fb0ba1f10456fabe0135e5",
+      "references/research-synthesis.md": "819f94c18b2a1e027304ea4bee487a7c18f695de3aab70bd3f9325062b95a2ff",
       "references/retrieval-design.md": "eb2336121215adede0bba5d6ebc3947b35b77c98533dc8d8ed2be9353896f790"
     },
     "title": "Context Loading",
@@ -53,21 +53,21 @@
   },
   "context-management": {
     "published_sha256": {
-      "RESEARCH.md": "973e1d99e5ae3059cbcf02e21ffb3e56a8624b3e96f98497693d63d75def5b80",
-      "SKILL.md": "2e404b2b61e28bc6fc289eebb0e8d2f246958a4de6dc271b85764d2a29ed631e",
-      "VALIDATION.md": "caa2c24e7139599bd0d634eceb2a389ca712611f64807b7fd487ff5c53963049",
-      "origin.json": "80e18e961f8a3f7b12434abc93c1b610fcd9ad113df3b7825b48ce791c2071f4",
-      "references/evaluation.md": "69f77654237fc87cf568d007b1fdd72bb7ea99aa3339e4c22e0f551a8f56ebff",
-      "references/evidence.md": "a36a2a2ec772b800c6e8ece85ada2f6cd68794a5714961668615644f462ef824"
+      "RESEARCH.md": "b16c795b64af70221a59d5fe2138618a744493683ebe2bb6c0a885682275fe54",
+      "SKILL.md": "97af1d4fd04425178b55a15c124c630e8a07057efc55a2d61dfd00aa3de5534b",
+      "VALIDATION.md": "a7619991863cfdc7d4d13f697b42f0729ddb208fc6a2a32a8f05deaca6b05a93",
+      "origin.json": "9d5fc6f647fd9bee46cb2a704f05d83eafe7bade8e533c4353a8f3f66526d41f",
+      "references/evaluation.md": "a7ce6d25d57064192770537bf76db6a6610192e962e5d3d2f4c2a68b073ffc98",
+      "references/evidence.md": "c07fb27d746e03cbc464bd545e076abad75ee97f5a2224ccc435191ce0ca222e"
     },
     "source_name": "context-rot-management",
     "source_sha256": {
-      "RESEARCH.md": "973e1d99e5ae3059cbcf02e21ffb3e56a8624b3e96f98497693d63d75def5b80",
-      "SKILL.md": "267d7c6c3b9c44515a70ad3661b72d94b9bc3f2c65c708f4cd810ed82fa873c4",
-      "VALIDATION.md": "caa2c24e7139599bd0d634eceb2a389ca712611f64807b7fd487ff5c53963049",
-      "origin.json": "40cc18108985660069d620abef32d4fb2f30727515e43a56c9b83fa64992d577",
-      "references/evaluation.md": "69f77654237fc87cf568d007b1fdd72bb7ea99aa3339e4c22e0f551a8f56ebff",
-      "references/evidence.md": "a36a2a2ec772b800c6e8ece85ada2f6cd68794a5714961668615644f462ef824"
+      "RESEARCH.md": "b16c795b64af70221a59d5fe2138618a744493683ebe2bb6c0a885682275fe54",
+      "SKILL.md": "bc3f00272308ecce4b48a74b86d9a3931a2e987e0b3a42404c651109a93618d9",
+      "VALIDATION.md": "a7619991863cfdc7d4d13f697b42f0729ddb208fc6a2a32a8f05deaca6b05a93",
+      "origin.json": "c49bf31cc3476c1892f9a948174b5c5a7ab26e56779b6fc5adae5c816c24cc07",
+      "references/evaluation.md": "a7ce6d25d57064192770537bf76db6a6610192e962e5d3d2f4c2a68b073ffc98",
+      "references/evidence.md": "c07fb27d746e03cbc464bd545e076abad75ee97f5a2224ccc435191ce0ca222e"
     },
     "title": "Context Management",
     "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
@@ -169,17 +169,17 @@
   },
   "stateful-evidence-reasoning": {
     "published_sha256": {
-      "SKILL.md": "6dbda0954147dd406f5a86209f1c0da4b6048023a5372bfbca6793f54a372caa",
-      "evals/cases.md": "767dc319b0823b757fe704ca1a38504afc116e9d9f595205f4c92fb6e52b1cf4",
-      "references/evidence.md": "4c80a490e01d12feed5ff94b20c56171520ea153c0c50420e0d2bc1f3b37e476",
-      "references/validation.md": "67395e0a669497262a112d16f5100bf0f71e21a4ca5ecdc4514300017210f8ca"
+      "SKILL.md": "308d1eded0ceaee1fa18e7fa03d9528324ebe0919f693f35c18cbcc16692090c",
+      "evals/cases.md": "35ba8d866aa2510f16896d8c4aedd5e345f3faa696fb70ae8269638d59a30a92",
+      "references/evidence.md": "031ebe34b06015ee2951c5cd7a09cb51431ba7c386af60f1f37f9ad14bc5d3f6",
+      "references/validation.md": "5cef3d29b25c47460dd8be2274e5abb2483e8ecdfcfb6d4218492d898a7e98aa"
     },
     "source_name": "stateful-evidence-reasoning",
     "source_sha256": {
-      "SKILL.md": "446cec69f9bfa38bcadf01bf0109df8044d313115bfb2ab89a3f36c696c5a1a8",
-      "evals/cases.md": "767dc319b0823b757fe704ca1a38504afc116e9d9f595205f4c92fb6e52b1cf4",
-      "references/evidence.md": "4c80a490e01d12feed5ff94b20c56171520ea153c0c50420e0d2bc1f3b37e476",
-      "references/validation.md": "67395e0a669497262a112d16f5100bf0f71e21a4ca5ecdc4514300017210f8ca"
+      "SKILL.md": "923c0df96a851d1e5d1e24396e4f8d361b0e29ca1830247f5e583b32dd874e60",
+      "evals/cases.md": "35ba8d866aa2510f16896d8c4aedd5e345f3faa696fb70ae8269638d59a30a92",
+      "references/evidence.md": "031ebe34b06015ee2951c5cd7a09cb51431ba7c386af60f1f37f9ad14bc5d3f6",
+      "references/validation.md": "5cef3d29b25c47460dd8be2274e5abb2483e8ecdfcfb6d4218492d898a7e98aa"
     },
     "title": "Stateful Evidence Reasoning",
     "transformation": "Public identifier replacement and entrypoint heading; no rule changes."

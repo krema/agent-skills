@@ -15,3 +15,11 @@ Package revision: initial `stateful-evidence-reasoning` skill drafted from LongH
 ## Unverified behavior
 
 No fresh agent executed the evaluation requests. Citation fidelity, whether the record remains compact in a real long search, and whether the skill improves answer accuracy or efficiency are behaviorally untested. The paper's benchmark outcomes must not be reported as outcomes of this package.
+
+## 13 October 2026 — Scoped coverage update
+
+Revision: added a conditional coverage check for overall-evidence or corpus-wide conclusions, with E07 and synthetic Case 5. The existing source-revision, computation, and simple-question decisions are retained.
+
+Author walkthrough, with expected outcomes visible: Case 5 activates the new condition, requires checking the other workload reports, and supports a conditional result. Case 1 remains a defined numerical question; Case 3 still permits a direct answer. This review does not establish actual agent execution or effectiveness. No independent behavior trial was run; completeness of source-group discovery and resistance to premature stopping remain untested.
+
+Structural checks: YAML frontmatter parsed successfully; internal resources and portable-path checks passed. The rebuilt ZIP was extracted and its complete four-file inventory and SHA-256 hashes matched the package.
