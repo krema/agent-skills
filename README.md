@@ -2,7 +2,7 @@
 
 A growing collection of reusable skills for **Claude Code, Codex, and GitHub Copilot**.
 
-Install the complete collection as **`skills@krema`**, or choose individual skills with `npx skills`.
+Install skills globally with [`npx skills`](#global-installation-with-npx-skills) to use them across projects, or install the complete collection as the native **`skills@krema`** plugin.
 
 [Browse the skills](#skills) · [Install](#install) · [Updates](#updates) · [Contributing](CONTRIBUTING.md)
 
@@ -54,6 +54,38 @@ Refine existing guidance and learn from corrections and verified outcomes.
 
 Choose **one installation method per agent** to avoid loading duplicate copies. Native plugins install the complete collection; `npx skills` lets you choose individual skills. See [compatibility notes](docs/validation.md) for tested clients and limitations.
 
+### Global installation with `npx skills`
+
+Requires Node.js and npm. Run this command in your terminal from any directory:
+
+```sh
+npx skills add krema/agent-skills --global
+```
+
+Select the skills and coding agents you want when prompted, then confirm the installation. `--global` installs them for your user account so they are available across projects.
+
+Check your global installation:
+
+```sh
+npx skills list --global
+```
+
+Look for the skill names you selected. Start a new agent session if the new skills are not visible in an existing session.
+
+To install **all skills for Codex**, specify the agent and skill selection:
+
+```sh
+npx skills add krema/agent-skills --global --agent codex --skill '*'
+```
+
+To install **one skill for Codex**:
+
+```sh
+npx skills add krema/agent-skills --global --agent codex --skill context-management
+```
+
+Use `claude-code` or `github-copilot` instead of `codex` for another agent. For a project-only installation, run the command from your project root and omit `--global`. See the [skills CLI documentation](https://github.com/vercel-labs/skills#install-a-skill) for more options.
+
 ### Claude Code — native marketplace
 
 Run these commands inside Claude Code:
@@ -90,29 +122,6 @@ copilot plugin install skills@krema
 
 Use `copilot plugin list` to check installation. These commands target **Copilot CLI**; plugin controls in other Copilot clients depend on that client's version and policies.
 
-### Any of the three — `npx skills`
-
-Requires Node.js and npm. Browse before installing:
-
-```sh
-npx skills add krema/agent-skills --list
-```
-
-Install all skills into the current project for the three agents:
-
-```sh
-npx skills add krema/agent-skills --skill '*' \
-  --agent claude-code codex github-copilot
-```
-
-Or install a single skill:
-
-```sh
-npx skills add krema/agent-skills --skill context-management --agent codex
-```
-
-Add `--global` if you want skills available across projects. The CLI handles agent-specific directories; no separate npm package is needed.
-
 ## Use
 
 Ask the agent for the task you want completed, using the examples above as a starting point. Skill descriptions help the host select relevant instructions. Explicit skill selection and invocation syntax depend on the client.
@@ -141,11 +150,10 @@ copilot plugin marketplace update krema
 copilot plugin update skills@krema
 
 # Installations managed by the skills CLI
-npx skills check
-npx skills update
+npx skills update --global
 ```
 
-`npx skills update` can update other skills managed by that CLI too.
+`npx skills update --global` updates all global skills managed by that CLI, including those from other repositories. Omit `--global` to choose an installation scope interactively.
 
 ## Security
 
