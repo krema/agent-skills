@@ -71,3 +71,9 @@ Structural checks passed: restricted two-field metadata and folder/name agreemen
 Evidence-only additions E21–E22 and a neutral source-description edit introduce no operational rule or dependency. Author review checked that their limited findings do not strengthen existing obligations. Earlier execution trials were not rerun; no new behavioral or performance result is claimed.
 
 The 11-file package was checked for metadata, internal-link containment, symlinks, private paths, personal chat/project references, credentials and unfinished markers. Synthetic evaluation inputs remain explicitly identified in the evaluation cases. ZIP CRC, inventory, temporary extraction, extracted links, byte equality and external manifest equality were checked. Research-run status and private logs remain outside the package. The official validator was not rerun; its previously recorded dependency limitation remains.
+
+## Evidence refresh — 2026-10-13
+
+E22 was corrected to v2 and E23 added; the synthesis and evidence mapping were aligned. The entrypoint, operational references and fixtures are unchanged. Author review checked that source conditions and counterevidence remain explicit and no stronger operational obligation is introduced. Historical execution trials were not rerun; no new behavioral result or performance gain is claimed.
+
+Restricted frontmatter, folder/name agreement, all internal Markdown links and containment, UTF-8 readability, symlink absence, unfinished markers and private-path/credential patterns were checked. All files remain Markdown with no runtime dependencies. The rebuilt ZIP passed CRC, exact inventory, temporary extraction, extracted-link checks and byte-hash equality against the package manifest. These are structural/distribution checks, not a security guarantee. The official validator was not rerun; its earlier dependency limitation remains. Installation verification and private run details are recorded outside this package.

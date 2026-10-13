@@ -16,7 +16,7 @@ There are three separate questions: whether irrelevant context can hurt, whether
 
 Chroma's focused-history results use known relevant material, so they approximate a best-case selection step. They motivate relevance filtering but do not measure the cost or error rate of an autonomous selector. Lost in the Middle also demonstrates a failure mode rather than validating a complete routing architecture. [Chroma](https://www.trychroma.com/research/context-rot), [Liu et al.](https://arxiv.org/html/2307.03172v3)
 
-Retrieval can discard necessary evidence. Full-context processing and hybrid routing outperform the tested RAG baseline in Li et al.; the newer Pre-Route work explores deciding from metadata before answering. These results favor testing alternatives rather than hard-coding “always retrieve less.” [Li et al.](https://arxiv.org/html/2407.16833v2), [Chen et al.](https://arxiv.org/html/2605.10235v1)
+Retrieval can discard necessary evidence. Full-context processing and hybrid routing outperform the tested RAG baseline in Li et al.; the newer Pre-Route work explores deciding from metadata before answering. These results favor testing alternatives rather than hard-coding “always retrieve less.” [Li et al.](https://arxiv.org/html/2407.16833v2), [Chen et al.](https://arxiv.org/html/2605.10235v2)
 
 Instruction bloat is not merely a word-count problem. Redundancy, conflicting scope, and unnecessary activities can matter. The latest AGENTS.md study does not establish that shorter files causally improve success. Its results also differ from the efficiency-focused study linked by Thoughtworks because their tasks and endpoints differ. Retain useful constraints and compare outcomes. [Gloaguen et al., v3](https://arxiv.org/html/2602.11988v3), [Lulla et al.](https://arxiv.org/html/2601.20404v1)
 
@@ -68,3 +68,7 @@ No universal token cap, hierarchy depth, confidence threshold or top-k is establ
 ## October 9 evidence refresh
 
 E18 qualifies filter evaluation; E19 reinforces the distinction between discovery and successful use; E20 adds a model-native alternative with separate efficiency and quality experiments. These bounded results support targeted evaluation rather than additional universal loading rules.
+
+## October 13 evidence refresh
+
+E22 now reflects v2, including recovery-provenance limits. E23 adds support for the existing trust boundary across sessions. Neither establishes a new universal loading rule; see the ledger for methods and counterevidence.

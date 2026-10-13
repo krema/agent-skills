@@ -1,15 +1,16 @@
 # Evidence: stateful source-grounded reasoning
 
-Reviewed 12 October 2026. Intended use: a general Codex-style agent answering multi-document and large-corpus questions with ordinary search, read, notes, and computation tools. Target outcome: fewer missed corrections, unsupported claims, and unnecessary follow-up searches. This is a targeted review of the user-supplied paper and decision-relevant primary sources, not a systematic review. No independent replication or test of this *skill* was located or performed.
+Initial review 12 October 2026; targeted refresh 13 October 2026. Intended use: a general Codex-style agent answering multi-document and large-corpus questions with ordinary search, read, notes, and computation tools. Target outcome: fewer missed corrections, unsupported claims, and unnecessary follow-up searches. This is a targeted review of the user-supplied paper and decision-relevant primary sources, not a systematic review. No independent replication or test of this *skill* was located or performed.
 
 ## Research coverage
 
-| Decision | Search/inspection scope on 12 October 2026 | Result |
+| Decision | Search/inspection scope (12–13 October 2026) | Result |
 |---|---|---|
 | Whether separate evidence and conclusion states help | LongHarness v1 method, Tables 1–3 and 9, Appendices B–E; search for official implementation | The authors report gains and ablation losses in their harness. A targeted search did not locate an official LongHarness code release. Transfer to a text skill is untested. |
 | Whether source links and revisions are sufficient | LongHarness state contract and controller limits; OfficeQA Pro failure analysis | Source-reference validation does not ensure faithful extraction, correct operands, or correct parsing. |
 | When a simpler path may work | ReContext methods/results/limitations; LedgerMind dispatcher and limitations; Lost in the Middle abstract | Other methods improve evidence use without the same persistent state. Extra reasoning can hurt simple tasks in another setting. |
 | Benchmark transfer | OfficeQA Pro source paper and repository; LongHarness setup | The principal corpus is historical Treasury documents with numerical answers and revisable tables; direct-model and harness interfaces differ. |
+| Selection bias and search coverage | 13 October: primary Search Shapes Conclusions v1 methods, results, and public-agent adapter; overlap searches from 11 October | E07 supports a scoped coverage safeguard as engineering inference. |
 
 ## E01 — Coupled evidence and conclusion state helped in the reported harness
 
@@ -77,6 +78,15 @@ Reviewed 12 October 2026. Intended use: a general Codex-style agent answering mu
 - Counterevidence/alternatives: E04 uses evidence replay; more capable models may differ.
 - Skill implication: Do not assume merely placing all documents in context ensures they will be used; inspect and surface decisive passages.
 
+## E07 — Source support and search coverage are different checks
+
+- Source: Xiao et al., [Search Shapes Conclusions](https://arxiv.org/html/2609.39026v1), Sections 2–4 and Appendices A, D.
+- Version: v1, 30 September 2026; newly inspected 13 October 2026.
+- Design: Author experiments on 200 MS2 questions with Qwen2.5-32B and OLMo3-7B, plus 36 PERSPECTRUM tasks using a modified public agent.
+- Finding: Read-document estimates depend on search selection; their correction uses logged acquisition probabilities and a defined candidate pool.
+- Limits: Pool-average evidence scores are not scientific truth; the controlled search adapter differs from unrestricted web search. No independent replication inspected.
+- Implication: The coverage check is an engineering adaptation, not an implementation of CESS or a demonstrated remedy.
+
 ## Evidence to behavior
 
 | Condition and action | Basis | Applicability and inference | Counterweight / fallback | Check |
@@ -86,6 +96,7 @@ Reviewed 12 October 2026. Intended use: a general Codex-style agent answering mu
 | New source contradicts old value → supersede/retract and recompute dependencies | E01–E03 | Matches paper lifecycle and benchmark revision hazards | Preserve genuine period/definition conflicts rather than assuming later is correct | Final operands cite active entries; old values absent from final computation |
 | Remaining gap could change answer → search for that gap; stop when it cannot materially change decision within constraints | E01 | Paper ablation supports conclusion-guided search in its harness; transfer is inferred | Budget/access limits lead to qualified answer | Search has a stated purpose; unresolved material gaps are reported |
 | Numerical or parsed evidence → verify units, source value, and formula | E02–E03 | Engineering inference from known validation and parsing failures | If original unavailable, state extraction uncertainty | Formula can be recomputed from cited active operands |
+| Overall-evidence question → inspect opposing findings and relevant source groups | E07 | Engineering inference; source fidelity does not establish coverage | Qualify incomplete coverage; no statistical guarantee | Case 5 author walkthrough; behavior untested |
 
 ## Open questions and refresh triggers
 

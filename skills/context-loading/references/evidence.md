@@ -6,6 +6,8 @@ Targeted refresh: **2026-10-08**. E07 updated to v2; E15–E17 added. The Octobe
 
 Targeted refresh: **2026-10-09**. E18–E20 added from overlapping discovery and a previously pending source. Publication dates remain distinct from access dates; no cited experiment was reproduced.
 
+Targeted refresh: **2026-10-13**. E22 corrected to an older, previously missed v2; E23 adds evidence on persistent artifacts. Existing operational rules remain unchanged.
+
 ## Search coverage and stopping rationale
 
 | Decision | Actual query/source families | Result |
@@ -151,9 +153,15 @@ Type: provisional preprint using paired skill configurations on SkillsBench and 
 
 ## E22 — Long-context failure is task and scaffold dependent
 
-Source: [How Agent Skills Fail under Long Contexts](https://arxiv.org/html/2607.17937v1), July 20, 2026, v1; accessed October 10. Inspected workspace construction, checker design, boundary probes and validity discussion.
+Source: Yue Xue, [When and How Context Rot Appears in Coding Agents](https://arxiv.org/html/2607.17937v2), v2 August 1, 2026; accessed October 13. This corrects the previously retained v1 record; the revision predates this refresh. Inspected execution configuration, results, delegated-worker probes and validity discussion.
 
-Type: bounded preprint case study with 24 artifact checks and ten valid runs per principal condition. Concrete checklists help the main case, but other task/model probes do not consistently degrade. Character-matched contexts differ beyond length; pilot-driven sample extension, infrastructure exclusions and sparse replications limit inference. Implication: existing workload-specific evaluation and requirement-preservation guidance stand. No universal context threshold or mandatory checklist follows.
+Type: bounded exploratory preprint; 24 artifact checks, ten valid runs per main condition. Task/model results vary; pilot-driven sample expansion and imbalanced infrastructure exclusions limit inference. A delegated-worker probe produced an exact artifact after prohibited recovery following compaction. This is a mechanism observation, not a failure-rate or threshold estimate; simpler controls did not fail and the full-contract refresh arm never reached its intervention. Implication: existing source-boundary and trace-aware validation guidance remains appropriate. Do not infer that a correct artifact proves compliant recovery, or prescribe a universal context threshold/checklist.
+
+## E23 — Persistent artifacts do not make selected content trustworthy
+
+Source: Liao et al., [Cross-Session Attacks via Persistent Artifacts](https://arxiv.org/html/2610.13227v1), v1 October 9, 2026; accessed October 13. Inspected threat model, benchmark/harness, ablations, cost table and limitations.
+
+Type: provisional empirical paper; 270 constructed adversarial cases, seven model configurations across three scaffolds, with model-based judges. Both upstream and downstream skills are attacker-controlled. Provenance-only context restoration provides limited protection; combined operation review helps but leaves residual attacks. Its runtime share is substantial despite a small token share. Repeated-run evidence is limited and component ablation uses one configuration. These results do not establish production prevalence or a reliable prompt-only defense. Implication: supports existing authority boundaries and total-cost evaluation, including artifact reuse after a session reset. E18 remains a counterweight against indiscriminate rejection of permitted evidence. No mandatory reviewer, hook or new operational rule follows.
 
 ## Evidence to behavior
 
@@ -168,8 +176,8 @@ The following rules are synthesis unless marked interface requirement. Tests ref
 | Empty or incomplete retrieval → diagnose, broaden, or full-source fallback | E06/E08; inference | Absence of results is not evidence of absence | B/D, failure-state reporting |
 | Global/exhaustive question → coverage plan rather than top-k completeness claim | E06; inference | Full context itself has E02/E04 limits | B, enumerate known source set |
 | Deferred tool selected → load schema before invocation | E11 interface pattern | Host protocol differs | B, trace/schema correctness |
-| External content selected → keep authority and access boundaries | E14/E18 plus host requirements | Additional gates can also exclude permitted evidence | B/I, exposure and evidence-preservation checks |
-| Long task/compaction → retain source handles and completed actions | E03/E13; inference | Re-reading may be necessary after change | E, no duplicated side effect |
+| External content selected → keep authority and access boundaries | E14/E18/E23 plus host requirements | Additional gates can also exclude permitted evidence | B/I, exposure and evidence-preservation checks |
+| Long task/compaction → retain source handles and completed actions | E03/E13/E22; inference | Re-reading may be necessary after change | E, no duplicated side effect |
 | Efficiency claim → matched quality and total-cost evaluation | E02/E06/E09/E10/E12/E13/E21; synthesis | Tokens alone confound results | Comparative protocol |
 | Multilingual free-text misses → inspect generated arguments and test supported normalization/fallback | E15; conditional inference | Exact identifiers and ambiguous matches require preservation checks | F, authored diagnostic review; runtime untested |
 | Claude deferred tools → retain complete API registration | E17; interface requirement | Other hosts may differ | G, contract review; live API untested |

@@ -3,7 +3,8 @@
   "adapted_on": "2026-10-09",
   "changes": [
     "Generalized historical conversation and originating-user references; operational rules and evaluation outcomes unchanged.",
-    "2026-10-10: Reconciled the completed upstream refresh against the original fingerprinted baseline and curated changes; retained privacy generalization and validation limits."
+    "2026-10-10: Reconciled the completed upstream refresh against the original fingerprinted baseline and curated changes; retained privacy generalization and validation limits.",
+    "2026-10-13: Reconciled completed upstream changes using fingerprint-matched prior files; preserved curated privacy edits and validation limits."
   ],
   "source_sha256": {
     "RESEARCH.md": "c85cf4a2a59ce92e9a879701b72b210a4b88c5aaea2b7c22b4a7dedd9d7b1ce6",
@@ -13,11 +14,11 @@
     "references/evidence.md": "04834c56f7077ce69b080794580a333b6dcaaaff711f65bb7157fde5cf22a7bf"
   },
   "reconciled_source_sha256": {
-    "VALIDATION.md": "caa2c24e7139599bd0d634eceb2a389ca712611f64807b7fd487ff5c53963049",
-    "RESEARCH.md": "973e1d99e5ae3059cbcf02e21ffb3e56a8624b3e96f98497693d63d75def5b80",
-    "SKILL.md": "267d7c6c3b9c44515a70ad3661b72d94b9bc3f2c65c708f4cd810ed82fa873c4",
-    "references/evidence.md": "a36a2a2ec772b800c6e8ece85ada2f6cd68794a5714961668615644f462ef824",
-    "references/evaluation.md": "69f77654237fc87cf568d007b1fdd72bb7ea99aa3339e4c22e0f551a8f56ebff"
+    "VALIDATION.md": "a7619991863cfdc7d4d13f697b42f0729ddb208fc6a2a32a8f05deaca6b05a93",
+    "RESEARCH.md": "b16c795b64af70221a59d5fe2138618a744493683ebe2bb6c0a885682275fe54",
+    "SKILL.md": "bc3f00272308ecce4b48a74b86d9a3931a2e987e0b3a42404c651109a93618d9",
+    "references/evidence.md": "c07fb27d746e03cbc464bd545e076abad75ee97f5a2224ccc435191ce0ca222e",
+    "references/evaluation.md": "a7ce6d25d57064192770537bf76db6a6610192e962e5d3d2f4c2a68b073ffc98"
   },
-  "reconciled_on": "2026-10-10"
+  "reconciled_on": "2026-10-13"
 }

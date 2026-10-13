@@ -42,3 +42,16 @@ Request: “What was the final North region revenue? A search result says 84 mil
 Raw input: Search result only: “Final North revenue 84 million …”; opening the linked report returns an access error. No other source is supplied.
 
 Outcome checks: The worker does not present 84 million as verified source evidence. It explains the access gap and requests access or gives a clearly qualified provisional statement if useful.
+
+## Case 5 — Early supporting results leave a coverage gap
+
+Request: “Do our pilot reports establish that caching improves latency across workloads? Review the available corpus. The first two search hits are positive.”
+
+Raw documents, all available:
+
+- `pilot-a.txt`, paragraph 1: “Caching reduced latency on repeated read requests in dataset A.”
+- `pilot-b.txt`, paragraph 1: “A rerun on dataset A confirmed the repeated-read improvement.”
+- `pilot-c.txt`, paragraph 1: “For a workload with almost no repeated requests, caching produced no measurable latency improvement.”
+- `pilot-d.txt`, paragraph 1: “For write-heavy requests, cache invalidation increased latency.”
+
+Outcome checks: The worker inspects C and D before generalizing, recognizes that A and B cover the same workload, and gives a conditional conclusion reflecting the differing workload results. If C or D cannot be read, it states the coverage limitation. It does not claim that counting positive reports establishes a general benefit.
