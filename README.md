@@ -19,6 +19,7 @@ Set up repository guidance, load relevant information, and preserve decisions ac
 | Skill | Use it when… | Example request |
 | --- | --- | --- |
 | [Agent Instructions](skills/agent-instructions/SKILL.md) | Repository instructions are stale, contradictory, or hard to follow. | “Audit our AGENTS.md and CLAUDE.md. Fix conflicts while preserving project requirements.” |
+| [Agent Instruction Reliability](skills/agent-instruction-reliability/SKILL.md) | A coding agent skipped, misread, or could not execute a user, project, or skill instruction. | “Find why the agent skipped this review step and check the proposed repair against its action trace.” |
 | [Context Loading](skills/context-loading/SKILL.md) | An agent needs the right information at the right time. | “Restructure these instructions so task-specific details load when needed.” |
 | [Context Management](skills/context-management/SKILL.md) | A long task loses constraints, repeats work, or needs a reliable handoff. | “Prepare a handoff that preserves decisions, unfinished work, and source references.” |
 

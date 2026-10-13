@@ -1,4 +1,25 @@
 {
+  "agent-instruction-reliability": {
+    "published_sha256": {
+      "SKILL.md": "04956d2deeee8ffebc4e809b4ee214d33e0facd612724821fbc1d5901e584a17",
+      "evals/cases.md": "ecc854cd2a2a5710dc01d0e007e749be23efd96a68329d20cc338efeff69e3ac",
+      "evals/validation.md": "0c3a25b63fd4be678419097d8e5d4e78f9138d28d1dc0dad916882446a46b7b2",
+      "references/cross-framework.md": "26ad11725cadd958dde2205427bfeec2777a4fdca0d927d86d4869385327e415",
+      "references/evidence.md": "0d9796ba1cefd66b76de1cff0770dc028e0587c1d40dccb4886ad11d317c271c",
+      "references/issue-index.md": "e88585c20a126b0764ff5b36e6b7eb0137d07ce0e30c15e327e2278c8e7de421"
+    },
+    "source_name": "agent-instruction-reliability",
+    "source_sha256": {
+      "SKILL.md": "2be0903ea682f5e272263bdc07a555f4c418bdc928fd37a1955f26bb1c0fe9db",
+      "evals/cases.md": "ecc854cd2a2a5710dc01d0e007e749be23efd96a68329d20cc338efeff69e3ac",
+      "evals/validation.md": "0c3a25b63fd4be678419097d8e5d4e78f9138d28d1dc0dad916882446a46b7b2",
+      "references/cross-framework.md": "26ad11725cadd958dde2205427bfeec2777a4fdca0d927d86d4869385327e415",
+      "references/evidence.md": "0d9796ba1cefd66b76de1cff0770dc028e0587c1d40dccb4886ad11d317c271c",
+      "references/issue-index.md": "e88585c20a126b0764ff5b36e6b7eb0137d07ce0e30c15e327e2278c8e7de421"
+    },
+    "title": "Agent Instruction Reliability",
+    "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
+  },
   "agent-instructions": {
     "published_sha256": {
       "SKILL.md": "892755da91709e69f0e38a0ce22d8c44056f616dc7594f5a12a71744be2366e8",
