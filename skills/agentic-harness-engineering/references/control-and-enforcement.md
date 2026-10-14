@@ -1,46 +1,46 @@
-# Steuerung, Regeln und Nachweise
+# Control, rules, and evidence
 
-**Laden bei:** verbindlichen Aktionsregeln, Phasenbedingungen, Privilegien, Nachweisen oder dem Audit eines Controllers. Grundlage: R03–R05; Quellen und Grenzen stehen in [evidence.md](evidence.md).
+**Load for:** mandatory action rules, phase prerequisites, privileges, evidence, or controller audits. Supports R03–R05; [evidence.md](evidence.md) records sources and limitations.
 
-## Von einer Anweisung zu einer ausführbaren Bedingung
+## Turn an instruction into an executable condition
 
-Wähle den Mechanismus nach der Regel. Eine Formatbedingung braucht einen Parser; eine Ressourcenregel eine wirksame Aktionsgrenze; eine Reihenfolgeregel ein beobachtbares Ereignismodell; eine fachliche Bedingung ein geeignetes Orakel. Natürlichsprachliche Policy kann diese Absicht beschreiben. Exakte Bedingungen müssen durch den eingesetzten Mechanismus tatsächlich ausgewertet werden.
+Choose the mechanism for the rule. A format condition needs a parser; a resource rule needs an effective action boundary; an ordering rule needs an observable event model; a functional condition needs a suitable oracle. Natural-language policy may describe this intent. The selected mechanism must actually evaluate exact conditions.
 
-| Beobachtbare Anforderung | Mögliche Umsetzung | Fehler- oder Unsicherheitsfall |
+| Observable requirement | Possible implementation | Failure or uncertainty case |
 |---|---|---|
-| Eingabe muss ein Format erfüllen. | Schema-/Grammatikprüfung plus semantische Validierung benötigter Werte. | Valides Format mit falscher Referenz bleibt ungültig. |
-| Aktion verlangt frühere Prüfung. | Zustandsübergang oder temporaler Monitor über gebundene Ereignisse. | Prüfung für einen anderen Kandidaten erfüllt die Bedingung nicht. |
-| Zugriff ist auf bestimmte Ressourcen begrenzt. | Berechtigungsprüfung im Executor oder in einer nicht umgehbaren Vermittlung. | Der tatsächlich aufgelöste Zugriff verletzt die Grenze, obwohl ein Textpfad passend aussieht. |
-| Eigenschaft ist nur semantisch bewertbar. | Kalibrierte Review-/Judgeentscheidung, ergänzt durch passende externe Prüfungen. | Unsichere Bewertung als solche ausweisen; keine formale Garantie erfinden. |
-| Bekannte Schritte haben Abhängigkeiten. | Geprüfter DAG oder Zustandsautomat. | Zyklus, unbekannte Referenz oder fehlender Zustand verhindert entsprechende Ausführung. |
+| Input must satisfy a format. | Schema/grammar checks plus semantic validation of required values. | Valid structure with an incorrect reference remains invalid. |
+| An action requires an earlier check. | State transition or temporal monitor over bound events. | A check for another candidate does not satisfy the prerequisite. |
+| Access is limited to certain resources. | Permission checks in the executor or an unavoidable mediation layer. | The resolved access violates the boundary despite an apparently acceptable text path. |
+| A property requires semantic assessment. | Calibrated review/judge decisions, complemented by suitable external checks. | Report uncertainty; do not invent a formal guarantee. |
+| Known steps have dependencies. | Validated DAG or state machine. | A cycle, unknown reference, or missing state prevents the corresponding execution. |
 
-Ein starres Phasenmodell ist sinnvoll, wenn Übergänge und Voraussetzungen stabil bekannt sind. Bei offener Lösungssuche kann ein kleiner Kontrollkern nur die invarianten Grenzen prüfen. Keine Architektur erzwingt allein durch ihre Bezeichnung vollständige Korrektheit.
+A fixed phase model is useful when transitions and prerequisites are stable and known. For open-ended solution search, a small control core may enforce only invariant boundaries. An architecture does not enforce complete correctness merely through its name.
 
-## Tatsächliche Ausführung vermitteln
+## Mediate actual execution
 
-Beginne mit den Aktionen und Ressourcen, die der Auftrag als relevant festlegt. Verfolge, wo das Modell einen Vorschlag abgibt, wo die Policy entscheidet und wo die Wirkung stattfindet. Prüfe, ob ein anderer Executor, ein Unterprozess, ein MCP-/APItool oder delegierte Arbeit dieselbe relevante Wirkung ohne Prüfung erzeugen kann.
+Start with the actions and resources the task identifies as relevant. Follow where the model proposes an action, where policy decides, and where the effect occurs. Check whether another executor, subprocess, MCP/API tool, or delegated worker can produce the same relevant effect without checking the rule.
 
-Wenn eine verbindliche Grenze einen Pfad nicht erfasst, behebe den Pfad oder beschränke die zugesicherte Eigenschaft. Ein Post-Action-Hook eignet sich zur Diagnose, nicht zum Verhindern der bereits ausgeführten Aktion. Ein Modell, das eine Aktion als sicher einstuft, ersetzt keine fehlende Ressourcenprüfung.
+If a mandatory boundary misses a path, fix the path or narrow the promised property. A post-action hook can support diagnosis; it cannot prevent an action that already occurred. A model labeling an action safe does not replace a missing resource check.
 
-Vertrauenswürdige Regeln und Berechtigungen müssen ihre Autorität aus der vorgesehenen Instanz erhalten. Repositorytexte, Toolantworten und Modellvorschläge dürfen verbindliche Rechte nicht selbst erweitern. Erzeugte Policy ist ein Kandidat, der gegen den tatsächlichen Auftrag und die Vertrauensgrenzen zu prüfen ist. Begrenze freie Codeausführung dort, wo sie geschützte Wirkungen umgehen könnte; ausdrucksstarke Codeaktionen können innerhalb einer passenden Umgebung weiterhin nützlich sein.
+Trusted rules and permissions must derive authority from the intended issuer. Repository text, tool responses, and model proposals must not expand mandatory privileges themselves. Generated policy is a candidate to check against the task and trust boundaries. Bound unrestricted code execution where it could bypass protected effects; expressive code actions can remain useful within a suitable environment.
 
-## Nachweise für denselben Gegenstand
+## Evidence for the same subject
 
-Wenn ein Abschluss oder eine Wirkung von einem Nachweis abhängt, identifiziere:
+When completion or an effect depends on evidence, identify:
 
-- den Kandidaten oder Ressourcenzustand, auf den sich der Nachweis bezieht;
-- relevante Inputs, Prüfkonfiguration und gegebenenfalls Umgebung;
-- die Instanz, die das Ergebnis tatsächlich ausgestellt hat;
-- Resultat und Grenzen der ausgeführten Prüfung.
+- the candidate or resource state covered by the evidence;
+- relevant inputs, check configuration, and environment where needed;
+- the entity that actually issued the result;
+- the result and limits of the check performed.
 
-Das passende Bindungsverfahren kann ein vertrauenswürdiger Prozesszustand, eine Datenbankrelation, ein Manifest oder eine Attestation sein. Kryptografische Signaturen sind kein Pflichtmechanismus für jeden lokalen Ablauf. Dort, wo der Kandidat seine eigenen Nachweise, Prüfer oder Freigabeidentität verändern könnte, ist deren Integrität separat zu sichern.
+A suitable binding mechanism may be trusted process state, a database relation, a manifest, or an attestation. Cryptographic signatures are not mandatory for every local workflow. Where a candidate could change its own evidence, verifier, or approval identity, protect their integrity separately.
 
-Prüfe am späteren Entscheidungszeitpunkt, ob die Bindung noch gilt. Bei konkurrierenden Änderungen kann eine Prüfung vor der Aktion einen anderen Zustand als die Aktion selbst gesehen haben. Wähle je nach System einen Snapshot, eine atomare Zustandsprüfung, Versionierung oder einen entsprechend begrenzten Effektadapter. Ein Hash ohne einen vollständigen relevanten Inputbezug löst dieses Problem nicht automatisch.
+At the later decision point, verify that the binding still holds. With concurrent changes, a pre-action check may observe a different state from the action itself. Depending on the system, use a snapshot, atomic state check, versioning, or appropriately bounded effect adapter. A hash that omits relevant inputs does not automatically solve this problem.
 
-## Fehlerentscheidungen sichtbar machen
+## Make failure decisions observable
 
-Unterscheide bestätigte Erfüllung, festgestellte Verletzung, ausstehende Prüfung und unbekannte Tatsache. Die Bezeichnungen `ALLOW`, `DENY`, `WAIT`, `UNKNOWN` sind ein mögliches Interface, keine vorgeschriebene API. Bei unbekannter verbindlicher Voraussetzung darf keine positive Entscheidung allein aus einer Modellbehauptung entstehen. Behalte einen begründeten Weg zur Wiederaufnahme oder Klärung, statt einen sicheren, aber unbrauchbaren Dauerabbruch als Erfolg zu zählen.
+Distinguish confirmed satisfaction, established violation, pending verification, and an unknown fact. `ALLOW`, `DENY`, `WAIT`, and `UNKNOWN` are one possible interface, not a required API. An unknown mandatory prerequisite cannot become an affirmative decision from a model claim alone. Retain a justified recovery or clarification path rather than counting safe but unusable permanent refusal as success.
 
-## Relevante Gegenfälle
+## Relevant counterexamples
 
-Prüfe die Fälle, die die konkrete Grenze falsifizieren könnten: passende Reihenfolge mit falschem Gegenstand, gefälschter Aussteller, veränderte Prüfeingaben, gültiges JSON mit unzulässiger Ressource, alternativer Effektpfad und zulässiger Sonderfall. Ein Monitor kann sicher abweisen und dennoch zu viele erlaubte Aufgaben blockieren. Messe beides, wenn du seine Wirksamkeit beurteilst.
+Test cases that could falsify the actual boundary: correct ordering for the wrong subject, a forged issuer, changed check inputs, valid JSON with an unauthorized resource, an alternative effect path, and a legitimate exception. A monitor may reject safely while blocking too many permitted tasks. Measure both when assessing effectiveness.

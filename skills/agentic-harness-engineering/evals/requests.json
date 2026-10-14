@@ -1,42 +1,48 @@
 {
   "version": 1,
-  "purpose": "Generische Skill-Evaluationsanfragen; erwartete Ergebnisse stehen separat in criteria.json.",
+  "purpose": "General skill evaluation requests; expected outcomes are stored separately in criteria.json.",
   "cases": [
     {
       "id": "C01",
-      "request": "Entwirf einen kleinen Harness für einen Agenten, der lokale TypeScript-Buildfehler repariert. Der Auftrag und Workspace sind autorisiert, Netzwerk und Veröffentlichung werden nicht benötigt. Build und Tests sind vorhanden. Liefere einen konkreten Ablauf und passende Fehlerentscheidungen; kein Plattformneubau.",
+      "request": "Design a small harness for an agent repairing local TypeScript build failures. The task and workspace are authorized; networking and publication are not needed. Builds and tests are available. Provide a concrete flow and appropriate failure decisions, without rebuilding a platform.",
       "inputs": [],
-      "scope": "Nur Entwurf; keine Implementierung oder externe Aktionen."
+      "scope": "Design only; no implementation or external actions."
     },
     {
       "id": "C02",
-      "request": "Auditiere den synthetischen Controller gegen seinen Vertrag. Du darfst ihn lokal ausführen. Liefere belegte Befunde, einen angemessenen Verbesserungsweg und relevante Prüffälle; ändere den Controller nicht.",
-      "inputs": ["fixtures/controller.py", "fixtures/contract.md", "fixtures/scenarios.json"],
-      "scope": "Audit und rein lokale, speicherinterne Ausführung."
+      "request": "Audit the synthetic controller against its contract. You may execute it locally. Provide evidence-backed findings, an appropriate improvement path, and relevant test cases; do not change the controller.",
+      "inputs": [
+        "fixtures/controller.py",
+        "fixtures/contract.md",
+        "fixtures/scenarios.json"
+      ],
+      "scope": "Audit and purely local in-memory execution."
     },
     {
       "id": "C03",
-      "request": "Wir verwenden Temperatur 0, JSONschema und drei Reviewer mit demselben Modell. Können wir damit 100% Accuracy und einen deterministischen Entwicklungs-Lifecycle zusagen? Erläutere eine belastbare Aussage und schlage passende Nachweise vor.",
+      "request": "We use temperature zero, JSON Schema, and three reviewers using the same model. Can we promise 100% accuracy and a deterministic development lifecycle? Explain a defensible claim and propose suitable evidence.",
       "inputs": [],
-      "scope": "Beratung zu Garantien und Verifikation."
+      "scope": "Advice on guarantees and verification."
     },
     {
       "id": "C04",
-      "request": "Ein Optimierer hat auf 20 Aufgaben nach 40 Varianten die beste Harnessversion gefunden. Diese löst 17 statt 14 derselben Aufgaben. Es gibt keinen separaten Testsatz und keine Wiederholungen. Formuliere die zulässige Erfolgsaussage und einen angemessenen nächsten Evaluationsschritt.",
+      "request": "An optimizer selected the best harness after 40 variants on 20 tasks. It solves 17 instead of 14 of those same tasks. There is no separate test set and no repetition. State the justified success claim and an appropriate next evaluation step.",
       "inputs": [],
-      "scope": "Bewertung eines gegebenen Evaluationsprotokolls."
+      "scope": "Assessment of a supplied evaluation protocol."
     },
     {
       "id": "C05",
-      "request": "Beurteile die Wiederaufnahme anhand des Operationsprotokolls. Entwirf die Recoveryentscheidung für jeden Eintrag. Ein Livekonto oder die Erlaubnis für neue Remoteaufrufe ist nicht Teil des Auftrags.",
-      "inputs": ["fixtures/operations.json"],
-      "scope": "Recoveryentwurf anhand statischer Daten; keine Remoteaktionen."
+      "request": "Assess resumption using the operation log. Design the recovery decision for each entry. A live account or permission for new remote calls is not part of the task.",
+      "inputs": [
+        "fixtures/operations.json"
+      ],
+      "scope": "Recovery design using static data; no remote actions."
     },
     {
       "id": "C06",
-      "request": "Unser Agent vergisst nach Kontextverdichtung gelegentlich offene Testfehler. Wir möchten nur dieses Problem beheben. Ein Team schlägt dazu fünf neue Agenten, 200 Seiten Repositoryanweisungen und einen kompletten Frameworkwechsel vor. Empfiehl eine begründete Änderung samt Prüfung; keine Änderungen ausführen.",
+      "request": "Our agent occasionally forgets open test failures after context compaction. We want to fix only that problem. A team proposes five new agents, 200 pages of repository instructions, and a complete framework replacement. Recommend a justified change and its verification; do not implement changes.",
       "inputs": [],
-      "scope": "Begrenzte Beratung zu Kontinuität; keine Implementierung."
+      "scope": "Bounded continuity advice; no implementation."
     }
   ]
 }

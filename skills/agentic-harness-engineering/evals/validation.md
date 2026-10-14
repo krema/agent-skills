@@ -1,23 +1,24 @@
-# Validierung dieser Skillfassung
+# Validation of this skill edition
 
-**Erstellt und geprüft: 14.10.2026.** Das Paket ist **strukturell validiert; die Befolgung durch einen unabhängigen Agenten ist noch ungetestet**.
+**Created, translated, and checked: 2026-10-14.** The package is **structurally validated; independent agent followability remains untested**.
 
-Die Erstellung folgt Recherche- und Skillauthoringvorgaben. Gemeinsame Entscheidungen stehen im Einstieg, umfangreichere Mechanismen in bedingt ladbaren Referenzen. Das Paket setzt keine bestimmte Plattform, Repositorystruktur, Freigabefolge oder externe Companion-Skills voraus. Es enthält keine Installationsaktion und keine zusätzlichen Ausführungsrechte.
+Creation follows research and skill-authoring guidance. Shared decisions reside in the entrypoint; detailed mechanisms are conditionally loaded references. The package assumes no particular platform, repository layout, approval sequence, or external companion skill. It includes no installation action or additional execution rights.
 
-## Tatsächlich geprüft
+## Checks actually performed
 
-- Der vorhandene Skillvalidator prüft Frontmatter, Namen und Scaffoldfelder.
-- Ergänzende Strukturprüfungen prüfen portable lokale Verweise, Ressourcen, Quellen-/Regel-IDs, vollständige Fallrubriken, Metadaten und Abwesenheit privater Maschinenpfade oder Runtimeabhängigkeiten außerhalb des Pakets.
-- Sechs allgemeine Requests und Ergebnisrubriken wurden vor dem Autorenreview erstellt. Die Kriterien liegen in einer eigenen Datei und sollen nicht in den Kontext eines frischen Testworkers geladen werden.
-- Die synthetische Auditfixture wurde mit Python ausgeführt. Ein positiver und ein negativer Normalfall sowie drei problematische Effektpfade wurden beobachtet. Alle Effekte bleiben im Arbeitsspeicher.
-- Der [Autorenreview](author-review.md) dokumentiert Entscheidungen und Grenzen für die sechs Fälle.
+- The existing skill validator checks frontmatter, naming, and scaffold fields.
+- Additional structural checks cover portable local links, resources, source/rule IDs, complete case rubrics, metadata, and absence of private machine paths or runtime dependencies outside the package.
+- Six general requests and outcome rubrics were written before the author review. Criteria reside in a separate file and should remain outside a fresh test worker's context.
+- The synthetic audit fixture was executed with Python. A positive and negative normal case and three problematic effect paths were observed. All effects remain in memory.
+- The [author review](author-review.md) documents decisions and limitations for the six cases.
+- For the English edition, the author compared the nine rules, applicability conditions, exceptions, evidence qualifications, and case outcomes with the prior edition. Source IDs, URLs, inspection depths, and executable fixture logic were preserved; the fixture observations were checked again.
 
-Die tatsächlichen mechanischen Ergebnisse stehen in [structural-checks.json](structural-checks.json), die Fixturebeobachtungen in [fixture-observations.json](fixture-observations.json). Diese Dateien werden nach den Prüfungen geschrieben und gehören zur gelieferten Fassung.
+Mechanical results are in [structural-checks.json](structural-checks.json), and fixture observations in [fixture-observations.json](fixture-observations.json). Source-package validation precedes installation; installation/publication status is tracked separately.
 
-## Was diese Prüfung nicht zeigt
+## What these checks do not establish
 
-Ein Fixturelauf validiert den synthetischen Testinput, nicht automatisch die Entscheidungen eines Agenten, der den Skill verwendet. Der Autor kannte die Kriterien, daher ist sein Review keine blinde Verhaltensprüfung. Es wurden keine unabhängigen Agententrials und keine Produktiv- oder Remoteaktionen durchgeführt. Die unabhängige Followabilityprüfung wurde in diesem Auftrag nicht delegiert; deshalb wird kein frischer Testworker behauptet.
+Fixture execution validates a synthetic test input, not automatically the decisions of an agent using the skill. The author knew the criteria, so the review is not a blind behavioral trial. No independent agent trials or production/remote actions were performed as skill evaluations. Independent followability evaluation was not delegated in this task; no fresh test worker is claimed.
 
-Noch empirisch zu prüfen sind insbesondere Modus-/Scopetrennung in neuen Aufgaben, sinnvolle Referenzwahl, vollständiges Verfolgen realer Effektpfade, tatsächliche Recoveryentscheidungen und qualifizierte Aussagen unter Druck zu pauschalen Garantien. Eine Leistungssteigerung durch den Skill würde passende Baseline-/Revisedversuche und repräsentative Aufgaben benötigen.
+Empirical questions remain about mode/scope separation in new tasks, useful reference selection, tracing real effect paths, actual recovery decisions, and qualified claims under pressure for blanket guarantees. Demonstrating performance gains from the skill would require suitable baseline/revised trials and representative tasks.
 
-Die Literatur und die Fixture rechtfertigen weder einen universellen Determinismusanspruch noch eine allgemeine Accuracyzusage. Der Forschungsstand bleibt der 13.10.2026; bei versionsabhängigen Implementierungen ist der tatsächliche Vertrag neu zu prüfen.
+Neither the literature nor the fixture establishes universal determinism or accuracy guarantees. The research cutoff remains 2026-10-13; version-dependent implementations must check the actual contract.

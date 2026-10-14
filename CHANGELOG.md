@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.1 — 2026-10-14
+
+- Translate Agentic Harness Engineering into English, including its entrypoint, focused references, all 95 source annotations, evaluation requests, grading criteria, and validation reports. The public identifier, nine rules, applicability conditions, evidence limitations, and authorization boundaries are preserved.
+- Recheck portable resources and source identities; confirm unchanged executable fixture logic and observations. This compatible language update adds no independent agent trials or downstream effectiveness claims.
+
 ## 1.4.0 — 2026-10-14
 
 - Add Agentic Harness Engineering for general design, auditing, and improvement of agentic software-development harnesses. Conditional guidance covers lifecycle control, rule enforcement, evidence binding, recovery, verification, and evaluation without prescribing a project-specific platform or approval sequence.
