@@ -1,0 +1,7 @@
+[
+  {"id": "valid", "path": "dispatcher", "candidate": "C1", "report": {"subject": "C1", "issuer": "review-service", "passed": true}},
+  {"id": "negative", "path": "dispatcher", "candidate": "C1", "report": {"subject": "C1", "issuer": "review-service", "passed": false}},
+  {"id": "other_subject", "path": "dispatcher", "candidate": "C2", "report": {"subject": "C1", "issuer": "review-service", "passed": true}},
+  {"id": "caller_report", "path": "dispatcher", "candidate": "C1", "report": {"subject": "C1", "issuer": "caller", "passed": true}},
+  {"id": "alternate_path", "path": "direct", "candidate": "C3", "report": null}
+]

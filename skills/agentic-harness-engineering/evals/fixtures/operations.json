@@ -1,0 +1,6 @@
+[
+  {"operation": "A", "local_status": "confirmed", "remote_reference": "remote-A", "last_response": "success"},
+  {"operation": "B", "local_status": "started", "remote_reference": null, "last_response": "connection_lost", "idempotency_contract": "unknown"},
+  {"operation": "C", "local_status": "reserved_not_sent", "remote_reference": null, "last_response": null},
+  {"operation": "D", "local_status": "started", "remote_reference": null, "last_response": "timeout", "idempotency_contract": "unknown", "coordination": "machine-local file lock; second machine may run"}
+]
