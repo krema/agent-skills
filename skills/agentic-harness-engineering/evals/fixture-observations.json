@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-14",
+  "python": "3.13.2",
+  "scope": "Synthetic, in-memory fixture execution; not an agent-followability trial.",
+  "observations": [
+    {
+      "id": "valid",
+      "result": "published",
+      "effects": [
+        {
+          "kind": "publish",
+          "candidate": "C1"
+        }
+      ]
+    },
+    {
+      "id": "negative",
+      "result": "blocked",
+      "effects": []
+    },
+    {
+      "id": "other_subject",
+      "result": "published",
+      "effects": [
+        {
+          "kind": "publish",
+          "candidate": "C2"
+        }
+      ]
+    },
+    {
+      "id": "caller_report",
+      "result": "published",
+      "effects": [
+        {
+          "kind": "publish",
+          "candidate": "C1"
+        }
+      ]
+    },
+    {
+      "id": "alternate_path",
+      "result": "published",
+      "effects": [
+        {
+          "kind": "publish",
+          "candidate": "C3"
+        }
+      ]
+    }
+  ]
+}

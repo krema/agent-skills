@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-14",
+  "result": "passed",
+  "frontmatter_and_name_checked": true,
+  "scientific_source_count": 79,
+  "technical_source_count": 16,
+  "source_count": 95,
+  "inspection_counts": {
+    "selected_full_text_passages": 36,
+    "abstract_and_metadata": 43,
+    "selected_documentation_passages": 16
+  },
+  "operational_rules": 9,
+  "local_references_checked": 18,
+  "source_id_mentions_checked": 189,
+  "evaluation_requests": 6,
+  "rubrics_written_before_author_review": true,
+  "fixture_scenarios_executed": 5,
+  "portable_copy_execution": true,
+  "validation_did_not_mutate_inputs": true,
+  "author_review_cases": 6,
+  "independent_agent_trials": 0,
+  "matched_baseline_trials": 0,
+  "downstream_effectiveness_demonstrated": false,
+  "installed": false,
+  "errors": []
+}

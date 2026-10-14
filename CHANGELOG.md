@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.0 — 2026-10-14
+
+- Add Agentic Harness Engineering for general design, auditing, and improvement of agentic software-development harnesses. Conditional guidance covers lifecycle control, rule enforcement, evidence binding, recovery, verification, and evaluation without prescribing a project-specific platform or approval sequence.
+- Include a 95-source research catalog, six synthetic evaluation requests with separate grading criteria, an author review, and five in-memory audit-fixture observations. Structural checks and fixture execution do not establish independent agent followability or measured downstream improvement.
+
 ## 1.3.0 — 2026-10-13
 
 - Add Agent Instruction Reliability to diagnose missed or conflicting agent instructions through traces, handoffs, workflow gates, and host capabilities. Its evidence includes a Superpowers issue screen and a focused BMAD and Compound Engineering comparison; structural checks and walkthroughs do not prove behavioral improvement.

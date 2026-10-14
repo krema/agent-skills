@@ -47,6 +47,7 @@ Refine existing guidance and learn from corrections and verified outcomes.
 
 | Skill | Use it when… | Example request |
 | --- | --- | --- |
+| [Agentic Harness Engineering](skills/agentic-harness-engineering/SKILL.md) | Designing, auditing, or improving control, rule enforcement, recovery, and verification in an agentic development harness. | “Audit this harness and propose evidence-backed changes with observable acceptance checks.” |
 | [Skill Refinement](skills/skill-refinement/SKILL.md) | A skill or agent-facing document needs a substantive review or rewrite. | “Improve this skill: remove redundant guidance and preserve its conditions and recovery steps.” |
 | [Learning Loop](skills/learning-loop/SKILL.md) | Corrections and verified outcomes should improve future workflows. | “Review these supplied logs and propose scoped improvements to our guidance.” |
 

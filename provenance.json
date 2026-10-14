@@ -39,6 +39,53 @@
     "title": "Agent Instructions",
     "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
   },
+  "agentic-harness-engineering": {
+    "published_sha256": {
+      "SKILL.md": "a5225d9b0be273380bfde39a499113a1d096dbbc95fa678212afd70aadb5764b",
+      "evals/author-review.md": "9a5dd991d0b912fcf19360ecbf5430e071e5ea72d06a86d36e94ccb6892ea5a3",
+      "evals/criteria.json": "0a7d6aeeaa1076dc1c6237a1ea7f49afc353052dcb38b16964c19cd417b55c8e",
+      "evals/fixture-observations.json": "04789ef59cbe200a0634f10deb81454f318a91867d6cbf534f4c059c93e18a61",
+      "evals/fixtures/contract.md": "243c4606861bc2ac8550557b865c47e72b8975e530519793d32b3fec34cd6533",
+      "evals/fixtures/controller.py": "3ca0d1f981f8711ca32c291df5daefdde225e439474e2b100f9f89bbb963026e",
+      "evals/fixtures/operations.json": "d597aa41da03fe49c158dee25b629c242806d02a59f581ea1390075b1cc1e1de",
+      "evals/fixtures/scenarios.json": "20ae1552df3db77b9143d70f9924f4106edf17087db313e5ec13daf2fecc530e",
+      "evals/requests.json": "859c99d95d1b11031d82f2861d75bdc661fe8892a6ebb783b90e776b268407b0",
+      "evals/structural-checks.json": "1cb435be18e935c5aef9fccd26e50184378a0a090e15ef44ea1f16f714841931",
+      "evals/validation.md": "3fea4c1094c53d10d7c5c50ee0241167ec25fd33f75204c5e1fd0256e6fc2401",
+      "references/control-and-enforcement.md": "e4b120f1ee2abd5b7e1ab18e52133173e6325ff0f3713cdac75c527af194bf79",
+      "references/evaluation.md": "2a2f883e12032cfd64ffec4428ace749b9c6d95c013c29cf48a9e901cccd7222",
+      "references/evidence.md": "8afbd3e5e3523eaf937583a0b43dcc16108d7dbf80cc8520cdb2036a446a7786",
+      "references/execution-and-recovery.md": "be17244df15bda2a5b34f345457c4f2708662edebb74dcd0bab0de3b84608299",
+      "references/quality-and-optimization.md": "eefa3c99a6d4ed6ebf27f59c689f4e9ef4126b0f737339cb6e2ba88697bd1086",
+      "references/search-log.md": "bdd5daeec3a6fe367590ef6cf31c396718d7bcea49601c23cdb12732de2f4367",
+      "references/sources.json": "a355454d7cd74da29cf7c4a1c1c793b0f1b59305d321ccc0992e5f9a70262b74",
+      "references/sources.md": "0e8de10e1cff0fac3b0cfb358d15edafbe3c6912ca1ebd7e4e1ac0abe6a2c829"
+    },
+    "source_name": "agentic-harness-engineering",
+    "source_sha256": {
+      "SKILL.md": "a5225d9b0be273380bfde39a499113a1d096dbbc95fa678212afd70aadb5764b",
+      "evals/author-review.md": "9a5dd991d0b912fcf19360ecbf5430e071e5ea72d06a86d36e94ccb6892ea5a3",
+      "evals/criteria.json": "0a7d6aeeaa1076dc1c6237a1ea7f49afc353052dcb38b16964c19cd417b55c8e",
+      "evals/fixture-observations.json": "04789ef59cbe200a0634f10deb81454f318a91867d6cbf534f4c059c93e18a61",
+      "evals/fixtures/contract.md": "243c4606861bc2ac8550557b865c47e72b8975e530519793d32b3fec34cd6533",
+      "evals/fixtures/controller.py": "3ca0d1f981f8711ca32c291df5daefdde225e439474e2b100f9f89bbb963026e",
+      "evals/fixtures/operations.json": "d597aa41da03fe49c158dee25b629c242806d02a59f581ea1390075b1cc1e1de",
+      "evals/fixtures/scenarios.json": "20ae1552df3db77b9143d70f9924f4106edf17087db313e5ec13daf2fecc530e",
+      "evals/requests.json": "859c99d95d1b11031d82f2861d75bdc661fe8892a6ebb783b90e776b268407b0",
+      "evals/structural-checks.json": "1cb435be18e935c5aef9fccd26e50184378a0a090e15ef44ea1f16f714841931",
+      "evals/validation.md": "3fea4c1094c53d10d7c5c50ee0241167ec25fd33f75204c5e1fd0256e6fc2401",
+      "references/control-and-enforcement.md": "e4b120f1ee2abd5b7e1ab18e52133173e6325ff0f3713cdac75c527af194bf79",
+      "references/evaluation.md": "2a2f883e12032cfd64ffec4428ace749b9c6d95c013c29cf48a9e901cccd7222",
+      "references/evidence.md": "8afbd3e5e3523eaf937583a0b43dcc16108d7dbf80cc8520cdb2036a446a7786",
+      "references/execution-and-recovery.md": "be17244df15bda2a5b34f345457c4f2708662edebb74dcd0bab0de3b84608299",
+      "references/quality-and-optimization.md": "eefa3c99a6d4ed6ebf27f59c689f4e9ef4126b0f737339cb6e2ba88697bd1086",
+      "references/search-log.md": "bdd5daeec3a6fe367590ef6cf31c396718d7bcea49601c23cdb12732de2f4367",
+      "references/sources.json": "a355454d7cd74da29cf7c4a1c1c793b0f1b59305d321ccc0992e5f9a70262b74",
+      "references/sources.md": "0e8de10e1cff0fac3b0cfb358d15edafbe3c6912ca1ebd7e4e1ac0abe6a2c829"
+    },
+    "title": "Agentic Harness Engineering",
+    "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
+  },
   "context-loading": {
     "published_sha256": {
       "SKILL.md": "df95e784f841bd7de431e17376e4a8b7f80308ca25f768436dffb94991ca97cb",
