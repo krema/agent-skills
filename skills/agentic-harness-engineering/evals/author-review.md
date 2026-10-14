@@ -1,45 +1,45 @@
-# Autorenreview der Entscheidungsregeln
+# Author review of the decision rules
 
-**14.10.2026, Fassung 1.** Die Requests und Gradingkriterien wurden vor diesem Review angelegt. Der Autor kennt die Regeln und Kriterien; dies ist **keine unabhängige Ausführungsprüfung eines frischen Agenten**. Geprüft werden die Entscheidungsabdeckung und konkrete Auditbelege. Die Codefixture wurde tatsächlich mit Python ausgeführt, hat aber ausschließlich speicherinterne Effekte.
+**2026-10-14, edition 1; translated to English without changing the case conclusions.** Requests and grading criteria were written before this review. The author knows the rules and criteria; this is **not an independent execution trial by a fresh agent**. The review assesses decision coverage and concrete audit evidence. The code fixture was actually executed with Python and has only in-memory effects.
 
-## C01 — Begrenzter Buildreparatur-Harness
+## C01 — Bounded build-repair harness
 
-Ein angemessener Entwurf erfasst den autorisierten Workspace, den aktuellen Kandidaten und vorhandene Build-/Testergebnisse. Die Arbeitsschleife erzeugt Änderungen, führt passende Prüfungen aus und verwendet deren Fehler zur Reparatur. Ein Kandidatenwechsel entwertet betroffene Ergebnisse. Das Budget folgt der gegebenen Aufgabe; bei Ausschöpfung bleibt der Kandidat ungelöst. Ein erfolgreicher, nachweisgebundener Abschluss und ein fehlgeschlagener Durchlauf benötigen weder neue Veröffentlichungsrechte noch zusätzliche Rollen. R01/R05/R06 tragen diese Entscheidungen ohne eine vollständige Plattform vorzuschreiben.
+An appropriate design records the authorized workspace, current candidate, and available build/test results. The loop generates changes, runs appropriate checks, and uses failures to guide repair. Changing the candidate invalidates affected results. The task determines the budget; exhaustion leaves the candidate unresolved. Evidence-bound success and unsuccessful execution require neither publication privileges nor extra roles. R01/R05/R06 support these decisions without prescribing a complete platform.
 
-**Reviewurteil:** Die Anweisungen erlauben eine angemessene einfache Lösung. Die tatsächliche Followability eines neuen Testworkers bleibt ungeprüft.
+**Review outcome:** Instructions allow a proportionate simple solution. Actual followability by a new test worker remains untested.
 
-## C02 — Audit mit tatsächlich ausgeführter Fixture
+## C02 — Audit with an executed fixture
 
-Die Ausführung beobachtete fünf Fälle. Der normale positive Report erzeugt einen speicherinternen Effekt; der negative Report erzeugt keinen. `other_subject` veröffentlicht C2 mit einem Report zu C1. `caller_report` veröffentlicht einen Kandidaten mit dem vom Aufrufer stammenden Report. `alternate_path` veröffentlicht C3 direkt, ohne den Dispatcher.
+Execution observed five cases. The normal positive report produces an in-memory effect; the negative report produces none. `other_subject` publishes C2 using a report for C1. `caller_report` publishes with a caller-originated report. `alternate_path` publishes C3 directly, without the dispatcher.
 
-Die Ursachen sind konkret: `dispatch()` benutzt nur `passed`, keine Gegenstandsprüfung und keine verifizierte Herkunft. `Executor.publish()` ist direkt aufrufbar. Das bloße Vergleichen einer Ausstellerzeichenkette wäre noch keine Authentifizierung. Ein Verbesserungsweg muss die relevanten Effekte vermitteln, den Beleg an den aktuellen Kandidaten binden und die Ausstellerautorität passend zur echten Vertrauensgrenze prüfen. Die positive und negative Kontrolle bleiben relevant; sämtliche tatsächlichen Effekte hier sind nur Listeneinträge.
+Causes are concrete: `dispatch()` uses only `passed`, without checking subject binding or verified issuance. `Executor.publish()` can be called directly. Comparing an issuer string alone would still not authenticate it. An improvement must mediate relevant effects, bind evidence to the current candidate, and verify issuer authority at the real trust boundary. Positive and negative controls remain relevant; every actual effect here is only a list entry.
 
-**Reviewurteil:** Die Fixture liefert nachvollziehbare Belege für die R04/R05-Entscheidungen. Der beobachtete Fixturelauf ist kein Nachweis, dass ein frischer Agent den Skill korrekt anwenden würde.
+**Review outcome:** The fixture supplies traceable evidence for R04/R05 decisions. Observing its execution does not prove that a fresh agent would apply the skill correctly.
 
-## C03 — Garantie unter Temperatur, Schema und Voting
+## C03 — Guarantees from temperature, schema, and voting
 
-Eine belastbare Antwort trennt reproduzierbare Controllerentscheidungen von neuer Modellgenerierung und fachlicher Korrektheit. Strukturbedingungen des Schemas und gemeinsame Fehler der Reviewer bleiben eigenständige Grenzen. Passende externe Prüfer können definierte Eigenschaften absichern; ein korrekt übersetztes formales Modell und sounde Prüfungen sind Annahmen. 100% Accuracy für beliebige Entwicklungsaufgaben ist aus den gegebenen Mechanismen nicht ableitbar. R02/R03/R06/R08 enthalten diese Qualifikation im operativen Text.
+A defensible response separates reproducible controller decisions from fresh model generation and functional correctness. Schema-covered structural conditions and shared reviewer errors remain separate limitations. Suitable external verifiers can support defined properties; correct translation into a formal model and sound checks are assumptions. The supplied mechanisms do not establish 100% accuracy for arbitrary development tasks. R02/R03/R06/R08 qualify these claims in operational guidance.
 
-**Reviewurteil:** Keine unbedingte Garantie aus den Fallangaben; aktuelle empirische Modellwirkung und Followability sind nicht gemessen.
+**Review outcome:** The case supports no unconditional guarantee; current empirical model performance and followability were not measured.
 
-## C04 — Tuning auf bekannten Aufgaben
+## C04 — Tuning on known tasks
 
-Die gegebenen Resultate zeigen 14 gegenüber 17 Erfolgen unter 20 bereits verwendeten Aufgaben. Die besten 40 Varianten wurden auf derselben Menge gewählt. Das Ergebnis kann als beobachteter Such-/Tuningeffekt beschrieben werden, ohne einen unabhängigen Transfertest oder ein Konfidenzintervall zu erfinden. Als nächster Schritt eignen sich bislang unbenutzte Aufgaben, dokumentierte Vergleichsbedingungen und dem Entscheidungsbedarf angemessene Wiederholungen einschließlich Suchkosten. R09 und die Evaluationsreferenz unterscheiden diese Ebenen.
+The given results show 14 versus 17 successes among 20 previously used tasks. The best of 40 variants was selected on the same set. Describe this as an observed search/tuning effect without inventing independent transfer evidence or confidence intervals. Appropriate next steps include unused tasks, documented comparison conditions, and decision-relevant repetitions including search cost. R09 and the evaluation reference separate these levels.
 
-**Reviewurteil:** Die instruktionale Begrenzung der Generalisierung ist vorhanden; ein gematchter Versuch wurde hier nicht durchgeführt.
+**Review outcome:** The instructions limit generalization appropriately; no matched experiment was performed here.
 
-## C05 — Recovery aus statischen Operationen
+## C05 — Recovery from static operations
 
-A ist gemäß dem Protokoll bestätigt und benötigt keine erneute Wirkung. B bleibt nach Verbindungsverlust unklar; ein später autorisierter Abgleich muss zwischen bereits erfolgter Wirkung und sicher erneut ausführbarer Operation unterscheiden. C ist unter der gegebenen, autoritativ vorausgesetzten Protokollsemantik noch nicht versendet; eine Fortsetzung müsste ihre Reservierung und geltende Autorisierung beachten. D bleibt unklar, und ein maschinenlokaler Lock schützt nicht vor einem zweiten Rechner. Für B/D darf eine unbekannte Idempotenzsemantik nicht als Zusage behandelt werden. Die Beratung braucht keinen Liveaufruf und keine neue Genehmigungszeremonie.
+A is confirmed according to the log and needs no repeated effect. B remains uncertain after connection loss; later authorized reconciliation must distinguish an existing effect from safely repeatable execution. Under the supplied, assumed-authoritative log semantics, C has not been sent; continuation must respect its reservation and authorization. D remains uncertain, and a machine-local lock does not protect against a second machine. For B/D, unknown idempotency semantics cannot become a guarantee. Advice needs no live call or new approval ceremony.
 
-**Reviewurteil:** R01/R07 liefern einen Entwurf innerhalb des beauftragten Scopes; reale Remoteverträge und Recoveryausführung wurden nicht geprüft.
+**Review outcome:** R01/R07 support a design within scope; real remote contracts and recovery execution were not tested.
 
-## C06 — Fehlerverlust nach Verdichtung
+## C06 — Losing failures after compaction
 
-Die begrenzte Änderung hält offene Testfehler mit Kandidatenbezug autoritativ fest und projiziert sie in den nächsten Schritt. Eine Prüfung setzt mit offenem Fehler den Kontext zurück und verlangt, dass ein unbelegter Abschluss weiterhin erkannt wird. Nach einer passenden erfolgreichen Prüfung darf der Blocker aufgelöst werden; nach einer relevanten neuen Änderung ist die Gültigkeit erneut zu beurteilen. Ein großes Agententeam oder Frameworkwechsel ist damit nicht begründet. R07/R08 erlauben diese kleine Intervention und eine zum Problem passende Evaluation.
+A bounded change retains open test failures with candidate bindings in authoritative state and projects them into the next step. A check resets context with an open failure and requires that unsupported completion remains detectable. Suitable successful verification may resolve the blocker; a relevant new change requires reassessing validity. This does not justify a large agent team or framework replacement. R07/R08 permit the small intervention and proportionate evaluation.
 
-**Reviewurteil:** Scope und Gegenfälle sind ausreichend ausdrückbar. Ein laufender Agententest zum tatsächlichen Kontextverlust bleibt offen.
+**Review outcome:** Scope and counterexamples are expressible. A running agent trial of actual context loss remains open.
 
-## Gesamturteil
+## Overall assessment
 
-Alle sechs Fälle wurden als Autorenreview abgedeckt; die Codefixture bestätigt ihre beschriebenen lokalen Beobachtungen. Es gibt **keine unabhängigen Agententrials, keinen Baseline-/Revisedvergleich und keinen Downstreamnachweis** für diese Skillfassung. Die vorgeschlagenen Entscheidungen sind strukturell und argumentativ überprüft, ihre tatsächliche Befolgung durch einen frischen Agenten bleibt ungetestet.
+All six cases were covered by author review; code-fixture execution confirms the described local observations. There are **no independent agent trials, matched baseline/revised comparisons, or downstream effectiveness results** for this edition. Proposed decisions are structurally and argumentatively reviewed; actual compliance by a fresh agent remains untested.

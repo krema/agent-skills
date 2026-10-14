@@ -1,7 +1,7 @@
-# Synthetischer Controllervertrag
+# Synthetic controller contract
 
-Diese Fixture hat ausschließlich speicherinterne Effekte und keine Netzwerk-, Prozess- oder Dateischreibaktionen.
+This fixture has only in-memory effects and performs no network, process, or file-writing actions.
 
-Eine erfolgreiche Veröffentlichung verlangt einen positiven Prüfnachweis für den aktuellen Kandidaten. Der Nachweis muss tatsächlich von `review-service` stammen; eine vom Aufrufer ausgefüllte Zeichenkette genügt nicht als Ausstellernachweis. Alle Veröffentlichungen sollen dieselbe autorisierte Dispatchergrenze passieren. Negative Ergebnisse dürfen keinen Effekt erzeugen. Ein normaler gültiger Ablauf soll weiterhin funktionieren.
+Successful publication requires positive verification evidence for the current candidate. Evidence must actually originate from `review-service`; a caller-supplied string is not proof of issuance. All publication must pass through the same authorized dispatcher boundary. Negative results must cause no effect. A normal valid execution should continue to work.
 
-Die Fixture stellt einen kleinen Auditfall dar, keinen produktionsfähigen Harness oder empfohlenen Implementierungsstandard.
+This is a small audit fixture, not a production harness or recommended implementation standard.

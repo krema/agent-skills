@@ -1,36 +1,36 @@
-# Zustand, Kontext, Replay und Wiederaufnahme
+# State, context, replay, and recovery
 
-**Laden bei:** langen Sitzungen, Kontextverlust, Abbruch/Wiederaufnahme, konkurrierenden Workern oder wiederholbaren Außenwirkungen. Grundlage: R07; [evidence.md](evidence.md) enthält Quellen und Verträge.
+**Load for:** long sessions, context loss, interruption/resumption, concurrent workers, or repeatable external effects. Supports R07; [evidence.md](evidence.md) records sources and contracts.
 
-## Autoritativer Zustand und Modellkontext
+## Authoritative state and model context
 
-Speichere die für korrekte Fortsetzung nötigen Tatsachen in einer passenden Zustandsquelle. Für eine lange Entwicklungsaufgabe können das Zielversion, aktueller Kandidat, erfüllte Bedingungen, offene Fehler, Entscheidungen und Operationsstatus sein. Das Modell erhält eine auf den nächsten Schritt abgestimmte Projektion daraus. Für eine kurze rein lesende Aufgabe kann ein kleiner strukturierter Kontext ausreichen; eine Datenbank ist keine allgemeine Voraussetzung.
+Keep the facts needed for correct continuation in a suitable state source. A long development task may require the goal version, current candidate, satisfied conditions, open failures, decisions, and operation status. Give the model a projection tailored to its next step. A short read-only task may need only a small structured context; a database is not a universal prerequisite.
 
-Verdichtung verändert die sichtbare Darstellung, nicht automatisch die zugrunde liegenden Tatsachen. Prüfe bei einem Reset, ob offene Blocker, verworfene Kandidaten und unklare Wirkungen weiter auffindbar sind. Eine Zusammenfassung darf eine unbelegte Behauptung nicht zur autoritativen Tatsache aufwerten. Kennzeichne Herkunft und Gültigkeitsbezug wiederverwendeter Erinnerungen.
+Compaction changes the visible representation, not automatically the underlying facts. After a reset, check that open blockers, rejected candidates, and uncertain effects remain discoverable. A summary must not promote an unsupported claim into an authoritative fact. Identify the provenance and validity scope of reused memories.
 
-## Welche Art von Wiederholbarkeit verlangt wird
+## Identify the required kind of repeatability
 
-| Ziel | Aufzuzeichnen / zu kontrollieren | Begrenzung |
+| Objective | Record or control | Limitation |
 |---|---|---|
-| Entscheidung erklären | Zustandsinput, Controller-/Policyversion, relevante Fakten und Entscheidung. | Fehlende Fakten bleiben ein Beobachtungsproblem. |
-| Internen Ablauf replayen | Ursprüngliche Modellantworten, Toolresultate und geordnete Ereignisse. | Führt keine neuen Remoteeffekte aus. |
-| Neu ausführen | Tatsächliche Modellkonfiguration, Inputs, Toolchain, Ressourcen und relevante Umgebungsstände. | Neue Modellantworten und Außenwelt können abweichen. |
-| Nach Crash fortsetzen | Dauerhafter Fortschritt und Status ausstehender beziehungsweise unklarer Operationen. | Persistenz allein verhindert keine Doppelwirkung. |
+| Explain a decision | State input, controller/policy version, relevant facts, and decision. | Missing facts remain an observation problem. |
+| Replay an internal execution | Original model responses, tool results, and ordered events. | Does not perform new remote effects. |
+| Execute again | Actual model configuration, inputs, toolchain, resources, and relevant environment state. | Fresh model responses and the external environment may differ. |
+| Resume after a crash | Durable progress and pending or uncertain operation status. | Persistence alone does not prevent duplicate effects. |
 
-Dokumentiere versionsabhängige Einzelheiten dort, wo sie die gemessene Wirkung verändern. Ein vollständig gepinntes Modellinterface garantiert keine identische neue Antwort. Behaupte eine hermetische Umgebung nur für tatsächlich erfasste Abhängigkeiten. Persistierte Logs oder Checkpoints garantieren nicht von sich aus vollständige Beobachtbarkeit.
+Record version-dependent details where they affect the measured outcome. A fully pinned model interface does not guarantee an identical fresh response. Claim a hermetic environment only for dependencies actually captured. Persisted logs or checkpoints do not inherently guarantee complete observability.
 
-## Remoteoperationen und Retry
+## Remote operations and retry
 
-Wenn eine Operation von außen sichtbar wird, unterscheide „Anforderung reserviert“, „Ausführung begonnen“, „Ergebnis bestätigt“ und „Wirkung unklar“, soweit diese Zustände für den Ablauf relevant sind. Die genaue Repräsentation ist systemabhängig.
+For externally visible operations, distinguish request reservation, execution started, confirmed outcome, and uncertain effect where these states matter. The representation is system-dependent.
 
-Wenn nach einer begonnenen Operation die Antwort verloren geht, prüfe zuerst die Bedeutung des verfügbaren Remotezustands. Nutze einen stabilen Operationsschlüssel oder eine APIeigene Idempotenzfunktion, wenn ihr Vertrag die gewünschte Semantik abdeckt. Ein erneuter Aufruf ist nur dann unproblematisch, wenn er sicher keine unzulässige zusätzliche Wirkung erzeugt oder diese durch den Remotevertrag verhindert wird. Ist kein sicherer Abgleich möglich, erhalte den unklaren Zustand und leite eine zum Auftrag passende Klärung ein.
+If a response is lost after an operation starts, first assess the available remote state. Use a stable operation key or API-provided idempotency where its contract covers the required semantics. Repeating a call is safe only when it cannot cause an unauthorized additional effect or the remote contract prevents that effect. If safe reconciliation is unavailable, retain the unknown state and pursue clarification appropriate to the task.
 
-Ein lokaler Dateilock schützt nur seine tatsächliche Koordinationsdomäne. Mehrere Prozesse oder Maschinen benötigen eine dafür geeignete Reservierung und Zustandskonsistenz. Eine reservierte Anfrage und eine Remoteoperation bilden ohne zusätzliches Protokoll keine automatische atomare Transaktion.
+A local file lock protects only its actual coordination domain. Multiple processes or machines need suitable reservation and state consistency. Reserving a request and performing a remote operation do not automatically form an atomic transaction.
 
-Bei Frameworks prüfe die tatsächlich eingesetzte Version: Ein Interrupt kann den Node erneut ausführen; eine Activity kann erneut versucht werden. Lege nicht idempotente Nebenwirkungen nicht ungeprüft vor einen Punkt, der wiederholt wird. Teste die relevante Crashposition statt nur einen erfolgreichen Normaldurchlauf.
+For frameworks, inspect the version actually deployed: an interrupt may restart a node, and an activity may be retried. Do not place non-idempotent effects before a repeatable checkpoint without checking the implications. Test the relevant crash position rather than only a successful normal execution.
 
-## Konflikte und Stoppen
+## Conflicts and stopping
 
-Für konkurrierende Worker identifiziere, welcher Fortschritt autoritativ ist und wie veraltete Zustandsstände erkannt werden. Für begrenzte Arbeitsschleifen bestimme Budget und Abschlusskriterium außerhalb der bloßen Modellbehauptung. Wähle keine festen universellen Turn- oder Tokenlimits aus einem Paperbeispiel.
+For concurrent workers, establish which progress is authoritative and how stale state is detected. For bounded execution loops, define budget and completion criteria outside a model claim alone. Do not adopt universal turn or token limits from a paper example.
 
-Gegenfälle sind Reset mit offenem Blocker, Crash vor Versand, Remoteerfolg vor Antwortverlust, konkurrierende Reservierungen und ein verspätetes Ergebnis für einen alten Kandidaten. Prüfe nur die für den konkreten Auftrag relevanten Fälle. Eine korrekte Wiederaufnahme zeigt, dass diese kontrollierten Unterbrechungen behandelt werden; sie ist keine allgemeine Verfügbarkeitsgarantie.
+Counterexamples include a reset with an open blocker, a crash before sending, remote success before response loss, competing reservations, and a late result for an old candidate. Test cases relevant to the actual task. Correct recovery shows handling of these controlled interruptions; it is not a general availability guarantee.

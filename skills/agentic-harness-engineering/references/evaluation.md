@@ -1,39 +1,39 @@
-# Evaluation eines Harness oder einer Harnessänderung
+# Evaluate a harness or harness change
 
-**Laden bei:** Prüfung einer wesentlichen Mechanismusänderung, Benchmarkdesign, Garantiebehauptungen oder einem Audit vorhandener Evals. Grundlage: R09. Diese Anleitung bewertet Harnessverhalten; sie installiert keinen Skill und autorisiert keine externen Testwirkungen.
+**Load for:** consequential mechanism changes, benchmark design, guarantee claims, or auditing existing evaluations. Supports R09. This guidance evaluates harness behavior; it does not install a skill or authorize external test effects.
 
-## Frage, Vergleich und Ergebnis vorher festlegen
+## Define the question, comparison, and outcome first
 
-Bestimme die konkrete Behauptung: verhindert ein Monitor definierte Verstöße, stellt ein Resumeprotokoll einen unterbrochenen Ablauf wieder her, erkennt ein Prüfer falsche Kandidaten oder verbessert eine Strategie den Task-Erfolg? Wähle die Prüfungen passend dazu. Ein Formatcheck ist kein Verhaltensnachweis. Eine Wirkungsmessung ist nicht für jede rein redaktionelle Änderung erforderlich.
+Identify the actual claim: does a monitor prevent defined violations, does a resume protocol recover interrupted execution, does a verifier reject incorrect candidates, or does a strategy improve task success? Choose checks accordingly. Format validation does not establish behavior. An effectiveness experiment is not required for every purely editorial change.
 
-Schreibe repräsentative Aufgaben, relevante Fehler- und Grenzfälle und eine Ergebnisrubrik, bevor die Versuche beginnen. Beurteile Ergebnisse und tatsächliche Aktionen, nicht gewünschte Formulierungen. Gültige alternative Lösungen dürfen bestehen bleiben. Bewahre erwartete Antworten außerhalb des Kontexts eines frischen Testworkers, falls ein solcher eingesetzt wird. Ein Autorenwalkthrough mit bekannter Lösung ist Designreview.
+Write representative tasks, relevant failure and boundary cases, and an outcome rubric before trials. Assess outcomes and actual actions rather than preferred wording. Accept valid alternative solutions. Keep expected answers out of a fresh test worker's context if one is used. An author walkthrough with a known answer is design review.
 
-## Metriken auseinanderhalten
+## Separate the metrics
 
-| Frage | Geeignete Beobachtung | Verwechslungsgefahr |
+| Question | Suitable observation | Common confusion |
 |---|---|---|
-| Task richtig erledigt? | Passende Endzustände und fachliche Prüfungen. | Modell behauptet Abschluss, Orakel ist schwach. |
-| Falscher Kandidat akzeptiert? | Gegenfälle, die eine relevante Bedingung verletzen. | Nur Erfolgsfälle werden getestet. |
-| Regelverletzung verhindert? | Tatsächlich ausgeführte Wirkungen und abgewiesene Vorschläge getrennt. | Ein erkannter Verstoß wird als verhinderter Verstoß gezählt. |
-| Erlaubte Aufgabe unnötig blockiert? | Repräsentative zulässige Gegenfälle. | Dauerhafte Verweigerung erscheint als hohe Sicherheit. |
-| Zuverlässig bei Wiederholung? | Wiederholungen unter dokumentierten Bedingungen. | Einzelerfolg wird als Stabilität ausgegeben. |
-| Replay korrekt? | Gespeicherte Antworten/Ereignisse rekonstruieren denselben Controllerzustand. | Ein neuer Liveaufruf wird mit Replay verwechselt. |
-| Effizient? | Kosten, Laufzeit, Abbrüche und Prüfarbeit. | Der Evaluations- oder Suchaufwand wird ausgelassen. |
+| Was the task completed correctly? | Appropriate final states and functional checks. | The model claims completion, or the oracle is weak. |
+| Was an incorrect candidate accepted? | Counterexamples violating a relevant condition. | Only success cases are tested. |
+| Was a rule violation prevented? | Executed effects and rejected proposals, reported separately. | A detected violation is counted as prevented. |
+| Was a legitimate task unnecessarily blocked? | Representative permitted counterexamples. | Permanent refusal appears safe. |
+| Is execution reliable across repetitions? | Repeated trials under documented conditions. | One success is treated as stability. |
+| Is replay correct? | Recorded responses/events reconstruct the same controller state. | A fresh live call is confused with replay. |
+| Is it efficient? | Costs, latency, aborts, and verification work. | Search or evaluation overhead is omitted. |
 
-`pass@k` beschreibt mindestens einen Erfolg unter k Versuchen; `pass^k` Erfolg in allen k Wiederholungen. Dokumentiere Schätzer, Wiederholungsprotokoll und Taskaggregation. Beide Metriken ersetzen weder fachliche Abdeckung noch eine Untersuchung seltener Schäden.
+`pass@k` describes at least one success in k attempts; `pass^k` describes success in all k repetitions. Document the estimator, repetition protocol, and task aggregation. Neither metric replaces functional coverage or investigation of rare harms.
 
-## Passenden Testumfang wählen
+## Choose proportional tests
 
-Für einen deterministischen Predicate-/Controllerfix prüfe betroffene Normal-, Fehler- und Grenzfälle. Für unsichere Routing-, Kontext- oder Reparaturregeln ist eine realistische Ausführung mit tatsächlich verfügbaren Tools und Artefakten aussagekräftiger als ein statisches Durchlesen. Simulierte Interfaces prüfen nur die simulierte Semantik.
+For a deterministic predicate/controller fix, check affected normal, failure, and boundary cases. For uncertain routing, context, or repair rules, realistic execution with available tools and artifacts is more informative than static reading. Simulated interfaces establish only their simulated semantics.
 
-Für Leistungsbehauptungen vergleiche Baseline und Änderung bei geeigneter Modell-, Aufgaben- und Budgetkontrolle. Wiederhole ausreichend, um die für die Entscheidung relevante Varianz beurteilen zu können; begründe den Umfang statt eine universelle Versuchszahl zu verwenden. Dokumentiere beobachtete Unsicherheit. Mehrere gleichzeitig geänderte Komponenten erlauben keine einfache kausale Zuordnung zu einem einzigen Feature.
+For performance claims, compare baseline and revision with suitable model, task, and budget controls. Repeat enough to assess decision-relevant variance; justify the scope instead of imposing a universal trial count. Document observed uncertainty. Changing several components together does not support simple causal attribution to one feature.
 
-Für Generalisierung halte finale Evaluationsfälle von Suche und wiederholter Auswahl getrennt. Ein mehrfach zur Optimierung verwendeter Test ist kein unberührter Holdout mehr. Bei Onlinegedächtnis sind Reihenfolge, Zustandsinitialisierung und erlaubtes Feedback Teil des Versuchs. Wenn keine unabhängigen Fälle verfügbar sind, begrenze die Aussage auf bekannte Aufgaben und beschreibe eine spätere Transferprüfung.
+For generalization, keep final evaluation cases separate from search and repeated selection. A repeatedly tuned test is no longer an untouched holdout. For online memory, ordering, state initialization, and permitted feedback are part of the experiment. Without independent cases, limit claims to known tasks and describe a later transfer test.
 
-## Prüfbare Grenzen und Autorisierung
+## Test boundaries and authorization
 
-Isoliere Tests von Livekonten, produktiven Ressourcen und installierten Konfigurationen, sofern deren Nutzung nicht bereits zum Auftrag gehört. Autorisierte Implementierung ist keine pauschale Erlaubnis für neue externe Wirkungen. Wenn eine benötigte Liveprüfung nicht möglich ist, liefere die übrige Arbeit und benenne die konkrete ungetestete Entscheidung.
+Isolate tests from live accounts, production resources, and installed configurations unless their use already belongs to the task. Authorized implementation does not grant blanket permission for new external effects. If a necessary live check is unavailable, deliver unaffected work and identify the particular untested decision.
 
-Bewahre zur Interpretation benötigte Revisionen, Inputs, Ergebnisse, Aktionsbeobachtungen und bekannte Umgebungsbedingungen. Prüfe insbesondere die zum Mechanismus passenden Gegenfälle: veralteter Nachweis, uninstrumentierter Effektpfad, gültiges Format mit falschem Inhalt, manipuliertes Orakel, verlorene Remoteantwort, konkurrierende Worker oder Contextreset mit offenem Blocker.
+Retain the revisions, inputs, results, action observations, and known environment conditions needed for interpretation. Check counterexamples relevant to the mechanism: stale evidence, uninstrumented effect paths, valid structure with incorrect content, a manipulated oracle, lost remote responses, concurrent workers, or context reset with an open blocker.
 
-Berichte separat: strukturell geprüft, durch Autorenreview geprüft, tatsächlich ausgeführt und im Downstreamvergleich wirksam. Weder Literaturzitate noch ein erfolgreicher Einzeltest legitimieren „vollständig deterministisch“, „100% Accuracy“ oder „wissenschaftlich validierter Harness“ ohne die passende, begrenzte Begründung.
+Report separately: structural validation, author review, actual execution, and demonstrated downstream effectiveness. Neither citations nor one successful test justify unrestricted claims of complete determinism, 100% accuracy, or scientific validation.

@@ -1,583 +1,583 @@
-# Forschungsquellen für Agentic Harness Engineering
+# Research sources for Agentic Harness Engineering
 
-**Forschungsstand/Zugriff: 13.10.2026. Paket erstellt: 14.10.2026.** 95 Quellen: 79 wissenschaftliche Arbeiten einschließlich Surveys/Positionspapieren und 16 Engineering-/Dokumentationsquellen.
+**Research cutoff/access: 2026-10-13. Package and English edition: 2026-10-14.** 95 sources: 79 scientific works, including surveys/position papers, and 16 engineering/documentation sources.
 
-36 wissenschaftliche Quellen wurden selektiv an Volltextstellen geprüft, 43 an Abstract und Metadaten. Die 16 weiteren Quellen wurden an relevanten Passagen geprüft. Diese Tiefe ist keine vollständige Lektüre, unabhängige Replikation oder allgemeine Wirksamkeitsgarantie.
+Selected full-text passages were inspected for 36 scientific works; abstracts and metadata for 43. Relevant passages were inspected for the other 16 sources. This does not establish complete reading, independent replication, or general effectiveness.
 
-Suche gezielt nach Quellen-ID, Titel oder Thema. Die angegebenen Fassungen begrenzen die jeweiligen Claims. Bei unversionierter Dokumentation ist das Zugriffsdatum angegeben. Ein nicht zuverlässig festgestelltes Datum bleibt im JSON null.
+Search by source ID, title, or topic. Versions bound each claim. Unversioned documentation records its access date. A publication date that could not be reliably established remains null in JSON.
 
-## Forschung, Mechanismen und Benchmarks
+## Research, mechanisms, and benchmarks
 
 ### P01 — SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering
 
-Yang et al. · Fassung: 2405.15793v3 · Datum: 2024-11-11 · Prüfung: ausgewählte Volltextstellen.
+Yang et al. · Version: 2405.15793v3 · Date: 2024-11-11 · Inspection: selected full-text passages.
 
-Gezielte Editier-, Such- und Feedbackwerkzeuge verbessern das untersuchte SWE-Setup. Die Modell- und Benchmarkversion begrenzen den Transfer. [Originalquelle](https://arxiv.org/abs/2405.15793v3)
+Targeted editing, search, and feedback tools improve the evaluated SWE setup. Model and benchmark versions limit transfer. [Original source](https://arxiv.org/abs/2405.15793v3)
 
 ### P02 — Agentless: Demystifying LLM-based Software Engineering Agents
 
-Xia et al. · Fassung: 2407.01489v2 · Datum: 2024-10-29 · Prüfung: ausgewählte Volltextstellen.
+Xia et al. · Version: 2407.01489v2 · Date: 2024-10-29 · Inspection: selected full-text passages.
 
-Lokalisierung, Reparatur und Validierung als begrenzte Pipeline; Gegenbefund zur Annahme, zusätzliche Agentenautonomie müsse helfen. [Originalquelle](https://arxiv.org/abs/2407.01489v2)
+Localization, repair, and validation form a bounded pipeline; counterevidence to the assumption that greater agent autonomy necessarily helps. [Original source](https://arxiv.org/abs/2407.01489v2)
 
 ### P03 — SWE-bench: Can Language Models Resolve Real-World GitHub Issues?
 
-Jimenez et al. · Fassung: 2310.06770v3 · Datum: 2024-11-11 · Prüfung: Abstract + Metadaten.
+Jimenez et al. · Version: 2310.06770v3 · Date: 2024-11-11 · Inspection: abstract + metadata.
 
-Reale Issue-Patch-Aufgaben mit Testorakel. Bestehende Tests definieren beobachteten Erfolg, keine vollständige Softwarespezifikation. [Originalquelle](https://arxiv.org/abs/2310.06770v3)
+Real issue-to-patch tasks with test oracles. Existing tests define observed success, not a complete software specification. [Original source](https://arxiv.org/abs/2310.06770v3)
 
 ### P04 — SWE-Search: Enhancing Software Agents with Monte Carlo Tree Search and Iterative Refinement
 
-Antoniades et al. · Fassung: 2410.20285v6 · Datum: 2025-04-02 · Prüfung: ausgewählte Volltextstellen.
+Antoniades et al. · Version: 2410.20285v6 · Date: 2025-04-02 · Inspection: selected full-text passages.
 
-Strukturierte Suche kann Reparaturen verbessern; zusätzliche Rechenleistung und Wertschätzer sind Teil des Verfahrens, keine kostenlose Determinismussteigerung. [Originalquelle](https://arxiv.org/abs/2410.20285v6)
+Structured search can improve repairs; additional compute and value estimators are part of the method, not a free increase in determinism. [Original source](https://arxiv.org/abs/2410.20285v6)
 
 ### P05 — ReAct: Synergizing Reasoning and Acting in Language Models
 
-Yao et al. · Fassung: 2210.03629v3 · Datum: 2023-03-10 · Prüfung: Abstract + Metadaten.
+Yao et al. · Version: 2210.03629v3 · Date: 2023-03-10 · Inspection: abstract + metadata.
 
-Verzahnt Überlegung, Werkzeugaktion und Beobachtung. Ein Arbeitsmuster, ohne technische Erzwingung von Berechtigungen. [Originalquelle](https://arxiv.org/abs/2210.03629v3)
+Interleaves reasoning, tool actions, and observations. An execution pattern without technical enforcement of permissions. [Original source](https://arxiv.org/abs/2210.03629v3)
 
 ### P06 — Reflexion: Language Agents with Verbal Reinforcement Learning
 
-Shinn et al. · Fassung: 2303.11366v4 · Datum: 2023-10-10 · Prüfung: Abstract + Metadaten.
+Shinn et al. · Version: 2303.11366v4 · Date: 2023-10-10 · Inspection: abstract + metadata.
 
-Sprachliche Rückmeldungen werden für weitere Versuche gespeichert. Erfolg hängt von der Qualität des Feedbacks und der Aufgabe ab. [Originalquelle](https://arxiv.org/abs/2303.11366v4)
+Verbal feedback is retained for later attempts. Success depends on feedback quality and task characteristics. [Original source](https://arxiv.org/abs/2303.11366v4)
 
 ### P07 — Self-Refine: Iterative Refinement with Self-Feedback
 
-Madaan et al. · Fassung: 2303.17651v2 · Datum: 2023-05-25 · Prüfung: Abstract + Metadaten.
+Madaan et al. · Version: 2303.17651v2 · Date: 2023-05-25 · Inspection: abstract + metadata.
 
-Iteratives Feedback durch dasselbe Modell. Eine Verbesserungshypothese, kein unabhängiger Korrektheitsnachweis. [Originalquelle](https://arxiv.org/abs/2303.17651v2)
+Iterative feedback from the same model. An improvement hypothesis, not independent evidence of correctness. [Original source](https://arxiv.org/abs/2303.17651v2)
 
 ### P08 — Large Language Models Cannot Self-Correct Reasoning Yet
 
-Huang et al. · Fassung: 2310.01798v2 · Datum: 2024-03-14 · Prüfung: Abstract + Metadaten.
+Huang et al. · Version: 2310.01798v2 · Date: 2024-03-14 · Inspection: abstract + metadata.
 
-Intrinsische Korrektur ohne externes Feedback kann bei den untersuchten Reasoning-Aufgaben scheitern. Kein universelles Urteil über neuere Modelle. [Originalquelle](https://arxiv.org/abs/2310.01798v2)
+Intrinsic correction without external feedback can fail on the evaluated reasoning tasks. No universal verdict on newer models. [Original source](https://arxiv.org/abs/2310.01798v2)
 
 ### P09 — CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing
 
-Gou et al. · Fassung: 2305.11738v4 · Datum: 2024-02-21 · Prüfung: Abstract + Metadaten.
+Gou et al. · Version: 2305.11738v4 · Date: 2024-02-21 · Inspection: abstract + metadata.
 
-Werkzeugbeobachtungen unterstützen die Korrektur. Zusammen mit P08 relevant für die Trennung von Kritik und prüfbarem Orakel. [Originalquelle](https://arxiv.org/abs/2305.11738v4)
+Tool observations support correction. Together with P08, relevant to separating critique from a checkable oracle. [Original source](https://arxiv.org/abs/2305.11738v4)
 
 ### P10 — τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains
 
-Yao et al. · Fassung: 2406.12045v1 · Datum: 2024-06-17 · Prüfung: ausgewählte Volltextstellen.
+Yao et al. · Version: 2406.12045v1 · Date: 2024-06-17 · Inspection: selected full-text passages.
 
-Prüft Tool-/Nutzerinteraktion und Policies; pass^k misst wiederholten Erfolg. Service-Domänen übertragen sich nur teilweise auf Softwareentwicklung. [Originalquelle](https://arxiv.org/abs/2406.12045v1)
+Evaluates tool/user interaction and policies; pass^k measures repeated success. Service domains transfer only partly to software development. [Original source](https://arxiv.org/abs/2406.12045v1)
 
 ### P11 — τ²-Bench: Evaluating Conversational Agents in a Dual-Control Environment
 
-Barres et al. · Fassung: 2506.07982v1 · Datum: 2025-06-09 · Prüfung: Abstract + Metadaten.
+Barres et al. · Version: 2506.07982v1 · Date: 2025-06-09 · Inspection: abstract + metadata.
 
-Nutzer und Agent verändern die Umgebung. Hilft, Zusammenarbeit und Zustandsänderungen getrennt von reiner Antwortqualität zu untersuchen. [Originalquelle](https://arxiv.org/abs/2506.07982v1)
+Users and agents change the environment. Helps examine collaboration and state changes separately from answer quality. [Original source](https://arxiv.org/abs/2506.07982v1)
 
 ### P12 — AppWorld: A Controllable World of Apps and People for Benchmarking Interactive Coding Agents
 
-Trivedi et al. · Fassung: 2407.18901v1 · Datum: 2024-07-26 · Prüfung: Abstract + Metadaten.
+Trivedi et al. · Version: 2407.18901v1 · Date: 2024-07-26 · Inspection: abstract + metadata.
 
-Kontrollierte App-Welt mit funktionalen und Nebenwirkungsprüfungen. Relevanz: Erfolg braucht auch Grenzen für unbeabsichtigte Änderungen. [Originalquelle](https://arxiv.org/abs/2407.18901v1)
+Controlled application environment with functional and side-effect checks. Success also needs limits on unintended changes. [Original source](https://arxiv.org/abs/2407.18901v1)
 
 ### P13 — OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments
 
-Xie et al. · Fassung: 2404.07972v2 · Datum: 2024-05-30 · Prüfung: Abstract + Metadaten.
+Xie et al. · Version: 2404.07972v2 · Date: 2024-05-30 · Inspection: abstract + metadata.
 
-Reale Desktopumgebungen und auswertbare Endzustände. Ergänzend für Agenten mit Browser-/GUIaufgaben. [Originalquelle](https://arxiv.org/abs/2404.07972v2)
+Real desktop environments with assessable final states. Relevant to agents performing browser/GUI tasks. [Original source](https://arxiv.org/abs/2404.07972v2)
 
 ### P14 — WebArena: A Realistic Web Environment for Building Autonomous Agents
 
-Zhou et al. · Fassung: 2307.13854v4 · Datum: 2024-04-16 · Prüfung: Abstract + Metadaten.
+Zhou et al. · Version: 2307.13854v4 · Date: 2024-04-16 · Inspection: abstract + metadata.
 
-Reproduzierbare Webaufgaben mit funktionaler Bewertung. Websitezustand und Infrastruktur gehören zum Versuchsaufbau. [Originalquelle](https://arxiv.org/abs/2307.13854v4)
+Reproducible web tasks with functional assessment. Website state and infrastructure belong to the experimental setup. [Original source](https://arxiv.org/abs/2307.13854v4)
 
 ### P15 — AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents
 
-Debenedetti et al. · Fassung: 2406.13352v3 · Datum: 2024-11-24 · Prüfung: Abstract + Metadaten.
+Debenedetti et al. · Version: 2406.13352v3 · Date: 2024-11-24 · Inspection: abstract + metadata.
 
-Aufgaben und Angriffe auf Toolinhalte; geeignetes Muster für adversariale Harness-Tests. Kein Nachweis einer umfassenden Defense. [Originalquelle](https://arxiv.org/abs/2406.13352v3)
+Tasks and attacks involving tool content provide a pattern for adversarial harness tests. No evidence of comprehensive defense. [Original source](https://arxiv.org/abs/2406.13352v3)
 
 ### P16 — InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents
 
-Zhan et al. · Fassung: 2403.02691v3 · Datum: 2024-08-04 · Prüfung: Abstract + Metadaten.
+Zhan et al. · Version: 2403.02691v3 · Date: 2024-08-04 · Inspection: abstract + metadata.
 
-Angriffe über externe Werkzeugdaten. Übertragbares Fehlermuster für Tickets, Repositorytexte und Logs. [Originalquelle](https://arxiv.org/abs/2403.02691v3)
+Attacks through external tool data. A transferable failure pattern for tickets, repository text, and logs. [Original source](https://arxiv.org/abs/2403.02691v3)
 
 ### P17 — Defeating Prompt Injections by Design
 
-Debenedetti et al. · Fassung: 2503.18813v2 · Datum: 2025-06-24 · Prüfung: ausgewählte Volltextstellen.
+Debenedetti et al. · Version: 2503.18813v2 · Date: 2025-06-24 · Inspection: selected full-text passages.
 
-Trennt Steuerung und untrusted Daten mit Fähigkeiten und Datenflussregeln. Garantien beziehen sich auf das definierte Modell; verbleibende Grenzen sind wesentlich. [Originalquelle](https://arxiv.org/abs/2503.18813v2)
+Separates control and untrusted data through capabilities and dataflow rules. Guarantees apply to the defined model; remaining limits matter. [Original source](https://arxiv.org/abs/2503.18813v2)
 
 ### P18 — The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions
 
-Wallace et al. · Fassung: 2404.13208v1 · Datum: 2024-04-19 · Prüfung: Abstract + Metadaten.
+Wallace et al. · Version: 2404.13208v1 · Date: 2024-04-19 · Inspection: abstract + metadata.
 
-Trainierte Priorisierung privilegierter Anweisungen. Das Ergebnis rechtfertigt keine gleichwertige Garantie durch zusätzliche Promptüberschriften. [Originalquelle](https://arxiv.org/abs/2404.13208v1)
+Trained prioritization of privileged instructions. Results do not establish an equivalent guarantee from additional prompt headings. [Original source](https://arxiv.org/abs/2404.13208v1)
 
 ### P19 — StruQ: Defending Against Prompt Injection with Structured Queries
 
-Chen et al. · Fassung: 2402.06363v2 · Datum: 2024-09-25 · Prüfung: Abstract + Metadaten.
+Chen et al. · Version: 2402.06363v2 · Date: 2024-09-25 · Inspection: abstract + metadata.
 
-Getrennte Kanäle plus spezifisches Training. Bloße Trennzeichen in einem unveränderten Modell sind nicht dieselbe Intervention. [Originalquelle](https://arxiv.org/abs/2402.06363v2)
+Separate channels plus specific training. Delimiters alone in an unchanged model are not the same intervention. [Original source](https://arxiv.org/abs/2402.06363v2)
 
 ### P20 — Instruction-Following Evaluation for Large Language Models
 
-Zhou et al. · Fassung: 2311.07911v1 · Datum: 2023-11-14 · Prüfung: Abstract + Metadaten.
+Zhou et al. · Version: 2311.07911v1 · Date: 2023-11-14 · Inspection: abstract + metadata.
 
-Automatisch prüfbare Antwortbedingungen. Gute Teilorakel, mit begrenzter Abdeckung von Lifecycle-Regeln und fachlicher Qualität. [Originalquelle](https://arxiv.org/abs/2311.07911v1)
+Automatically checkable response conditions. Useful partial oracles with limited coverage of lifecycle rules and functional quality. [Original source](https://arxiv.org/abs/2311.07911v1)
 
 ### P21 — Generalizing Verifiable Instruction Following
 
-Pyatkin et al. · Fassung: 2507.02833v3 · Datum: 2025-11-11 · Prüfung: Abstract + Metadaten.
+Pyatkin et al. · Version: 2507.02833v3 · Date: 2025-11-11 · Inspection: abstract + metadata.
 
-Neue verifizierbare Bedingungen untersuchen Überanpassung an bekannte Instruction-Tests. Begründet getrennte Entwicklungs- und Holdout-Fälle. [Originalquelle](https://arxiv.org/abs/2507.02833v3)
+New verifiable conditions examine overfitting to known instruction tests. Supports separating development and holdout cases. [Original source](https://arxiv.org/abs/2507.02833v3)
 
 ### P22 — Lost in the Middle: How Language Models Use Long Contexts
 
-Liu et al. · Fassung: 2307.03172v3 · Datum: 2023-11-20 · Prüfung: Abstract + Metadaten.
+Liu et al. · Version: 2307.03172v3 · Date: 2023-11-20 · Inspection: abstract + metadata.
 
-Positionsabhängige Nutzung langer Kontexte in untersuchten Modellen. Keine universelle maximale Tokenzahl für heutigen Harness. [Originalquelle](https://arxiv.org/abs/2307.03172v3)
+Position-dependent use of long context in evaluated models. No universal maximum token count for current harnesses. [Original source](https://arxiv.org/abs/2307.03172v3)
 
 ### P23 — DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines
 
-Khattab et al. · Fassung: 2310.03714v1 · Datum: 2023-10-05 · Prüfung: Abstract + Metadaten.
+Khattab et al. · Version: 2310.03714v1 · Date: 2023-10-05 · Inspection: abstract + metadata.
 
-Deklarative Module und Optimierung anhand einer Metrik. Die Güte der Metrik und Holdouts bleibt entscheidend. [Originalquelle](https://arxiv.org/abs/2310.03714v1)
+Declarative modules and metric-based optimization. Metric quality and holdouts remain decisive. [Original source](https://arxiv.org/abs/2310.03714v1)
 
 ### P24 — Prompting Is Programming: A Query Language for Large Language Models
 
-Beurer-Kellner, Fischer, Vechev · Fassung: 2212.06094v3 · Datum: 2023-05-30 · Prüfung: Abstract + Metadaten.
+Beurer-Kellner, Fischer, Vechev · Version: 2212.06094v3 · Date: 2023-05-30 · Inspection: abstract + metadata.
 
-Programmierte Steuerung und Ausgabebedingungen. Deterministische Programmlogik macht die sprachliche Bedeutung nicht automatisch korrekt. [Originalquelle](https://arxiv.org/abs/2212.06094v3)
+Programmatic control and output conditions. Deterministic program logic does not automatically make linguistic meaning correct. [Original source](https://arxiv.org/abs/2212.06094v3)
 
 ### P25 — JSONSchemaBench: A Rigorous Benchmark of Structured Outputs for Language Models
 
-Geng et al. · Fassung: 2501.10868v3 · Datum: 2025-02-27 · Prüfung: Abstract + Metadaten.
+Geng et al. · Version: 2501.10868v3 · Date: 2025-02-27 · Inspection: abstract + metadata.
 
-Untersucht Schemaabdeckung, Effizienz und Inhaltsqualität. JSON-Konformität ist ein Teilziel; unterschiedliche Engines decken Schemas unterschiedlich ab. [Originalquelle](https://arxiv.org/abs/2501.10868v3)
+Examines schema coverage, efficiency, and content quality. JSON conformance is a partial objective; engines cover schemas differently. [Original source](https://arxiv.org/abs/2501.10868v3)
 
 ### P26 — ProbGuard: Proactive Runtime Monitoring for LLM Agent Safety via Probabilistic Prediction
 
-Wang et al. · Fassung: 2508.00500v4 · Datum: 2026-08-03 · Prüfung: Abstract + Metadaten.
+Wang et al. · Version: 2508.00500v4 · Date: 2026-08-03 · Inspection: abstract + metadata.
 
-Gelerntes probabilistisches Modell für proaktives Monitoring. Risikoschwellen sind statistische Entscheidungen, keine deterministische Kenntnis künftiger Fehler. [Originalquelle](https://arxiv.org/abs/2508.00500v4)
+Learned probabilistic model for proactive monitoring. Risk thresholds are statistical decisions, not deterministic knowledge of future failures. [Original source](https://arxiv.org/abs/2508.00500v4)
 
 ### P27 — Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces
 
-Merrill et al. · Fassung: 2601.11868v1 · Datum: 2026-01-17 · Prüfung: Abstract + Metadaten.
+Merrill et al. · Version: 2601.11868v1 · Date: 2026-01-17 · Inspection: abstract + metadata.
 
-Version 2.0 umfasst 89 Aufgaben mit Lösungen und Tests. Passung zu Build-, Reparatur- und Toolchainaufgaben. [Originalquelle](https://arxiv.org/abs/2601.11868v1)
+Version 2.0 includes 89 tasks with solutions and tests. Relevant to build, repair, and toolchain work. [Original source](https://arxiv.org/abs/2601.11868v1)
 
 ### P28 — What Makes a Terminal-Bench Task Hard? Separating Genuine Hardness from Fake-Hardness on an Adjudicated Agentic Corpus
 
-Lip et al. · Fassung: 2609.26826v1 · Datum: 2026-09-20 · Prüfung: Abstract + Metadaten.
+Lip et al. · Version: 2609.26826v1 · Date: 2026-09-20 · Inspection: abstract + metadata.
 
-Unterscheidet echte Schwierigkeit von defekten Orakeln, Infrastrukturproblemen und Bypassfällen. Aktuelles Preprint; Detailmethodik hier nicht geprüft. [Originalquelle](https://arxiv.org/abs/2609.26826v1)
+Distinguishes genuine difficulty from faulty oracles, infrastructure problems, and bypass cases. Recent preprint; detailed methods were not inspected. [Original source](https://arxiv.org/abs/2609.26826v1)
 
 ### P29 — MTAC-IFBench: Benchmarking Instruction-Following in Multi-Turn Agentic Coding
 
-Wen et al. · Fassung: 2609.14992v1 · Datum: 2026-09-14 · Prüfung: ausgewählte Volltextstellen.
+Wen et al. · Version: 2609.14992v1 · Date: 2026-09-14 · Inspection: selected full-text passages.
 
-Kodierungsaufgaben mit zahlreichen fortgeschriebenen Bedingungen. Die Bewertung enthält neben Skripten auch Judges; Autoren diskutieren Judge-Bias und Kosten. [Originalquelle](https://arxiv.org/abs/2609.14992v1)
+Coding tasks with accumulated conditions. Evaluation uses judges as well as scripts; authors discuss judge bias and cost. [Original source](https://arxiv.org/abs/2609.14992v1)
 
 ### P30 — Harness-Bench: Measuring Harness Effects across Models in Realistic Agent Workflows
 
-Yao et al. · Fassung: 2605.27922v1 · Datum: 2026-05-27 · Prüfung: ausgewählte Volltextstellen.
+Yao et al. · Version: 2605.27922v1 · Date: 2026-05-27 · Inspection: selected full-text passages.
 
-106 Aufgaben in der geprüften Paperfassung. Vergleich vollständiger Modell-Harness-Konfigurationen; isoliert nicht automatisch kausale Effekte einzelner Bausteine. [Originalquelle](https://arxiv.org/abs/2605.27922v1)
+106 tasks in the inspected paper version. Compares complete model/harness configurations; does not automatically isolate causal component effects. [Original source](https://arxiv.org/abs/2605.27922v1)
 
 ### P31 — Agent Behavioral Contracts: Formal Specification and Runtime Enforcement for Reliable Autonomous AI Agents
 
-Bhardwaj · Fassung: 2602.22302v1 · Datum: 2026-02-25 · Prüfung: Abstract + Metadaten.
+Bhardwaj · Version: 2602.22302v1 · Date: 2026-02-25 · Inspection: abstract + metadata.
 
-Explorative Contract-Architektur und eigene Evaluation. Nur Abstract geprüft; keine Basis für ein Wirksamkeitsversprechen oder eine Pflichtmigration. [Originalquelle](https://arxiv.org/abs/2602.22302v1)
+Exploratory contract architecture and its own evaluation. Abstract only; no basis for effectiveness promises or mandatory migration. [Original source](https://arxiv.org/abs/2602.22302v1)
 
 ### P32 — Proof of Execution: Runtime Verification for Governed AI Agent Actions
 
-Rhodes, Kang · Fassung: 2607.05397v1 · Datum: 2026-04-26 laut Seite; Metadatenanomalie · Prüfung: Abstract + Metadaten.
+Rhodes, Kang · Version: 2607.05397v1 · Date: 2026-04-26 as reported on the page; metadata anomaly · Inspection: abstract + metadata.
 
-Bindet ausgeführte Schritte an Contracts unter Deploymentannahmen. Abstract geprüft; Datum und Monatskennung widersprechen sich. Ergänzende Lektüre, keine zentrale Evidenz. [Originalquelle](https://arxiv.org/abs/2607.05397v1)
+Binds executed steps to contracts under deployment assumptions. Abstract inspected; date and month identifier conflict. Supplementary reading, not central evidence. [Original source](https://arxiv.org/abs/2607.05397v1)
 
 ### P33 — VIGIL: Runtime Enforcement of Behavioral Specifications in AI Agent Skills
 
-Li et al. · Fassung: 2606.26524v1 · Datum: 2026-06-25 · Prüfung: ausgewählte Volltextstellen.
+Li et al. · Version: 2606.26524v1 · Date: 2026-06-25 · Inspection: selected full-text passages.
 
-Historische Artefaktbindungen plus SMT-Prüfung. Grounding und vollständiger Collector bleiben Voraussetzungen; gemessene Erkennung ist nicht fehlerfrei. [Originalquelle](https://arxiv.org/abs/2606.26524v1)
+Historical artifact bindings plus SMT checks. Grounding and complete collection remain prerequisites; measured detection is imperfect. [Original source](https://arxiv.org/abs/2606.26524v1)
 
 ### P34 — Getting Better at Working With You: Compiling User Corrections into Runtime Enforcement for Coding Agents
 
-Zhou et al. · Fassung: 2606.13174v1 · Datum: 2026-06-11 · Prüfung: ausgewählte Volltextstellen.
+Zhou et al. · Version: 2606.13174v1 · Date: 2026-06-11 · Inspection: selected full-text passages.
 
-Korrekturen werden in Regeln und Abschlussprüfungen überführt. Simulierte Nutzer und wiederkehrende Aufgaben begrenzen die Übertragbarkeit. [Originalquelle](https://arxiv.org/abs/2606.13174v1)
+Compiles corrections into rules and completion checks. Simulated users and recurring tasks limit transfer. [Original source](https://arxiv.org/abs/2606.13174v1)
 
 ### P35 — Self-Healing Harness for Runtime Oversight of Agent Self-Modification
 
-Tayebati et al. · Fassung: 2609.24130v1 · Datum: 2026-09-21 · Prüfung: ausgewählte Volltextstellen.
+Tayebati et al. · Version: 2609.24130v1 · Date: 2026-09-21 · Inspection: selected full-text passages.
 
-Änderungsvorschläge werden gegen geschützte Fälle geprüft. Kleine Versuchsbasis und fehlende Vergleichsarme begrenzen kausale Aussagen. [Originalquelle](https://arxiv.org/abs/2609.24130v1)
+Checks proposed changes against protected cases. Small experiments and missing comparison arms limit causal claims. [Original source](https://arxiv.org/abs/2609.24130v1)
 
 ### P36 — AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents
 
-Wang et al. · Fassung: 2503.18666v3 · Datum: 2025-07-31 · Prüfung: ausgewählte Volltextstellen.
+Wang et al. · Version: 2503.18666v3 · Date: 2025-07-31 · Inspection: selected full-text passages.
 
-Trigger, Bedingungen und Reaktionen an Aktionsgrenzen. Automatisch erstellte Regeln und semantische Prädikate bleiben unvollständig. [Originalquelle](https://arxiv.org/abs/2503.18666v3)
+Triggers, conditions, and responses at action boundaries. Automatically generated rules and semantic predicates remain incomplete. [Original source](https://arxiv.org/abs/2503.18666v3)
 
 ### P37 — Formal Policy Enforcement for Real-World Agentic Systems
 
-Palumbo et al. · Fassung: 2602.16708v3 · Datum: 2026-05-08 · Prüfung: ausgewählte Volltextstellen.
+Palumbo et al. · Version: 2602.16708v3 · Date: 2026-05-08 · Inspection: selected full-text passages.
 
-Versionierter Policycompiler und instrumentierte Hosts. Formale Garantien setzen korrekte Policies, beobachtbare Fakten und vollständige Vermittlung voraus. [Originalquelle](https://arxiv.org/abs/2602.16708v3)
+Versioned policy compiler and instrumented hosts. Formal guarantees require correct policies, observable facts, and complete mediation. [Original source](https://arxiv.org/abs/2602.16708v3)
 
 ### P38 — Enforcing Temporal Constraints for LLM Agents
 
-Kamath et al. · Fassung: 2512.23738v1 · Datum: 2025-12-25 · Prüfung: ausgewählte Volltextstellen.
+Kamath et al. · Version: 2512.23738v1 · Date: 2025-12-25 · Inspection: selected full-text passages.
 
-Zeitliche Constraints und kontrollierte Toolgenerierung. Spezifikationskonformität der modellierten Traces ist enger als fachliche Richtigkeit der Software. [Originalquelle](https://arxiv.org/abs/2512.23738v1)
+Temporal constraints and controlled tool generation. Conformance of modeled traces is narrower than software's functional correctness. [Original source](https://arxiv.org/abs/2512.23738v1)
 
 ### P39 — Breaking and Fixing Defenses Against Control-Flow Hijacking in Multi-Agent Systems
 
-Jha et al. · Fassung: 2510.17276v2 · Datum: 2026-03-05 · Prüfung: ausgewählte Volltextstellen.
+Jha et al. · Version: 2510.17276v2 · Date: 2026-03-05 · Inspection: selected full-text passages.
 
-Angriffe und Verteidigung durch zulässige Aufrufpfade. Zu strikte Graphen können notwendige Umplanung verhindern; zulässige Pfade können problematische Inhalte transportieren. [Originalquelle](https://arxiv.org/abs/2510.17276v2)
+Attacks and defenses using permitted call paths. Overly strict graphs can block necessary replanning; permitted paths can still carry harmful content. [Original source](https://arxiv.org/abs/2510.17276v2)
 
 ### P40 — Constrained Decoding Eliminates Structural Failures in Small LLMs but Reveals a Scale-Dependent Semantic Gap
 
-Chavan · Fassung: 2609.23742v1 · Datum: 2026-09-20 · Prüfung: Abstract + Metadaten.
+Chavan · Version: 2609.23742v1 · Date: 2026-09-20 · Inspection: abstract + metadata.
 
-Kleine aktuelle Untersuchung zu kleinen Modellen. Ergänzender Gegenbefund zur Gleichsetzung von Schemaerfolg und Inhaltsrichtigkeit. [Originalquelle](https://arxiv.org/abs/2609.23742v1)
+Small recent study of small models. Supplementary counterevidence to equating schema success with content correctness. [Original source](https://arxiv.org/abs/2609.23742v1)
 
 ### P41 — Decode-Time Grammars: Constrained LLM Generation over a Refinement Order of Grammar Fragments
 
-Zhang et al. · Fassung: 2607.18357v1 · Datum: 2026-07-20 · Prüfung: Abstract + Metadaten.
+Zhang et al. · Version: 2607.18357v1 · Date: 2026-07-20 · Inspection: abstract + metadata.
 
-Generierung über strukturierte Symbole und Referenzen. Enger formaler Zielbereich; hier nur Abstract eingeordnet. [Originalquelle](https://arxiv.org/abs/2607.18357v1)
+Generation over structured symbols and references. Narrow formal scope; only the abstract was assessed. [Original source](https://arxiv.org/abs/2607.18357v1)
 
 ### P42 — Why Do Multi-Agent LLM Systems Fail?
 
-Cemri et al. · Fassung: 2503.13657v3 · Datum: 2025-10-26 · Prüfung: Abstract + Metadaten.
+Cemri et al. · Version: 2503.13657v3 · Date: 2025-10-26 · Inspection: abstract + metadata.
 
-Beobachtete Fehler bei Systemdesign, Abstimmung und Verifikation. Mehr Rollen allein liefern keine unabhängige Evidenz. [Originalquelle](https://arxiv.org/abs/2503.13657v3)
+Observed failures in system design, coordination, and verification. Additional roles alone do not supply independent evidence. [Original source](https://arxiv.org/abs/2503.13657v3)
 
 ### P43 — AI Agents That Matter
 
-Kapoor et al. · Fassung: 2407.01502v1 · Datum: 2024-07-01 · Prüfung: Abstract + Metadaten.
+Kapoor et al. · Version: 2407.01502v1 · Date: 2024-07-01 · Inspection: abstract + metadata.
 
-Bewertet Kosten, Reproduzierbarkeit und Überanpassung. Agentenvergleich braucht nachvollziehbare Budgets und echte Testtrennung. [Originalquelle](https://arxiv.org/abs/2407.01502v1)
+Examines cost, reproducibility, and overfitting. Agent comparisons need traceable budgets and genuine test separation. [Original source](https://arxiv.org/abs/2407.01502v1)
 
 ### P44 — Progent: Securing AI Agents with Privilege Control
 
-Shi et al. · Fassung: 2504.11703v3 · Datum: 2026-05-14 · Prüfung: ausgewählte Volltextstellen.
+Shi et al. · Version: 2504.11703v3 · Date: 2026-05-14 · Inspection: selected full-text passages.
 
-Symbolische Toolrechte und geprüfte Verengung beziehungsweise Erweiterung. Die initiale Policy und die Vollständigkeit der Toolgrenze bleiben vertrauensrelevant. [Originalquelle](https://arxiv.org/abs/2504.11703v3)
+Symbolic tool permissions with checked narrowing or expansion. Initial policy and completeness of the tool boundary remain trust assumptions. [Original source](https://arxiv.org/abs/2504.11703v3)
 
 ### P45 — Executable Code Actions Elicit Better LLM Agents
 
-Wang et al. · Fassung: 2402.01030v4 · Datum: 2024-06-07 · Prüfung: Abstract + Metadaten.
+Wang et al. · Version: 2402.01030v4 · Date: 2024-06-07 · Inspection: abstract + metadata.
 
-Ausführbarer Code kann leistungsfähiger sein als engere Aktionsschnittstellen. Passende Sandboxen und vermittelte relevante Außenwirkungen begrenzen die Ausführung. [Originalquelle](https://arxiv.org/abs/2402.01030v4)
+Executable code can outperform narrower action interfaces. Suitable sandboxes and mediated relevant external effects bound execution. [Original source](https://arxiv.org/abs/2402.01030v4)
 
 ### P46 — Enforceable Security Policies
 
-Schneider · Fassung: 2000 / ACM TISSEC · Datum: 2000 · Prüfung: ausgewählte Volltextstellen.
+Schneider · Version: 2000 / ACM TISSEC · Date: 2000 · Inspection: selected full-text passages.
 
-Charakterisiert Grenzen von Ausführungsmonitoren. Safety-Eigenschaften sind enger als beliebige Korrektheit, Fortschritt oder alle Informationsflussanforderungen. [Originalquelle](https://www.cs.cornell.edu/fbs/publications/EnfSecPols.pdf)
+Characterizes execution-monitor limits. Safety properties are narrower than arbitrary correctness, progress, or every information-flow requirement. [Original source](https://www.cs.cornell.edu/fbs/publications/EnfSecPols.pdf)
 
 ### P47 — The Protection of Information in Computer Systems
 
-Saltzer, Schroeder · Fassung: 1975 / Proceedings of the IEEE · Datum: 1975 · Prüfung: ausgewählte Volltextstellen.
+Saltzer, Schroeder · Version: 1975 / Proceedings of the IEEE · Date: 1975 · Inspection: selected full-text passages.
 
-Architekturprinzipien zu vollständiger Vermittlung, minimalen Privilegien und sicheren Defaults. Grundlagenarbeit, keine LLM-Wirksamkeitsstudie. [Originalquelle](https://web.mit.edu/Saltzer/www/publications/protection/Basic.html)
+Architectural principles for complete mediation, least privilege, and secure defaults. Foundational work, not an LLM effectiveness study. [Original source](https://web.mit.edu/Saltzer/www/publications/protection/Basic.html)
 
 ### P48 — in-toto: Providing farm-to-table guarantees for bits and bytes
 
-Torres-Arias et al. · Fassung: 2019 / USENIX Security · Datum: 2019 · Prüfung: ausgewählte Volltextstellen.
+Torres-Arias et al. · Version: 2019 / USENIX Security · Date: 2019 · Inspection: selected full-text passages.
 
-Authentifizierte Schritte und Artefaktbeziehungen. Integritätsnachweise sind kein Beweis, dass Tests vollständig oder Ergebnisse fachlich richtig sind. [Originalquelle](https://www.usenix.org/conference/usenixsecurity19/presentation/torres-arias)
+Authenticated steps and artifact relationships. Integrity evidence does not prove complete tests or functionally correct results. [Original source](https://www.usenix.org/conference/usenixsecurity19/presentation/torres-arias)
 
 ### P49 — Edit automata: enforcement mechanisms for run-time security policies
 
-Ligatti, Bauer, Walker · Fassung: 2005 / IJIS; online 2004 · Datum: 2005 · Prüfung: ausgewählte Volltextstellen.
+Ligatti, Bauer, Walker · Version: 2005 / IJIS; online 2004 · Date: 2005 · Inspection: selected full-text passages.
 
-Monitore können Aktionen unterdrücken beziehungsweise ergänzen. Geeignete formale Regeln und Befugnisse für Ersatzaktionen sind weiterhin nötig. [Originalquelle](https://users.ece.cmu.edu/~lbauer/papers/2005/ijis2005-editauto.pdf)
+Monitors can suppress or insert actions. Suitable formal rules and authority for replacement actions remain necessary. [Original source](https://users.ece.cmu.edu/~lbauer/papers/2005/ijis2005-editauto.pdf)
 
 ### P50 — Solving a Million-Step LLM Task with Zero Errors
 
-Meyerson et al. · Fassung: 2511.09030v1 · Datum: 2025-11-12 · Prüfung: ausgewählte Volltextstellen.
+Meyerson et al. · Version: 2511.09030v1 · Date: 2025-11-12 · Inspection: selected full-text passages.
 
-MAKER kombiniert vorgegebene Zerlegung, Voting und Red Flags auf Hanoi. Korrelierte Fehler und offene Softwareaufgaben begrenzen den Transfer. [Originalquelle](https://arxiv.org/abs/2511.09030v1)
+MAKER combines predetermined decomposition, voting, and red flags on Hanoi. Correlated errors and open-ended software tasks limit transfer. [Original source](https://arxiv.org/abs/2511.09030v1)
 
 ### P51 — The OpenHands Software Agent SDK: A Composable and Extensible Foundation for Production Agents
 
-Wang et al. · Fassung: 2511.03690v2 · Datum: 2026-04-22 · Prüfung: ausgewählte Volltextstellen.
+Wang et al. · Version: 2511.03690v2 · Date: 2026-04-22 · Inspection: selected full-text passages.
 
-Zustands- und Ereignisarchitektur mit Produktionsauswertung. Gebündelte Änderungen und ausgeschlossene Providerfehler begrenzen die kausale Zuordnung. [Originalquelle](https://arxiv.org/abs/2511.03690v2)
+State/event architecture with production evaluation. Bundled changes and excluded provider failures limit causal attribution. [Original source](https://arxiv.org/abs/2511.03690v2)
 
 ### P52 — From Failed Trajectories to Reliable LLM Agents: Diagnosing and Repairing Harness Flaws
 
-Chen et al. · Fassung: 2606.06324v2 · Datum: 2026-07-02 · Prüfung: ausgewählte Volltextstellen.
+Chen et al. · Version: 2606.06324v2 · Date: 2026-07-02 · Inspection: selected full-text passages.
 
-HarnessFix verbindet Traces, Diagnose, begrenzte Reparaturoperatoren und Regressionsprüfung mit getrennten Datensplits. Lokaler Nutzen bleibt zu messen. [Originalquelle](https://arxiv.org/abs/2606.06324v2)
+HarnessFix connects traces, diagnosis, scoped repair operators, and regression checks with separate data splits. Local utility still needs measurement. [Original source](https://arxiv.org/abs/2606.06324v2)
 
 ### P53 — MemoHarness: Agent Harnesses That Learn from Experience
 
-Huang et al. · Fassung: 2607.14159v1 · Datum: 2026-07-14 · Prüfung: ausgewählte Volltextstellen.
+Huang et al. · Version: 2607.14159v1 · Date: 2026-07-14 · Inspection: selected full-text passages.
 
-Erfahrungsbank und fallbezogene Anpassung. Kleine primäre Testmenge, fehlende Unsicherheitsintervalle und unvollständige Ablationen begrenzen Aussagen. [Originalquelle](https://arxiv.org/abs/2607.14159v1)
+Experience bank and case-specific adaptation. Small primary test set, missing uncertainty intervals, and incomplete ablations limit claims. [Original source](https://arxiv.org/abs/2607.14159v1)
 
 ### P54 — An LLM Compiler for Parallel Function Calling
 
-Kim et al. · Fassung: 2312.04511v3 · Datum: 2024-06-05 · Prüfung: ausgewählte Volltextstellen.
+Kim et al. · Version: 2312.04511v3 · Date: 2024-06-05 · Inspection: selected full-text passages.
 
-Ein Planner erzeugt Abhängigkeiten für kontrollierte parallele Ausführung. Fehlerhafte Plannerreferenzen bleiben eine eigene Fehlerquelle. [Originalquelle](https://arxiv.org/abs/2312.04511v3)
+A planner generates dependencies for controlled parallel execution. Incorrect planner references remain a separate failure source. [Original source](https://arxiv.org/abs/2312.04511v3)
 
 ### P55 — ADaPT: As-Needed Decomposition and Planning with Language Models
 
-Prasad et al. · Fassung: 2311.05772v2 · Datum: 2024-04-08 · Prüfung: ausgewählte Volltextstellen.
+Prasad et al. · Version: 2311.05772v2 · Date: 2024-04-08 · Inspection: selected full-text passages.
 
-Rekursive Zerlegung bei Ausführungsschwierigkeiten mit Tiefengrenze. Die modellbasierte Completionheuristik ist kein verbindlicher Erfolgsnachweis. [Originalquelle](https://arxiv.org/abs/2311.05772v2)
+Recursive decomposition when execution struggles, with a depth limit. Model-based completion heuristics are not mandatory success evidence. [Original source](https://arxiv.org/abs/2311.05772v2)
 
 ### P56 — Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models
 
-Zhou et al. · Fassung: 2310.04406v3 · Datum: 2024-06-06 · Prüfung: Abstract + Metadaten.
+Zhou et al. · Version: 2310.04406v3 · Date: 2024-06-06 · Inspection: abstract + metadata.
 
-LATS kombiniert Suche, Modellbewertungen und Feedback. Zusätzlicher Compute und Aufgabenwahl sind Teil der Intervention. [Originalquelle](https://arxiv.org/abs/2310.04406v3)
+LATS combines search, model evaluations, and feedback. Additional compute and task selection are part of the intervention. [Original source](https://arxiv.org/abs/2310.04406v3)
 
 ### P57 — Agent Workflow Memory
 
-Wang et al. · Fassung: 2409.07429v1 · Datum: 2024-09-11 · Prüfung: ausgewählte Volltextstellen.
+Wang et al. · Version: 2409.07429v1 · Date: 2024-09-11 · Inspection: selected full-text passages.
 
-Induzierte Teilroutinen unterstützen Offline- und Online-Webagenten. Erinnerung legitimiert weder Aktionen noch den aktuellen Abschluss. [Originalquelle](https://arxiv.org/abs/2409.07429v1)
+Induced subroutines support offline and online web agents. Memory authorizes neither actions nor current completion. [Original source](https://arxiv.org/abs/2409.07429v1)
 
 ### P58 — AutoCodeRover: Autonomous Program Improvement
 
-Zhang et al. · Fassung: 2404.05427v3 · Datum: 2024-07-25 · Prüfung: Abstract + Metadaten.
+Zhang et al. · Version: 2404.05427v3 · Date: 2024-07-25 · Inspection: abstract + metadata.
 
-ASTgestützte Navigation und testbasierte Fehlereingrenzung für Reparaturen. Ergebnisse hängen von Repository und verfügbaren Tests ab. [Originalquelle](https://arxiv.org/abs/2404.05427v3)
+AST-based navigation and test-based fault localization for repair. Results depend on repositories and available tests. [Original source](https://arxiv.org/abs/2404.05427v3)
 
 ### P59 — OpenHands: An Open Platform for AI Software Developers as Generalist Agents
 
-Wang et al. · Fassung: 2407.16741v3 · Datum: 2025-04-18 · Prüfung: Abstract + Metadaten.
+Wang et al. · Version: 2407.16741v3 · Date: 2025-04-18 · Inspection: abstract + metadata.
 
-Plattform für Toolaktionen und Softwareaufgaben. Vom späteren SDK-Paper zu unterscheiden; hier Hintergrund zum Runtimeaufbau. [Originalquelle](https://arxiv.org/abs/2407.16741v3)
+Platform for tool actions and software tasks. Distinct from the later SDK paper; background on runtime architecture. [Original source](https://arxiv.org/abs/2407.16741v3)
 
 ### P60 — AgentCoder: Multi-Agent-based Code Generation with Iterative Testing and Optimisation
 
-Huang et al. · Fassung: 2312.13010v3 · Datum: 2024-05-24 · Prüfung: Abstract + Metadaten.
+Huang et al. · Version: 2312.13010v3 · Date: 2024-05-24 · Inspection: abstract + metadata.
 
-Programmier-, Testdesign- und Ausführungsrollen auf Codegenerierungsaufgaben. Rollenvielfalt beweist keine Unabhängigkeit der Prüfer. [Originalquelle](https://arxiv.org/abs/2312.13010v3)
+Programmer, test-design, and execution roles for code-generation tasks. Role diversity does not prove verifier independence. [Original source](https://arxiv.org/abs/2312.13010v3)
 
 ### P61 — MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework
 
-Hong et al. · Fassung: 2308.00352v7 · Datum: 2024-11-01 · Prüfung: Abstract + Metadaten.
+Hong et al. · Version: 2308.00352v7 · Date: 2024-11-01 · Inspection: abstract + metadata.
 
-Standardisierte Abläufe und Zwischenartefakte organisieren Zusammenarbeit. Promptbasierte SOPs sind keine vollständige Runtimegrenze. [Originalquelle](https://arxiv.org/abs/2308.00352v7)
+Standardized workflows and intermediate artifacts organize collaboration. Prompt-based SOPs are not a complete runtime boundary. [Original source](https://arxiv.org/abs/2308.00352v7)
 
 ### P62 — LLM+P: Empowering Large Language Models with Optimal Planning Proficiency
 
-Liu et al. · Fassung: 2304.11477v3 · Datum: 2023-09-27 · Prüfung: Abstract + Metadaten.
+Liu et al. · Version: 2304.11477v3 · Date: 2023-09-27 · Inspection: abstract + metadata.
 
-Sprachaufgabe wird formalisiert und durch einen klassischen Planner bearbeitet. Gültigkeit hängt von Übersetzung und Modell ab. [Originalquelle](https://arxiv.org/abs/2304.11477v3)
+Language tasks are formalized and processed by a classical planner. Validity depends on translation and the model. [Original source](https://arxiv.org/abs/2304.11477v3)
 
 ### P63 — PlanBench: An Extensible Benchmark for Evaluating Large Language Models on Planning and Reasoning about Change
 
-Valmeekam et al. · Fassung: 2206.10498v4 · Datum: 2023-11-26 · Prüfung: Abstract + Metadaten.
+Valmeekam et al. · Version: 2206.10498v4 · Date: 2023-11-26 · Inspection: abstract + metadata.
 
-Kontrollierte Planungsaufgaben prüfen Zustandsänderungen. Historische Modellbefunde erlauben keine pauschale Aussage über alle heutigen Modelle. [Originalquelle](https://arxiv.org/abs/2206.10498v4)
+Controlled planning tasks evaluate state changes. Historical model findings support no blanket claim about all current models. [Original source](https://arxiv.org/abs/2206.10498v4)
 
 ### P64 — LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks
 
-Kambhampati et al. · Fassung: 2402.01817v3 · Datum: 2024-06-12 · Prüfung: Abstract + Metadaten.
+Kambhampati et al. · Version: 2402.01817v3 · Date: 2024-06-12 · Inspection: abstract + metadata.
 
-Positionspapier zur Kombination von Lösungsvorschlägen und externen Kritikern. Der Titel ist keine universelle empirische Modellbewertung. [Originalquelle](https://arxiv.org/abs/2402.01817v3)
+Position paper combining proposals and external critics. Its title is not a universal empirical model assessment. [Original source](https://arxiv.org/abs/2402.01817v3)
 
 ### P65 — Robust Planning with Compound LLM Architectures: An LLM-Modulo Approach
 
-Gundawar et al. · Fassung: 2411.14484v1 · Datum: 2024-11-20 · Prüfung: ausgewählte Volltextstellen.
+Gundawar et al. · Version: 2411.14484v1 · Date: 2024-11-20 · Inspection: selected full-text passages.
 
-Vier Schedulingdomänen mit Prüfschleife. Korrektheitsannahmen betreffen erfasste Bedingungen und sounde Prüfer; erfolgreiche Suche bleibt offen. [Originalquelle](https://arxiv.org/abs/2411.14484v1)
+Four scheduling domains with a verification loop. Correctness assumptions concern covered conditions and sound verifiers; successful search remains uncertain. [Original source](https://arxiv.org/abs/2411.14484v1)
 
 ### P66 — Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?
 
-Gloaguen et al. · Fassung: 2602.11988v3 · Datum: 2026-09-29 · Prüfung: ausgewählte Volltextstellen.
+Gloaguen et al. · Version: 2602.11988v3 · Date: 2026-09-29 · Inspection: selected full-text passages.
 
-v3: CTXbench, kein signifikanter allgemeiner Gewinn gegenüber fehlender Datei; höhere Kosten. Entwicklerdateien übertreffen generierte Dateien. [Originalquelle](https://arxiv.org/abs/2602.11988v3)
+v3: CTXbench; no significant general gain over no context file; higher costs. Developer files outperform generated files. [Original source](https://arxiv.org/abs/2602.11988v3)
 
 ### P67 — Measuring AI Ability to Complete Long Software Tasks
 
-Kwa et al. · Fassung: 2503.14499v4 · Datum: 2026-07-10 · Prüfung: Abstract + Metadaten.
+Kwa et al. · Version: 2503.14499v4 · Date: 2026-07-10 · Inspection: abstract + metadata.
 
-Zeithorizont bezieht sich auf menschliche Expertenzeit. Versionsdatum ist kein automatischer Nachweis neuer Modellmessungen. [Originalquelle](https://arxiv.org/abs/2503.14499v4)
+Time horizon refers to human expert time. A revision date does not automatically establish new model measurements. [Original source](https://arxiv.org/abs/2503.14499v4)
 
 ### P68 — DSPy Assertions: Computational Constraints for Self-Refining Language Model Pipelines
 
-Singhvi et al. · Fassung: 2312.13382v2 · Datum: 2024-02-02 · Prüfung: ausgewählte Volltextstellen.
+Singhvi et al. · Version: 2312.13382v2 · Date: 2024-02-02 · Inspection: selected full-text passages.
 
-Harte und weiche Bedingungen steuern Reparatur und Abbruch. Modellbasierte Prädikate bleiben fehleranfällig. [Originalquelle](https://arxiv.org/abs/2312.13382v2)
+Hard and soft conditions control repair and stopping. Model-based predicates remain fallible. [Original source](https://arxiv.org/abs/2312.13382v2)
 
 ### P69 — AgentOccam: A Simple Yet Strong Baseline for LLM-Based Web Agents
 
-Yang et al. · Fassung: 2410.13825v2 · Datum: 2025-05-24 · Prüfung: Abstract + Metadaten.
+Yang et al. · Version: 2410.13825v2 · Date: 2025-05-24 · Inspection: abstract + metadata.
 
-Ausrichtung von Beobachtungs- und Aktionsraum als Webagentenbaseline. Gegenhypothese zur pauschalen Komplexitätssteigerung. [Originalquelle](https://arxiv.org/abs/2410.13825v2)
+Aligns observation and action spaces as a web-agent baseline. Competing hypothesis to indiscriminate increases in complexity. [Original source](https://arxiv.org/abs/2410.13825v2)
 
 ### P70 — AFlow: Automating Agentic Workflow Generation
 
-Zhang et al. · Fassung: 2410.10762v4 · Datum: 2025-04-15 · Prüfung: ausgewählte Volltextstellen.
+Zhang et al. · Version: 2410.10762v4 · Date: 2025-04-15 · Inspection: selected full-text passages.
 
-Codebasierte Workflowoptimierung mit Evaluation und wiederholten Läufen. Gewählte Datensplits und Benchmarks begrenzen den Transfer. [Originalquelle](https://arxiv.org/abs/2410.10762v4)
+Code-based workflow optimization with evaluation and repeated runs. Selected splits and benchmarks limit transfer. [Original source](https://arxiv.org/abs/2410.10762v4)
 
 ### P71 — Debug like a Human: A Large Language Model Debugger via Verifying Runtime Execution Step-by-step
 
-Zhong et al. · Fassung: 2402.16906v6 · Datum: 2024-06-06 · Prüfung: Abstract + Metadaten.
+Zhong et al. · Version: 2402.16906v6 · Date: 2024-06-06 · Inspection: abstract + metadata.
 
-LDB nutzt Zwischenzustände der Ausführung zur Fehlersuche. Modellgestützte Beurteilung solcher Zustände ist kein formaler Beweis. [Originalquelle](https://arxiv.org/abs/2402.16906v6)
+LDB uses intermediate execution states for debugging. Model-based assessment of those states is not a formal proof. [Original source](https://arxiv.org/abs/2402.16906v6)
 
 ### P72 — Is Your Code Generated by ChatGPT Really Correct? Rigorous Evaluation of Large Language Models for Code Generation
 
-Liu et al. · Fassung: 2305.01210v3 · Datum: 2023-10-30 · Prüfung: ausgewählte Volltextstellen.
+Liu et al. · Version: 2305.01210v3 · Date: 2023-10-30 · Inspection: selected full-text passages.
 
-Zusätzliche Inputs und Differential Testing prüfen übersehene Fehler. Referenzlösung und Eingabedomäne bleiben Voraussetzungen. [Originalquelle](https://arxiv.org/abs/2305.01210v3)
+Additional inputs and differential testing expose overlooked errors. Reference solutions and input domains remain assumptions. [Original source](https://arxiv.org/abs/2305.01210v3)
 
 ### P73 — Self-Consistency Improves Chain of Thought Reasoning in Language Models
 
-Wang et al. · Fassung: 2203.11171v4 · Datum: 2023-03-07 · Prüfung: Abstract + Metadaten.
+Wang et al. · Version: 2203.11171v4 · Date: 2023-03-07 · Inspection: abstract + metadata.
 
-Mehrere Reasoningpfade werden aggregiert. Geteilte Fehler und die Aufgabenklasse begrenzen die Verlässlichkeit von Mehrheiten. [Originalquelle](https://arxiv.org/abs/2203.11171v4)
+Aggregates multiple reasoning paths. Shared errors and task class limit majority reliability. [Original source](https://arxiv.org/abs/2203.11171v4)
 
 ### P74 — Meta-Harness: End-to-End Optimization of Model Harnesses
 
-Lee et al. · Fassung: 2603.28052v1 · Datum: 2026-03-30 · Prüfung: ausgewählte Volltextstellen.
+Lee et al. · Version: 2603.28052v1 · Date: 2026-03-30 · Inspection: selected full-text passages.
 
-Code- und Tracegestützte Optimierung. Terminal-Bench verwendet dieselben Aufgaben für Suche und Auswertung; Mathematik hat getrennten Transfer. [Originalquelle](https://arxiv.org/abs/2603.28052v1)
+Code- and trace-based optimization. Terminal-Bench uses the same tasks for search and evaluation; mathematics has separate transfer assessment. [Original source](https://arxiv.org/abs/2603.28052v1)
 
 ### P75 — Natural-Language Agent Harnesses
 
-Pan et al. · Fassung: 2603.25723v2 · Datum: 2026-05-18 · Prüfung: ausgewählte Volltextstellen.
+Pan et al. · Version: 2603.25723v2 · Date: 2026-05-18 · Inspection: selected full-text passages.
 
-Text beschreibt Policy, Code implementiert exakte Mechanismen. Interpretationsabhängige Texte müssen an ausgeführtem Verhalten geprüft werden. [Originalquelle](https://arxiv.org/abs/2603.25723v2)
+Text describes policy; code implements exact mechanisms. Interpretation-dependent documents must be checked against executed behavior. [Original source](https://arxiv.org/abs/2603.25723v2)
 
-## Surveys und Reporting
+## Surveys and reporting
 
 ### S01 — Agent Systems with Harness Engineering: A Systematic Survey
 
-Tang et al. · Fassung: Journalfassung; DOI 10.1007/s11704-026-61123-6 · Datum: 2026-09-16 · Prüfung: Abstract + Metadaten.
+Tang et al. · Version: Journal version; DOI 10.1007/s11704-026-61123-6 · Date: 2026-09-16 · Inspection: abstract + metadata.
 
-Survey zu Workflow, Gedächtnis und Skills. Journalmetadaten und Abstract geprüft; Volltextzugang blieb begrenzt. [Originalquelle](https://journal.hep.com.cn/fcs/EN/10.1007/s11704-026-61123-6)
+Survey of workflows, memory, and skills. Journal metadata and abstract inspected; full-text access remained limited. [Original source](https://journal.hep.com.cn/fcs/EN/10.1007/s11704-026-61123-6)
 
 ### S02 — Agent Harness Engineering: A Survey
 
-Li et al. · Fassung: Autoren-PDF; unversioniert, abgerufen 2026-10-13 · Datum: nicht zuverlässig festgestellt · Prüfung: ausgewählte Volltextstellen.
+Li et al. · Version: Unversioned author PDF; accessed 2026-10-13 · Date: not reliably established · Inspection: selected full-text passages.
 
-Sieben Harnessschichten und Mapping öffentlicher Projekte. Deskriptive, durch öffentlich zugängliche Informationen begrenzte Taxonomie. [Originalquelle](https://picrew.github.io/LLM-Harness/main.pdf)
+Seven harness layers and mapping of public projects. Descriptive taxonomy bounded by publicly available information. [Original source](https://picrew.github.io/LLM-Harness/main.pdf)
 
 ### S03 — From Question Answering to Task Completion: A Survey on Agent System and Harness Design
 
-Guo et al. · Fassung: 2606.20683v1 · Datum: 2026-06-14 · Prüfung: ausgewählte Volltextstellen.
+Guo et al. · Version: 2606.20683v1 · Date: 2026-06-14 · Inspection: selected full-text passages.
 
-Sechs gekoppelte Runtimeaufgaben und aufgabenabhängige Harnessbelastung. Taxonomie bietet Orientierung, keine isolierten Wirksamkeitsnachweise. [Originalquelle](https://arxiv.org/abs/2606.20683v1)
+Six coupled runtime responsibilities and task-dependent harness pressures. Orientation, not isolated effectiveness evidence. [Original source](https://arxiv.org/abs/2606.20683v1)
 
 ### S04 — Harness Engineering for Language Agents: The Harness Layer as Control, Agency, and Runtime
 
-He et al. · Fassung: 10.20944/preprints202603.1756.v2 · Datum: 2026-04-23 · Prüfung: ausgewählte Volltextstellen.
+He et al. · Version: 10.20944/preprints202603.1756.v2 · Date: 2026-04-23 · Inspection: selected full-text passages.
 
-Nicht begutachteter Preprint mit begrifflicher Zerlegung und HarnessCard. Reportingvorschlag für Modell, Kontrollartefakte und Runtimepolicy. [Originalquelle](https://www.preprints.org/manuscript/202603.1756)
+Non-peer-reviewed preprint with a conceptual decomposition and HarnessCard. Reporting proposal for models, control artifacts, and runtime policy. [Original source](https://www.preprints.org/manuscript/202603.1756)
 
-## Engineering und Schnittstellenverträge
+## Engineering and interface contracts
 
 ### D01 — Harness engineering: leveraging Codex in an agent-first world
 
-OpenAI / Lopopolo · Fassung: 2026-02-11 · Datum: 2026-02-11 · Prüfung: relevante Artikel-/Dokumentationspassagen.
+OpenAI / Lopopolo · Version: 2026-02-11 · Date: 2026-02-11 · Inspection: relevant article/documentation passages.
 
-Architekturprüfungen, kuratierte Repositoryführung und kurze Einstiegskarte. Ein interner Erfahrungsbericht; keine kausale Produktivitätsstudie. [Originalquelle](https://openai.com/index/harness-engineering/)
+Architecture checks, curated repository guidance, and a short entry map. Internal experience report, not a causal productivity study. [Original source](https://openai.com/index/harness-engineering/)
 
 ### D02 — Effective harnesses for long-running agents
 
-Anthropic / Young · Fassung: 2025-11-26 · Datum: 2025-11-26 · Prüfung: relevante Artikel-/Dokumentationspassagen.
+Anthropic / Young · Version: 2025-11-26 · Date: 2025-11-26 · Inspection: relevant article/documentation passages.
 
-Initialisierung, Featureliste, Fortschrittsartefakte und überprüfbarer Sitzungsabschluss. Engineering-Erfahrung mit konkreten Modell-/Aufgabenannahmen. [Originalquelle](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
+Initialization, feature lists, progress artifacts, and verifiable session completion. Engineering experience under concrete model/task assumptions. [Original source](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
 
 ### D03 — Harness design for long-running apps
 
-Anthropic / Rajasekaran · Fassung: 2026-03-24 · Datum: 2026-03-24 · Prüfung: relevante Artikel-/Dokumentationspassagen.
+Anthropic / Rajasekaran · Version: 2026-03-24 · Date: 2026-03-24 · Inspection: relevant article/documentation passages.
 
-Planung, Generierung und Evaluation längerer App-Aufgaben. Rollen und Kriterien müssen mit Modell- und Aufgabenwechseln neu bewertet werden. [Originalquelle](https://www.anthropic.com/engineering/harness-design-long-running-apps)
+Planning, generation, and evaluation of longer application tasks. Reassess roles and criteria when models or tasks change. [Original source](https://www.anthropic.com/engineering/harness-design-long-running-apps)
 
 ### D04 — Demystifying evals for AI agents
 
-Anthropic · Fassung: 2026-01-09 · Datum: 2026-01-09 · Prüfung: relevante Artikel-/Dokumentationspassagen.
+Anthropic · Version: 2026-01-09 · Date: 2026-01-09 · Inspection: relevant article/documentation passages.
 
-Trennt Task, Trial, Transcript, Grader und Outcome. Hilfreiche Methodik; eigene Evaluationen bleiben notwendig. [Originalquelle](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)
+Separates tasks, trials, transcripts, graders, and outcomes. Useful methodology; independent evaluations remain necessary. [Original source](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)
 
 ### D05 — Infrastructure noise
 
-Anthropic / Segato · Fassung: 2026-02-05 · Datum: 2026-02-05 · Prüfung: relevante Artikel-/Dokumentationspassagen.
+Anthropic / Segato · Version: 2026-02-05 · Date: 2026-02-05 · Inspection: relevant article/documentation passages.
 
-Umgebungsressourcen können Agentenscores beeinflussen. Ressourcen, Timeouts und Parallelität gehören in den Runmanifest. [Originalquelle](https://www.anthropic.com/engineering/infrastructure-noise)
+Environment resources can affect agent scores. Capture resources, timeouts, and concurrency in run manifests. [Original source](https://www.anthropic.com/engineering/infrastructure-noise)
 
 ### D06 — Building effective agents
 
-Anthropic · Fassung: 2024-12-19 · Datum: 2024-12-19 · Prüfung: relevante Artikel-/Dokumentationspassagen.
+Anthropic · Version: 2024-12-19 · Date: 2024-12-19 · Inspection: relevant article/documentation passages.
 
-Unterscheidet vordefinierte Workflows und modellgesteuerte Agenten. Einfachheit ist eine Ausgangsentscheidung, keine universelle Rangfolge. [Originalquelle](https://www.anthropic.com/engineering/building-effective-agents)
+Distinguishes predefined workflows from model-directed agents. Simplicity is a starting choice, not a universal ranking. [Original source](https://www.anthropic.com/engineering/building-effective-agents)
 
 ### D07 — Effective context engineering for AI agents
 
-Anthropic · Fassung: 2025-09-29 · Datum: 2025-09-29 · Prüfung: relevante Artikel-/Dokumentationspassagen.
+Anthropic · Version: 2025-09-29 · Date: 2025-09-29 · Inspection: relevant article/documentation passages.
 
-Aufgabengerechter Kontext, Abruf und Verdichtung. Zusammenfassungen ersetzen keinen autoritativen Workflowzustand. [Originalquelle](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
+Task-appropriate context, retrieval, and compaction. Summaries do not replace authoritative workflow state. [Original source](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
 
 ### D08 — Writing effective tools for agents
 
-Anthropic · Fassung: 2025-09-11 · Datum: 2025-09-11 · Prüfung: relevante Artikel-/Dokumentationspassagen.
+Anthropic · Version: 2025-09-11 · Date: 2025-09-11 · Inspection: relevant article/documentation passages.
 
-Werkzeugnamen, Argumente und verwertbare Rückmeldungen als Designparameter. Verbesserung sollte anhand echter Aufgaben gemessen werden. [Originalquelle](https://www.anthropic.com/engineering/writing-tools-for-agents)
+Tool names, arguments, and actionable feedback as design parameters. Measure improvement on real tasks. [Original source](https://www.anthropic.com/engineering/writing-tools-for-agents)
 
 ### D09 — Managed agents
 
-Anthropic · Fassung: 2026-04-08 · Datum: 2026-04-08 · Prüfung: relevante Artikel-/Dokumentationspassagen.
+Anthropic · Version: 2026-04-08 · Date: 2026-04-08 · Inspection: relevant article/documentation passages.
 
-Trennung von Sitzung, Harness, Modell und Ausführungsumgebung. Anbieterarchitektur als Erfahrung, keine vorgeschriebene Plattform. [Originalquelle](https://www.anthropic.com/engineering/managed-agents)
+Separates sessions, harnesses, models, and execution environments. Vendor architecture as experience, not a required platform. [Original source](https://www.anthropic.com/engineering/managed-agents)
 
 ### D10 — LangGraph: Persistence
 
-LangChain · Fassung: Live-Dokumentation, abgerufen 2026-10-13 · Datum: Live-Dokumentation, abgerufen 2026-10-13 · Prüfung: relevante Artikel-/Dokumentationspassagen.
+LangChain · Version: Live documentation, accessed 2026-10-13 · Date: Live documentation, accessed 2026-10-13 · Inspection: relevant article/documentation passages.
 
-Checkpoints und persistente Speicher unterscheiden sich von RAM-Speichern. Persistenz benötigt gewählten Backend- und Retentionsvertrag. [Originalquelle](https://docs.langchain.com/oss/python/langgraph/persistence)
+Checkpoints and persistent storage differ from RAM stores. Persistence needs a selected backend and retention contract. [Original source](https://docs.langchain.com/oss/python/langgraph/persistence)
 
 ### D11 — LangGraph: Interrupts
 
-LangChain · Fassung: Live-Dokumentation, abgerufen 2026-10-13 · Datum: Live-Dokumentation, abgerufen 2026-10-13 · Prüfung: relevante Artikel-/Dokumentationspassagen.
+LangChain · Version: Live documentation, accessed 2026-10-13 · Date: Live documentation, accessed 2026-10-13 · Inspection: relevant article/documentation passages.
 
-Unterbrochene Nodes werden beim Resume erneut begonnen. Vorherige Nebenwirkungen müssen gegen Wiederholung abgesichert werden. [Originalquelle](https://docs.langchain.com/oss/python/langgraph/interrupts)
+Interrupted nodes restart on resume. Earlier effects need protection against repetition. [Original source](https://docs.langchain.com/oss/python/langgraph/interrupts)
 
 ### D12 — Temporal Workflow Execution overview
 
-Temporal · Fassung: Live-Dokumentation, abgerufen 2026-10-13 · Datum: Live-Dokumentation, abgerufen 2026-10-13 · Prüfung: relevante Artikel-/Dokumentationspassagen.
+Temporal · Version: Live documentation, accessed 2026-10-13 · Date: Live documentation, accessed 2026-10-13 · Inspection: relevant article/documentation passages.
 
-Workflow-Replay prüft Commands gegen gespeicherte Ereignishistorie. Rekonstruktion ist keine erneute identische LLM-Generierung. [Originalquelle](https://docs.temporal.io/workflow-execution)
+Workflow replay checks commands against recorded event history. Reconstruction is not identical fresh LLM generation. [Original source](https://docs.temporal.io/workflow-execution)
 
 ### D13 — What is a Temporal Activity?
 
-Temporal · Fassung: Live-Dokumentation, abgerufen 2026-10-13 · Datum: Live-Dokumentation, abgerufen 2026-10-13 · Prüfung: relevante Artikel-/Dokumentationspassagen.
+Temporal · Version: Live documentation, accessed 2026-10-13 · Date: Live documentation, accessed 2026-10-13 · Inspection: relevant article/documentation passages.
 
-Activities dürfen nichtdeterministisch sein und werden bei Fehlern wiederholt. Idempotenz bleibt Aufgabe der externen Aktion. [Originalquelle](https://docs.temporal.io/activities)
+Activities may be nondeterministic and retried after failure. External actions remain responsible for idempotency. [Original source](https://docs.temporal.io/activities)
 
 ### D14 — Open Policy Agent: Introduction
 
-OPA · Fassung: Live-Dokumentation, abgerufen 2026-10-13 · Datum: Live-Dokumentation, abgerufen 2026-10-13 · Prüfung: relevante Artikel-/Dokumentationspassagen.
+OPA · Version: Live documentation, accessed 2026-10-13 · Date: Live documentation, accessed 2026-10-13 · Inspection: relevant article/documentation passages.
 
-Trennt Policyentscheidung und Durchsetzung. Der aufrufende Effektpfad muss das Ergebnis tatsächlich beachten. [Originalquelle](https://www.openpolicyagent.org/docs)
+Separates policy decisions from enforcement. The calling effect path must actually respect the decision. [Original source](https://www.openpolicyagent.org/docs)
 
 ### D15 — What is Cedar?
 
-Cedar · Fassung: Dokumentationsstand 4.5, abgerufen 2026-10-13 · Datum: Dokumentationsstand 4.5, abgerufen 2026-10-13 · Prüfung: relevante Artikel-/Dokumentationspassagen.
+Cedar · Version: Documentation version 4.5, accessed 2026-10-13 · Date: Documentation version 4.5, accessed 2026-10-13 · Inspection: relevant article/documentation passages.
 
-Autorisierung über Principal, Action, Resource und Context. Schema validiert Policies; Laufzeitdaten brauchen einen separaten Vertrag. [Originalquelle](https://docs.cedarpolicy.com/)
+Authorization through principal, action, resource, and context. Schemas validate policies; runtime data needs a separate contract. [Original source](https://docs.cedarpolicy.com/)
 
 ### D16 — SLSA Build: Provenance
 
-SLSA · Fassung: Spezifikation v1.2, abgerufen 2026-10-13 · Datum: Spezifikation v1.2, abgerufen 2026-10-13 · Prüfung: relevante Artikel-/Dokumentationspassagen.
+SLSA · Version: Specification v1.2, accessed 2026-10-13 · Date: Specification v1.2, accessed 2026-10-13 · Inspection: relevant article/documentation passages.
 
-Verifizierbare Zuordnung von Builder, Inputs und Outputs. Vollständigkeit der Dependencies bleibt begrenzt; Provenance ersetzt keine Qualitätsprüfung. [Originalquelle](https://slsa.dev/spec/v1.2/build-provenance)
+Verifiable relationships between builders, inputs, and outputs. Dependency completeness remains limited; provenance does not replace quality checks. [Original source](https://slsa.dev/spec/v1.2/build-provenance)

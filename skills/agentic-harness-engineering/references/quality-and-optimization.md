@@ -1,39 +1,39 @@
-# Fachliche Qualität und Auswahl von Methoden
+# Functional quality and method selection
 
-**Laden bei:** Accuracyproblemen, falschen Abschlüssen, Toolfehlern, Kontextproblemen oder der Auswahl von Zerlegung, Suche, Rollen und Lernverfahren. Grundlage: R06/R08. Die Quellenbewertung steht in [evidence.md](evidence.md), das Messverfahren in [evaluation.md](evaluation.md).
+**Load for:** accuracy problems, false completion, tool failures, context problems, or selecting decomposition, search, roles, and learning methods. Supports R06/R08. [evidence.md](evidence.md) assesses the sources; [evaluation.md](evaluation.md) describes measurement.
 
-## Das Orakel vor der zusätzlichen Schleife prüfen
+## Check the oracle before adding another loop
 
-Verknüpfe die erwartete Eigenschaft mit einer tatsächlichen Prüfung. Tests decken untersuchte Inputs ab; Typ- und Schemaprüfungen decken andere Bedingungen ab; formal sounde Prüfer gelten für ihr korrekt spezifiziertes Modell. Ein bestandener Prüfschritt ist nur ein Nachweis für seine erfassten Bedingungen.
+Connect the desired property to an actual check. Tests cover evaluated inputs; type and schema checks cover other conditions; formally sound verifiers apply to their correctly specified model. Passing a check establishes only the conditions it covers.
 
-Bei generierten Tests prüfe, ob sie auf dem fehlerhaften Ausgangszustand scheitern und auf einer gültigen Lösung bestehen, sofern diese Kontrolle verfügbar ist. Prüfe zusätzlich, ob sie an eine einzelne Implementierung überangepasst sind. Für relevante Eingabedomänen helfen gezielte Grenzfälle, Property-/Differential Testing oder andere passende Orakel. Eine Referenzlösung kann selbst falsch oder unvollständig sein; benenne diese Annahme.
+For generated tests, check that they fail on the faulty initial state and pass on a valid solution where these controls are available. Also check whether they overfit a particular implementation. For relevant input domains, targeted boundary cases, property/differential testing, or other suitable oracles can help. A reference solution can itself be wrong or incomplete; state that assumption.
 
-Bei Planern prüfe, ob formale Repräsentation, initialer Zustand und Ressourcen die fachliche Aufgabe erfassen. Die Korrektheit eines Solveroutputs ersetzt keine korrekte Übersetzung. Bei einem LLM-Judge berücksichtige Fehlbewertungen und gemeinsame Modellfehler; mehrere Rollen ergeben keine automatische Prüferunabhängigkeit.
+For planners, verify that the formal representation, initial state, and resources capture the functional task. A correct solver output does not replace a correct translation. For an LLM judge, consider misclassification and shared model errors; multiple roles do not automatically provide verifier independence.
 
-## Reparatur durch konkretes Feedback steuern
+## Drive repair with concrete feedback
 
-Lass Kandidaten erzeugen, tatsächlich prüfen und anhand identifizierter Fehler verbessern. Wenn nur Selbstkritik verfügbar ist, kennzeichne die Schleife als Heuristik. Unterscheide eine verbindliche Assertion von einer Empfehlung, bei der Weiterarbeit erlaubt ist. Nach ausgeschöpftem Budget bleiben harte unbewiesene Bedingungen offen; ein weicher Wunsch darf je nach Auftrag mit dokumentierter Einschränkung ungelöst bleiben.
+Generate candidates, actually check them, and repair identified failures. If only self-critique is available, label the loop heuristic. Distinguish mandatory assertions from recommendations that permit continuation. After the budget is exhausted, unproven mandatory conditions remain open; a soft preference may remain unresolved with a documented limitation, depending on the task.
 
-Wenn ein Kandidat seinen Prüfer verändern kann, trenne die Bewertung vom Kandidaten oder sichere die relevanten Prüfspezifikationen. Mehr Reparaturversuche an einem schwachen Orakel können dessen Lücken ausnutzen. Beobachte Fehlakzeptanz neben erfolgreicher Reparatur.
+If a candidate can change its verifier, separate evaluation from the candidate or protect the relevant check specification. More repair attempts against a weak oracle can exploit its gaps. Observe false acceptance alongside successful repair.
 
-## Methode passend zum Engpass wählen
+## Choose a method for the bottleneck
 
-| Beobachtung | Zu prüfende Methode | Bedingung / Gegenhypothese |
+| Observation | Method to investigate | Condition or competing hypothesis |
 |---|---|---|
-| Ungültige Toolinputs | Typisierte Eingaben, Schema/Grammatik und bessere Fehlerrückmeldung. | Semantische Werte bleiben separat zu prüfen. |
-| Schwierige Navigation oder Änderungen | Aufgabegeeignete Such-, Editier- und Beobachtungsinterfaces. | Zu enge Werkzeuge können nötige Ausdruckskraft verlieren. |
-| Schwieriger Teil einer ansonsten lösbaren Aufgabe | Adaptive Zerlegung mit prüfbaren Teilzielen. | Zerlegung kann falsche Abhängigkeiten oder Abschlussheuristiken erzeugen. |
-| Unabhängige Schritte dominieren Laufzeit | Geprüfter DAG und paralleles Scheduling. | Wirklich abhängige oder konfligierende Schritte dürfen nicht parallelisiert werden. |
-| Mehrere plausible Lösungskandidaten | Budgetierte Suche, Sampling und geeignete Auswahlprüfung. | Korrelierte Fehler und ungeeignete Wertfunktionen können zusätzliche Suche entwerten. |
-| Kontextverlust | Gezielte Kontextprojektion und dauerhafter Arbeitszustand. | Mehr Text oder starke Verdichtung können selbst Nachteile haben. |
-| Wiederkehrende Teilabläufe | Begrenzte Wiederverwendung von Erfahrungen. | Veraltete oder falsche Erinnerungen müssen revidierbar bleiben. |
-| Spezialisierte Information oder unabhängige Beurteilung fehlt | Zusätzliche Rolle mit klaren Inputs und Zuständigkeiten. | Eine einfache Pipeline bleibt Vergleichsbasis; Koordination kostet Ressourcen. |
-| Wiederkehrender Harnessfehler mit brauchbaren Traces | Begrenzte Harnessreparatur oder Workflowoptimierung. | Ohne getrennte Evals kann nur an bekannte Aufgaben angepasst werden. |
+| Invalid tool inputs | Typed inputs, schema/grammar checks, and better error feedback. | Semantic values still need separate checks. |
+| Difficult navigation or editing | Task-appropriate search, editing, and observation interfaces. | Overly narrow tools can remove necessary expressiveness. |
+| A difficult subtask in an otherwise solvable task | Adaptive decomposition with verifiable subgoals. | Decomposition may introduce wrong dependencies or completion heuristics. |
+| Independent steps dominate latency | Validated DAG and parallel scheduling. | Dependent or conflicting steps must not run in parallel. |
+| Several plausible candidates | Budgeted search, sampling, and suitable selection checks. | Correlated errors and poor value functions can undermine additional search. |
+| Lost context | Targeted context projection and durable working state. | More text or aggressive compaction can introduce disadvantages. |
+| Recurring subroutines | Bounded reuse of experience. | Stale or incorrect memories must remain revisable. |
+| Missing specialist information or independent assessment | An additional role with clear inputs and responsibilities. | Keep a simple pipeline as a baseline; coordination costs resources. |
+| Recurring harness failures with usable traces | Scoped harness repair or workflow optimization. | Without separate evaluations, optimization may only fit known tasks. |
 
-Die Tabelle beschreibt mögliche Interventionen, keine automatische Eskalationsfolge. Wähle die kleinste plausible Änderung, die den beobachteten Fehler adressiert. Bei einer bereits exakt berechenbaren Aufgabe verwende einen geeigneten klassischen Algorithmus als Alternative oder Baseline.
+The table describes possible interventions, not an automatic escalation sequence. Choose the smallest plausible change addressing the observed failure. For an exactly computable task, retain a suitable classical algorithm as an alternative or baseline.
 
-## Grenzen der Generalisierung
+## Limits of generalization
 
-MAKERs langer fehlerfreier Ablauf beruht auf einer engen, vorgegeben zerlegbaren Aufgabe; daraus folgt kein Anspruch auf beliebige Softwarekorrektheit. Mehrheitsvoting benötigt günstige Fehlerbedingungen und ein angemessenes Auswahlverfahren. AGENTS.md v3 spricht gegen einen pauschalen Erfolgsgewinn zusätzlicher Kontextdateien, nicht gegen jede nützliche Repositoryanweisung.
+MAKER's long error-free execution relies on a narrow task with a predetermined decomposition; it does not establish arbitrary software correctness. Majority voting needs favorable error conditions and appropriate selection. AGENTS.md v3 challenges a blanket success benefit from extra context files, not every useful repository instruction.
 
-Bei Harnesslernen speichere Fehlerkontext, Änderung und tatsächliche Ergebnisse, damit eine Verbesserung nachvollziehbar bleibt. Behalte einen getrennten Einführungsweg für Änderungen an verbindlichen Grenzmechanismen. Onlineanpassung einer Strategie ist nicht gleichbedeutend mit autorisiertem Umschreiben der eigenen Berechtigungen. Vergleiche Verbesserungen und geschützte Gegenfälle auf getrennten, bislang nicht zur Optimierung genutzten Aufgaben, wenn Generalisierung behauptet wird.
+For harness learning, preserve failure context, changes, and actual results so improvement remains traceable. Keep a separate introduction path for changes to mandatory boundary mechanisms. Online strategy adaptation is not authorization to rewrite its own permissions. If claiming generalization, assess improvements and protected counterexamples on separate tasks not previously used for optimization.
