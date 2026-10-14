@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5.0 — 2026-10-14
+
+- Add Copilot Usage Baseline for historical GitHub Copilot CLI token totals, per-session mean and median, model comparisons, and provisional credit estimates. It discovers available history sources, reports local/cloud coverage and missing metrics, distinguishes usage events from cumulative snapshots, and preserves the SDK's billing-conversion caveat.
+- Include the reviewed evidence, original source fingerprints, four evaluation requests with separate rubrics, and publication validation limits. This compatible new skill warrants a minor release; packaging checks and an author walkthrough do not establish independent agent effectiveness or reconciled account billing.
+
 ## 1.4.1 — 2026-10-14
 
 - Translate Agentic Harness Engineering into English, including its entrypoint, focused references, all 95 source annotations, evaluation requests, grading criteria, and validation reports. The public identifier, nine rules, applicability conditions, evidence limitations, and authorization boundaries are preserved.

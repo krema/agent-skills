@@ -10,7 +10,7 @@ Install skills globally with [`npx skills`](#global-installation-with-npx-skills
 
 Choose a category for your task and use an example request to get started.
 
-[Agent instructions and context](#agent-instructions-and-context) · [Research and evidence](#research-and-evidence) · [Documentation and work planning](#documentation-and-work-planning) · [Skill and workflow improvement](#skill-and-workflow-improvement)
+[Agent instructions and context](#agent-instructions-and-context) · [Research and evidence](#research-and-evidence) · [Documentation and work planning](#documentation-and-work-planning) · [Skill and workflow improvement](#skill-and-workflow-improvement) · [GitHub Copilot usage](#github-copilot-usage)
 
 ### Agent instructions and context
 
@@ -50,6 +50,14 @@ Refine existing guidance and learn from corrections and verified outcomes.
 | [Agentic Harness Engineering](skills/agentic-harness-engineering/SKILL.md) | Designing, auditing, or improving control, rule enforcement, recovery, and verification in an agentic development harness. | “Audit this harness and propose evidence-backed changes with observable acceptance checks.” |
 | [Skill Refinement](skills/skill-refinement/SKILL.md) | A skill or agent-facing document needs a substantive review or rewrite. | “Improve this skill: remove redundant guidance and preserve its conditions and recovery steps.” |
 | [Learning Loop](skills/learning-loop/SKILL.md) | Corrections and verified outcomes should improve future workflows. | “Review these supplied logs and propose scoped improvements to our guidance.” |
+
+### GitHub Copilot usage
+
+Quantify historical usage from the Copilot CLI records available to your agent.
+
+| Skill | Use it when… | Example request |
+| --- | --- | --- |
+| [Copilot Usage Baseline](skills/copilot-usage-baseline/SKILL.md) | Prior Copilot CLI sessions need token baselines, model comparisons, or a clearly labeled credit estimate. | “Summarize mean and median tokens per session for the last 30 days, with a model breakdown and history coverage.” |
 
 ## Install
 
@@ -128,6 +136,8 @@ Use `copilot plugin list` to check installation. These commands target **Copilot
 Ask the agent for the task you want completed, using the examples above as a starting point. Skill descriptions help the host select relevant instructions. Explicit skill selection and invocation syntax depend on the client.
 
 The Markdown skills need no API keys or additional services. Skill Refinement includes optional structural checks and evaluation helpers requiring **Python 3.10+**, using only the standard library.
+
+Copilot Usage Baseline requires accessible Copilot CLI usage records. History interfaces and retention vary by host; the skill reports the coverage of the source it can actually query.
 
 Learning Loop keeps observations in private project storage and proposes evidence-backed changes. It includes no background observer: continuous capture requires a separately authorized host integration or recurring invocation. Applying improvements respects the user’s existing authorization.
 
