@@ -140,6 +140,27 @@
     "title": "Context Management",
     "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
   },
+  "copilot-usage-baseline": {
+    "published_sha256": {
+      "SKILL.md": "4c6ca1c222dd5e97171d6ba95944018bda0e4211a55217bc4738e2b6c352429f",
+      "evals/requests.md": "34c6b42d2e83d661cf725841188c706b84d38bdba591e87554dee59270bf7a8f",
+      "evals/rubrics.md": "2f428ff92d8c92bb9e0639e64cdf46a0cc2506a187345236ed5a7065b4d829e5",
+      "evals/validation.md": "17aaf40448807bd710447793dac804fdadf11c263b90107b19ee6641557b2508",
+      "origin.json": "6d5b690a5147eb7cb88492230fdd2cd628b3f7d2f15fb29ff0a1a159d21a2f35",
+      "references/evidence.md": "19f7516d20a16e7fecdaa354d1b61ca3075a15967b849954bae47e50cc4954ea"
+    },
+    "source_name": "copilot-usage-baseline",
+    "source_sha256": {
+      "SKILL.md": "ad6521bb51ab95c764a704008e7b4ad5d448deb179f31840bfda11b4f96d135b",
+      "evals/requests.md": "34c6b42d2e83d661cf725841188c706b84d38bdba591e87554dee59270bf7a8f",
+      "evals/rubrics.md": "2f428ff92d8c92bb9e0639e64cdf46a0cc2506a187345236ed5a7065b4d829e5",
+      "evals/validation.md": "17aaf40448807bd710447793dac804fdadf11c263b90107b19ee6641557b2508",
+      "origin.json": "6d5b690a5147eb7cb88492230fdd2cd628b3f7d2f15fb29ff0a1a159d21a2f35",
+      "references/evidence.md": "19f7516d20a16e7fecdaa354d1b61ca3075a15967b849954bae47e50cc4954ea"
+    },
+    "title": "Copilot Usage Baseline",
+    "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
+  },
   "learning-loop": {
     "published_sha256": {
       "SKILL.md": "84c140290088ff9be05f454350c3cec680ddaf4b9e967568483cf0b432a99103",

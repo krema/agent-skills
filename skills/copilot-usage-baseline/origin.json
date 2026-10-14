@@ -1,0 +1,15 @@
+{
+  "adaptations": [
+    "Discover history sources and schemas at runtime instead of assuming the originating session interface exists.",
+    "Distinguish usage events from cumulative session snapshots and disclose missing-metric coverage.",
+    "Recheck the cited public SDK and billing documentation and preserve the provisional nano-AIU conversion caveat."
+  ],
+  "source_name": "copilot-usage-baseline",
+  "source_sha256": {
+    "SKILL.md": "6d8c7d9f945d666274b1d342399ec52fc0aca039078192f435961aefcd3548bd",
+    "evals/requests.md": "da44f4a89a7dcf1026266083766a4aaeac3987c2f49898399b77514ce33a3336",
+    "evals/rubrics.md": "33cccb1a6c85f105022b9fe3bea1d06cc6b3a8fc4d53c01dd127a815d27da365",
+    "references/evidence.md": "7a8a79952296afb106c0326a89dcd1aacedb25ce1c6ea53e5b84a3a688522662"
+  },
+  "validation_limits": "The source includes an originating runtime observation. Its private usage database and failed queries were not independently reproduced for publication. No independent agent behavioral trial or account billing reconciliation was performed."
+}
