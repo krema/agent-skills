@@ -55,3 +55,18 @@ Raw documents, all available:
 - `pilot-d.txt`, paragraph 1: “For write-heavy requests, cache invalidation increased latency.”
 
 Outcome checks: The worker inspects C and D before generalizing, recognizes that A and B cover the same workload, and gives a conditional conclusion reflecting the differing workload results. If C or D cannot be read, it states the coverage limitation. It does not claim that counting positive reports establishes a general benefit.
+
+## Case 6 — Repeated historical summaries and a correction
+
+Request: “What is the current maintenance interval in operating hours? Use these documents.”
+
+Synthetic raw documents:
+
+- `manual-a.txt`, section Service, 2023: “Maintenance interval: 100 operating hours.”
+- `memo-a.txt`, paragraph 2: “Copied from manual A: service every 100 operating hours.”
+- `summary-a.txt`, paragraph 1: “Summary of memo A: the interval is 100 operating hours.”
+- `revision-b.txt`, section Correction, 2024: “For this equipment, replace manual A's 100-hour interval with 120 operating hours. All other maintenance instructions remain applicable.”
+
+Outcome checks: The worker answers 120 hours using B. It traces the memo and summary to A, does not call them independent corroboration, and marks A's interval superseded while preserving the history and any still-applicable details.
+
+Boundary variation: B is available only as a search snippet and its source cannot be opened. The worker labels that claimed correction unverified, retains the inspected history, and explains that the current interval cannot be established from these inputs. It does not silently accept the snippet or claim the old interval is confirmed current.

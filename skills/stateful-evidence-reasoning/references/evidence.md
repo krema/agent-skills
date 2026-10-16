@@ -1,16 +1,17 @@
 # Evidence: stateful source-grounded reasoning
 
-Initial review 12 October 2026; targeted refresh 13 October 2026. Intended use: a general Codex-style agent answering multi-document and large-corpus questions with ordinary search, read, notes, and computation tools. Target outcome: fewer missed corrections, unsupported claims, and unnecessary follow-up searches. This is a targeted review of the user-supplied paper and decision-relevant primary sources, not a systematic review. No independent replication or test of this *skill* was located or performed.
+Initial review 12 October 2026; targeted refreshes 13 and 16 October 2026. Intended use: a general Codex-style agent answering multi-document and large-corpus questions with ordinary search, read, notes, and computation tools. Target outcome: fewer missed corrections, unsupported claims, and unnecessary follow-up searches. This is a targeted review of the user-supplied paper and decision-relevant primary sources, not a systematic review. No independent replication or test of this *skill* was located or performed.
 
 ## Research coverage
 
-| Decision | Search/inspection scope (12–13 October 2026) | Result |
+| Decision | Search/inspection scope (12–16 October 2026) | Result |
 |---|---|---|
 | Whether separate evidence and conclusion states help | LongHarness v1 method, Tables 1–3 and 9, Appendices B–E; search for official implementation | The authors report gains and ablation losses in their harness. A targeted search did not locate an official LongHarness code release. Transfer to a text skill is untested. |
 | Whether source links and revisions are sufficient | LongHarness state contract and controller limits; OfficeQA Pro failure analysis | Source-reference validation does not ensure faithful extraction, correct operands, or correct parsing. |
 | When a simpler path may work | ReContext methods/results/limitations; LedgerMind dispatcher and limitations; Lost in the Middle abstract | Other methods improve evidence use without the same persistent state. Extra reasoning can hurt simple tasks in another setting. |
 | Benchmark transfer | OfficeQA Pro source paper and repository; LongHarness setup | The principal corpus is historical Treasury documents with numerical answers and revisable tables; direct-model and harness interfaces differ. |
 | Selection bias and search coverage | 13 October: primary Search Shapes Conclusions v1 methods, results, and public-agent adapter; overlap searches from 11 October | E07 supports a scoped coverage safeguard as engineering inference. |
+| Repeated records | 16 October: Memory Echo v1 method, setup, ablations, failure cases, limitations; repository README | E08 qualifies handling of repeated source material. |
 
 ## E01 — Coupled evidence and conclusion state helped in the reported harness
 
@@ -87,6 +88,15 @@ Initial review 12 October 2026; targeted refresh 13 October 2026. Intended use: 
 - Limits: Pool-average evidence scores are not scientific truth; the controlled search adapter differs from unrestricted web search. No independent replication inspected.
 - Implication: The coverage check is an engineering adaptation, not an implementation of CESS or a demonstrated remedy.
 
+## E08 — Repeated records require source ancestry
+
+- Source: Li et al., [Memory Echo](https://arxiv.org/html/2610.17763v1), Sections 3–6, limitations; [repository](https://github.com/OrcasSam/memory-echo-benchmark).
+- Version: v1, 13 October 2026; inspected 16 October.
+- Design: Author-controlled replay, 190 questions, four memory frameworks, two generators, model grading.
+- Finding and counterweight: Repeated descendants can compete with corrections. Family filtering alone lowered accuracy; missing replacement evidence also harmed performance.
+- Limits: Supplied provenance labels, frozen pools, answer-processing effects, no independent human audit. The repository excludes datasets/results; not reproduced here.
+- Implication: Linking repeated summaries is an engineering adaptation. It does not justify deleting useful history or trusting unverified corrections.
+
 ## Evidence to behavior
 
 | Condition and action | Basis | Applicability and inference | Counterweight / fallback | Check |
@@ -97,6 +107,7 @@ Initial review 12 October 2026; targeted refresh 13 October 2026. Intended use: 
 | Remaining gap could change answer → search for that gap; stop when it cannot materially change decision within constraints | E01 | Paper ablation supports conclusion-guided search in its harness; transfer is inferred | Budget/access limits lead to qualified answer | Search has a stated purpose; unresolved material gaps are reported |
 | Numerical or parsed evidence → verify units, source value, and formula | E02–E03 | Engineering inference from known validation and parsing failures | If original unavailable, state extraction uncertainty | Formula can be recomputed from cited active operands |
 | Overall-evidence question → inspect opposing findings and relevant source groups | E07 | Engineering inference; source fidelity does not establish coverage | Qualify incomplete coverage; no statistical guarantee | Case 5 author walkthrough; behavior untested |
+| Repeated source records → preserve ancestry | E08 | Engineering adaptation | Keep useful details | Case 6 author walkthrough; behavior untested |
 
 ## Open questions and refresh triggers
 

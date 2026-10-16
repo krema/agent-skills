@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5.1 — 2026-10-16
+
+- Clarify source ancestry in Stateful Evidence Reasoning: repeated summaries retain the original evidence identity instead of counting as independent support. Preserve useful details and qualify corrections whose sources cannot be inspected.
+- Add the bounded Memory Echo evidence assessment and a synthetic correction case. Validation includes structural checks and an author walkthrough; recognition of paraphrased ancestry and downstream effectiveness remain untested.
+
 ## 1.5.0 — 2026-10-14
 
 - Add Copilot Usage Baseline for historical GitHub Copilot CLI token totals, per-session mean and median, model comparisons, and provisional credit estimates. It discovers available history sources, reports local/cloud coverage and missing metrics, distinguishes usage events from cumulative snapshots, and preserves the SDK's billing-conversion caveat.

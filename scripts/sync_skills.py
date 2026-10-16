@@ -70,8 +70,8 @@ def prepare(public, entry):
 def sync(config, root=ROOT, write=False, only=None):
     registry_path = root / "provenance.json"
     previous = json.loads(registry_path.read_text()) if registry_path.exists() else {}
-    # An omitted mapping must not silently remove a published package.
-    if set(previous) - set(config):
+    # Full imports require a complete map; explicit selections preserve other packages.
+    if only is None and set(previous) - set(config):
         raise ValueError("Source map omits published skills; resolve removals explicitly.")
     for public, record in previous.items():
         current = snapshot(root / "skills" / public)

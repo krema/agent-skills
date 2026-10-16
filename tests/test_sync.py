@@ -52,6 +52,25 @@ class SyncTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "omits"):
             sync({}, self.repo, write=True)
 
+    def test_partial_map_preserves_unselected_package_and_provenance(self):
+        complete = dict(self.config)
+        complete['other'] = dict(self.config['public-name'], title='Other')
+        sync(complete, self.repo, write=True)
+        other = self.repo / 'skills/other/SKILL.md'
+        before = other.read_bytes()
+        record = json.loads((self.repo / 'provenance.json').read_text())['other']
+        (self.source / 'SKILL.md').write_text(self.original + 'Updated guidance.\n')
+        self.assertEqual(['public-name'], sync(self.config, self.repo, only=['public-name']))
+        self.assertEqual(['public-name'], sync(self.config, self.repo, write=True, only=['public-name']))
+        self.assertEqual(before, other.read_bytes())
+        self.assertEqual(record, json.loads((self.repo / 'provenance.json').read_text())['other'])
+        with self.assertRaisesRegex(ValueError, 'missing from the source map'):
+            sync(self.config, self.repo, write=True, only=['other'])
+        other.write_text('Independent edit')
+        with self.assertRaisesRegex(ValueError, 'edited independently'):
+            sync(self.config, self.repo, write=True, only=['public-name'])
+        self.assertEqual('Independent edit', other.read_text())
+
     def test_skips_unfinished_sources(self):
         sync(self.config, self.repo, write=True)
         self.config['unfinished'] = {'path': '/nonexistent', 'source_name': 'unfinished', 'title': 'Unfinished'}
