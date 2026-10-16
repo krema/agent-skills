@@ -23,3 +23,11 @@ Revision: added a conditional coverage check for overall-evidence or corpus-wide
 Author walkthrough, with expected outcomes visible: Case 5 activates the new condition, requires checking the other workload reports, and supports a conditional result. Case 1 remains a defined numerical question; Case 3 still permits a direct answer. This review does not establish actual agent execution or effectiveness. No independent behavior trial was run; completeness of source-group discovery and resistance to premature stopping remain untested.
 
 Structural checks: YAML frontmatter parsed successfully; internal resources and portable-path checks passed. The rebuilt ZIP was extracted and its complete four-file inventory and SHA-256 hashes matched the package.
+
+## 16 October 2026 — Source ancestry clarification
+
+Revision: clarified that retrieved summaries which repeat a source retain its evidence identity. E08 records support and transfer limits; synthetic Case 6 covers a correction with repeated historical summaries and an inaccessible-correction boundary.
+
+Author walkthrough, expected outcomes visible: Case 6 traces the two summaries to A and uses inspected B for the revised interval; the boundary preserves history and qualifies the inaccessible correction. Cases 1 and 5 retain their existing correction and coverage decisions. This is design review; no fresh agent execution trial was run. The change supplies a bookkeeping decision and makes no effectiveness claim. Recognition of paraphrased ancestry in real corpora remains behaviorally untested.
+
+Structural verification: YAML parsed successfully; metadata, portable-path and relative-resource checks passed. The rebuilt four-file ZIP was extracted and every file and its SHA-256 hash matched the source package.

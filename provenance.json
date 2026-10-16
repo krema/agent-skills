@@ -258,17 +258,17 @@
   },
   "stateful-evidence-reasoning": {
     "published_sha256": {
-      "SKILL.md": "308d1eded0ceaee1fa18e7fa03d9528324ebe0919f693f35c18cbcc16692090c",
-      "evals/cases.md": "35ba8d866aa2510f16896d8c4aedd5e345f3faa696fb70ae8269638d59a30a92",
-      "references/evidence.md": "031ebe34b06015ee2951c5cd7a09cb51431ba7c386af60f1f37f9ad14bc5d3f6",
-      "references/validation.md": "5cef3d29b25c47460dd8be2274e5abb2483e8ecdfcfb6d4218492d898a7e98aa"
+      "SKILL.md": "2479cc2626a2962898db337d59681b6b3bc938bace969578d7a54009c7dc5e8e",
+      "evals/cases.md": "9e07713308aa7883358b5460944394551d2b4948de0e6b81572a5c3d058ab8f5",
+      "references/evidence.md": "37561fbe9e2e8625750715cd839d5863995c01d623cee33baa9177992a8ec4d9",
+      "references/validation.md": "81257f59ef301236a25450f1784db28195bee3e80f66d31d373949d1be33c4e0"
     },
     "source_name": "stateful-evidence-reasoning",
     "source_sha256": {
-      "SKILL.md": "923c0df96a851d1e5d1e24396e4f8d361b0e29ca1830247f5e583b32dd874e60",
-      "evals/cases.md": "35ba8d866aa2510f16896d8c4aedd5e345f3faa696fb70ae8269638d59a30a92",
-      "references/evidence.md": "031ebe34b06015ee2951c5cd7a09cb51431ba7c386af60f1f37f9ad14bc5d3f6",
-      "references/validation.md": "5cef3d29b25c47460dd8be2274e5abb2483e8ecdfcfb6d4218492d898a7e98aa"
+      "SKILL.md": "0260e454199772d2163bfa63249c830943ce46f1e633160dac636253581321bf",
+      "evals/cases.md": "9e07713308aa7883358b5460944394551d2b4948de0e6b81572a5c3d058ab8f5",
+      "references/evidence.md": "37561fbe9e2e8625750715cd839d5863995c01d623cee33baa9177992a8ec4d9",
+      "references/validation.md": "81257f59ef301236a25450f1784db28195bee3e80f66d31d373949d1be33c4e0"
     },
     "title": "Stateful Evidence Reasoning",
     "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
