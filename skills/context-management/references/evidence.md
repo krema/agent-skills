@@ -1,6 +1,6 @@
 # Evidence: context rot and agent context management
 
-Reviewed through 2026-10-12. Intended environment: file- and tool-using assistants, particularly Codex research and coding workflows. Research window: 2026-01-01 through 2026-10-12. Twenty-two primary sources were examined for relevant methods, results, and limitations. E01–E16 were appraised on October 7; E17–E19 on October 8. E20 and selected version checks were reviewed October 9. E21–E22 were appraised October 12; older entries retain their stated review dates.
+Reviewed through 2026-10-17. Intended environment: file- and tool-using assistants, particularly Codex research and coding workflows. Research window: 2026-01-01 through 2026-10-17. Twenty-three primary sources were examined for relevant methods, results, and limitations. E01–E16 were appraised on October 7; E17–E19 on October 8. E20 and selected version checks were reviewed October 9. E21–E22 were appraised October 12; E23 was appraised October 17; older entries retain their stated review dates.
 
 This is an extensive targeted review, not a systematic review or meta-analysis. Sources are predominantly preprints; peer review and independent replication were not established. Results are author-reported, not reproduced here. Older datasets or models inside a new 2026 experiment are allowed; older experimental findings are not used as support. No particular current Codex model is validated by this synthesis.
 
@@ -200,6 +200,14 @@ Empirical preprint: LoCoMo-10, ten dialogues and 1,540 questions; adversarial qu
 
 Engineering implication: inspect original context before extracting a reusable fact, preserve conditional/provenance/time information and dependencies needed for pending work. Do not adopt blanket rejection of transient state. This adapts the observed filtering tradeoff; it does not validate this record format, an enrichment policy or a universal memory gate. Test linked-fact retention and false promotion of situational statements to permanent attributes.
 
+## E23 — Restarting bounded optimization from a verified incumbent
+
+Source: Tan et al., [Scaling Discovery Requires Forgetting](https://arxiv.org/pdf/2610.20563), October 14, 2026, v1; §§3–5, Tables 1–4 and task/prompt appendices inspected October 17.
+
+Preprint: Pi with DeepSeek V4.1 Flash, four scored optimization tasks, three runs per configuration. Main budget-matched comparisons bundle communication and resets. A same-prefix AHC014 control compares continuation with resetting sessions and search state while retaining the best candidate and score; three replicates favor resetting, including a single agent. Equal proposal counts there do not mean equal spend. Broad variance, one model/harness and no independent reproduction limit confidence; edit-size traces do not isolate the mechanism. Trigger timing remains unresolved.
+
+Engineering adaptation: test a recoverable, bounded fresh start for a measured optimization plateau, retaining task obligations and validating results. This adaptation preserves dependencies/history unlike literal state deletion; it is untested and does not generalize to ordinary research, mandatory teams or automatic reset intervals. E15 warns that omitted failure history can carry essential dependencies.
+
 ## Evidence to behavior
 
 These are conditional engineering translations. Empirical support does not itself establish an agent's authorization or a runtime interface.
@@ -222,6 +230,7 @@ These are conditional engineering translations. Empirical support does not itsel
 | Evaluate trigger cues | E20; inference | Narrow offline corpus; no universal failure predictor | Harm count and total burden at matched opportunities |
 | Reassess evidence-linked conclusions | E21; inference | Evolving research; no runtime or performance equivalence | Corrections propagate to dependent claims; next search resolves a consequential gap |
 | Preserve context when forming reusable facts | E22; inference | Filtering can break multi-hop dependencies; temporary task state may matter | Conditions, provenance and required fact chains survive |
+| Test a bounded fresh start for scored search plateaus | E23; inference | Automatic evaluator and real host support; E15 warns against dropping dependencies | Verified quality and total cost versus continuation; obligations preserved |
 | Preserve authorization and host limits | User/task constraints; engineering | No paper grants tools or permissions | No invented compaction, delegation, installation or external action |
 
 ## Exclusions, gaps and refresh triggers
@@ -230,6 +239,6 @@ These are conditional engineering translations. Empirical support does not itsel
 - Survey/index/Reddit/TMLS/playbook results were discovery or framing leads, not empirical foundations. Recycled older experiments were not admitted by a 2026 webpage date.
 - Screened but not used for rules: Context-Length Robustness (2603.15723), Logic Haystacks, DISCO (2609.33485), Addressable Recall Compaction (2607.25066), and the SSRN MCP-attrition lead. These need separate full method/date appraisal; no conclusion here relies on their snippets.
 - No general architectural cure, universal context budget, benefit from automatic delegation, or superiority of retrieval over full context was established. KV-cache quantization is a different intervention and was outside scope.
-- Search coverage is English-language and indexed-web dependent; October coverage extends through October 12; earlier sources were not all reappraised. Targeted LongHarness/Gated Memory correction, replication and withdrawal searches found no verified notices; absence is not established. This is not all 2026 work. No fabricated screened-record count, preregistration or exhaustive-review claim is made.
+- Search coverage is English-language and indexed-web dependent; October coverage extends through October 17; earlier sources were not all reappraised. Targeted LongHarness/Gated Memory and forgetting-paper correction, replication and withdrawal searches found no verified notices; absence is not established. This is not all 2026 work. No fabricated screened-record count, preregistration or exhaustive-review claim is made.
 - Research stopped when each operational decision had support plus counterweights; more method papers were unlikely to justify stronger unconditional rules. Remaining important uncertainty is target-agent effectiveness, best trigger timing, repeated-summary behavior, and long-horizon aggregate tasks.
 - Refresh when the target model/harness changes, a retention failure appears, or replicated evidence changes a decision. Recheck exact paper versions, matching baselines and source dates. This is not an automatic update schedule.

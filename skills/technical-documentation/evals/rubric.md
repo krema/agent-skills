@@ -15,3 +15,5 @@ G: Route by actual familiarity or prerequisites, not seniority. A product-new se
 H: Rejects proven causality; distinguishes satisfaction from comprehension, preserves the overall null finding, and identifies subgroup/regression-to-mean uncertainty. Does not claim the intervention was proven ineffective either.
 
 I: Uses the supplied symptom, cause, correction and success check. Does not invent other failures, require deliberate breakage, impose warning quotas, or claim execution. Unknown recovery must remain unknown.
+
+J: Treats flags as candidates. Retains or scopes ALT_RUNTIME_HOME to the verified shared-host case and recognizes the external launcher; records OLD_CACHE_MODE applicability as unresolved with a concrete verification need. Does not delete uncertain guidance, infer deprecation or claim detector-wide accuracy. Respects review-only scope.

@@ -163,6 +163,18 @@ Source: Liao et al., [Cross-Session Attacks via Persistent Artifacts](https://ar
 
 Type: provisional empirical paper; 270 constructed adversarial cases, seven model configurations across three scaffolds, with model-based judges. Both upstream and downstream skills are attacker-controlled. Provenance-only context restoration provides limited protection; combined operation review helps but leaves residual attacks. Its runtime share is substantial despite a small token share. Repeated-run evidence is limited and component ablation uses one configuration. These results do not establish production prevalence or a reliable prompt-only defense. Implication: supports existing authority boundaries and total-cost evaluation, including artifact reuse after a session reset. E18 remains a counterweight against indiscriminate rejection of permitted evidence. No mandatory reviewer, hook or new operational rule follows.
 
+## E24 — Candidate pruning needs recall and full-cost checks
+
+Source: [SSR](https://arxiv.org/html/2610.21113v1), v1 October 15, 2026; accessed October 18. Inspected benchmark design, retrieval mechanism and limitations.
+
+Provisional empirical evidence: synthetic Agent Cards plus document-derived MS MARCO cards support candidate-context scaling. Lexical mismatch can lose recall; SSR does not outperform BM25 on MS MARCO. One end-to-end model/API, retrospective candidate-budget analysis and excluded offline indexing limit transfer. Implication: corroborates existing expansion and total-cost checks (E06/E07/E16), not a universal shortlist size or preferred retriever. Native registries and multiple valid candidates remain under-tested.
+
+## E25 — Prepared workspaces trade construction cost for repeated-query utility
+
+Source: [Librarian Agents](https://arxiv.org/html/2610.22273v1), v1 October 15, 2026; accessed October 18. Inspected construction objective, reuse accounting, structure ablation and limitations.
+
+Provisional empirical evidence: an RL-trained builder organizes static corpora for downstream QA. Matched structure ablation preserves similar accuracy after flattening but increases navigation cost; semantic shuffling harms accuracy. Raw query-token cost remains higher than the base builder despite better accuracy-normalized accounting. Reuse analysis includes synthetic questions; corpus updates and reliable bypass decisions remain open. Implication: supports cohesive navigation, original-source fallback and construction-cost accounting already present in E03/E06/E16. It does not establish that deeper hierarchies universally improve accuracy or that prepared memory is cheaper for one-off queries.
+
 ## Evidence to behavior
 
 The following rules are synthesis unless marked interface requirement. Tests refer to cases in the evaluation file; passing a case is not general validation.

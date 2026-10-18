@@ -1,6 +1,6 @@
 # Context rot: 2026 research synthesis
 
-Research cutoff: October 12, 2026. Scope: practical guidance for long research, coding and tool-use sessions. The [evidence ledger](references/evidence.md) contains twenty-two primary-source appraisals, exact links, inspected sections, opposing findings, search scope and exclusions. The [operational skill](SKILL.md) translates the findings into conditional actions.
+Research cutoff: October 17, 2026. Scope: practical guidance for long research, coding and tool-use sessions. The [evidence ledger](references/evidence.md) contains twenty-three primary-source appraisals, exact links, inspected sections, opposing findings, search scope and exclusions. The [operational skill](SKILL.md) translates the findings into conditional actions.
 
 The linked [Chroma report](https://www.trychroma.com/research/context-rot) was published July 14, 2025. It is excluded from the evidence supporting this package, under the 2026-only eligibility criterion. Older models and datasets appear in eligible 2026 experiments; that is different from treating an older result as a new finding.
 
@@ -14,6 +14,7 @@ The defensible recommendation is to manage information according to the next dec
 | Is an archive enough? | Confirm that the agent can retrieve the needed evidence within the task's practical budget. | E04, E05, E14 |
 | How should research react to corrections? | Reassess evidence-linked conclusions and search the remaining consequential gaps; appending corrections alone is insufficient. | E21 |
 | Which extracted facts should survive? | Preserve conditions and required fact chains; stable-fact filtering can hurt multi-hop work. | E22 |
+| When might a fresh start help? | For scored optimization plateaus, test a bounded restart from a verified candidate while preserving obligations and recoverability; transfer remains untested. | E23, E15 |
 | What should policy evaluation measure? | Completion, constraint adherence, state correctness, recovery burden, total resources and repeated-run behavior. | E04, E07, E09 |
 
 These distinctions change implementation. A constraint omitted during compaction requires recovery from the original instruction. A stale repository path requires checking the checkout. Repeated searches may call for revising the working hypothesis. A difficult corpus-wide question may require broader coverage even when that increases context. Each problem calls for a different response; the generic label “context rot” does not choose one.
