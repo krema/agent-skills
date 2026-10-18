@@ -65,6 +65,8 @@ Compare the proposed record with the original constraints and consequential stat
 
 When choosing a compaction trigger, treat recent errors or prior writes as unvalidated cues. Compare both harm frequency and total recovery burden at matched opportunities; observe runtime limits. [E20; engineering inference]
 
+For open-ended optimization with an automatic evaluator, if measured progress stalls and proposals repeat or shrink, consider a bounded fresh-session comparison from the best verified candidate. First preserve the objective, evaluator, observed score, remaining budget, constraints, authorization and needed dependencies; archive history recoverably outside the active input. Exclude obsolete search narrative only if it is unnecessary for correctness. Require actual host support for a fresh session and existing authorization; otherwise continue with focused reads. Compare valid candidate quality and total cost with continuation, and keep the better verified result. This is an untested engineering adaptation of a narrow study, not a reset schedule, permission to delete records, or a reason to add agents. [E23; E15 is the dependency counterweight]
+
 At a compaction boundary, check that the next action’s prerequisites and unresolved obligations remain available. Track unnecessary reacquisition and repeated actions as well as completion; a successful result can still hide recovery overhead. [E04, E07]
 
 Resume the next useful action and check its result against the task's completion condition. Look specifically for lost constraints, outdated values, duplicated external actions, missing evidence, and unnecessary retrieval of information already obtained.

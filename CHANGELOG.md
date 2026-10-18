@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.6.0 — 2026-10-18
+
+- Add an optional bounded fresh-session comparison to Context Management for automatically scored optimization plateaus. Preserve verified candidates, constraints, authorization and recoverable history; require host support and compare actual quality and total cost.
+- Refine Technical Documentation maintenance: check behavior, supported versions and deployment context before treating drift flags as obsolete guidance. Add a synthetic review-only case.
+- Refresh Context Loading evidence on candidate pruning and prepared workspaces, retaining existing operational rules and transfer limitations.
+- New behavioral guidance has author walkthroughs only; no independent execution or measured effectiveness improvement is claimed. Existing invocation names and installation requirements remain unchanged.
+
 ## 1.5.1 — 2026-10-16
 
 - Clarify source ancestry in Stateful Evidence Reasoning: repeated summaries retain the original evidence identity instead of counting as independent support. Preserve useful details and qualify corrections whose sources cannot be inspected.

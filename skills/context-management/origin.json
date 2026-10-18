@@ -4,7 +4,8 @@
   "changes": [
     "Generalized historical conversation and originating-user references; operational rules and evaluation outcomes unchanged.",
     "2026-10-10: Reconciled the completed upstream refresh against the original fingerprinted baseline and curated changes; retained privacy generalization and validation limits.",
-    "2026-10-13: Reconciled completed upstream changes using fingerprint-matched prior files; preserved curated privacy edits and validation limits."
+    "2026-10-13: Reconciled completed upstream changes using fingerprint-matched prior files; preserved curated privacy edits and validation limits.",
+    "2026-10-18: Reconciled completed upstream changes against hash-matched prior files; retained curated privacy adaptations and validation limits."
   ],
   "source_sha256": {
     "RESEARCH.md": "c85cf4a2a59ce92e9a879701b72b210a4b88c5aaea2b7c22b4a7dedd9d7b1ce6",
@@ -14,11 +15,11 @@
     "references/evidence.md": "04834c56f7077ce69b080794580a333b6dcaaaff711f65bb7157fde5cf22a7bf"
   },
   "reconciled_source_sha256": {
-    "VALIDATION.md": "a7619991863cfdc7d4d13f697b42f0729ddb208fc6a2a32a8f05deaca6b05a93",
-    "RESEARCH.md": "b16c795b64af70221a59d5fe2138618a744493683ebe2bb6c0a885682275fe54",
-    "SKILL.md": "bc3f00272308ecce4b48a74b86d9a3931a2e987e0b3a42404c651109a93618d9",
-    "references/evidence.md": "c07fb27d746e03cbc464bd545e076abad75ee97f5a2224ccc435191ce0ca222e",
-    "references/evaluation.md": "a7ce6d25d57064192770537bf76db6a6610192e962e5d3d2f4c2a68b073ffc98"
+    "VALIDATION.md": "b04137fa53db1c86d5baf77481f54a5ffa88be550adeed71397edc2ee775cdd0",
+    "RESEARCH.md": "6b9219ec91ceda06e173b3bb196acdc877b63a2ae8856a9e13cec7bf624c9c8d",
+    "SKILL.md": "2b2a2d5f2a29fbe1ab70f527d96ac9521cb112ca40a77f7a21f5bf3fd893fe14",
+    "references/evidence.md": "0844b6292cb1c37aeb638536c4867ff68b9ae42af842c1e32b7ff67924591076",
+    "references/evaluation.md": "4bf72d06de176351edb0c13f3f11c7b6d3e076274d33127582820fbadd399064"
   },
-  "reconciled_on": "2026-10-13"
+  "reconciled_on": "2026-10-18"
 }

@@ -4,7 +4,8 @@
   "changes": [
     "Generalized historical project observations and personal preferences in the evidence ledger; operational rules unchanged.",
     "Removed residual originating-user or author-environment details from supporting records; operational rules unchanged.",
-    "2026-10-10: Reconciled the completed upstream refresh against the original fingerprinted baseline and curated changes; retained privacy generalization and validation limits."
+    "2026-10-10: Reconciled the completed upstream refresh against the original fingerprinted baseline and curated changes; retained privacy generalization and validation limits.",
+    "2026-10-18: Reconciled completed upstream changes against hash-matched prior files; retained curated privacy adaptations and validation limits."
   ],
   "source_sha256": {
     "SKILL.md": "e32c5c882e0f73070cc373f5fee5dfb708b582f32cdb737fbc9e6d1274567a6c",
@@ -18,13 +19,13 @@
   },
   "reconciled_source_sha256": {
     "SKILL.md": "e32c5c882e0f73070cc373f5fee5dfb708b582f32cdb737fbc9e6d1274567a6c",
-    "evals/requests.md": "61db99d1ceee1a5657534a707bb28a5afcc4cc61e963ab68784f48f474fa18ee",
-    "evals/rubric.md": "dc863f2c91222ed7f3f21baadf529b50af3222fbb6f62011ce07cd845cee7c84",
-    "references/evidence.md": "f6689b572b2870fdca304c16adcdb39800c2f8731e940d225ab6f9193bae3358",
-    "references/validation.md": "165777522f55a35e9f1fdd447d0f2e370727271e111d2120669996f0db80e77d",
+    "evals/requests.md": "809f0be49a95fc550af91d18f40c47100047cb4165aa0174d598b078ec9ec82c",
+    "evals/rubric.md": "9a94ed1bd73741f6cc71e6562b73c5f1e8e2edc6206ec73a606df1d3bae435f4",
+    "references/evidence.md": "405eed02b0a9fde225f5fea326f4b417b350fec74b731689da5b9b93d88ee8ee",
+    "references/validation.md": "5a721ab0d73c4b4eda1a35e426e6dc3c2fa96a42d85dc8bd1b4ff18708e12a04",
     "references/guide-patterns.md": "f8b14f14675006b5de834184b0516244cc7d67378c988c64488c4b010b08a361",
     "references/writing.md": "bcfe4c40ddc604ad181acedd651ba6952330fc22d28931bbeb0d57c874910b48",
-    "references/maintenance.md": "92e936e1950d8ff47d833d070685da83793eaf8221fa0d8c5a9e7da93931b9c6"
+    "references/maintenance.md": "6528255d895adbc2c63c31b847ab8e089351b88ffc065a1f12eb366d43eeef1e"
   },
-  "reconciled_on": "2026-10-10"
+  "reconciled_on": "2026-10-18"
 }

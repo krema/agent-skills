@@ -1,6 +1,6 @@
 # Evidence and design decisions
 
-Reviewed through 2026-10-10. Revision 3. Intended use: agent-authored human onboarding, architecture explanations, task guides, and supporting lookup material in ordinary Markdown repositories. Independent synthesis of Diátaxis, Google, and Canonical; not an official package from those organizations. Required instructions are included locally as original paraphrases; upstream websites and their publishing stacks are not runtime dependencies.
+Reviewed through 2026-10-17. Revision 4. Intended use: agent-authored human onboarding, architecture explanations, task guides, and supporting lookup material in ordinary Markdown repositories. Independent synthesis of Diátaxis, Google, and Canonical; not an official package from those organizations. Required instructions are included locally as original paraphrases; upstream websites and their publishing stacks are not runtime dependencies.
 
 ## Coverage and search limits
 
@@ -87,3 +87,13 @@ Inference: select documented or observed failure points and connect recognition,
 | A supported failure can interrupt a procedure → provide relevant recognition and recovery nearby | E08 plus engineering inference | Do not invent failures or blanket warnings; case I checks grounding |
 
 Publication scope: evidence summaries and explicitly synthetic examples are included. Private project descriptions, conversation history, and internal execution logs are excluded. Validation coverage is summarized separately.
+
+## E09: Drift findings require applicability checks
+
+Tan, Wagner and Treude, [Detecting outdated code element references in software repository documentation](https://doi.org/10.1007/s10664-023-10397-6), published November 21, 2023 (2024 volume); accessed October 17, 2026. Read extraction/matching methods, repository results, maintainer responses and validity limits. Regex and exact-match analysis covered 991 popular and 2,277 Google projects at the current revision, with smaller historical samples after timeouts. It detects one kind of potential staleness, not overall guide correctness. In a selected outreach sample of 15 active projects, four responded positively, four reported false positives and seven had not responded. Some flagged guidance remained applicable despite the source term disappearing, including deployment configuration and behavior still implemented implicitly. This is observational maintainer feedback, not a controlled reader study or a detector-wide precision estimate.
+
+Inference: review flagged passages against behavior and supported contexts before removal; preserve or qualify applicable guidance and expose unresolved applicability. Neither a clean scan nor a missing source token establishes factual correctness. Case J checks this decision; no comprehension benefit is claimed.
+
+| Condition → action | Basis | Boundary and check |
+|---|---|---|
+| Drift flag or missing source term → verify applicability before editing | E09 plus engineering inference | Limited detector and maintainer sample; case J retains supported configuration guidance and leaves uncertain scope visible |

@@ -77,3 +77,8 @@ The 11-file package was checked for metadata, internal-link containment, symlink
 E22 was corrected to v2 and E23 added; the synthesis and evidence mapping were aligned. The entrypoint, operational references and fixtures are unchanged. Author review checked that source conditions and counterevidence remain explicit and no stronger operational obligation is introduced. Historical execution trials were not rerun; no new behavioral result or performance gain is claimed.
 
 Restricted frontmatter, folder/name agreement, all internal Markdown links and containment, UTF-8 readability, symlink absence, unfinished markers and private-path/credential patterns were checked. All files remain Markdown with no runtime dependencies. The rebuilt ZIP passed CRC, exact inventory, temporary extraction, extracted-link checks and byte-hash equality against the package manifest. These are structural/distribution checks, not a security guarantee. The official validator was not rerun; its earlier dependency limitation remains. Installation verification and private run details are recorded outside this package.
+
+
+## October 18 evidence refresh
+
+E24–E25 add bounded supporting evidence; operational instructions and the evidence-to-behavior conclusions remain unchanged. Author review checked that retrieval misses, source fallback and total-cost accounting already cover these findings; this is not an execution trial. Complete inventory/hash, frontmatter, local-resource, privacy-path, archive CRC and temporary-extraction checks passed for this revision. No comparative performance experiment was run and no effectiveness improvement is claimed.

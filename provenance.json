@@ -94,9 +94,9 @@
       "evals/fixtures/refactor/database.md": "f432094dde5565b174b52c8243dbd4a11645c806ea509a92925ccbb3c92b9c33",
       "evals/fixtures/refactor/instructions.md": "07a971b7267e7ab60615b4a1d1f284d4729f03c86d74175cab7721bdc7fd55c5",
       "evals/fixtures/refactor/styles.md": "4699dea9e2bd97cedd14a9c1acd83c9f72b0c425d6833ae5e6bd98033c56dcdf",
-      "evals/validation.md": "af035d280cf696e76b21c5cf816dd8e50d999585d17868936904dee8037e338c",
-      "origin.json": "e948b497fefaf59ad1e14aabef76b2c597554e8f74d925cc696fb261ba03abc8",
-      "references/evidence.md": "b83ed88f04a44050a9fbf89dfd897e3c6d5291636ff1fc0e4f5f7ac613399f69",
+      "evals/validation.md": "1f9df6bbad0ffca34bdf50bae0b73dd74a97e6af0b4485ff8587711a6246198f",
+      "origin.json": "49f953ae24d5fb686761377a8581080610130edbdc3799de7d370f1bf5ae2bde",
+      "references/evidence.md": "cb21b8f0007a14b9a3ca1fa960fc233e1899fffc0debb9cc457e6a62a777f4d9",
       "references/instruction-design.md": "4c8f334f884ebcf738d5bb81ef8a22977e7ff68eb86401755a9312fcce185e12",
       "references/research-synthesis.md": "a849ec4731e323a8a215e3f6f35805822118ab98c60570d15822464e5763fa96",
       "references/retrieval-design.md": "eb2336121215adede0bba5d6ebc3947b35b77c98533dc8d8ed2be9353896f790"
@@ -109,9 +109,9 @@
       "evals/fixtures/refactor/database.md": "f432094dde5565b174b52c8243dbd4a11645c806ea509a92925ccbb3c92b9c33",
       "evals/fixtures/refactor/instructions.md": "07a971b7267e7ab60615b4a1d1f284d4729f03c86d74175cab7721bdc7fd55c5",
       "evals/fixtures/refactor/styles.md": "4699dea9e2bd97cedd14a9c1acd83c9f72b0c425d6833ae5e6bd98033c56dcdf",
-      "evals/validation.md": "af035d280cf696e76b21c5cf816dd8e50d999585d17868936904dee8037e338c",
-      "origin.json": "c8ecb06b61c4f9e59919eba51bd5aed524e1a22f1915b6c76cba4ab277cdc466",
-      "references/evidence.md": "ff6f869cfd9bd2b030377852fea6355d7ab60588edfb9f5d11094649f9463760",
+      "evals/validation.md": "1f9df6bbad0ffca34bdf50bae0b73dd74a97e6af0b4485ff8587711a6246198f",
+      "origin.json": "44821ce156d0df98efe1c56e79f96c157105509ffc7008c5ba277f07eddabb61",
+      "references/evidence.md": "4efe9264d6cab555dd1d686d1f54486a668002fe65da21a83bb5022dc78f3d7d",
       "references/instruction-design.md": "4c8f334f884ebcf738d5bb81ef8a22977e7ff68eb86401755a9312fcce185e12",
       "references/research-synthesis.md": "819f94c18b2a1e027304ea4bee487a7c18f695de3aab70bd3f9325062b95a2ff",
       "references/retrieval-design.md": "eb2336121215adede0bba5d6ebc3947b35b77c98533dc8d8ed2be9353896f790"
@@ -121,21 +121,21 @@
   },
   "context-management": {
     "published_sha256": {
-      "RESEARCH.md": "b16c795b64af70221a59d5fe2138618a744493683ebe2bb6c0a885682275fe54",
-      "SKILL.md": "97af1d4fd04425178b55a15c124c630e8a07057efc55a2d61dfd00aa3de5534b",
-      "VALIDATION.md": "a7619991863cfdc7d4d13f697b42f0729ddb208fc6a2a32a8f05deaca6b05a93",
-      "origin.json": "9d5fc6f647fd9bee46cb2a704f05d83eafe7bade8e533c4353a8f3f66526d41f",
-      "references/evaluation.md": "a7ce6d25d57064192770537bf76db6a6610192e962e5d3d2f4c2a68b073ffc98",
-      "references/evidence.md": "c07fb27d746e03cbc464bd545e076abad75ee97f5a2224ccc435191ce0ca222e"
+      "RESEARCH.md": "6b9219ec91ceda06e173b3bb196acdc877b63a2ae8856a9e13cec7bf624c9c8d",
+      "SKILL.md": "127bbc3bb4ad0a984f6e7552d290a4019854f979c125161e413e8ad799515b70",
+      "VALIDATION.md": "b04137fa53db1c86d5baf77481f54a5ffa88be550adeed71397edc2ee775cdd0",
+      "origin.json": "d44beff12fc4d624b398f6c48708a359db12477f91c83c2db638c1c4eac78746",
+      "references/evaluation.md": "fdac44393bbcdd61e8c8a53ea2363b0d79e07b30fda7423458e74ca9ab62009b",
+      "references/evidence.md": "0844b6292cb1c37aeb638536c4867ff68b9ae42af842c1e32b7ff67924591076"
     },
     "source_name": "context-rot-management",
     "source_sha256": {
-      "RESEARCH.md": "b16c795b64af70221a59d5fe2138618a744493683ebe2bb6c0a885682275fe54",
-      "SKILL.md": "bc3f00272308ecce4b48a74b86d9a3931a2e987e0b3a42404c651109a93618d9",
-      "VALIDATION.md": "a7619991863cfdc7d4d13f697b42f0729ddb208fc6a2a32a8f05deaca6b05a93",
-      "origin.json": "c49bf31cc3476c1892f9a948174b5c5a7ab26e56779b6fc5adae5c816c24cc07",
-      "references/evaluation.md": "a7ce6d25d57064192770537bf76db6a6610192e962e5d3d2f4c2a68b073ffc98",
-      "references/evidence.md": "c07fb27d746e03cbc464bd545e076abad75ee97f5a2224ccc435191ce0ca222e"
+      "RESEARCH.md": "6b9219ec91ceda06e173b3bb196acdc877b63a2ae8856a9e13cec7bf624c9c8d",
+      "SKILL.md": "2b2a2d5f2a29fbe1ab70f527d96ac9521cb112ca40a77f7a21f5bf3fd893fe14",
+      "VALIDATION.md": "b04137fa53db1c86d5baf77481f54a5ffa88be550adeed71397edc2ee775cdd0",
+      "origin.json": "88246e40e3bbd04b2a9549e2cc60e0af8c97c5632eb73340ab1d4808ae7e4a43",
+      "references/evaluation.md": "fdac44393bbcdd61e8c8a53ea2363b0d79e07b30fda7423458e74ca9ab62009b",
+      "references/evidence.md": "0844b6292cb1c37aeb638536c4867ff68b9ae42af842c1e32b7ff67924591076"
     },
     "title": "Context Management",
     "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
@@ -276,25 +276,25 @@
   "technical-documentation": {
     "published_sha256": {
       "SKILL.md": "e3426be836a3d3f0a8fbd095111fc1a153be91dd19638a4c9bbd219e75899715",
-      "evals/requests.md": "61db99d1ceee1a5657534a707bb28a5afcc4cc61e963ab68784f48f474fa18ee",
-      "evals/rubric.md": "dc863f2c91222ed7f3f21baadf529b50af3222fbb6f62011ce07cd845cee7c84",
-      "origin.json": "16bd913a75031d36f2a2ef943fc684e70c4c842d7976087d0e55a3776bb38edf",
-      "references/evidence.md": "f6689b572b2870fdca304c16adcdb39800c2f8731e940d225ab6f9193bae3358",
+      "evals/requests.md": "809f0be49a95fc550af91d18f40c47100047cb4165aa0174d598b078ec9ec82c",
+      "evals/rubric.md": "9a94ed1bd73741f6cc71e6562b73c5f1e8e2edc6206ec73a606df1d3bae435f4",
+      "origin.json": "08ac6e6c13794f51018bebe5a5fc66c4cde4a5000580c1d7c41ccc24fb366a40",
+      "references/evidence.md": "405eed02b0a9fde225f5fea326f4b417b350fec74b731689da5b9b93d88ee8ee",
       "references/guide-patterns.md": "f8b14f14675006b5de834184b0516244cc7d67378c988c64488c4b010b08a361",
-      "references/maintenance.md": "92e936e1950d8ff47d833d070685da83793eaf8221fa0d8c5a9e7da93931b9c6",
-      "references/validation.md": "165777522f55a35e9f1fdd447d0f2e370727271e111d2120669996f0db80e77d",
+      "references/maintenance.md": "6528255d895adbc2c63c31b847ab8e089351b88ffc065a1f12eb366d43eeef1e",
+      "references/validation.md": "5a721ab0d73c4b4eda1a35e426e6dc3c2fa96a42d85dc8bd1b4ff18708e12a04",
       "references/writing.md": "bcfe4c40ddc604ad181acedd651ba6952330fc22d28931bbeb0d57c874910b48"
     },
     "source_name": "living-markdown-guides",
     "source_sha256": {
       "SKILL.md": "e32c5c882e0f73070cc373f5fee5dfb708b582f32cdb737fbc9e6d1274567a6c",
-      "evals/requests.md": "61db99d1ceee1a5657534a707bb28a5afcc4cc61e963ab68784f48f474fa18ee",
-      "evals/rubric.md": "dc863f2c91222ed7f3f21baadf529b50af3222fbb6f62011ce07cd845cee7c84",
-      "origin.json": "685d7c1ace14f3b05ed90b235f239b8b3f1d561a18c7c090f0a60fe7f10b5b25",
-      "references/evidence.md": "f6689b572b2870fdca304c16adcdb39800c2f8731e940d225ab6f9193bae3358",
+      "evals/requests.md": "809f0be49a95fc550af91d18f40c47100047cb4165aa0174d598b078ec9ec82c",
+      "evals/rubric.md": "9a94ed1bd73741f6cc71e6562b73c5f1e8e2edc6206ec73a606df1d3bae435f4",
+      "origin.json": "d7232d8100ccd4ee6f8f3c1204d8618236076dc698a97f0de8847bf238f863c2",
+      "references/evidence.md": "405eed02b0a9fde225f5fea326f4b417b350fec74b731689da5b9b93d88ee8ee",
       "references/guide-patterns.md": "f8b14f14675006b5de834184b0516244cc7d67378c988c64488c4b010b08a361",
-      "references/maintenance.md": "92e936e1950d8ff47d833d070685da83793eaf8221fa0d8c5a9e7da93931b9c6",
-      "references/validation.md": "165777522f55a35e9f1fdd447d0f2e370727271e111d2120669996f0db80e77d",
+      "references/maintenance.md": "6528255d895adbc2c63c31b847ab8e089351b88ffc065a1f12eb366d43eeef1e",
+      "references/validation.md": "5a721ab0d73c4b4eda1a35e426e6dc3c2fa96a42d85dc8bd1b4ff18708e12a04",
       "references/writing.md": "bcfe4c40ddc604ad181acedd651ba6952330fc22d28931bbeb0d57c874910b48"
     },
     "title": "Technical Documentation",

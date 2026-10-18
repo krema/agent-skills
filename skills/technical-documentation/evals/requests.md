@@ -1,6 +1,6 @@
 # Evaluation requests
 
-Revision: 3, 2026-10-10. All examples and project descriptions below are synthetic fixtures. Use isolated fixtures. Do not give the evaluator rubric to a test worker.
+Revision: 4, 2026-10-17. All examples and project descriptions below are synthetic fixtures. Use isolated fixtures. Do not give the evaluator rubric to a test worker.
 
 ## A: New reader guide
 
@@ -37,3 +37,7 @@ Review a claim: “Our guide is proven effective: satisfaction was high and the 
 ## I: Grounded recovery without invented errors
 
 Improve an imaginary local preview tutorial. Verified facts: run `preview sample.txt` from the checkout root; success prints `Ready`. A documented failure prints `Input missing` when the named file is absent; restore the supplied sample at that location and rerun. There is no evidence about other failures. No executable is supplied. Write concise recovery help without running anything or inventing error messages, support channels, or failure frequency.
+
+## J: A drift flag is not an obsolete guide
+
+Review only, using a synthetic fixture. A scanner flags a setup guide because `ALT_RUNTIME_HOME` no longer appears in the repository. Supplied maintainer notes confirm that this setting is still needed when two supported runtime versions share the host; the setting is consumed by an external launcher. A second flagged setting, `OLD_CACHE_MODE`, has no evidence about whether it remains supported. Recommend what to do with both passages. Do not edit files, execute commands or infer deprecation from the scan alone.
