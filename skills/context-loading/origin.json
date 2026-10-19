@@ -5,7 +5,8 @@
     "Generalized historical conversation and originating-user references; operational rules and evaluation outcomes unchanged.",
     "2026-10-10: Reconciled the completed upstream refresh against the original fingerprinted baseline and curated changes; retained privacy generalization and validation limits.",
     "2026-10-13: Reconciled completed upstream changes using fingerprint-matched prior files; preserved curated privacy edits and validation limits.",
-    "2026-10-18: Reconciled completed upstream changes against hash-matched prior files; retained curated privacy adaptations and validation limits."
+    "2026-10-18: Reconciled completed upstream changes against hash-matched prior files; retained curated privacy adaptations and validation limits.",
+    "2026-10-19: Reconciled completed evidence-only refresh against hash-matched prior files; retained curated privacy adaptations and validation limits."
   ],
   "source_sha256": {
     "SKILL.md": "68480085f03447556e930d3e80f866761115b9abeae014dd38da2e5f66de38e8",
@@ -22,16 +23,16 @@
   },
   "reconciled_source_sha256": {
     "SKILL.md": "68480085f03447556e930d3e80f866761115b9abeae014dd38da2e5f66de38e8",
-    "evals/validation.md": "1f9df6bbad0ffca34bdf50bae0b73dd74a97e6af0b4485ff8587711a6246198f",
+    "evals/validation.md": "a79153bf6f4fe8e04172f8b70240590a3b2b298f4435676296b9916ee1ad0b54",
     "evals/cases.md": "b298226a63f685b081b9eee2b794acba4bbd1cda648c843362169feb70bf576b",
-    "references/research-synthesis.md": "819f94c18b2a1e027304ea4bee487a7c18f695de3aab70bd3f9325062b95a2ff",
+    "references/research-synthesis.md": "1a7397b949f458d271ee1efd2c5a6bbdf71595c86132bf39d757175b2b0533dd",
     "references/instruction-design.md": "4c8f334f884ebcf738d5bb81ef8a22977e7ff68eb86401755a9312fcce185e12",
-    "references/evidence.md": "4efe9264d6cab555dd1d686d1f54486a668002fe65da21a83bb5022dc78f3d7d",
+    "references/evidence.md": "57cf78f44414f4ffe2b93669acace86e738aea10cd5a49f7628cb5b843189a7f",
     "references/retrieval-design.md": "eb2336121215adede0bba5d6ebc3947b35b77c98533dc8d8ed2be9353896f790",
     "evals/fixtures/rag/corpus.md": "940fac4bb92f7e45c3babe3b03e1e6095599cf1e87a9c6b0c7f49b45dd14ceb7",
     "evals/fixtures/refactor/styles.md": "4699dea9e2bd97cedd14a9c1acd83c9f72b0c425d6833ae5e6bd98033c56dcdf",
     "evals/fixtures/refactor/instructions.md": "07a971b7267e7ab60615b4a1d1f284d4729f03c86d74175cab7721bdc7fd55c5",
     "evals/fixtures/refactor/database.md": "f432094dde5565b174b52c8243dbd4a11645c806ea509a92925ccbb3c92b9c33"
   },
-  "reconciled_on": "2026-10-18"
+  "reconciled_on": "2026-10-19"
 }

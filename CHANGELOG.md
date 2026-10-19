@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.6.1 — 2026-10-19
+
+- Refresh Context Loading evidence with a bounded skill-loading study: retrieval and token savings can coexist with slower responses or worse selection. Distinguish activation-code retrieval from workflow execution; operational guidance remains unchanged.
+
 ## 1.6.0 — 2026-10-18
 
 - Add an optional bounded fresh-session comparison to Context Management for automatically scored optimization plateaus. Preserve verified candidates, constraints, authorization and recoverable history; require host support and compare actual quality and total cost.

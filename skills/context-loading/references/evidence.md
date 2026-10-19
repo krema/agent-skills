@@ -175,6 +175,12 @@ Source: [Librarian Agents](https://arxiv.org/html/2610.22273v1), v1 October 15, 
 
 Provisional empirical evidence: an RL-trained builder organizes static corpora for downstream QA. Matched structure ablation preserves similar accuracy after flattening but increases navigation cost; semantic shuffling harms accuracy. Raw query-token cost remains higher than the base builder despite better accuracy-normalized accounting. Reuse analysis includes synthetic questions; corpus updates and reliable bypass decisions remain open. Implication: supports cohesive navigation, original-source fallback and construction-cost accounting already present in E03/E06/E16. It does not establish that deeper hierarchies universally improve accuracy or that prepared memory is cheaper for one-off queries.
 
+## E26 — Direct skill-loading comparison separates retrieval from latency
+
+Source: [Workday report](https://arxiv.org/html/2609.35692v1), v1 September 28, 2026; first reviewed October 19. Inspected experimental setup, complete results table and open questions.
+
+Bounded primary preprint: 24 activation-code tasks, three seeds, three Qwen models, 32k windows and libraries of 5–100 skills. Totals include extra loading calls. Progressive loading usually improves retrieval and reduces tokens, but latency increases and Qwen3-8B at 20 skills retrieves worse (0.38 versus 0.68). Full-loading failures at 100 skills are context overflows. This tests selecting one skill and reading its code, not executing its workflow or navigating multiple resources. No current-host effectiveness inference follows. Implication: reinforces separate quality, latency and total-cost measurements and retaining upfront loading when appropriate; no universal catalog-size threshold.
+
 ## Evidence to behavior
 
 The following rules are synthesis unless marked interface requirement. Tests refer to cases in the evaluation file; passing a case is not general validation.
@@ -190,7 +196,7 @@ The following rules are synthesis unless marked interface requirement. Tests ref
 | Deferred tool selected → load schema before invocation | E11 interface pattern | Host protocol differs | B, trace/schema correctness |
 | External content selected → keep authority and access boundaries | E14/E18/E23 plus host requirements | Additional gates can also exclude permitted evidence | B/I, exposure and evidence-preservation checks |
 | Long task/compaction → retain source handles and completed actions | E03/E13/E22; inference | Re-reading may be necessary after change | E, no duplicated side effect |
-| Efficiency claim → matched quality and total-cost evaluation | E02/E06/E09/E10/E12/E13/E21; synthesis | Tokens alone confound results | Comparative protocol |
+| Efficiency claim → matched quality and total-cost evaluation | E02/E06/E09/E10/E12/E13/E21/E26; synthesis | Tokens alone confound results | Comparative protocol |
 | Multilingual free-text misses → inspect generated arguments and test supported normalization/fallback | E15; conditional inference | Exact identifiers and ambiguous matches require preservation checks | F, authored diagnostic review; runtime untested |
 | Claude deferred tools → retain complete API registration | E17; interface requirement | Other hosts may differ | G, contract review; live API untested |
 | Layered-memory efficiency claim → include construction and all generation stages | E16; accounting inference | Session fraction is not a billing metric | H, authored accounting review |

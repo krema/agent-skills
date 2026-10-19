@@ -82,3 +82,8 @@ Restricted frontmatter, folder/name agreement, all internal Markdown links and c
 ## October 18 evidence refresh
 
 E24–E25 add bounded supporting evidence; operational instructions and the evidence-to-behavior conclusions remain unchanged. Author review checked that retrieval misses, source fallback and total-cost accounting already cover these findings; this is not an execution trial. Complete inventory/hash, frontmatter, local-resource, privacy-path, archive CRC and temporary-extraction checks passed for this revision. No comparative performance experiment was run and no effectiveness improvement is claimed.
+
+
+## October 19 evidence refresh
+
+E26 adds bounded direct loading evidence; operational instructions and the evidence-to-behavior conclusions remain unchanged. Author review checked that retrieval quality, latency and total-cost accounting already cover these findings; this is not an execution trial. Complete inventory/hash, frontmatter, local-resource, privacy-path, archive CRC and temporary-extraction checks passed for this revision. No comparative performance experiment was run and no effectiveness improvement is claimed.

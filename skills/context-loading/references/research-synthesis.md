@@ -72,3 +72,8 @@ E18 qualifies filter evaluation; E19 reinforces the distinction between discover
 ## October 13 evidence refresh
 
 E22 now reflects v2, including recovery-provenance limits. E23 adds support for the existing trust boundary across sessions. Neither establishes a new universal loading rule; see the ledger for methods and counterevidence.
+
+
+## October 19 evidence refresh
+
+E26 adds a direct but narrow loading comparison: retrieval gains can coexist with latency or selection regressions. Activation-code retrieval does not establish successful skill execution. Existing conditional loading choices remain unchanged; see the evidence ledger.
