@@ -31,6 +31,7 @@ Reconcile source material or turn research into reusable guidance.
 | --- | --- | --- |
 | [Stateful Evidence Reasoning](skills/stateful-evidence-reasoning/SKILL.md) | An answer depends on multiple documents, conflicting versions, or calculations. | “Reconcile these reports, recompute using the final values, and cite the evidence.” |
 | [Research to Skill](skills/research-to-skill/SKILL.md) | Research should become an actionable skill with traceable evidence. | “Research this topic, build a skill, and report what was actually validated.” |
+| [Advocatus Diaboli](skills/advocatus-diaboli/SKILL.md) | An idea, decision, or argument needs a fair stress test with evidence and actionable checks. | “Challenge this plan, examine the strongest replies, and tell me what would change your recommendation.” |
 
 ### Documentation and work planning
 

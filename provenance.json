@@ -1,4 +1,21 @@
 {
+  "advocatus-diaboli": {
+    "published_sha256": {
+      "SKILL.md": "24897de17d41120b41be845970bdecc32ebc84541283840905d88b6de3ccb431",
+      "evals/cases.md": "2db9e59a889761e6dc525f3c77876815ccb9b7631c757dea0deaeb5e9bde4d35",
+      "evals/validation.md": "e1a205ae2ea2292873126307294fbf17ac269ac7b84dc7cee6bf776c75dc903d",
+      "references/evidence.md": "16c1ab03413240523ae0ef6d4a4fc063f08a8fb7a689ac4f6238683f44998036"
+    },
+    "source_name": "advocatus-diaboli",
+    "source_sha256": {
+      "SKILL.md": "24897de17d41120b41be845970bdecc32ebc84541283840905d88b6de3ccb431",
+      "evals/cases.md": "2db9e59a889761e6dc525f3c77876815ccb9b7631c757dea0deaeb5e9bde4d35",
+      "evals/validation.md": "e1a205ae2ea2292873126307294fbf17ac269ac7b84dc7cee6bf776c75dc903d",
+      "references/evidence.md": "16c1ab03413240523ae0ef6d4a4fc063f08a8fb7a689ac4f6238683f44998036"
+    },
+    "title": "Advocatus Diaboli",
+    "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
+  },
   "agent-instruction-reliability": {
     "published_sha256": {
       "SKILL.md": "04956d2deeee8ffebc4e809b4ee214d33e0facd612724821fbc1d5901e584a17",
