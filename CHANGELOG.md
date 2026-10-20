@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.7.0 — 2026-10-20
+
+- Add Advocatus Diaboli, an English skill for evidence-oriented stress tests of ideas, decisions, strategies, and arguments. It pairs material objections with fair replies and distinguishing checks, permits sound proposals to stand, and revises when new evidence warrants it.
+- Include the evidence ledger, eight evaluation cases, and explicit validation limits. Structural checks and author walkthroughs do not establish independent behavioral effectiveness. This compatible new capability warrants a minor release.
+
 ## 1.6.1 — 2026-10-19
 
 - Refresh Context Loading evidence with a bounded skill-loading study: retrieval and token savings can coexist with slower responses or worse selection. Distinguish activation-code retrieval from workflow execution; operational guidance remains unchanged.
