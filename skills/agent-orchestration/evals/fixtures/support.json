@@ -1,0 +1,16 @@
+{
+  "system": "Support assistant with router, order specialist, returns specialist, and shipping specialist",
+  "shared_state": ["signed-in customer", "current order", "preferred replacement size", "promised arrival deadline"],
+  "tools": {
+    "get_order": "returns purchase and dispatch dates; no live carrier estimate",
+    "get_shipping": "returns carrier-estimated delivery date and source timestamp",
+    "stage_return": "backend enforces ownership and 30-day eligibility; creates a proposal only"
+  },
+  "traces": [
+    {"request": "Exchange these for size 42 if they can arrive by Friday", "chain": ["router", "returns", "orders", "returns", "shipping", "returns", "router"], "issue": "Returns summary omits the requested size; router asks again"},
+    {"request": "When will the replacement arrive?", "chain": ["router", "orders", "shipping", "router"], "issue": "Order dispatch date is mistaken for estimated delivery after a handback"}
+  ],
+  "traffic_counts": null,
+  "end_to_end_eval": null,
+  "requirement": "Delivery answers must use live shipping data. Never imply a return has been applied when only a proposal exists."
+}

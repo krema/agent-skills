@@ -1,0 +1,28 @@
+{
+  "controls": "Same model, tools, snapshot inputs, budget and grader; sandbox replay",
+  "requirement": "Every delivery estimate must be based on get_shipping, never inferred from dispatch date",
+  "baseline": [
+    {"task": "c1", "rep": 1, "passed": true, "latency_seconds": 12},
+    {"task": "c1", "rep": 2, "passed": true, "latency_seconds": 14},
+    {"task": "c2", "rep": 1, "passed": true, "latency_seconds": 18},
+    {"task": "c2", "rep": 2, "passed": true, "latency_seconds": 20},
+    {"task": "c3", "rep": 1, "passed": true, "latency_seconds": 16},
+    {"task": "c3", "rep": 2, "passed": false, "latency_seconds": 16}
+  ],
+  "candidate": [
+    {"task": "c1", "rep": 1, "passed": true, "latency_seconds": 8},
+    {"task": "c1", "rep": 2, "passed": true, "latency_seconds": 9},
+    {"task": "c2", "rep": 1, "passed": true, "latency_seconds": 11},
+    {"task": "c2", "rep": 2, "passed": false, "latency_seconds": 10},
+    {"task": "c3", "rep": 1, "passed": true, "latency_seconds": 10},
+    {"task": "c3", "rep": 2, "passed": true, "latency_seconds": 12},
+    {"task": "c4", "rep": 1, "passed": true, "latency_seconds": 3}
+  ],
+  "traces": [
+    {"task": "c2", "rep": 1, "variant": "candidate", "events": ["load returns procedure", "get_order", "get_shipping", "answer using carrier estimate"]},
+    {"task": "c2", "rep": 2, "variant": "candidate", "events": ["load returns procedure", "get_order", "answer delivery date from dispatch date; no carrier lookup"]},
+    {"task": "c3", "rep": 2, "variant": "baseline", "events": ["handoff drops replacement size", "asks for size already supplied"]},
+    {"task": "c3", "rep": 2, "variant": "candidate", "events": ["retains replacement size", "stages correct replacement proposal"]}
+  ],
+  "token_and_cost_data": null
+}

@@ -1,0 +1,17 @@
+{
+  "system": "Coordinator plus regional public-document research workers",
+  "task": "Compare published product availability across three independent regions",
+  "partitions": ["region-a", "region-b", "region-c"],
+  "worker_work": "Adaptive search, source inspection, and resolving conflicting publication dates",
+  "intermediate_material": "Each worker reads many pages; only evidence rows and unresolved contradictions are needed for synthesis",
+  "result_fields": ["product", "region", "availability date", "source URL", "source date", "conflict or missing data"],
+  "observations": {
+    "shared_mutable_writes": false,
+    "cross_worker_dependencies": "none identified in inspected requests",
+    "duplicate_searches": "none found in three pilot traces",
+    "parallel_elapsed_minutes": [4, 5, 4],
+    "older_serial_elapsed_minutes": [11, 13],
+    "comparison_controls": "different requests; model versions and token totals were not recorded"
+  },
+  "next_request": "Another comparison with the same regional partitions and evidence requirements"
+}

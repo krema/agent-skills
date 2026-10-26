@@ -22,6 +22,7 @@ Set up repository guidance, load relevant information, and preserve decisions ac
 | [Agent Instruction Reliability](skills/agent-instruction-reliability/SKILL.md) | A coding agent skipped, misread, or could not execute a user, project, or skill instruction. | “Find why the agent skipped this review step and check the proposed repair against its action trace.” |
 | [Context Loading](skills/context-loading/SKILL.md) | An agent needs the right information at the right time. | “Restructure these instructions so task-specific details load when needed.” |
 | [Context Management](skills/context-management/SKILL.md) | A long task loses constraints, repeats work, or needs a reliable handoff. | “Prepare a handoff that preserves decisions, unfinished work, and source references.” |
+| [Agent Orchestration](skills/agent-orchestration/SKILL.md) | Choosing between a shared agent loop, tools, skills, and separate subagents. | “Review these agent boundaries and decide which specialists to retain, merge, or fold into the main loop.” |
 
 ### Research and evidence
 
