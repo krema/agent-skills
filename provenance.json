@@ -56,6 +56,45 @@
     "title": "Agent Instructions",
     "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
   },
+  "agent-orchestration": {
+    "published_sha256": {
+      "SKILL.md": "18f1d20c2cbd911d00432b5bdef85a539ced4f1e370b88ef9579cd4fdd9564c8",
+      "evals/fixtures/access.json": "158f812dd9988dc140e1bc9adfb0f6e10f0fc4fa2e3135feb2a68da014eef212",
+      "evals/fixtures/comparison.json": "68411a5b1ae0ae4e9dc4f299abaa4357d70b9f1d591d3b2feb691a3041a52ca3",
+      "evals/fixtures/research.json": "28b6f8bc814052d304aa753a35e74e99b0d26b6793a9725b8e0f70688c235459",
+      "evals/fixtures/support.json": "bf4f6da6e7418dd46a1e490786ddf68b4f7a4c6af3e643b8efc4c7ffe02b5635",
+      "evals/requests.md": "2fa5e3cede01e5e78b36a15eccbe5169bbc0b79c6955c15f2ff98c8bec024464",
+      "evals/results/A.md": "71b6e667dec079b2c19be0a426d05052e5b6a9a89c04c671bbc9897797a531e0",
+      "evals/results/B.md": "096571bb3f547c26fa923e3ab3523f0f7547c2fa5623a1c7c711e92b7edf0eb9",
+      "evals/results/C.md": "a737692e3506be74d1b84b223272f643e2707e0d3f287ba950031606715a4ff0",
+      "evals/results/D.md": "1b62d42674481d81d2220e9cc49efe9903688e6137699151753aa7c4e9e2e21f",
+      "evals/rubric.md": "965da2fb05ac87833238a4e7f4e85cc72c0e48686ecf80ad6794b744955b9231",
+      "evals/validation.md": "6b6c3faa657ec077e2052240baf4b01b1f17cde1a35631fb8e490857bf34fb95",
+      "origin.json": "74df292c933cc489f4755e8fe7d8f84a2aaca366a44471d007ba03b3fc37d79a",
+      "references/evidence.md": "088d1ebbb46b21499dd9a1b78d45b509a7d5f57dfe709c966a8209735a416b3d",
+      "references/migration-and-evaluation.md": "cdf060ef2bd1595d9cff88d89b92472754ca184f78d2431ed3a245bc92f344c9"
+    },
+    "source_name": "agent-orchestration",
+    "source_sha256": {
+      "SKILL.md": "18f1d20c2cbd911d00432b5bdef85a539ced4f1e370b88ef9579cd4fdd9564c8",
+      "evals/fixtures/access.json": "158f812dd9988dc140e1bc9adfb0f6e10f0fc4fa2e3135feb2a68da014eef212",
+      "evals/fixtures/comparison.json": "68411a5b1ae0ae4e9dc4f299abaa4357d70b9f1d591d3b2feb691a3041a52ca3",
+      "evals/fixtures/research.json": "28b6f8bc814052d304aa753a35e74e99b0d26b6793a9725b8e0f70688c235459",
+      "evals/fixtures/support.json": "bf4f6da6e7418dd46a1e490786ddf68b4f7a4c6af3e643b8efc4c7ffe02b5635",
+      "evals/requests.md": "2fa5e3cede01e5e78b36a15eccbe5169bbc0b79c6955c15f2ff98c8bec024464",
+      "evals/results/A.md": "71b6e667dec079b2c19be0a426d05052e5b6a9a89c04c671bbc9897797a531e0",
+      "evals/results/B.md": "096571bb3f547c26fa923e3ab3523f0f7547c2fa5623a1c7c711e92b7edf0eb9",
+      "evals/results/C.md": "a737692e3506be74d1b84b223272f643e2707e0d3f287ba950031606715a4ff0",
+      "evals/results/D.md": "1b62d42674481d81d2220e9cc49efe9903688e6137699151753aa7c4e9e2e21f",
+      "evals/rubric.md": "965da2fb05ac87833238a4e7f4e85cc72c0e48686ecf80ad6794b744955b9231",
+      "evals/validation.md": "6b6c3faa657ec077e2052240baf4b01b1f17cde1a35631fb8e490857bf34fb95",
+      "origin.json": "74df292c933cc489f4755e8fe7d8f84a2aaca366a44471d007ba03b3fc37d79a",
+      "references/evidence.md": "088d1ebbb46b21499dd9a1b78d45b509a7d5f57dfe709c966a8209735a416b3d",
+      "references/migration-and-evaluation.md": "cdf060ef2bd1595d9cff88d89b92472754ca184f78d2431ed3a245bc92f344c9"
+    },
+    "title": "Agent Orchestration",
+    "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
+  },
   "agentic-harness-engineering": {
     "published_sha256": {
       "SKILL.md": "a98d6018df1fa6143b9cc67c070da1213741cda672b2bbb00a93539c7d681beb",

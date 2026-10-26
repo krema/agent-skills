@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.8.0 — 2026-10-26
+
+- Add Agent Orchestration for choosing shared-loop, tool, skill, and subagent boundaries from context dependencies and task outcomes. It supports retaining, merging, or folding specialists and preserving obligations and effective access controls during migrations.
+- Include an eight-source evidence review, migration guidance, and four synthetic decision cases completed in one fresh-agent trial. Production migrations and downstream performance improvement remain untested.
+- This compatible new capability warrants a minor release; existing skill identifiers and installation requirements remain unchanged.
+
 ## 1.7.0 — 2026-10-20
 
 - Add Advocatus Diaboli, an English skill for evidence-oriented stress tests of ideas, decisions, strategies, and arguments. It pairs material objections with fair replies and distinguishing checks, permits sound proposals to stand, and revises when new evidence warrants it.
