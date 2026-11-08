@@ -36,3 +36,9 @@ The host's bundled `skill-creator` and `skill-installer` guidance was read on 20
 ## Local revision rationale — 2026-10-07
 
 Review of a generated instruction-maintenance skill found a disproportionate requirement for matched experiments after any substantial edit, authoring-only text in the operational entrypoint, and validation limited to intended-answer walkthroughs. These are local artifact observations, not a controlled effectiveness study. The revision makes condition/action/outcome synthesis explicit, checks the strength of obligations, and distinguishes focused execution from comparative effectiveness evaluation. Existing source claims were not refreshed. The new guidance is an engineering correction whose transfer beyond the recorded trial remains unproven.
+
+## Shared origins in apparent corroboration
+
+Zhou et al. compared matched search environments with one false page or several pages derived from a common origin. On 90 primary-model cases, the fraction of false claims published rose from 0.71 to 0.83. The magnitude varied across models, and access to counterevidence affected the result. The experiment used fictional claims. The natural-news test evaluated metadata classification only. Published October 2026, accessed November 8, 2026. See sections 6.1–6.4 and Limitations in [Evidence Laundering](https://aclanthology.org/2026.emnlp-main.509.pdf).
+
+The authoring decision is an engineering inference. When agreement would justify stronger guidance, separate shared observations from independent ones and keep unknown origins explicit. A separate analysis of shared data can still contribute a distinct finding. Transfer to skill authoring has not been measured.

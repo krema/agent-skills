@@ -29,6 +29,8 @@ Open the actual source; search snippets are discovery aids. If only an abstract 
 
 Write narrow claims with stable IDs. For each, preserve the conditions and opposing findings rather than averaging incompatible benchmarks. Ask whether apparent disagreement comes from different methods, tasks, models, measures, or populations. A later paper does not automatically supersede a better matched earlier one.
 
+When agreement would strengthen a rule, trace what each report actually observed. Group retellings of one study or dataset for the claim they repeat. Credit separately collected observations or distinct analyses on their own merits. If the origin is unclear, leave independence unresolved.
+
 Separate source-level quality from confidence that the proposed rule transfers to this skill. Explain confidence in words using design quality, consistency, and applicability; avoid invented numerical scores. Label author inference explicitly.
 
 Map findings to proposed rules:
