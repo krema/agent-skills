@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.8.1 — 2026-11-08
+
+- Research to Skill now traces agreeing reports to their underlying observations before strengthening a recommendation. Summaries of the same trial count once for the repeated finding. Independent replications retain their own conditions, and reports with unclear origins remain unresolved.
+
 ## 1.8.0 — 2026-10-26
 
 - Add Agent Orchestration for choosing shared-loop, tool, skill, and subagent boundaries from context dependencies and task outcomes. It supports retaining, merging, or folding specialists and preserving obligations and effective access controls during migrations.

@@ -245,22 +245,22 @@
       "SKILL.md": "661ba2953c4a9de3ebc822248c4ecacbaee559cc4113cc34ac047e17058c2b5d",
       "agents/openai.yaml": "209b4c11b6d999f21261b85a8ac73fee3cc5471bb65e897bdb55c01ded4137c1",
       "assets/evidence-template.md": "60f97e89f844bf982fdbabe7900cbe7de22bf2e4664b649ba6d716fe1508a139",
-      "evals/cases.md": "fef3c335f48b387e3933af91da8ea9331215be965a4d45b7dd5a1b331a9ad9d3",
-      "origin.json": "7e2b7ffa3d32e9165efd038ecdfb742c141552c2d356e6d5aeea3ceb2eefca03",
+      "evals/cases.md": "8d6014af38f6d0e4a4f95c87e4eddbedd8625b7ff15878ddbc24fd779f4a48dc",
+      "origin.json": "955ae33157a8f8fa5a266a972d402c777ac191cb5ea18994e40302a848efd8e3",
       "references/build-and-install.md": "954aaf1eec60c5f5cbb57db59166d235b98dce2b63c5251fe4679074129bbc19",
-      "references/method-evidence.md": "741981331d933a8eb9329155240d31483b32d177580c13bbb9142ad58f698c47",
-      "references/research-method.md": "d786f4b7b67ab52d660bd5d18023ed21e5de1a168c1d2191b1b869c5e999d9fd"
+      "references/method-evidence.md": "8e1d5c094ccd0162753ca40cc4abfb91a341559fecc78c5b32d960e78744301a",
+      "references/research-method.md": "3ed64f38fe513a386ea08a54a23ef94ac71d4820a23a7ff0fef723f502902e65"
     },
     "source_name": "research-to-skill",
     "source_sha256": {
       "SKILL.md": "661ba2953c4a9de3ebc822248c4ecacbaee559cc4113cc34ac047e17058c2b5d",
       "agents/openai.yaml": "209b4c11b6d999f21261b85a8ac73fee3cc5471bb65e897bdb55c01ded4137c1",
       "assets/evidence-template.md": "60f97e89f844bf982fdbabe7900cbe7de22bf2e4664b649ba6d716fe1508a139",
-      "evals/cases.md": "fef3c335f48b387e3933af91da8ea9331215be965a4d45b7dd5a1b331a9ad9d3",
-      "origin.json": "7e2b7ffa3d32e9165efd038ecdfb742c141552c2d356e6d5aeea3ceb2eefca03",
+      "evals/cases.md": "8d6014af38f6d0e4a4f95c87e4eddbedd8625b7ff15878ddbc24fd779f4a48dc",
+      "origin.json": "955ae33157a8f8fa5a266a972d402c777ac191cb5ea18994e40302a848efd8e3",
       "references/build-and-install.md": "954aaf1eec60c5f5cbb57db59166d235b98dce2b63c5251fe4679074129bbc19",
-      "references/method-evidence.md": "741981331d933a8eb9329155240d31483b32d177580c13bbb9142ad58f698c47",
-      "references/research-method.md": "d786f4b7b67ab52d660bd5d18023ed21e5de1a168c1d2191b1b869c5e999d9fd"
+      "references/method-evidence.md": "8e1d5c094ccd0162753ca40cc4abfb91a341559fecc78c5b32d960e78744301a",
+      "references/research-method.md": "3ed64f38fe513a386ea08a54a23ef94ac71d4820a23a7ff0fef723f502902e65"
     },
     "title": "Research to Skill",
     "transformation": "Public identifier replacement and entrypoint heading; no rule changes."
