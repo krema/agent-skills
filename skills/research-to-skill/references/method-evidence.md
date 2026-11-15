@@ -42,3 +42,9 @@ Review of a generated instruction-maintenance skill found a disproportionate req
 Zhou et al. compared matched search environments with one false page or several pages derived from a common origin. On 90 primary-model cases, the fraction of false claims published rose from 0.71 to 0.83. The magnitude varied across models, and access to counterevidence affected the result. The experiment used fictional claims. The natural-news test evaluated metadata classification only. Published October 2026, accessed November 8, 2026. See sections 6.1–6.4 and Limitations in [Evidence Laundering](https://aclanthology.org/2026.emnlp-main.509.pdf).
 
 The authoring decision is an engineering inference. When agreement would justify stronger guidance, separate shared observations from independent ones and keep unknown origins explicit. A separate analysis of shared data can still contribute a distinct finding. Transfer to skill authoring has not been measured.
+
+## Answer exposure in tool-enabled synthesis trials
+
+SciConBench compared agents synthesizing health evidence with open search and with access to reference conclusions filtered. Factual F1 fell under filtering, including for the additional open-weight models in the revised study. The filters differed across providers and could also affect retrieval of useful evidence. The comparison cannot identify how a particular answer was produced. First submitted June 9, 2026, revised November 10, accessed November 15. See sections 6, F.3 and I.1 of [Can AI Agents Synthesize Scientific Conclusions in Health?](https://arxiv.org/html/2606.11337v2).
+
+For skill evaluations, inspecting tool-accessible answers is an engineering inference. It matters when independent synthesis is the capability being tested. The study did not evaluate this authoring workflow.

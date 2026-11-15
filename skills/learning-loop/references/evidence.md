@@ -19,3 +19,11 @@ The original package's broader bibliography has not been revalidated for this ad
 [Sentry v1](https://arxiv.org/html/2610.02994v1), submitted 2026-10-02, accessed 2026-10-10, is earlier research newly assessed in this screening. Sections 4.3 and 5.3 and Appendix A.6.3 compare frozen playbooks with and without persistent exposure while retaining failure-triggered retrieval. Persistent exposure reduced reported performance on the evaluated tasks. The study uses Qwen3.5-9B and GPT-OSS-120B; transfer to other agents and authored skills is untested here.
 
 Engineering adaptation: give reusable recovery rules observable triggers and an exit condition, keep specialized details conditional, and review a success case where the trigger is absent. This supports narrower exposure, not a universal prohibition on persistent instructions or durable preferences. No runtime detector or automatic memory architecture is introduced, and no benchmark improvement is claimed for this skill.
+
+## Rechecking disputed lessons and testing transfer
+
+Lee et al. compared WikiTrace with the same insights alone. Adding linked source records and prompting the agent to consult them improved average scores by 3.2 points across eight suites. The comparison bundles evidence access with prompting. Agents chose when to consult records, so comparing those cases with the rest cannot isolate the effect of consulting a record. Preprint submitted November 10, 2026, accessed November 15. [WikiTrace, sections 4–5 and limitations](https://arxiv.org/html/2611.14320v1)
+
+Grynets et al. separated migration tasks by target reference to test the effect of reusing answers. Across 118 held-out target groups the paired difference in reference conformity with memory was 0.005 (95% interval −0.003 to 0.017). Conformity measures agreement with a reference. Behavioral correctness required a separate check. Preprint submitted November 12, 2026, accessed November 15. [Migration evaluation, Tables XX–XXI](https://arxiv.org/pdf/2611.16143)
+
+The workflow implications are engineering inferences. Revisit authorized evidence when a lesson’s scope is disputed. Distinguish success on the original example from evidence of transfer. Neither experiment evaluated this skill.

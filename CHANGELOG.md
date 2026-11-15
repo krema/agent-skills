@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.8.2 — 2026-11-15
+
+- Learning Loop checks disputed lessons against authorized evidence and distinguishes replaying a repair from verifying it on a different task.
+- Research to Skill checks whether a synthesis trial exposes the expected answer through tools or workspace files. When exposure is uncertain, the evaluation records that limit.
+
 ## 1.8.1 — 2026-11-08
 
 - Research to Skill now traces agreeing reports to their underlying observations before strengthening a recommendation. Summaries of the same trial count once for the repeated finding. Independent replications retain their own conditions, and reports with unclear origins remain unresolved.
