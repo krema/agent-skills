@@ -29,6 +29,8 @@ An explicit durable correction can justify a targeted proposal immediately. A si
 
 Read the affected guidance and its scope. Check existing equivalent rules, conflicts, and whether the failure came from instructions, environment, or a product decision. Keep unresolved contradictions visible. Put project facts in project notes, a concise durable preference in scoped instructions, and a reusable procedure in a skill. Broaden scope only with supporting evidence or explicit user intent.
 
+When lessons conflict or lack a condition needed now, consult the smallest authorized source excerpt or result artifact that could resolve the question. If the evidence is unavailable or inconclusive, leave the disputed advice provisional.
+
 When turning a recovery into reusable guidance, state the observable failure that makes it applicable and when to stop using it. Keep specialized recovery details in the relevant procedure or conditionally loaded reference; do not make the whole failure history an always-on instruction. Check both a matching failure and a successful case where the trigger is absent. This does not restrict durable user preferences or rules that genuinely apply throughout the task.
 
 ## Propose, apply, and verify
@@ -38,6 +40,8 @@ Create a proposal with evidence IDs, counterevidence, exact target and baseline,
 Apply only within current or standing user authorization. Before editing, re-read the target and reconcile intervening changes; preserve a recoverable prior version. Update the narrowest relevant passage. Observation authority alone does not authorize changing active guidance, installing hooks, altering schedules, or publishing records.
 
 Mark applied after checking the actual artifact. Mark validated only after the intended behavioral check succeeds, with evidence and limitations; formatting or a self-review is not that check. If behavior is untested, leave it applied but unvalidated. If failure recurs or a regression appears, revise or revert within scope, preserving unrelated later edits, and attach the new evidence. Rejected or superseded proposals must not be applied on the next cycle without new grounds.
+
+A successful replay can verify the original repair. To claim transfer, check another task whose expected answer is absent from the stored example and verify the actual outcome. If only a replay is available, record what it established on that input.
 
 ## Continue the loop
 

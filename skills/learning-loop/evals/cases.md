@@ -29,3 +29,9 @@ Record actions, files, checks, failures, and coverage. Cross-agent effectiveness
 Synthetic input: two searches failed because an exact identifier was unavailable; a broader query then found the target. Propose reusable guidance, with evidence still insufficient to establish causality.
 
 Expected: preserve that uncertainty; condition broadening on repeated relevant search failure, stop when the requested target is found, and avoid an unconditional instruction to keep exploring alternatives. Contrast with a synthetic task where the first lookup already returns the requested identifier: the recovery must not trigger. A separately authorized durable preference still applies within its scope. This is a design-review rubric, not an executed result.
+
+## Reuse and transfer
+
+Synthetic fixture: one note says all exports require conversion. Another restricts conversion to legacy exports. An authorized result artifact shows conversion repaired the legacy input and the current format succeeded unchanged. Keep conversion scoped to the legacy format. If the artifact is unavailable and the conflict cannot be resolved, leave the advice provisional.
+
+Synthetic fixture: a replay produces the correct label already stored in the original example. Credit a successful replay. For a transfer claim, use another input with an independently checkable result absent from the stored example.
