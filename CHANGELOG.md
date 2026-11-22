@@ -1,9 +1,14 @@
 # Changelog
 
-## 1.8.2 — 2026-11-15
+## 1.9.0 — 2026-11-22
 
 - Learning Loop checks disputed lessons against authorized evidence and distinguishes replaying a repair from verifying it on a different task.
 - Research to Skill checks whether a synthesis trial exposes the expected answer through tools or workspace files. When exposure is uncertain, the evaluation records that limit.
+- Learning Loop now states that repetition alone does not establish that a lesson is correct and sharpens task-scope and source-coverage checks. Its evidence update includes scoped findings on memory generalization and the Agents API session-webhook boundary; no automatic capture or adapter is added. [How Much Should an Agent Remember?](https://arxiv.org/html/2611.26361v1) · [The Memory Trap](https://arxiv.org/html/2611.07554v1) · [Agents API session webhooks](https://developers.openai.com/api/docs/guides/agents-api/sessions/webhooks)
+- Research to Skill now calls for task-proportionate validation when an LLM grader materially drives a trial conclusion, and reports what reference comparison and grader limits were checked. [All Verdicts are Not Equal](https://aclanthology.org/2026.aacl-long.207/) · [AgentJudgeBench](https://aclanthology.org/2026.emnlp-main.659/)
+- Ticket Craft now asks multi-criterion agent handoffs to report each consequential criterion with its supporting check or evidence, keeping failed, blocked, and unverified results visible. The benchmark-specific source does not establish live-team prevalence or an improvement from this wording. [SWE-CoWork](https://arxiv.org/abs/2611.20218v1)
+
+  The conditional LLM-grader validation procedure is a compatible new evaluation capability, so the batch advances to a minor version. The other changes refine evidence and status reporting. Skill identifiers, supported inputs, prerequisites, deliverables, defaults, and authorized side effects remain unchanged. Updated cases received source-author walkthroughs only; independent execution and downstream effectiveness remain untested.
 
 ## 1.8.1 — 2026-11-08
 

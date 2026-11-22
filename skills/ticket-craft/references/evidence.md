@@ -81,6 +81,16 @@ Implication: map promised behavior to checks and examine contradictions in both 
 - A 2025 robustness-diagram acceptance-criteria study was discovered and its landing page opened; full methods/results were not assessed. It was excluded from design support because modeling-diagram accuracy is indirect for execution handoffs.
 - Positive long-context mitigation papers were discovered but not method-reviewed. E05 is therefore explicitly historical and conditional, not a claim about all 2026 models.
 
+## E10 — Requirement-level handoff status must match verification
+
+Source: Lei et al., [SWE-CoWork: Benchmarking Coding Agents as Digital Employees in Organizations](https://arxiv.org/abs/2611.20218v1), v1 submitted 2026-11-15; accessed 2026-11-22. Inspected benchmark construction, fixed executable contracts, paired complete-requirements condition, requirement-level trajectories, results, and discussion.
+
+Type: benchmark and trajectory analysis across 101 assignments in real repositories, 11 languages, and 12 domains, with modeled workplace colleagues and records. Across eleven evaluated models, partial implementation rates were far above whole-task completion. In the paired Oracle-Spec comparison for Seed Evolving and GPT-6 Astra, complete requirements raised fail-to-pass test coverage by about 16 percentage points but did not change either model's complete-task pass rate. In the paper's traced Claude-Opus-5.5 handoffs, 31% of requirements reported as done failed their linked tests. The paper tracks requirement acquisition, implementation, preserved behavior, verification, and handoff separately.
+
+Implication: for a multi-criterion agent handoff, ask for criterion-level outcomes with supporting checks/evidence and leave blocked, failed, or unverified criteria visible. A single status claim can conceal a gap. This narrows the existing general completion-report instruction; it does not prescribe a score threshold or a fixed ticket schema.
+
+Limits: colleagues and organizational histories are modeled; the benchmark is not a real-team deployment or a controlled comparison of ticket formats. The paired complete-spec comparison covers two models; more complete requirements improved partial coverage but not whole-task pass in those conditions. The 31% finding is benchmark-specific and is not an estimate of live-team prevalence. No evidence here shows that the wording change itself improves delivery; this is a cautious engineering adaptation to an observed report-verification gap.
+
 ## Evidence to behavior
 
 | Decision/action | Basis and classification | Applicability/counterweight | Observable check |
@@ -92,6 +102,7 @@ Implication: map promised behavior to checks and examine contradictions in both 
 | Separate delivery from outcome measurement | Engineering choice | No causal validation in this review; supplied metrics take precedence | Software completion does not claim business impact |
 | Record consequential missing decisions; do not invent facts | Engineering constraint for faithful authoring | Routine design remains discretionary; drafts can proceed independently | Unknown behavior is visible and readiness qualified |
 | Add accessible starting state, pointers, constraints, verification for agents | E02/E09 transfer inference; engineering design | Not a universal required-field list; analysis-only tasks differ | Pickup can identify relevant input/action and success evidence |
+| In multi-criterion handoffs, report criterion-level verified, failed, blocked, or unverified status with evidence | E10 benchmark/trajectory evidence; engineering adaptation | Simulated workplace; no ticket-format experiment or live-team prevalence | A partial result cannot be reported as unqualified completion |
 | Omit redundant context and foreground essentials | E05–E08 conditional empirical support plus inference | Mixed results; neither a context ban nor fixed word cap | Every retained detail changes a decision or identifies a needed source |
 | Preserve action scope in description-only work | Task scope plus engineering safeguard | Requested tracker updates or execution may be authorized separately | Output is description/package, not unrequested operational action |
 

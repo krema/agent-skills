@@ -22,4 +22,8 @@ Official starting points, whose supported versions and payloads must be checked 
 - [Codex documentation](https://developers.openai.com/codex/)
 - [GitHub Copilot hooks reference](https://docs.github.com/en/copilot/reference/hooks-reference)
 
+### OpenAI Agents API session webhooks
+
+For applications using OpenAI's Agents API, the [session webhooks reference](https://developers.openai.com/api/docs/guides/agents-api/sessions/webhooks) documents `agent.session.created`, `agent.session.action_required`, `agent.session.in_progress`, `agent.session.idle`, and `agent.session.failed`. The webhook identifies the event and session; for `action_required`, retrieve the current session to inspect the omitted action details. Verify signed webhooks with the configured secret. This is an Agents API interface, not a local Codex hook or a transcript export. A lifecycle event alone does not establish that user and assistant content was captured or that the session is fully covered; inspect the current session events/items interface and record actual coverage.
+
 These links are interface discovery aids, not a claim that this package has implemented or tested adapters for all hosts.

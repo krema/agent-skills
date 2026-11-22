@@ -3,7 +3,8 @@
   "adapted_on": "2026-10-09",
   "changes": [
     "Clarified review-only output and preservation of existing ticket contracts during revision.",
-    "Removed residual originating-user or author-environment details from supporting records; operational rules unchanged."
+    "Removed residual originating-user or author-environment details from supporting records; operational rules unchanged.",
+    "On 2026-11-22, refined multi-criterion agent handoff completion evidence using a scoped adaptation of SWE-CoWork; retained historical source_sha256 fingerprints."
   ],
   "source_sha256": {
     "SKILL.md": "c10046535e4f0e9b6c48582c8f8a864c857a91fcc5eda6d52b353f2ed82b61df",
