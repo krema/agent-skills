@@ -7,7 +7,9 @@
     "Research rules and historical evidence retained; no new effectiveness claim.",
     "Authoring review clarified review-only and adjacent-task boundaries and made archive delivery conditional.",
     "Removed residual originating-user or author-environment details from supporting records; operational rules unchanged.",
-    "2026-11-08: Added claim-level source independence appraisal and a synthetic evaluation case after reviewing Zhou et al. Original source fingerprints retained."
+    "2026-11-08: Added claim-level source independence appraisal and a synthetic evaluation case after reviewing Zhou et al. Original source fingerprints retained.",
+    "2026-11-15: Clarified answer exposure through tools in synthesis trials and added a synthetic evaluation case.",
+    "2026-11-22: Added conditional guidance to validate material LLM-grader judgments and a synthetic failure case after reviewing current evaluator-reliability and workflow-benchmark studies. Original source fingerprints remain unchanged; this adaptation is not evidence that the workflow improves outcomes."
   ],
   "source_sha256": {
     "SKILL.md": "0f7956b8a0b038e7cc9fdcddfa4919b26e6dd77ee869fb593bc7dfcfb1511d42",
